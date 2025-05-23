@@ -1,0 +1,352 @@
+.header-wrap {
+  font-family: $font-family-reg;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 108%;
+  color: $light-black;
+
+  .header-wrap__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+
+    .header-wrap__block-city,
+    .header-wrap__block-phone-time {
+      display: flex;
+      gap: 40px;
+
+      div {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      a {
+        font-family: $font-family-med;
+        font-weight: 500;
+        color: $light-black;
+        text-decoration: none;
+        transition: all ease 0.3s;
+
+        &:hover {
+          opacity: $opacity-hover;
+          transition: all ease 0.3s;
+        }
+      }
+      span {
+        font-family: $font-family-demibold;
+      }
+    }
+    .header-wrap__block-search {
+      .header-wrap__search-form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 0.8px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        padding: 0px 12px;
+        width: 100%;
+        max-width: 190px;
+        height: 28px;
+
+        input[type="text"] {
+          border: none;
+          outline: none;
+          font-size: 13px;
+          line-height: 92%;
+          letter-spacing: 0em;
+          color: rgba(0, 0, 0, 0.5);
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .header-wrap__info {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/header-image-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header-wrap__info-font {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.3) 28.85%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        rgba(0, 0, 0, 0.05);
+      z-index: 1;
+    }
+
+    .header-wrap__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 50px 0px 50px;
+      position: relative;
+      z-index: 2;
+      height: 56px;
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        a {
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 1.5rem;
+          letter-spacing: 0em;
+          color: $white;
+          text-decoration: none;
+          transition: all ease 0.3s;
+
+          &:hover {
+            opacity: $opacity-hover;
+            transition: all ease 0.3s;
+          }
+        }
+      }
+      .header-wrap__func-block {
+        display: flex;
+        gap: 6px;
+        .func-block__btn-menu {
+          button {
+            width: 56px;
+            height: 56px;
+            background-image: url("../images/menu-icon.svg");
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+            &:hover {
+              opacity: $opacity-hover;
+              transition: all ease 0.3s;
+            }
+          }
+        }
+        .leave-request-btn {
+          a {
+            color: $white;
+            background: none;
+            border: 1px solid rgba($color: $white, $alpha: 1);
+            transition: all ease 0.3s;
+            padding: 9px 6px 9px 15px;
+
+            svg {
+              rect {
+                fill: $white;
+              }
+              path {
+                fill: #1c75a8;
+              }
+            }
+
+            &:hover {
+              border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
+              transition: all ease 0.3s;
+              background-color: $white;
+              color: $light-black;
+
+              svg {
+                rect {
+                  fill: #1c75a8;
+                }
+                path {
+                  fill: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-wrap__title-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      gap: 25px;
+      z-index: 2;
+      h1 {
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 6.4rem;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: $white;
+        width: 100%;
+        max-width: 855px;
+        span {
+          color: $blue;
+        }
+      }
+      p {
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
+        color: $white;
+      }
+    }
+    .header-wrap__achievements-block {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 47px;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+      color: $white;
+      .header-wrap__achievements-clients,
+      .header-wrap__achievements-skill,
+      .header-wrap__achievements-partners {
+        border-radius: 20px;
+        backdrop-filter: blur(80px);
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .achievements-block__title {
+          font-family: $font-family-reg;
+          font-weight: 400;
+          font-size: 4rem;
+          letter-spacing: -0.04em;
+          line-height: normal;
+          display: flex;
+          align-items: center;
+          span {
+            font-weight: 400;
+            font-size: 3rem;
+            letter-spacing: -0.02em;
+          }
+        }
+        .achievements-block__desc {
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 114%;
+        }
+      }
+
+      .header-wrap__achievements-clients {
+        width: 116px;
+        padding: 24px 19px;
+        gap: 14px;
+        .achievements-block__images {
+          img {
+            width: 100px;
+            height: 46px;
+          }
+        }
+        .achievements-block__title {
+          margin-bottom: 9px;
+        }
+      }
+      .header-wrap__achievements-skill {
+        width: 172px;
+        padding: 15px 20px 24px 20px;
+        gap: 40px;
+        .achievements-block__title {
+        }
+        .achievements-block__text {
+          p {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 114%;
+            margin-bottom: 21px;
+          }
+          a {
+            font-family: $font-family-reg;
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $white;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .header-wrap__achievements-partners {
+        .achievements-block__title {
+          margin-bottom: 6px;
+        }
+        width: 117px;
+        padding: 14px 17px 20px 21px;
+        gap: 16px;
+      }
+    }
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header-wrap .header-wrap__info {
+    background-image: url("../images/header-image-1-2x.png");
+  }
+}
+
+.logo {
+  width: 253px;
+  height: 40px;
+}
+.leave-request-btn {
+  a {
+    display: flex;
+    align-items: center;
+    color: $light-black;
+    text-decoration: none;
+    font-family: $font-family-med;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0em;
+    border-radius: 50px;
+    width: 143px;
+    background-color: $white;
+    border: 1px solid $white;
+    transition: all ease 0.3s;
+    padding: 5px 6px 5px 15px;
+
+    span {
+      flex: 1;
+    }
+    svg {
+      rect {
+        fill: #1c75a8;
+      }
+      path {
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      background: none;
+      border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
+      color: $white;
+      transition: all ease 0.3s;
+      svg {
+        rect {
+          fill: $white;
+        }
+        path {
+          fill: #1c75a8;
+        }
+      }
+    }
+  }
+}

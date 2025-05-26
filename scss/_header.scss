@@ -27,11 +27,11 @@
         font-weight: 500;
         color: $light-black;
         text-decoration: none;
-        transition: all ease 0.3s;
+        transition: $transition-default;
 
         &:hover {
           opacity: $opacity-hover;
-          transition: all ease 0.3s;
+          transition: $transition-default;
         }
       }
       span {
@@ -113,11 +113,11 @@
           letter-spacing: 0em;
           color: $white;
           text-decoration: none;
-          transition: all ease 0.3s;
+          transition: $transition-default;
 
           &:hover {
             opacity: $opacity-hover;
-            transition: all ease 0.3s;
+            transition: $transition-default;
           }
         }
       }
@@ -131,12 +131,14 @@
             background-image: url("../images/menu-icon.svg");
             background-color: rgba(0, 0, 0, 0);
             border: none;
+            border-radius: 50%;
             cursor: pointer;
-            transition: all ease 0.3s;
+            transition: $transition-default;
 
             &:hover {
-              opacity: $opacity-hover;
-              transition: all ease 0.3s;
+              // opacity: $opacity-hover;
+              background-color: $sea-blue;
+              transition: $transition-default;
             }
           }
         }
@@ -145,7 +147,7 @@
             color: $white;
             background: none;
             border: 1px solid rgba($color: $white, $alpha: 1);
-            transition: all ease 0.3s;
+            transition: $transition-default;
             padding: 9px 6px 9px 15px;
 
             svg {
@@ -159,7 +161,7 @@
 
             &:hover {
               border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
-              transition: all ease 0.3s;
+              transition: $transition-default;
               background-color: $white;
               color: $light-black;
 
@@ -319,7 +321,7 @@
     width: 143px;
     background-color: $white;
     border: 1px solid $white;
-    transition: all ease 0.3s;
+    transition: $transition-default;
     padding: 5px 6px 5px 15px;
 
     span {
@@ -338,7 +340,7 @@
       background: none;
       border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
       color: $white;
-      transition: all ease 0.3s;
+      transition: $transition-default;
       svg {
         rect {
           fill: $white;

@@ -1,0 +1,111 @@
+.special-offers {
+  .special-offers__tltle-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    .special-offers__tltle {
+      text-decoration: none;
+      font-family: $font-family-reg;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: $black;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      padding: 10px 15px;
+      display: flex;
+      width: 100%;
+      max-width: 179px;
+      height: 26px;
+      align-items: center;
+      transition: $transition-default;
+
+      &:hover {
+        background-color: $sea-blue;
+        color: $white;
+        transition: $transition-default;
+      }
+    }
+  }
+
+  .special-offers__cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+
+    .special-offers__card {
+      width: 266px;
+      height: 357px;
+      overflow: hidden;
+      background-color: $light-blue;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+
+      .special-offers__font-image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+      }
+
+      .special-offers__card-desc {
+        position: relative;
+        color: $white;
+        margin: 20px;
+
+        h6 {
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 2rem;
+          line-height: 110%;
+          letter-spacing: -0.01em;
+          margin-bottom: 10px;
+        }
+        p {
+          font-family: $font-family-reg;
+          font-weight: 400;
+          font-size: 1.2rem;
+        }
+
+        .special-offers__card-title {
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 2.6rem;
+          line-height: 104%;
+          letter-spacing: -0.01em;
+          color: $light-black;
+          margin-bottom: 24px;
+
+          span {
+            color: $blue;
+          }
+        }
+        .leave-request-btn {
+          a:hover {
+            border-color: $sea-blue;
+            color: $sea-blue;
+          }
+        }
+      }
+      .special-offers__icon {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-self: flex-end;
+        margin: 20px;
+      }
+    }
+  }
+}

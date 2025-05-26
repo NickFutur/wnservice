@@ -36,6 +36,10 @@
   padding: 0px 20px;
 }
 
+.container_mt_120 {
+  margin-top: 120px;
+}
+
 .header-wrap {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
   font-weight: 400;
@@ -66,12 +70,12 @@
   font-weight: 500;
   color: #1f1f1f;
   text-decoration: none;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__contacts .header-wrap__block-city a:hover,
 .header-wrap .header-wrap__contacts .header-wrap__block-phone-time a:hover {
   opacity: 0.8;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__contacts .header-wrap__block-city span,
 .header-wrap .header-wrap__contacts .header-wrap__block-phone-time span {
@@ -142,11 +146,11 @@
   letter-spacing: 0em;
   color: #ffffff;
   text-decoration: none;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation nav a:hover {
   opacity: 0.8;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block {
   display: flex;
@@ -158,18 +162,19 @@
   background-image: url("../images/menu-icon.svg");
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  border-radius: 50%;
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .func-block__btn-menu button:hover {
-  opacity: 0.8;
-  transition: all ease 0.3s;
+  background-color: #1c75a8;
+  transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .leave-request-btn a {
   color: #ffffff;
   background: none;
   border: 1px solid white;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
   padding: 9px 6px 9px 15px;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .leave-request-btn a svg rect {
@@ -180,7 +185,7 @@
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .leave-request-btn a:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
   background-color: #ffffff;
   color: #1f1f1f;
 }
@@ -331,7 +336,7 @@
   width: 143px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
   padding: 5px 6px 5px 15px;
 }
 .leave-request-btn a span {
@@ -347,11 +352,110 @@
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: #ffffff;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease;
 }
 .leave-request-btn a:hover svg rect {
   fill: #ffffff;
 }
 .leave-request-btn a:hover svg path {
   fill: #1c75a8;
+}
+
+.special-offers .special-offers__tltle-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.special-offers .special-offers__tltle-block .special-offers__tltle {
+  text-decoration: none;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  width: 100%;
+  max-width: 179px;
+  height: 26px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.special-offers .special-offers__tltle-block .special-offers__tltle:hover {
+  background-color: #1c75a8;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.special-offers .special-offers__cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+.special-offers .special-offers__cards-block .special-offers__card {
+  width: 266px;
+  height: 357px;
+  overflow: hidden;
+  background-color: #ebf4f9;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special-offers .special-offers__cards-block .special-offers__card:nth-child(2) {
+  flex-direction: column-reverse;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__font-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc {
+  position: relative;
+  color: #ffffff;
+  margin: 20px;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc h6 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc .special-offers__card-title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  color: #1f1f1f;
+  margin-bottom: 24px;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc .special-offers__card-title span {
+  color: #13a9e1;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc .leave-request-btn a:hover {
+  border-color: #1c75a8;
+  color: #1c75a8;
+}
+.special-offers .special-offers__cards-block .special-offers__card .special-offers__icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-self: flex-end;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */

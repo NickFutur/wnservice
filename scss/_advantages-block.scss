@@ -1,0 +1,152 @@
+.advantages-block {
+  position: relative;
+  min-height: 929px;
+
+  .advantages-block__font {
+    position: absolute;
+    z-index: 0;
+    background-image: url("../images/advantages-font.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    border-radius: 30px;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+  .advantages-block__wrap {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.01) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      rgba(0, 0, 0, 0.05);
+    color: $white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 76px;
+    min-height: 711px;
+    padding-top: 156px;
+    padding-bottom: 62px;
+
+    .advantages-block__info-text {
+      font-family: $font-family-med;
+      font-weight: 500;
+      color: $white;
+      text-align: center;
+      width: 100%;
+      max-width: 725px;
+
+      h2 {
+        font-size: 5.6rem;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 30px;
+
+        span {
+          color: $blue;
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+      }
+    }
+
+    .advantages-block__cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 20px;
+
+      .advantages-block__card {
+        padding: 12px;
+        width: 220px;
+        backdrop-filter: blur(40px);
+        box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 23px;
+        min-height: 294px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .advantages-block__image {
+          width: 100%;
+          height: 170px;
+          overflow: hidden;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          img {
+            width: 100%;
+          }
+
+          svg {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+        }
+        .advantages-block__info-text {
+          text-align: left;
+          h4 {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 117%;
+            margin-bottom: 8px;
+          }
+          p {
+            font-family: $font-family-reg;
+            font-weight: 400;
+            font-size: 1.2rem;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(4) {
+          background: #0775b5;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+    .advantages-block__pluses {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 60px;
+      flex-wrap: wrap;
+      .advantages-block__pluse {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        backdrop-filter: blur(7px);
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 50px;
+        padding: 8px 12px 8px 8px;
+        font-weight: 400;
+        font-size: 1.3rem;
+        letter-spacing: 0em;
+      }
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .advantages-block .advantages-block__font {
+    background-image: url("../images/advantages-font-2x.png");
+  }
+}

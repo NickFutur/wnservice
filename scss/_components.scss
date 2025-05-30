@@ -1,3 +1,4 @@
+// кнопка заголовка, например "Наши услуги"
 .component__tltle-block {
   display: flex;
   align-items: center;
@@ -20,9 +21,99 @@
     transition: $transition-default;
 
     &:hover {
-      background-color: $sea-blue;
-      color: $white;
+      color: rgba(31, 31, 31, 0.8);
       transition: $transition-default;
+    }
+  }
+}
+
+// кнопка "Оставить заявку"
+.leave-request-btn {
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $font-family-med;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0em;
+    border-radius: 50px;
+    width: 143px;
+    transition: $transition-default;
+    padding: 5px 6px 5px 15px;
+
+    span {
+      flex: 1;
+    }
+    svg {
+    }
+
+    &:hover {
+      transition: $transition-default;
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.leave-request-btn_backrgound {
+  a {
+    color: $light-black;
+    background-color: $white;
+    border: 1px solid $white;
+    span {
+    }
+    svg {
+      rect {
+        fill: $blue-link;
+      }
+      path {
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      background: $blue-link;
+      border: 1px solid rgba($color: $blue-link, $alpha: $opacity-hover);
+      color: $white;
+      svg {
+        rect {
+          fill: $white;
+        }
+        path {
+          fill: $blue-link;
+        }
+      }
+    }
+  }
+}
+
+.leave-request-btn_backrgound-not {
+  a {
+    color: $white;
+    background: none;
+    border: 1px solid $white;
+    span {
+    }
+    svg {
+      rect {
+        fill: $white;
+      }
+      path {
+        fill: $blue-link;
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          fill: $blue-link;
+        }
+        path {
+          fill: $white;
+        }
+      }
     }
   }
 }

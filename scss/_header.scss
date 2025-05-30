@@ -142,40 +142,6 @@
             }
           }
         }
-        .leave-request-btn {
-          a {
-            color: $white;
-            background: none;
-            border: 1px solid rgba($color: $white, $alpha: 1);
-            transition: $transition-default;
-            padding: 9px 6px 9px 15px;
-
-            svg {
-              rect {
-                fill: $white;
-              }
-              path {
-                fill: #1c75a8;
-              }
-            }
-
-            &:hover {
-              border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
-              transition: $transition-default;
-              background-color: $white;
-              color: $light-black;
-
-              svg {
-                rect {
-                  fill: #1c75a8;
-                }
-                path {
-                  fill: $white;
-                }
-              }
-            }
-          }
-        }
       }
     }
     .header-wrap__title-block {
@@ -306,49 +272,4 @@
 .logo {
   width: 253px;
   height: 40px;
-}
-.leave-request-btn {
-  a {
-    display: flex;
-    align-items: center;
-    color: $light-black;
-    text-decoration: none;
-    font-family: $font-family-med;
-    font-weight: 500;
-    font-size: 1.3rem;
-    letter-spacing: 0em;
-    border-radius: 50px;
-    width: 143px;
-    background-color: $white;
-    border: 1px solid $white;
-    transition: $transition-default;
-    padding: 5px 6px 5px 15px;
-
-    span {
-      flex: 1;
-    }
-    svg {
-      rect {
-        fill: #1c75a8;
-      }
-      path {
-        fill: $white;
-      }
-    }
-
-    &:hover {
-      background: none;
-      border: 1px solid rgba($color: $white, $alpha: $opacity-hover);
-      color: $white;
-      transition: $transition-default;
-      svg {
-        rect {
-          fill: $white;
-        }
-        path {
-          fill: #1c75a8;
-        }
-      }
-    }
-  }
 }

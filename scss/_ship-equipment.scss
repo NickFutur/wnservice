@@ -1,0 +1,87 @@
+.ship-equipment-block {
+  .ship-equipment-block__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    .ship-equipment-block__card {
+      width: 184px;
+      height: 183px;
+      background: $light-blue-2;
+      padding: 20px;
+      border-radius: 30px;
+
+      .ship-equipment-block__link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .ship-equipment-block__image {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+
+        .ship-equipment-block__desc {
+          h3 {
+            display: inline-block;
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: $light-black;
+            text-decoration: none;
+            transition: $transition-default;
+          }
+        }
+
+        &:hover {
+          h3 {
+            color: rgba(31, 31, 31, 0.8);
+            transition: $transition-default;
+          }
+        }
+      }
+    }
+    .ship-equipment-block__card-all {
+      background: $blue-link;
+      .ship-equipment-block__link {
+        .ship-equipment-block__desc {
+          h3 {
+            color: $white !important;
+          }
+        }
+        .ship-equipment-block__image-svg {
+          position: relative;
+          display: flex;
+          flex: 1;
+          justify-content: flex-end;
+          svg {
+            transition: $transition-default;
+          }
+        }
+
+        &:hover {
+          .ship-equipment-block__desc {
+            h3 {
+              color: rgba(255, 255, 255, 0.8) !important;
+            }
+          }
+          .ship-equipment-block__image-svg {
+            svg {
+              transform: rotate(45deg);
+              transition: $transition-default;
+            }
+          }
+        }
+      }
+    }
+  }
+}

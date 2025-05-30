@@ -1,5 +1,5 @@
 // кнопка заголовка, например "Наши услуги"
-.component__tltle-block {
+.component__tltle-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +114,33 @@
           fill: $white;
         }
       }
+    }
+  }
+}
+
+// блок заголовка
+.component__title-block {
+  .component__tltle-link {
+    margin-bottom: 30px;
+  }
+  .component__title-text {
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-med;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 112%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $light-black;
+    margin-bottom: 75px;
+
+    h3 {
+      width: 100%;
+      max-width: 882px;
+    }
+    span {
+      color: $blue;
     }
   }
 }

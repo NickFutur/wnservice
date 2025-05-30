@@ -1,29 +1,4 @@
 .service-block {
-  .service-block__title-block {
-    .component__tltle-block {
-      margin-bottom: 30px;
-    }
-    .service-block__title-text {
-      display: flex;
-      justify-content: center;
-      font-family: $font-family-med;
-      font-weight: 500;
-      font-size: 4rem;
-      line-height: 112%;
-      letter-spacing: -0.01em;
-      text-align: center;
-      color: $light-black;
-      margin-bottom: 75px;
-
-      h3 {
-        width: 100%;
-        max-width: 882px;
-      }
-      span {
-        color: $blue;
-      }
-    }
-  }
   .service-block__info-block {
     display: flex;
     flex-direction: column;
@@ -191,6 +166,7 @@
         h4 {
         }
         .service-block__card-links-block {
+          max-width: 441px;
           a {
           }
         }

@@ -40,13 +40,13 @@
   margin-top: 120px;
 }
 
-.component__tltle-block {
+.component__tltle-link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
 }
-.component__tltle-block .component__tltle {
+.component__tltle-link .component__tltle {
   text-decoration: none;
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
   font-weight: 400;
@@ -62,7 +62,7 @@
   justify-content: center;
   transition: all 0.3s ease;
 }
-.component__tltle-block .component__tltle:hover {
+.component__tltle-link .component__tltle:hover {
   color: rgba(31, 31, 31, 0.8);
   transition: all 0.3s ease;
 }
@@ -129,6 +129,29 @@
 }
 .leave-request-btn_backrgound-not a:hover svg path {
   fill: #ffffff;
+}
+
+.component__title-block .component__tltle-link {
+  margin-bottom: 30px;
+}
+.component__title-block .component__title-text {
+  display: flex;
+  justify-content: center;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 75px;
+}
+.component__title-block .component__title-text h3 {
+  width: 100%;
+  max-width: 882px;
+}
+.component__title-block .component__title-text span {
+  color: #13a9e1;
 }
 
 .header-wrap {
@@ -595,28 +618,6 @@
     background-image: url("../images/advantages-font-2x.png");
   }
 }
-.service-block .service-block__title-block .component__tltle-block {
-  margin-bottom: 30px;
-}
-.service-block .service-block__title-block .service-block__title-text {
-  display: flex;
-  justify-content: center;
-  font-family: "TT Hoves Pro Trial Medium", sans-serif;
-  font-weight: 500;
-  font-size: 4rem;
-  line-height: 112%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #1f1f1f;
-  margin-bottom: 75px;
-}
-.service-block .service-block__title-block .service-block__title-text h3 {
-  width: 100%;
-  max-width: 882px;
-}
-.service-block .service-block__title-block .service-block__title-text span {
-  color: #13a9e1;
-}
 .service-block .service-block__info-block {
   display: flex;
   flex-direction: column;
@@ -777,4 +778,74 @@
 }
 .service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card {
   min-width: 450px;
+}
+.service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card .service-block__card-links-block {
+  max-width: 441px;
+}
+.ship-equipment-block .ship-equipment-block__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card {
+  width: 184px;
+  height: 183px;
+  background: #ddeef8;
+  padding: 20px;
+  border-radius: 30px;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__image {
+  width: 100%;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__image img {
+  width: 100%;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__desc h3 {
+  display: inline-block;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1f1f1f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link:hover h3 {
+  color: rgba(31, 31, 31, 0.8);
+  transition: all 0.3s ease;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all {
+  background: #0775b5;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__desc h3 {
+  color: #ffffff !important;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__image-svg {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__image-svg svg {
+  transition: all 0.3s ease;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover .ship-equipment-block__desc h3 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover .ship-equipment-block__image-svg svg {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

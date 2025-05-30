@@ -1,0 +1,28 @@
+.component__tltle-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  .component__tltle {
+    text-decoration: none;
+    font-family: $font-family-reg;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: flex;
+    width: auto;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-default;
+
+    &:hover {
+      background-color: $sea-blue;
+      color: $white;
+      transition: $transition-default;
+    }
+  }
+}

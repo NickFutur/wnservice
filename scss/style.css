@@ -1102,4 +1102,82 @@
   left: -148px;
   width: 148px; /* Ширина как в SVG */
   height: 76px; /* Высота как в SVG */
+}
+
+.partners-block {
+  height: 751px;
+  overflow: hidden;
+}
+.partners-block .partners-block__wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/partners-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.partners-block .partners-block__wrap .partners-block__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  align-self: flex-end;
+  flex: 1 1 50%; /* Базовый размер 50%, но может сжиматься */
+  min-width: 300px; /* Минимальная ширина перед переносом */
+}
+.partners-block .partners-block__wrap .partners-block__text-block .component__tltle-link {
+  justify-content: flex-start;
+}
+.partners-block .partners-block__wrap .partners-block__text-block .component__tltle-link .component__tltle {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+.partners-block .partners-block__wrap .partners-block__text-block .component__tltle-link .component__tltle:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.partners-block .partners-block__wrap .partners-block__text-block .partner-block__desc {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 115%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  max-width: 578px;
+  width: 100%;
+}
+.partners-block .partners-block__wrap .partners-block__logos {
+  flex: 1 1 50%; /* Базовый размер 50%, но может сжиматься */
+  margin-right: 50px;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper {
+  animation: scrollLogos 20s linear infinite;
+  flex-direction: column; /* Вертикальное расположение */
+  animation: scrollDown 20s linear infinite;
+  display: flex;
+  justify-self: flex-end;
+  gap: 11.48px;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper img {
+  max-width: 523px;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0); /* Начальная позиция */
+  }
+  100% {
+    transform: translateY(-50%); /* Сдвигаем вверх на половину высоты */
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .partners-block {
+    background-image: url("../images/partners-1-2x.png");
+  }
 }/*# sourceMappingURL=style.css.map */

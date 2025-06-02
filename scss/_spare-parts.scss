@@ -1,0 +1,108 @@
+.spare-parts-block {
+  .spare-parts-block__wrap {
+    width: 100%;
+    display: flex;
+    .spare-parts-block__image-wrapper {
+      width: 736px;
+      height: 552px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      svg {
+        position: absolute;
+        top: 21px;
+        left: 20px;
+      }
+    }
+    .spare-parts-block__info-wrapper {
+      flex: 1;
+      background-color: $blue-link;
+      color: $white;
+      margin-left: -30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      .spare-parts-block__info-title {
+        display: flex;
+        justify-content: space-between;
+        gap: 92px;
+        margin: 25px 25px 0px 45px;
+        padding-bottom: 45px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        .info-title__text {
+          margin-top: 20px;
+          h2 {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 2.6rem;
+            line-height: 108%;
+            letter-spacing: -0.01em;
+            margin-bottom: 15px;
+          }
+          P {
+            font-family: $font-family-reg;
+            font-weight: 400;
+            font-size: 1.6rem;
+          }
+        }
+        .info-title__image {
+          width: 120px;
+          height: 120px;
+          min-width: 120px;
+          img {
+            width: 100%;
+            border-radius: 12px;
+          }
+        }
+      }
+      .spare-parts-block__info-pluses {
+        padding: 0px 25px 45px 45px;
+        .info-pluses__list {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin-bottom: 33px;
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 1.3rem;
+          letter-spacing: 0em;
+
+          li {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 22px;
+            p {
+              width: 100%;
+              max-width: 330px;
+            }
+          }
+        }
+        .leave-request-btn_backrgound {
+          a {
+            &:hover {
+              border: 1px solid $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .spare-parts-block {
+    .spare-parts-block__wrap {
+      flex-direction: column;
+      .spare-parts-block__image-wrapper {
+        width: 100%;
+      }
+      .spare-parts-block__info-wrapper {
+        margin-left: 0;
+        margin-top: -50px;
+      }
+    }
+  }
+}

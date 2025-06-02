@@ -46,12 +46,14 @@
       flex: 1;
     }
     svg {
+      transition: $transition-default;
     }
 
     &:hover {
       transition: $transition-default;
       svg {
         transform: rotate(45deg);
+        transition: $transition-default;
       }
     }
   }
@@ -62,6 +64,7 @@
     color: $light-black;
     background-color: $white;
     border: 1px solid $white;
+    transition: $transition-default;
     span {
     }
     svg {
@@ -77,6 +80,7 @@
       background: $blue-link;
       border: 1px solid rgba($color: $blue-link, $alpha: $opacity-hover);
       color: $white;
+      transition: $transition-default;
       svg {
         rect {
           fill: $white;
@@ -94,6 +98,7 @@
     color: $white;
     background: none;
     border: 1px solid $white;
+    transition: $transition-default;
     span {
     }
     svg {
@@ -106,6 +111,7 @@
     }
 
     &:hover {
+      transition: $transition-default;
       svg {
         rect {
           fill: $blue-link;

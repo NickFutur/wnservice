@@ -40,6 +40,14 @@
   margin-top: 120px;
 }
 
+.container_mt_110 {
+  margin-top: 110px;
+}
+
+.border_radius_20 {
+  border-radius: 20px;
+}
+
 .component__tltle-link {
   display: flex;
   align-items: center;
@@ -83,17 +91,22 @@
 .leave-request-btn a span {
   flex: 1;
 }
+.leave-request-btn a svg {
+  transition: all 0.3s ease;
+}
 .leave-request-btn a:hover {
   transition: all 0.3s ease;
 }
 .leave-request-btn a:hover svg {
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .leave-request-btn_backrgound a {
   color: #1f1f1f;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+  transition: all 0.3s ease;
 }
 .leave-request-btn_backrgound a svg rect {
   fill: #0775b5;
@@ -105,6 +118,7 @@
   background: #0775b5;
   border: 1px solid rgba(7, 117, 181, 0.8);
   color: #ffffff;
+  transition: all 0.3s ease;
 }
 .leave-request-btn_backrgound a:hover svg rect {
   fill: #ffffff;
@@ -117,12 +131,16 @@
   color: #ffffff;
   background: none;
   border: 1px solid #ffffff;
+  transition: all 0.3s ease;
 }
 .leave-request-btn_backrgound-not a svg rect {
   fill: #ffffff;
 }
 .leave-request-btn_backrgound-not a svg path {
   fill: #0775b5;
+}
+.leave-request-btn_backrgound-not a:hover {
+  transition: all 0.3s ease;
 }
 .leave-request-btn_backrgound-not a:hover svg rect {
   fill: #0775b5;
@@ -848,4 +866,104 @@
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover .ship-equipment-block__image-svg svg {
   transform: rotate(45deg);
   transition: all 0.3s ease;
+}
+
+.spare-parts-block .spare-parts-block__wrap {
+  width: 100%;
+  display: flex;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
+  width: 736px;
+  height: 552px;
+  position: relative;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper img {
+  width: 100%;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper svg {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
+  flex: 1;
+  background-color: #0775b5;
+  color: #ffffff;
+  margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 92px;
+  margin: 25px 25px 0px 45px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__text {
+  margin-top: 20px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__text h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  margin-bottom: 15px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__text P {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__image {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
+  padding: 0px 25px 45px 45px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 33px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 22px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list li p {
+  width: 100%;
+  max-width: 330px;
+}
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .leave-request-btn_backrgound a:hover {
+  border: 1px solid #ffffff;
+}
+
+@media (max-width: 1400px) {
+  .spare-parts-block .spare-parts-block__wrap {
+    flex-direction: column;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
+    width: 100%;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
+    margin-left: 0;
+    margin-top: -50px;
+  }
 }/*# sourceMappingURL=style.css.map */

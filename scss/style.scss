@@ -4,6 +4,9 @@
   padding: 0px 20px;
 }
 
+.container_mt_200 {
+  margin-top: 200px;
+}
 .container_mt_120 {
   margin-top: 120px;
 }
@@ -23,3 +26,4 @@
 @import "service-block";
 @import "ship-equipment";
 @import "spare-parts";
+@import "reg-maintenance";

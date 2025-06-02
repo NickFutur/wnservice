@@ -142,6 +142,12 @@
             }
           }
         }
+        .leave-request-btn {
+          a {
+            width: 166px;
+            height: 56px;
+          }
+        }
       }
     }
     .header-wrap__title-block {
@@ -212,7 +218,7 @@
       }
 
       .header-wrap__achievements-clients {
-        width: 116px;
+        width: 155px;
         padding: 24px 19px;
         gap: 14px;
         .achievements-block__images {
@@ -226,7 +232,7 @@
         }
       }
       .header-wrap__achievements-skill {
-        width: 172px;
+        width: 212px;
         padding: 15px 20px 24px 20px;
         gap: 40px;
         .achievements-block__title {
@@ -256,7 +262,7 @@
         .achievements-block__title {
           margin-bottom: 6px;
         }
-        width: 117px;
+        width: 155px;
         padding: 14px 17px 20px 21px;
         gap: 16px;
       }

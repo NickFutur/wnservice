@@ -33,6 +33,11 @@
   font-size: 10px;
 }
 
+* {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  box-sizing: border-box;
+}
+
 .container_padding {
   padding: 0px 20px;
 }
@@ -89,7 +94,7 @@
   font-size: 1.3rem;
   letter-spacing: 0em;
   border-radius: 50px;
-  width: 143px;
+  width: 164px;
   transition: all 0.3s ease;
   padding: 5px 6px 5px 15px;
 }
@@ -307,6 +312,10 @@
   background-color: #1c75a8;
   transition: all 0.3s ease;
 }
+.header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .leave-request-btn a {
+  width: 166px;
+  height: 56px;
+}
 .header-wrap .header-wrap__info .header-wrap__title-block {
   display: flex;
   flex-direction: column;
@@ -382,7 +391,7 @@
   line-height: 114%;
 }
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-clients {
-  width: 116px;
+  width: 155px;
   padding: 24px 19px;
   gap: 14px;
 }
@@ -394,7 +403,7 @@
   margin-bottom: 9px;
 }
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-skill {
-  width: 172px;
+  width: 212px;
   padding: 15px 20px 24px 20px;
   gap: 40px;
 }
@@ -417,7 +426,7 @@
   text-decoration: none;
 }
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-partners {
-  width: 117px;
+  width: 155px;
   padding: 14px 17px 20px 21px;
   gap: 16px;
 }
@@ -533,8 +542,8 @@
   align-items: center;
   gap: 76px;
   min-height: 711px;
-  padding-top: 156px;
-  padding-bottom: 62px;
+  padding-top: 157px;
+  padding-bottom: 80px;
 }
 .advantages-block .advantages-block__wrap .advantages-block__info-text {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
@@ -567,7 +576,7 @@
 }
 .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card {
   padding: 12px;
-  width: 220px;
+  width: 244px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
@@ -616,6 +625,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -812,8 +822,8 @@
   justify-content: center;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card {
-  width: 184px;
-  height: 183px;
+  width: 204px;
+  height: 203px;
   background: #ddeef8;
   padding: 20px;
   border-radius: 30px;
@@ -1003,7 +1013,7 @@
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc {
   position: absolute;
   padding: 20px;
-  width: 254px;
+  width: 294px;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);

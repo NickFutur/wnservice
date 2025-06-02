@@ -1,5 +1,10 @@
 @import "variants";
 
+* {
+  font-family: $font-family-reg;
+  box-sizing: border-box;
+}
+
 .container_padding {
   padding: 0px 20px;
 }

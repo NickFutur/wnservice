@@ -148,5 +148,13 @@
     span {
       color: $blue;
     }
+    p {
+      font-family: $font-family-reg;
+      font-weight: 400;
+      font-size: 1.4rem;
+      text-align: center;
+      color: $light-black;
+      line-height: normal;
+    }
   }
 }

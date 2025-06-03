@@ -181,6 +181,14 @@
 .component__title-block .component__title-text span {
   color: #13a9e1;
 }
+.component__title-block .component__title-text p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #1f1f1f;
+  line-height: normal;
+}
 
 .header-wrap {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
@@ -1360,4 +1368,78 @@
 .work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide:hover .work-block__slide-title {
   color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
+}
+
+.footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
+  max-width: 590px;
+  justify-self: center;
+}
+.footer-maintenance .footer-maintenance__block {
+  display: flex;
+  justify-content: center;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card {
+  overflow: hidden;
+  border-radius: 30px;
+  width: 289px;
+  height: 238px;
+  background-color: #0775b5;
+  position: relative;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 17px;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg {
+  align-self: flex-end;
+  transition: all 0.3s ease;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg rect {
+  fill: #ffffff;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg path {
+  fill: #1c75a8;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link:hover svg {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link:hover p {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card img {
+  width: 100%;
+  height: auto;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(1) {
+  transform: rotate(-4deg);
+  z-index: 2;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(2) {
+  transform: rotate(8deg);
+  z-index: 1;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(3) {
+  transform: rotate(-13deg);
+  z-index: 0;
 }/*# sourceMappingURL=style.css.map */

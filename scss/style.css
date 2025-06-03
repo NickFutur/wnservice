@@ -1370,6 +1370,10 @@
   transition: all 0.3s ease;
 }
 
+.footer-maintenance .footer-maintenance__title {
+  display: flex;
+  justify-content: center;
+}
 .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
   flex-direction: column;
   align-items: center;

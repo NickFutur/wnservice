@@ -1,5 +1,7 @@
 .footer-maintenance {
   .footer-maintenance__title {
+    display: flex;
+    justify-content: center;
     .component__title-block {
       .component__title-text {
         flex-direction: column;

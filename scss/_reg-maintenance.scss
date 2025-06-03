@@ -1,9 +1,16 @@
 .reg-maintenance-block {
   overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .component__title-text {
     margin-bottom: 0;
   }
+
   .reg-maintenance-block__wrap {
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     position: relative;
@@ -14,9 +21,12 @@
     justify-self: center;
     align-items: center;
     margin-top: -80px;
+
     img {
       width: 100%;
+      height: auto;
     }
+
     .reg-maintenance-block__desc-wrap {
       width: 100%;
       position: absolute;
@@ -28,15 +38,30 @@
         position: absolute;
         padding: 20px;
         width: 294px;
-        backdrop-filter: blur(50px);
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
-        // background: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.6); // Fallback
         color: $black;
         letter-spacing: -0.01em;
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
+
+        @supports (
+          (-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))
+        ) {
+          -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+          background: rgba(255, 255, 255, 0.3);
+        }
+
+        @supports not (gap: 10px) {
+          > *:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
 
         h4 {
           font-family: $font-family-med;
@@ -44,6 +69,7 @@
           font-size: 1.5rem;
           line-height: 100%;
         }
+
         p {
           font-family: $font-family-reg;
           font-weight: 400;

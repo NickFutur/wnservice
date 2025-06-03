@@ -1239,4 +1239,125 @@
   100% {
     transform: translateY(-50%);
   }
+}
+.work-block .work-block__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 70px;
+  margin-bottom: 94px;
+}
+.work-block .work-block__wrap .work-block__header-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.work-block .work-block__wrap .work-block__header-block .component__title-text {
+  margin-bottom: 0;
+  text-align: left;
+}
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination {
+  position: relative;
+  display: flex;
+  gap: 9px;
+}
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-prev,
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-next {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-prev svg rect,
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-next svg rect {
+  fill: #0775b5;
+  transition: all 0.3s ease;
+}
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-prev svg path,
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-next svg path {
+  fill: #ffffff;
+}
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-prev:hover svg rect,
+.work-block .work-block__wrap .work-block__header-block .work-block__work-pagination .work-block__swiper-button-next:hover svg rect {
+  fill: rgba(7, 117, 181, 0.9);
+  transition: all 0.3s ease;
+}
+.work-block .work-block__slider {
+  padding-left: 71px;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide {
+  width: 315px !important;
+  height: 315px;
+  background: #d9d9d9;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-photo .work-block__slide-photo-font {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, #000 100%);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-photo img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 17px;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link svg {
+  align-self: flex-end;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link svg rect {
+  fill: #ffffff;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link svg path {
+  fill: #1c75a8;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link .work-block__slide-title {
+  position: relative;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  padding: 9px;
+  max-width: 230px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide:hover svg {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+.work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide:hover .work-block__slide-title {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

@@ -33,6 +33,10 @@
   font-size: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
   box-sizing: border-box;
@@ -82,6 +86,26 @@
 }
 .component__tltle-link .component__tltle:hover {
   color: rgba(31, 31, 31, 0.8);
+  transition: all 0.3s ease;
+}
+.component__tltle-link .component__tltle-light {
+  text-decoration: none;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  width: auto;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.component__tltle-link .component__tltle-light:hover {
+  color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
 }
 
@@ -188,6 +212,158 @@
   text-align: center;
   color: #1f1f1f;
   line-height: normal;
+}
+
+.component-feedback {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 747px;
+  height: auto;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(217, 217, 217, 0.2);
+  padding: 44px 95px 49px 95px;
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.component-feedback .component__title-block .component__title-text {
+  margin-bottom: 47px;
+}
+.component-feedback .component-feedback__block .component-feedback__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text],
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel],
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number] {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(31, 31, 31, 0.8);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]::placeholder,
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]::placeholder,
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]::placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]:focus::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]:focus::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]:focus::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]:focus::placeholder,
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]:focus::placeholder,
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]:focus::placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-text,
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
+  flex: 1;
+  height: 54px;
+  overflow: hidden;
+  gap: 16px;
+  padding-left: 20px;
+  min-width: 200px;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel label {
+  display: flex;
+  align-items: center;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea {
+  margin-bottom: 21px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea {
+  width: 100%;
+  height: 89px;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 18px 20px;
+  color: rgba(31, 31, 31, 0.8);
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  min-width: 200px;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea::placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea:focus::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea:focus::placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy {
+  margin-bottom: 29px;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-check {
+  position: relative;
+  display: none;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+  cursor: pointer;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(217, 217, 217, 0.2);
+  margin-right: 10px;
+}
+.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-check:checked + .component-feedback__form-policy-label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/feedback-done.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header-wrap {
@@ -1170,11 +1346,6 @@
   height: 751px;
   overflow: hidden;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .partners-block {
-    background-image: url("../images/partners-1-2x.png");
-  }
-}
 .partners-block .partners-block__wrap {
   height: 100%;
   width: 100%;
@@ -1185,6 +1356,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .partners-block .partners-block__wrap {
+    background-image: url("../images/partners-1-2x.png");
+  }
 }
 .partners-block .partners-block__wrap .partners-block__text-block {
   display: flex;
@@ -1446,4 +1622,244 @@
 .footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(3) {
   transform: rotate(-13deg);
   z-index: 0;
+}
+
+.footer-contacts {
+  position: relative;
+  margin-top: 137px;
+  margin-bottom: 20px;
+  background-color: #063036;
+}
+.footer-contacts .footer-contacts__font {
+  position: absolute;
+  width: 100%;
+  height: 327px;
+  left: 0;
+  right: 0;
+  top: 55%;
+  filter: blur(400px);
+  background: #063036;
+}
+.footer-contacts .footer-contacts__feedback-block {
+  min-height: 1000px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/footer-background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer-contacts .footer-contacts__feedback-block {
+    background-image: url("../images/partners-1-2x.png");
+  }
+}
+.footer-contacts .footer-contacts__info-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 69px 50px;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-contacts .footer-contacts__info-block a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__header-btn {
+  margin-bottom: 62px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__header-btn .component__title-block {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__header-btn .component__title-block .component__tltle-link {
+  margin-bottom: 0px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 72px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 38px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 30px;
+  display: flex;
+  gap: 10px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city {
+  width: 100%;
+  max-width: 258px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #ffffff;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city a {
+  font-family: "TT Hoves Pro Trial DemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: normal;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #ffffff;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 125%;
+  width: 100%;
+  max-width: 312px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__firm-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__firm-details h5 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__police-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__police-links h5 {
+  font-size: 1.4rem;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 312px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 43px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block h5 {
+  font-size: 1.4rem;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block .footer-contacts__firm-graf-tel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block .footer-contacts__firm-graf-tel .footer-contacts__firm-time {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block .footer-contacts__firm-graf-tel .footer-contacts__firm-time span {
+  font-weight: 600;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__firm-contacts-block .footer-contacts__firm-email h5 {
+  margin-bottom: 3px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__messangers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__messangers a {
+  text-decoration: none;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__messangers a svg {
+  transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__firm-contacts .footer-contacts__messangers a:hover svg {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  max-width: 312px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 250px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__nav a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0em;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__rating {
+  width: 100%;
+  max-width: 175px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__rating img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 185px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up svg {
+  transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up:hover svg {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

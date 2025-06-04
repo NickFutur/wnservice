@@ -2,11 +2,6 @@
   height: 751px;
   overflow: hidden;
 
-  // Retina поддержка
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("../images/partners-1-2x.png");
-  }
-
   .partners-block__wrap {
     height: 100%;
     width: 100%;
@@ -17,6 +12,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    // Retina поддержка
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      & {
+        background-image: url("../images/partners-1-2x.png");
+      }
+    }
 
     .partners-block__text-block {
       display: flex;

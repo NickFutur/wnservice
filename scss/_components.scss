@@ -25,6 +25,26 @@
       transition: $transition-default;
     }
   }
+  .component__tltle-light {
+    text-decoration: none;
+    font-family: $font-family-reg;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: flex;
+    width: auto;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-default;
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+      transition: $transition-default;
+    }
+  }
 }
 
 // кнопка "Оставить заявку"
@@ -155,6 +175,159 @@
       text-align: center;
       color: $light-black;
       line-height: normal;
+    }
+  }
+}
+
+// feedback form block
+.component-feedback {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 747px;
+  height: auto;
+  backdrop-filter: blur(40px);
+  box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(217, 217, 217, 0.2);
+  padding: 44px 95px 49px 95px;
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  .component__title-block {
+    .component__title-text {
+      margin-bottom: 47px;
+    }
+  }
+  .component-feedback__block {
+    .component-feedback__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .component-feedback__form-inputs {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"] {
+          font-family: $font-family-reg;
+          font-weight: 400;
+          font-size: 1.4rem;
+          color: rgba(31, 31, 31, 0.8);
+          border: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          display: block;
+          &::placeholder {
+            color: rgba(31, 31, 31, 0.5);
+          }
+          &:focus::placeholder {
+            color: rgba(31, 31, 31, 0.8);
+          }
+        }
+        .component-feedback__form-input-text {
+          // flex: 1;
+        }
+        .component-feedback__form-input-text,
+        .component-feedback__form-input-tel {
+          display: flex;
+          align-items: center;
+          background: $white;
+          border-radius: 15px;
+          flex: 1;
+          height: 54px;
+          overflow: hidden;
+          gap: 16px;
+          padding-left: 20px;
+          min-width: 200px;
+        }
+        .component-feedback__form-input-tel {
+          label {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .component-feedback__form-textarea {
+        margin-bottom: 21px;
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+
+        textarea {
+          width: 100%;
+          height: 89px;
+          resize: none;
+          border: none;
+          outline: none;
+          padding: 18px 20px;
+          color: rgba(31, 31, 31, 0.8);
+          font-family: $font-family-reg;
+          font-weight: 400;
+          min-width: 200px;
+          &::placeholder {
+            color: rgba(31, 31, 31, 0.5);
+          }
+          &:focus::placeholder {
+            color: rgba(31, 31, 31, 0.8);
+          }
+        }
+      }
+      .component-feedback__form-policy {
+        margin-bottom: 29px;
+        font-family: $font-family-reg;
+        font-weight: 400;
+        font-size: 1.2rem;
+        letter-spacing: -0.01em;
+        color: rgba(255, 255, 255, 0.7);
+
+        .component-feedback__form-policy-check {
+          position: relative;
+          display: none;
+        }
+        .component-feedback__form-policy-label {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          position: relative;
+          cursor: pointer;
+
+          a {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: rgba(255, 255, 255, 0.7);
+          }
+          &:before {
+            content: "";
+            display: block;
+            width: 17px;
+            height: 17px;
+            border: 0.5px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(217, 217, 217, 0.2);
+            margin-right: 10px;
+          }
+        }
+
+        .component-feedback__form-policy-check:checked
+          + .component-feedback__form-policy-label:before {
+        }
+        .component-feedback__form-policy-check:checked
+          + .component-feedback__form-policy-label:after {
+          content: "";
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          width: 14px;
+          height: 14px;
+          background-image: url("../images/feedback-done.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
     }
   }
 }

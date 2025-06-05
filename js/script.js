@@ -19,12 +19,15 @@ const modalMenuCloseBtn = document.querySelector("#modal-menu-close-btn");
 const modalLeaveRequestBtn = document.querySelector("#modal-leave-request-btn");
 
 // обработка кнопок окрытия модального окна меню
-modalMenuBtns.forEach((modalMenuBtn) => {
-  modalMenuBtn.addEventListener("click", () => {
-    modalMenuDesktop.classList.add("open-menu");
+if (modalMenuBtns.length > 0 && modalMenuDesktop) {
+  modalMenuBtns.forEach((modalMenuBtn) => {
+    modalMenuBtn.addEventListener("click", () => {
+      modalMenuDesktop.classList.add("open-menu");
+    });
   });
-});
-
+} else {
+  console.error("Один из элементов не найден: кнопки или модальное окно");
+}
 // обработка кнопок закрытия модального окна меню
 modalMenuCloseBtn.addEventListener("click", () => {
   modalMenuDesktop.classList.remove("open-menu");

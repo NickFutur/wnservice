@@ -1,3 +1,4 @@
+// ф-ция вывода слайдера на главной
 const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
   // Optional parameters
   slidesPerView: 4,
@@ -13,12 +14,48 @@ const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
 });
 
 const modalMenuDesktop = document.querySelector("#modal-menu-desktop");
-const modalMenuBtn = document.querySelector("#modal-menu-btn");
+const modalMenuBtns = document.querySelectorAll(".js-modal-menu-btn");
 const modalMenuCloseBtn = document.querySelector("#modal-menu-close-btn");
+const modalLeaveRequestBtn = document.querySelector("#modal-leave-request-btn");
 
-modalMenuBtn.addEventListener("click", () => {
-  modalMenuDesktop.classList.add("open-menu");
+// обработка кнопок окрытия модального окна меню
+modalMenuBtns.forEach((modalMenuBtn) => {
+  modalMenuBtn.addEventListener("click", () => {
+    modalMenuDesktop.classList.add("open-menu");
+  });
 });
+
+// обработка кнопок закрытия модального окна меню
 modalMenuCloseBtn.addEventListener("click", () => {
   modalMenuDesktop.classList.remove("open-menu");
+});
+modalLeaveRequestBtn.addEventListener("click", () => {
+  modalMenuDesktop.classList.remove("open-menu");
+});
+
+// ф-ция вывода фиксированного меню
+document.addEventListener("DOMContentLoaded", function () {
+  const fixedTopMenu = document.querySelector("#js-fixed-menu");
+  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // ф-ция обработки скролла
+  function handleScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollDirection = scrollTop > lastScrollTop ? "down" : "up";
+    const isNearTop = scrollTop < 100;
+
+    if (scrollDirection === "up" && !isNearTop) {
+      fixedTopMenu.classList.add("fixed-menu-open");
+    } else {
+      fixedTopMenu.classList.remove("fixed-menu-open");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
+
+  // Применяем throttle (вызов не чаще, чем раз в 100 мс)
+  const throttledScroll = _.throttle(handleScroll, 100);
+
+  // Вешаем оптимизированный обработчик
+  window.addEventListener("scroll", throttledScroll);
 });

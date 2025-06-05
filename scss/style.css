@@ -2086,4 +2086,70 @@ a:hover {
 
 .open-menu {
   display: flex;
+}
+
+.fixed-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  display: block;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+.fixed-menu .header-wrap__contacts {
+  border-bottom: 1px solid rgba(31, 31, 31, 0.1);
+  height: 40px;
+}
+.fixed-menu .fixed-menu__navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.1);
+  height: 80px;
+  margin-bottom: 25px;
+}
+.fixed-menu .fixed-menu__navigation nav {
+  display: flex;
+  gap: 25px;
+}
+.fixed-menu .fixed-menu__navigation nav a {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+.fixed-menu .fixed-menu__navigation nav a:hover {
+  opacity: 0.8;
+}
+.fixed-menu .fixed-menu__navigation .header-wrap__func-block {
+  display: flex;
+  gap: 6px;
+}
+.fixed-menu .fixed-menu__navigation .header-wrap__func-block .leave-request-btn_backrgound a {
+  border: 1px solid rgba(31, 31, 31, 0.1);
+  height: 56px;
+}
+.fixed-menu .fixed-menu__navigation .header-wrap__func-block .func-block__btn-menu button {
+  width: 56px;
+  height: 56px;
+  background-image: url("../images/menu-icon-dark.svg");
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fixed-menu .fixed-menu__navigation .header-wrap__func-block .func-block__btn-menu button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.fixed-menu-open {
+  transform: translateY(0);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

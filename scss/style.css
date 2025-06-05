@@ -29,6 +29,12 @@
   font-weight: normal;
   src: local("TT Hoves Pro Trial DemiBold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
 }
+@font-face {
+  font-family: "TT Neoris Trial Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Neoris Trial Regular"), url("../fonts/tt_neoris/tt_neoris_regular.woff") format("woff");
+}
 :root {
   font-size: 10px;
 }
@@ -60,6 +66,18 @@ html {
 
 .border_radius_20 {
   border-radius: 20px;
+}
+
+a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0em;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+a:hover {
+  transition: all 0.3s ease;
 }
 
 .component__tltle-link {
@@ -494,7 +512,7 @@ html {
   transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .func-block__btn-menu button:hover {
-  background-color: #1c75a8;
+  opacity: 0.8;
   transition: all 0.3s ease;
 }
 .header-wrap .header-wrap__info .header-wrap__navigation .header-wrap__func-block .leave-request-btn a {
@@ -1629,6 +1647,7 @@ html {
   margin-top: 137px;
   margin-bottom: 20px;
   background-color: #063036;
+  overflow: hidden;
 }
 .footer-contacts .footer-contacts__font {
   position: absolute;
@@ -1637,7 +1656,7 @@ html {
   left: 0;
   right: 0;
   top: 55%;
-  filter: blur(400px);
+  filter: blur(80px);
   background: #063036;
 }
 .footer-contacts .footer-contacts__feedback-block {
@@ -1862,4 +1881,209 @@ html {
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up:hover svg {
   transform: scale(1.1);
   transition: all 0.3s ease;
+}
+
+.modal-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #ffffff;
+  overflow: auto;
+}
+.modal-menu .modal-menu_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-menu .modal-menu_wrap .modal-menu__margin-bottom {
+  padding: 10px;
+}
+.modal-menu .modal-menu_wrap .header-wrap__contacts {
+  height: auto;
+  padding: 13px 0;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info {
+  height: auto;
+  flex: 1;
+  justify-content: normal;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-font {
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+  background: rgba(6, 50, 56, 0.2);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .header-wrap__navigation {
+  height: 86px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .header-wrap__navigation .header-wrap__func-block .func-block__btn-close-menu button {
+  width: 56px;
+  height: 56px;
+  background-image: url("../images/menu-icon-close.svg");
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .header-wrap__navigation .header-wrap__func-block .func-block__btn-close-menu button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 40px 50px 53px 50px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 40px;
+  width: 100%;
+  max-width: 313px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-nav-left {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 35px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-nav-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 2rem;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-nav-left ul li a {
+  color: #ffffff;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-nav-left ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  color: #ffffff;
+  gap: 40px;
+  padding-top: 35px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel {
+  margin-bottom: 30px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel .modal-menu__firm-time {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel .modal-menu__firm-time p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-size: 400;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel .modal-menu__firm-time p span {
+  font-family: "TT Hoves Pro Trial DemiBold", sans-serif;
+  font-size: 600;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel h5,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-email h5 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel a,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-email a {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel a:hover,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-email a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers {
+  display: flex;
+  gap: 12px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a svg {
+  transition: all 0.3s ease;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:hover svg {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right {
+  display: flex;
+  margin-left: 129px;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-menu h4,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-menu h4,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-menu h4 {
+  font-family: "TT Neoris Trial Regular", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-menu ul,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-menu ul,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-menu ul li a,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-menu ul li a,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-menu ul li a {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-menu ul li a:hover,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-menu ul li a:hover,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-dop,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-dop,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-dop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 108%;
+}
+
+.open-menu {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

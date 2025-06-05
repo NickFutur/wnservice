@@ -1,15 +1,219 @@
 .modal-menu {
   display: none;
-  background: red;
-}
-
-.open-menu {
-  display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
+  z-index: 1000;
+  background: $white;
+  overflow: auto;
+
+  .modal-menu_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // padding-bottom: 20px;
+    .modal-menu__margin-bottom {
+      padding: 10px;
+    }
+    .header-wrap__contacts {
+      height: auto;
+      padding: 13px 0;
+    }
+
+    .modal-menu_info {
+      height: auto;
+      flex: 1;
+      justify-content: normal;
+
+      .modal-menu_info-font {
+        backdrop-filter: blur(250px);
+        background: rgba(6, 50, 56, 0.2);
+      }
+
+      .header-wrap__navigation {
+        height: 86px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .header-wrap__func-block {
+          .func-block__btn-close-menu {
+            button {
+              width: 56px;
+              height: 56px;
+              background-image: url("../images/menu-icon-close.svg");
+              background-color: rgba(0, 0, 0, 0);
+              border: none;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: $transition-default;
+
+              &:hover {
+                opacity: $opacity-hover;
+                // background-color: $sea-blue;
+                transition: $transition-default;
+              }
+            }
+          }
+        }
+      }
+      .modal-menu_info-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        margin: 40px 50px 53px 50px;
+
+        .modal-menu_info-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-right: 40px;
+          width: 100%;
+          max-width: 313px;
+          border-right: 1px solid rgba(255, 255, 255, 0.3);
+          .modal-menu_info-nav-left {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 35px;
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              font-size: 2rem;
+              li {
+                a {
+                  color: $white;
+                  &:hover {
+                    color: rgba(255, 255, 255, 0.8);
+                  }
+                }
+              }
+            }
+          }
+          .modal-menu_info-more-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            color: $white;
+            gap: 40px;
+            padding-top: 35px;
+            .modal-menu__firm-contacts-block {
+              .modal-menu__firm-graf-tel {
+                margin-bottom: 30px;
+                .modal-menu__firm-time {
+                  display: flex;
+                  gap: 9px;
+                  align-items: center;
+                  p {
+                    font-family: $font-family-reg;
+                    font-size: 400;
+                    span {
+                      font-family: $font-family-demibold;
+                      font-size: 600;
+                    }
+                  }
+                }
+              }
+              .modal-menu__firm-graf-tel,
+              .modal-menu__firm-email {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-family: $font-family-reg;
+                h5 {
+                  font-weight: 400;
+                  font-size: 1.4rem;
+                }
+                a {
+                  font-size: 2rem;
+                  color: $white;
+                  &:hover {
+                    color: rgba(255, 255, 255, 0.8);
+                  }
+                }
+              }
+              .modal-menu__firm-email {
+              }
+            }
+            .modal-menu__messangers {
+              display: flex;
+              gap: 12px;
+              a {
+                svg {
+                  transition: $transition-default;
+                }
+
+                &:hover {
+                  svg {
+                    transform: scale(1.1);
+                    transition: $transition-default;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .modal-menu_info-right {
+          display: flex;
+          margin-left: 129px;
+          justify-content: space-between;
+          width: 100%;
+          flex-wrap: wrap;
+          gap: 72px;
+
+          .modal-menu_left-block,
+          .modal-menu_center-block,
+          .modal-menu_right-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+
+            .modal-menu_info-right-menu {
+              h4 {
+                font-family: $font-family-neoris;
+                font-weight: 500;
+                font-size: 2rem;
+                letter-spacing: 0em;
+                color: $white;
+                margin-bottom: 35px;
+              }
+              ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li {
+                  a {
+                    color: $white;
+                    font-size: 1.4rem;
+                    &:hover {
+                      color: rgba(255, 255, 255, 0.8);
+                    }
+                  }
+                }
+              }
+            }
+            .modal-menu_info-right-dop {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              color: $white;
+              font-family: $font-family-reg;
+              font-weight: 400;
+              font-size: 1.2rem;
+              line-height: 108%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.open-menu {
+  display: flex;
 }

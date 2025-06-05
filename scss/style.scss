@@ -26,6 +26,18 @@ html {
 .border_radius_20 {
   border-radius: 20px;
 }
+a {
+  font-family: $font-family-med;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0em;
+  line-height: normal;
+  transition: $transition-default;
+
+  &:hover {
+    transition: $transition-default;
+  }
+}
 
 @import "components";
 @import "header";
@@ -38,3 +50,4 @@ html {
 @import "partners-block";
 @import "work-block";
 @import "footer";
+@import "modal-menu";

@@ -3,6 +3,7 @@
   margin-top: 137px;
   margin-bottom: 20px;
   background-color: $dark-green;
+  overflow: hidden;
 
   .footer-contacts__font {
     position: absolute;
@@ -11,7 +12,7 @@
     left: 0;
     right: 0;
     top: 55%;
-    filter: blur(400px);
+    filter: blur(80px);
     background: $dark-green;
   }
   .footer-contacts__feedback-block {

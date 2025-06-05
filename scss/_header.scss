@@ -137,8 +137,8 @@
             transition: $transition-default;
 
             &:hover {
-              // opacity: $opacity-hover;
-              background-color: $sea-blue;
+              opacity: $opacity-hover;
+              // background-color: $sea-blue;
               transition: $transition-default;
             }
           }

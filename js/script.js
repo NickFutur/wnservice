@@ -14,7 +14,11 @@ const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
 
 const modalMenuDesktop = document.querySelector("#modal-menu-desktop");
 const modalMenuBtn = document.querySelector("#modal-menu-btn");
+const modalMenuCloseBtn = document.querySelector("#modal-menu-close-btn");
 
 modalMenuBtn.addEventListener("click", () => {
   modalMenuDesktop.classList.add("open-menu");
+});
+modalMenuCloseBtn.addEventListener("click", () => {
+  modalMenuDesktop.classList.remove("open-menu");
 });

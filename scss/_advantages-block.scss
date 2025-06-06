@@ -36,6 +36,12 @@
     padding-top: 157px;
     padding-bottom: 80px;
 
+    .component__title-block {
+      .component__tltle-link {
+        margin-bottom: 26px;
+      }
+    }
+
     .advantages-block__info-text {
       font-family: $font-family-med;
       font-weight: 500;
@@ -44,7 +50,7 @@
       width: 100%;
       max-width: 725px;
 
-      h2 {
+      h3 {
         font-size: 5.6rem;
         line-height: 100%;
         letter-spacing: -0.03em;

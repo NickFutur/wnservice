@@ -32,15 +32,6 @@
 
       .component__tltle-link {
         justify-content: flex-start;
-
-        .component__tltle {
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          color: $white;
-
-          &:hover {
-            color: rgba(255, 255, 255, 0.8);
-          }
-        }
       }
 
       .partner-block__desc {

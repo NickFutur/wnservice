@@ -643,9 +643,69 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.header-wrap__dop-block .header-wrap__info {
+  height: 458px;
+  background-image: url("../images/header-service-image-1.png");
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block {
+  flex-direction: row;
+  margin: 0px 50px 50px 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main {
+  width: 650px;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs a {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main h1 {
+  text-align: left;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(180deg, #fff 0%, #d9d9d9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc {
+  width: 100%;
+  max-width: 335px;
+}
+.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header-wrap .header-wrap__info {
     background-image: url("../images/header-image-1-2x.png");
+  }
+  .header-wrap__dop-block .header-wrap__info {
+    height: 458px;
+    background-image: url("../images/header-service-image-1-2x.png");
   }
 }
 .logo {

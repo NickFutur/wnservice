@@ -39,6 +39,10 @@ a {
   }
 }
 
+@mixin fadeInDown($duration: 1s) {
+  animation: fadeInDown $duration ease;
+}
+
 @import "components";
 @import "header";
 @import "special-offers";

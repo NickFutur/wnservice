@@ -17,9 +17,17 @@
           position: relative;
           overflow: hidden;
           border-radius: 30px;
+
+          &:hover {
+            img {
+              transform: scale(1.1);
+              transition: all 0.8s ease;
+            }
+          }
           img {
             width: 100%;
             border-radius: 30px;
+            transition: all 0.8s ease;
           }
 
           .service-block__card-text {
@@ -70,8 +78,8 @@
                 &:hover {
                   -webkit-backdrop-filter: blur(15px);
                   backdrop-filter: blur(15px);
-                  background: $blue-link;
-                  color: $white;
+                  background: $blue-link-light;
+                  color: rgba(7, 117, 181, 1);
                   transition: $transition-default;
                 }
               }
@@ -100,10 +108,16 @@
         min-width: 300px;
         border-radius: 30px;
         overflow: hidden;
-
+        &:hover {
+          img {
+            transform: scale(1.1);
+            transition: all 0.8s ease;
+          }
+        }
         img {
           width: 100%;
           border-radius: 30px;
+          transition: all 0.8s ease;
         }
         .card-text-corr {
           justify-content: space-between;
@@ -154,8 +168,8 @@
               &:hover {
                 -webkit-backdrop-filter: blur(15px);
                 backdrop-filter: blur(15px);
-                background: $blue-link;
-                color: $white;
+                background: $blue-link-light;
+                color: rgba(7, 117, 181, 1);
                 transition: $transition-default;
               }
             }
@@ -166,7 +180,14 @@
     .service-block__info-wrap-3 {
       .service-block__card {
         min-width: 450px;
+        &:hover {
+          img {
+            transform: scale(1.1);
+            transition: all 0.8s ease;
+          }
+        }
         img {
+          transition: all 0.8s ease;
         }
         h4 {
         }

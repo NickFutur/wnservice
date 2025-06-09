@@ -945,9 +945,14 @@ a:hover {
   overflow: hidden;
   border-radius: 30px;
 }
+.service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card:hover img {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card img {
   width: 100%;
   border-radius: 30px;
+  transition: all 0.8s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text {
   position: absolute;
@@ -998,8 +1003,8 @@ a:hover {
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:hover {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background: #0775b5;
-  color: #ffffff;
+  background: rgb(221, 238, 248);
+  color: rgb(7, 117, 181);
   transition: all 0.3s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card-horizontal {
@@ -1023,9 +1028,14 @@ a:hover {
   border-radius: 30px;
   overflow: hidden;
 }
+.service-block .service-block__info-block .service-block__info-wrap-2 .service-block__card:hover img {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
 .service-block .service-block__info-block .service-block__info-wrap-2 .service-block__card img {
   width: 100%;
   border-radius: 30px;
+  transition: all 0.8s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-2 .service-block__card .card-text-corr {
   justify-content: space-between;
@@ -1078,12 +1088,19 @@ a:hover {
 .service-block .service-block__info-block .service-block__info-wrap-2 .service-block__card .service-block__card-text .service-block__card-links-block a:hover {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background: #0775b5;
-  color: #ffffff;
+  background: rgb(221, 238, 248);
+  color: rgb(7, 117, 181);
   transition: all 0.3s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card {
   min-width: 450px;
+}
+.service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card:hover img {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
+.service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card img {
+  transition: all 0.8s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card .service-block__card-links-block {
   max-width: 441px;
@@ -1097,9 +1114,8 @@ a:hover {
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card {
   width: 204px;
   height: 203px;
-  background: #ddeef8;
-  padding: 20px;
   border-radius: 30px;
+  overflow: hidden;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link {
   display: flex;
@@ -1110,6 +1126,8 @@ a:hover {
   display: flex;
   width: 100%;
   height: 100%;
+  padding: 20px;
+  background: #ddeef8;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__image {
   width: 100%;
@@ -1129,11 +1147,13 @@ a:hover {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link:hover {
+  background: #cde8f8;
+}
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link:hover h3 {
-  color: rgba(31, 31, 31, 0.8);
   transition: all 0.3s ease;
 }
-.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all {
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link {
   background: #0775b5;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__desc h3 {
@@ -1148,8 +1168,8 @@ a:hover {
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__image-svg svg {
   transition: all 0.3s ease;
 }
-.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover .ship-equipment-block__desc h3 {
-  color: rgba(255, 255, 255, 0.8) !important;
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover {
+  background: #0772af;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover .ship-equipment-block__image-svg svg {
   transform: rotate(45deg);
@@ -1735,7 +1755,7 @@ a:hover {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .footer-contacts .footer-contacts__feedback-block {
-    background-image: url("../images/partners-1-2x.png");
+    background-image: url("../images/footer-background-1-2x.png");
   }
 }
 .footer-contacts .footer-contacts__info-block {

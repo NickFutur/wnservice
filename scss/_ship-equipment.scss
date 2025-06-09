@@ -7,9 +7,8 @@
     .ship-equipment-block__card {
       width: 204px;
       height: 203px;
-      background: $light-blue-2;
-      padding: 20px;
       border-radius: 30px;
+      overflow: hidden;
 
       .ship-equipment-block__link {
         display: flex;
@@ -20,6 +19,8 @@
         display: flex;
         width: 100%;
         height: 100%;
+        padding: 20px;
+        background: $light-blue-2;
         .ship-equipment-block__image {
           width: 100%;
           img {
@@ -43,16 +44,17 @@
         }
 
         &:hover {
+          background: #cde8f8;
           h3 {
-            color: rgba(31, 31, 31, 0.8);
+            // color: rgba(31, 31, 31, 0.8);
             transition: $transition-default;
           }
         }
       }
     }
     .ship-equipment-block__card-all {
-      background: $blue-link;
       .ship-equipment-block__link {
+        background: $blue-link;
         .ship-equipment-block__desc {
           h3 {
             color: $white !important;
@@ -69,9 +71,10 @@
         }
 
         &:hover {
+          background: #0772af;
           .ship-equipment-block__desc {
             h3 {
-              color: rgba(255, 255, 255, 0.8) !important;
+              // color: rgba(255, 255, 255, 0.8) !important;
             }
           }
           .ship-equipment-block__image-svg {

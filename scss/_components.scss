@@ -41,6 +41,7 @@
     justify-content: center;
     transition: $transition-default;
     &:hover {
+          backdrop-filter: blur(1px);
       background: rgba(255, 255, 255, 0.1);
       transition: $transition-default;
     }

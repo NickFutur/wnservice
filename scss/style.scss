@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+p{
+line-height: normal;
+}
+
 .container_padding {
   padding: 0px 20px;
 }
@@ -41,6 +45,15 @@ a {
 
 @mixin fadeInDown($duration: 1s) {
   animation: fadeInDown $duration ease;
+}
+
+.parallax-element {
+  transition: transform 0.3s ease-out;
+}
+
+/* Добавляем параллакс-эффект при скролле */
+.parallax-element:hover {
+  transform: translateY(-10px);
 }
 
 @import "components";

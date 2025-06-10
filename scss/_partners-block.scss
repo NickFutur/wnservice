@@ -61,14 +61,15 @@
         justify-self: flex-end;
         gap: 11.48px;
 
-        animation: scrollDown 20s linear infinite;
-        -webkit-animation: scrollDown 20s linear infinite;
+        animation: scrollDown 50s linear infinite;
+        -webkit-animation: scrollDown 50s linear infinite;
 
         img {
           max-width: 523px;
           flex-shrink: 0;
           width: 100%;
           height: auto;
+          backdrop-filter: blur(1px);
         }
       }
     }

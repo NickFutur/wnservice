@@ -48,6 +48,10 @@ html {
   box-sizing: border-box;
 }
 
+p {
+  line-height: normal;
+}
+
 .container_padding {
   padding: 0px 20px;
 }
@@ -78,6 +82,15 @@ a {
 }
 a:hover {
   transition: all 0.3s ease;
+}
+
+.parallax-element {
+  transition: transform 0.3s ease-out;
+}
+
+/* Добавляем параллакс-эффект при скролле */
+.parallax-element:hover {
+  transform: translateY(-10px);
 }
 
 .component__tltle-link {
@@ -123,6 +136,8 @@ a:hover {
   transition: all 0.3s ease;
 }
 .component__tltle-link .component__tltle-light:hover {
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
@@ -905,6 +920,25 @@ a:hover {
   flex-wrap: wrap;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse {
+  position: relative;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-desc {
+  display: none;
+  opacity: 0;
+  border-radius: 10px;
+  padding: 10px;
+  background: #ffffff;
+  color: #000000;
+  position: absolute;
+  bottom: 52px;
+  left: 26px;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  line-height: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-btn {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -916,6 +950,26 @@ a:hover {
   font-weight: 400;
   font-size: 1.3rem;
   letter-spacing: 0em;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-btn:hover {
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(1) .advantages-block__pluse-desc {
+  width: 199px;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(2) .advantages-block__pluse-desc {
+  width: 138px;
+}
+.advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(3) .advantages-block__pluse-desc {
+  width: 191px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -923,6 +977,12 @@ a:hover {
     background-image: url("../images/advantages-font-2x.png");
   }
 }
+.pluse-desc-open {
+  display: flex !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
 .service-block .service-block__info-block {
   display: flex;
   display: -webkit-flex;
@@ -1182,7 +1242,7 @@ a:hover {
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
   width: 736px;
-  height: 552px;
+  height: 600px;
   position: relative;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper img {
@@ -1215,7 +1275,7 @@ a:hover {
   justify-content: space-between;
   gap: 92px;
   margin: 25px 25px 0px 45px;
-  padding-bottom: 45px;
+  padding-bottom: 67px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 @supports not (gap: 92px) {
@@ -1259,7 +1319,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 33px;
+  margin-bottom: 49px;
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -1507,14 +1567,16 @@ a:hover {
   flex-direction: column;
   justify-self: flex-end;
   gap: 11.48px;
-  animation: scrollDown 20s linear infinite;
-  -webkit-animation: scrollDown 20s linear infinite;
+  animation: scrollDown 50s linear infinite;
+  -webkit-animation: scrollDown 50s linear infinite;
 }
 .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper img {
   max-width: 523px;
   flex-shrink: 0;
   width: 100%;
   height: auto;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 @keyframes scrollDown {
   0% {
@@ -1523,6 +1585,9 @@ a:hover {
   100% {
     transform: translateY(-50%);
   }
+}
+.work-block {
+  overflow: hidden;
 }
 .work-block .work-block__wrap {
   display: flex;
@@ -2201,7 +2266,6 @@ a:hover {
   align-items: center;
   border-bottom: 1px solid rgba(31, 31, 31, 0.1);
   height: 80px;
-  margin-bottom: 25px;
 }
 .fixed-menu .fixed-menu__navigation nav {
   display: flex;

@@ -72,3 +72,23 @@ AOS.init({
   mirror: true, // Анимировать при скролле вверх
   anchorPlacement: "top-bottom", // top-bottom, top-center, top-top и др.
 });
+
+// обработка кнопок в блоке о компании
+const advantagesPluses = document.querySelectorAll(".advantages-block__pluse");
+
+advantagesPluses.forEach(advantagesPlus => {
+  const plusDesc = advantagesPlus.querySelector(".advantages-block__pluse-desc");
+  const plusBtn = advantagesPlus.querySelector(".advantages-block__pluse-btn");
+  
+  plusBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    plusDesc.classList.toggle("pluse-desc-open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!advantagesPlus.contains(e.target)) {
+      plusDesc.classList.remove("pluse-desc-open");
+    }
+  });
+});
+

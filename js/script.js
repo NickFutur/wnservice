@@ -1,3 +1,13 @@
+AOS.init({
+  offset: 120, // Смещение (в px) от оригинальной позиции
+  delay: 200, // Задержка (мс)
+  duration: 1000, // Длительность анимации (мс)
+  easing: "ease", // easing функция
+  once: false, // Анимация только один раз
+  mirror: true, // Анимировать при скролле вверх
+  anchorPlacement: "top-bottom", // top-bottom, top-center, top-top и др.
+});
+
 // ф-ция вывода слайдера на главной
 const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
   // Optional parameters
@@ -61,16 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Вешаем оптимизированный обработчик
   window.addEventListener("scroll", throttledScroll);
-});
-
-AOS.init({
-  offset: 120, // Смещение (в px) от оригинальной позиции
-  delay: 200, // Задержка (мс)
-  duration: 1000, // Длительность анимации (мс)
-  easing: "ease", // easing функция
-  once: false, // Анимация только один раз
-  mirror: true, // Анимировать при скролле вверх
-  anchorPlacement: "top-bottom", // top-bottom, top-center, top-top и др.
 });
 
 // обработка кнопок в блоке о компании

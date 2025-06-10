@@ -101,6 +101,11 @@
       }
 
       .spare-parts-block__info-pluses {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        flex: 1;
         padding: 0px 25px 45px 45px;
 
         .info-pluses__list {
@@ -112,7 +117,6 @@
           -ms-flex-direction: column;
           flex-direction: column;
           gap: 25px;
-          margin-bottom: 49px;
           font-family: $font-family-med;
           font-weight: 500;
           font-size: 13px;

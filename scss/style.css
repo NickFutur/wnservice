@@ -1313,13 +1313,17 @@ a:hover {
   border-radius: 12px;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
   padding: 0px 25px 45px 45px;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 49px;
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
   font-size: 13px;

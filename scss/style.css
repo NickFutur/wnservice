@@ -30,6 +30,12 @@
   src: local("TT Hoves Pro Trial DemiBold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
 }
 @font-face {
+  font-family: "TT Hoves Pro Trial Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Light"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Light.woff") format("woff");
+}
+@font-face {
   font-family: "TT Neoris Trial Regular";
   font-style: normal;
   font-weight: normal;
@@ -862,14 +868,14 @@ a:hover {
   gap: 20px;
 }
 .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card {
-  padding: 12px;
+  padding: 12px 12px 20px 12px;
   width: 244px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 23px;
-  min-height: 294px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -903,16 +909,16 @@ a:hover {
   margin-bottom: 8px;
 }
 .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card .advantages-block__info-text p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
-  font-weight: 400;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
   font-size: 1.2rem;
+  line-height: normal;
 }
 .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card:nth-child(1), .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card:nth-child(4) {
   background: #0775b5;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -932,13 +938,15 @@ a:hover {
   position: absolute;
   bottom: 52px;
   left: 26px;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   line-height: normal;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   transition: all 0.3s ease;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-btn {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  line-height: normal;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -947,7 +955,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 50px;
   padding: 8px 12px 8px 8px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.3rem;
   letter-spacing: 0em;
   border: none;
@@ -1239,6 +1247,7 @@ a:hover {
 .spare-parts-block .spare-parts-block__wrap {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
   width: 736px;
@@ -1264,6 +1273,8 @@ a:hover {
   flex-direction: column;
   gap: 30px;
   position: relative;
+  width: 100%;
+  max-width: 700px;
 }
 @supports not (gap: 30px) {
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper > *:not(:last-child) {

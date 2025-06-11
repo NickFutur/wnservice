@@ -34,6 +34,13 @@
     url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
 }
 @font-face {
+  font-family: "TT Hoves Pro Trial Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Light"),
+    url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Light.woff") format("woff");
+}
+@font-face {
   font-family: "TT Neoris Trial Regular";
   font-style: normal;
   font-weight: normal;
@@ -44,6 +51,7 @@
   font-size: 10px;
 }
 //   fonts
+$font-family-light: "TT Hoves Pro Trial Light", sans-serif;
 $font-family-reg: "TT Hoves Pro Trial Regular", sans-serif;
 $font-family-ital: "TT Hoves Pro Trial Italic", sans-serif;
 $font-family-med: "TT Hoves Pro Trial Medium", sans-serif;

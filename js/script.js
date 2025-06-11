@@ -76,10 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // обработка кнопок в блоке о компании
 const advantagesPluses = document.querySelectorAll(".advantages-block__pluse");
 
-advantagesPluses.forEach(advantagesPlus => {
-  const plusDesc = advantagesPlus.querySelector(".advantages-block__pluse-desc");
+advantagesPluses.forEach((advantagesPlus) => {
+  const plusDesc = advantagesPlus.querySelector(
+    ".advantages-block__pluse-desc"
+  );
   const plusBtn = advantagesPlus.querySelector(".advantages-block__pluse-btn");
-  
+
   plusBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     plusDesc.classList.toggle("pluse-desc-open");
@@ -91,4 +93,3 @@ advantagesPluses.forEach(advantagesPlus => {
     }
   });
 });
-

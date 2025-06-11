@@ -1383,6 +1383,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 26px;
 }
 .reg-maintenance-block .component__title-text {
   margin-bottom: 0;
@@ -1393,20 +1394,29 @@ a:hover {
   position: relative;
   width: 100%;
   max-width: 1021px;
-  max-height: 1021px;
-  height: 100%;
+  height: 1021px;
   justify-self: center;
   align-items: center;
-  margin-top: -80px;
+  margin-top: 0px;
+}
+.reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__font {
+  position: absolute;
+  z-index: -1;
+  background-color: #59b1b9;
+  border-radius: 500px;
+  width: 637px;
+  height: 730px;
+  top: 93px;
+  filter: blur(94px);
 }
 .reg-maintenance-block .reg-maintenance-block__wrap img {
-  width: 100%;
-  height: auto;
+  width: 863px;
+  width: 863px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap {
   width: 100%;
   position: absolute;
-  top: 272px;
+  top: 210px;
   left: 0;
   height: 578px;
 }
@@ -1447,8 +1457,9 @@ a:hover {
   font-size: 1.2rem;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(1) {
+  width: 284px;
   top: 24px;
-  left: 10px;
+  left: 0px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(1)::after {
   content: url('data:image/svg+xml;utf8,<svg width="168" height="65" viewBox="0 0 168 66" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="163" cy="61" r="4.5" fill="white" stroke="url(%23paint0_linear_654_1961)"/><path d="M0 1.05556C0 1.05556 53.6959 1.05603 85.1444 1.05556C116.593 1.05509 143.44 -2.94296 163 57" stroke="url(%23paint1_linear_654_1961)"/><defs><linearGradient id="paint0_linear_654_1961" x1="158.165" y1="59.4252" x2="165.214" y2="57.1776" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1961" x1="2.68471" y1="20.181" x2="70.6913" y2="-42.9331" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
@@ -1460,8 +1471,8 @@ a:hover {
   height: 65px; /* Высота как в SVG */
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(2) {
-  top: 214px;
-  left: -22px;
+  top: 259px;
+  left: -47px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(2)::after {
   content: url('data:image/svg+xml;utf8,<svg width="182" height="73" viewBox="0 0 182 73" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="matrix(1 0 0 -1 172 10)" fill="white" stroke="url(%23paint0_linear_654_1990)"/><path d="M0 71.9355C0 71.9355 57.9783 71.935 91.9351 71.9355C125.892 71.9361 154.88 76.5767 176 7" stroke="url(%23paint1_linear_654_1990)"/><defs><linearGradient id="paint0_linear_654_1990" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1990" x1="2.89883" y1="49.7364" x2="81.2079" y2="117.343" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
@@ -1473,7 +1484,7 @@ a:hover {
   height: 73px; /* Высота как в SVG */
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(3) {
-  bottom: 89px;
+  bottom: -26px;
   left: 26px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(3)::after {
@@ -1486,8 +1497,8 @@ a:hover {
   height: 72px; /* Высота как в SVG */
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(4) {
-  top: 22px;
-  right: 13px;
+  top: 33px;
+  right: -6px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(4)::after {
   content: url('data:image/svg+xml;utf8,<svg width="168" height="66" viewBox="0 0 168 66" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="matrix(-1 0 0 1 10 56)" fill="white" stroke="url(%23paint0_linear_654_1964)"/><path d="M168 1.05556C168 1.05556 114.304 1.05603 82.8556 1.05556C51.4071 1.05509 24.56 -2.94296 5 57" stroke="url(%23paint1_linear_654_1964)"/><defs><linearGradient id="paint0_linear_654_1964" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1964" x1="165.315" y1="20.181" x2="97.3087" y2="-42.9331" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
@@ -1499,8 +1510,8 @@ a:hover {
   height: 65px; /* Высота как в SVG */
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(5) {
-  top: 182px;
-  right: -31px;
+  top: 208px;
+  right: -47px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(5):after {
   content: url('data:image/svg+xml;utf8,<svg width="205" height="73" viewBox="0 0 205 73" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="rotate(180 5 5)" fill="white" stroke="url(%23paint0_linear_654_1987)"/><path d="M205 71.9355C205 71.9355 139.445 71.935 101.051 71.9355C62.6565 71.9361 29.88 76.5767 6 7" stroke="url(%23paint1_linear_654_1987)"/><defs><linearGradient id="paint0_linear_654_1987" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1987" x1="201.722" y1="49.7364" x2="122.589" y2="126.982" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
@@ -1512,8 +1523,8 @@ a:hover {
   height: 73px; /* Высота как в SVG */
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(6) {
-  bottom: 127px;
-  right: 6px;
+  bottom: 33px;
+  right: -21px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc:nth-child(6):after {
   content: url('data:image/svg+xml;utf8,<svg width="148" height="76" viewBox="0 0 148 76" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.5" cy="3.5" r="3" transform="matrix(-1 0 0 1 7 0)" fill="white" stroke="url(%23paint0_linear_654_1958)"/><path d="M148 74.9326C148 74.9326 100.563 74.932 72.7804 74.9326C44.9976 74.9331 21.28 79.7879 4 7" stroke="url(%23paint1_linear_654_1958)" stroke-width="0.7"/><defs><linearGradient id="paint0_linear_654_1958" x1="0.115294" y1="2.39762" x2="5.04963" y2="0.824346" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1958" x1="145.628" y1="51.7088" x2="68.8192" y2="103.57" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');

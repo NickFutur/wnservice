@@ -22,6 +22,8 @@
     justify-self: center;
     align-items: center;
     margin-top: 0px;
+    transform-style: preserve-3d;
+
     .reg-maintenance-block__font {
       position: absolute;
       z-index: -1;
@@ -29,12 +31,13 @@
       border-radius: 500px;
       width: 637px;
       height: 730px;
-      top: 93px;
+      // top: 93px;
       filter: blur(94px);
+      transform: translateY(0px);
     }
 
     img {
-      width: 863px;
+      height: 863px;
       width: 863px;
     }
 
@@ -44,6 +47,7 @@
       top: 210px;
       left: 0;
       height: 578px;
+      transform: translateZ(0);
 
       .reg-maintenance-block__desc {
         position: absolute;

@@ -4,6 +4,8 @@
   margin-bottom: 20px;
   background-color: $dark-green;
   overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   .footer-contacts__font {
     position: absolute;
@@ -17,20 +19,31 @@
   }
   .footer-contacts__feedback-block {
     min-height: 1000px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-image: url("../images/footer-background-1.png");
+    background-image: url(../images/footer-background-1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; /* Это создаст эффект параллакса */
     background-position: center;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    position: relative;
     // Retina поддержка
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       & {
         background-image: url("../images/footer-background-1-2x.png");
       }
+    }
+    &:before {
+      content: "";
+      width: 300%;
+      position: absolute;
+      top: -46px;
+      height: 86px;
+      background: $white;
+      filter: blur(15px);
     }
   }
   .footer-contacts__info-block {

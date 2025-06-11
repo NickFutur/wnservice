@@ -89,6 +89,14 @@
             width: 124px;
             height: 124px;
           }
+          .logo-back-not-mob {
+            opacity: 0;
+            background: none;
+
+            img {
+              display: none;
+            }
+          }
         }
       }
     }

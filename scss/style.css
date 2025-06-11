@@ -1254,10 +1254,11 @@ a:hover {
   width: 736px;
   height: 600px;
   position: relative;
+  overflow: hidden;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   display: block;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper svg {
@@ -1266,10 +1267,11 @@ a:hover {
   left: 20px;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
-  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   background-color: #0775b5;
   color: #ffffff;
-  margin-left: -30px;
+  margin-left: -36px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1287,7 +1289,8 @@ a:hover {
   justify-content: space-between;
   gap: 92px;
   margin: 25px 25px 0px 45px;
-  padding-bottom: 67px;
+  flex: 1;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 @supports not (gap: 92px) {
@@ -1366,16 +1369,33 @@ a:hover {
   border: 1px solid #ffffff;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
   .spare-parts-block .spare-parts-block__wrap {
     flex-direction: column;
   }
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
     width: 100%;
   }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
     margin-left: 0;
     margin-top: -50px;
+    max-width: none;
+  }
+}
+@media (max-width: 768px) {
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
+    height: 464px;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
+    gap: 33px;
+    padding-bottom: 42px;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
+    gap: 18px;
   }
 }
 .reg-maintenance-block {
@@ -1398,6 +1418,7 @@ a:hover {
   justify-self: center;
   align-items: center;
   margin-top: 0px;
+  transform-style: preserve-3d;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__font {
   position: absolute;
@@ -1406,11 +1427,11 @@ a:hover {
   border-radius: 500px;
   width: 637px;
   height: 730px;
-  top: 93px;
   filter: blur(94px);
+  transform: translateY(0px);
 }
 .reg-maintenance-block .reg-maintenance-block__wrap img {
-  width: 863px;
+  height: 863px;
   width: 863px;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap {
@@ -1419,6 +1440,7 @@ a:hover {
   top: 210px;
   left: 0;
   height: 578px;
+  transform: translateZ(0);
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc {
   position: absolute;
@@ -1622,6 +1644,13 @@ a:hover {
 .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not {
   width: 124px;
   height: 124px;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob {
+  opacity: 0;
+  background: none;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob img {
+  display: none;
 }
 @keyframes scrollDown {
   0% {
@@ -1840,6 +1869,8 @@ a:hover {
   margin-bottom: 20px;
   background-color: #063036;
   overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .footer-contacts .footer-contacts__font {
   position: absolute;
@@ -1853,20 +1884,31 @@ a:hover {
 }
 .footer-contacts .footer-contacts__feedback-block {
   min-height: 1000px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-image: url("../images/footer-background-1.png");
+  background-image: url(../images/footer-background-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* Это создаст эффект параллакса */
   background-position: center;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  position: relative;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .footer-contacts .footer-contacts__feedback-block {
     background-image: url("../images/footer-background-1-2x.png");
   }
+}
+.footer-contacts .footer-contacts__feedback-block:before {
+  content: "";
+  width: 300%;
+  position: absolute;
+  top: -46px;
+  height: 86px;
+  background: #ffffff;
+  filter: blur(15px);
 }
 .footer-contacts .footer-contacts__info-block {
   position: relative;

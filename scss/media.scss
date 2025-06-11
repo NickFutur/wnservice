@@ -13,7 +13,7 @@
     margin-top: 90px;
   }
   .container_padding {
-    padding: 0px 14px;
+    padding: 0px 12px;
   }
   .header-wrap {
     .header-wrap__contacts {
@@ -102,6 +102,69 @@
           }
         }
       }
+    }
+  }
+  .partners-block {
+    height: 853px;
+    .partners-block__wrap {
+      flex-direction: column-reverse;
+      overflow: hidden;
+      .partners-block__text-block {
+        align-self: flex-start;
+        justify-content: flex-end;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        .partner-block__desc {
+          font-size: 2rem;
+          max-width: 450px;
+        }
+      }
+      .partners-block__logos {
+        flex-direction: row;
+        margin-top: 40px;
+        margin-right: 0;
+        .partners-block__logos-wrapper {
+          flex-direction: row;
+          .partners-block__logos-block {
+            grid-template-columns: repeat(10, 124px);
+            .logo-back-not-mob {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              backdrop-filter: blur(44px);
+              background: rgba(217, 217, 217, 0.5);
+              border-radius: 23px;
+              opacity: 1;
+
+              img {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Ключевые кадры с префиксами для лучшей поддержки
+  @-webkit-keyframes scrollDown {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollDown {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
     }
   }
 }

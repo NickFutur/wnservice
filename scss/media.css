@@ -11,7 +11,7 @@
     margin-top: 90px;
   }
   .container_padding {
-    padding: 0px 14px;
+    padding: 0px 12px;
   }
   .header-wrap .header-wrap__contacts {
     gap: 40px;
@@ -83,6 +83,55 @@
   }
   .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card .advantages-block__info-text h4 {
     font-size: 1.6rem;
+  }
+  .partners-block {
+    height: 853px;
+  }
+  .partners-block .partners-block__wrap {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block {
+    align-self: flex-start;
+    justify-content: flex-end;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block .partner-block__desc {
+    font-size: 2rem;
+    max-width: 450px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos {
+    flex-direction: row;
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper {
+    flex-direction: row;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block {
+    grid-template-columns: repeat(10, 124px);
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(44px);
+            backdrop-filter: blur(44px);
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 23px;
+    opacity: 1;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob img {
+    display: block;
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 @media (max-width: 768px) {

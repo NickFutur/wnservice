@@ -93,3 +93,26 @@ advantagesPluses.forEach((advantagesPlus) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const parallaxContainer = document.querySelector(
+    ".reg-maintenance-block__wrap"
+  );
+  const bgOverlay = document.querySelector(".reg-maintenance-block__font");
+
+  // Используем скролл окна, а не элемента
+  window.addEventListener("scroll", function () {
+    const scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+    const scrollSpeed = 0.3;
+
+    // Добавляем проверку существования элемента
+    if (bgOverlay) {
+      bgOverlay.style.transform = `translateY(${
+        1800 - scrollPosition * scrollSpeed
+      }px)`;
+      // Или, если нужно именно top:
+      // bgOverlay.style.top = `${scrollPosition * scrollSpeed}px`;
+    }
+  });
+});

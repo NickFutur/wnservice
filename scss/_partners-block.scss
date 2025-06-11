@@ -60,16 +60,35 @@
         flex-direction: column;
         justify-self: flex-end;
         gap: 11.48px;
+        will-change: transform;
 
-        animation: scrollDown 50s linear infinite;
+        animation: scrollDown 40s linear infinite;
         -webkit-animation: scrollDown 50s linear infinite;
 
-        img {
-          max-width: 523px;
-          flex-shrink: 0;
-          width: 100%;
-          height: auto;
-          backdrop-filter: blur(1px);
+        .partners-block__logos-block {
+          display: grid;
+          grid-template-columns: repeat(4, 124px);
+          gap: 11.48px 8.86px;
+          will-change: transform;
+          .partners-block__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 124px;
+            height: 124px;
+            backdrop-filter: blur(44px);
+            background: rgba(217, 217, 217, 0.5);
+            border-radius: 23px;
+
+            img {
+              width: auto;
+              height: auto;
+            }
+          }
+          .partners-block__logo-back-not {
+            width: 124px;
+            height: 124px;
+          }
         }
       }
     }

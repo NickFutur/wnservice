@@ -780,6 +780,7 @@ a:hover {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
+  width: 99%;
 }
 .special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc .special-offers__card-title {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
@@ -1582,16 +1583,34 @@ a:hover {
   flex-direction: column;
   justify-self: flex-end;
   gap: 11.48px;
-  animation: scrollDown 50s linear infinite;
+  will-change: transform;
+  animation: scrollDown 40s linear infinite;
   -webkit-animation: scrollDown 50s linear infinite;
 }
-.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper img {
-  max-width: 523px;
-  flex-shrink: 0;
-  width: 100%;
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block {
+  display: grid;
+  grid-template-columns: repeat(4, 124px);
+  gap: 11.48px 8.86px;
+  will-change: transform;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 124px;
+  -webkit-backdrop-filter: blur(44px);
+          backdrop-filter: blur(44px);
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 23px;
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo img {
+  width: auto;
   height: auto;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+}
+.partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not {
+  width: 124px;
+  height: 124px;
 }
 @keyframes scrollDown {
   0% {

@@ -1,8 +1,96 @@
-@media (max-width: 1440px) {
+@media (max-width: 1420px) {
+  .modal-menu {
+    .modal-menu_wrap {
+      .modal-menu_info {
+        .modal-menu_info-wrapper {
+          .modal-menu_info-right {
+            gap: 20px;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1251px) {
+  .lap-d-none_min-1251 {
+    display: none !important;
+  }
 }
 @media (max-width: 1250px) {
   .lap-d-none_1250 {
     display: none !important;
+  }
+  .modal-menu {
+    .modal-menu_wrap {
+      .modal-menu_info {
+        .modal-menu_info-wrapper {
+          .modal-menu_info-right {
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 12%;
+            .modal-menu_left-block {
+              margin-bottom: 30px;
+              .modal-menu_info-right-menu {
+                h4 {
+                  margin-bottom: 25px;
+                }
+              }
+              .modal-menu_info-right-dop {
+                // display: none;
+              }
+            }
+            .modal-menu_center-block {
+              .modal-menu_info-right-menu {
+                h4 {
+                  margin-bottom: 25px;
+                }
+              }
+              .modal-menu_info-right-dop {
+                // display: none;
+              }
+            }
+            .modal-menu_right-block {
+              gap: 42px;
+              .modal-menu_info-right-menu {
+                h4 {
+                  display: none;
+                }
+              }
+            }
+          }
+          .modal-menu_info-left {
+            border-right: none;
+            max-width: 243px;
+            padding-right: 0px;
+            .modal-menu_info-nav-left {
+              ul {
+                font-size: 1.8rem;
+              }
+            }
+            .modal-menu_info-more-info {
+              justify-content: flex-start;
+              gap: 30px;
+              .modal-menu__firm-contacts-block {
+                .modal-menu__firm-graf-tel,
+                .modal-menu__firm-email {
+                  a {
+                    font-size: 1.8rem;
+                  }
+                }
+              }
+              .modal-menu__messangers {
+                margin-bottom: auto;
+              }
+              .modal-menu_info-right-dop {
+                display: flex;
+                gap: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 1024px) {

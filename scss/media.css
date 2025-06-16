@@ -312,6 +312,36 @@
     font-size: 1.6rem;
     width: 99%;
   }
+  .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
+    max-width: 435px;
+    margin-bottom: 50px;
+  }
+  .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text h3 {
+    font-size: 3rem;
+    line-height: 107%;
+  }
+  .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text p {
+    font-size: 1.5rem;
+  }
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card {
+    border-radius: 25px;
+    width: 226px;
+    height: 186px;
+  }
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link {
+    padding: 14px;
+  }
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link p {
+    font-size: 1.6rem;
+    padding-left: 12px;
+    padding-bottom: 3px;
+  }
+  .footer-contacts .footer-contacts__info-block .footer-contacts__header-btn {
+    margin-bottom: 44px;
+  }
+  .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .logo {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .tablet-d-none_768 {

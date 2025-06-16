@@ -409,6 +409,54 @@
       }
     }
   }
+  .footer-maintenance {
+    .footer-maintenance__title {
+      .component__title-block {
+        .component__title-text {
+          max-width: 435px;
+          margin-bottom: 50px;
+          h3 {
+            font-size: 3rem;
+            line-height: 107%;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .footer-maintenance__block {
+      .footer-maintenance__card {
+        border-radius: 25px;
+        width: 226px;
+        height: 186px;
+        .footer-maintenance__card-link {
+          padding: 14px;
+          p {
+            font-size: 1.6rem;
+            padding-left: 12px;
+            padding-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+  .footer-contacts {
+    .footer-contacts__feedback-block {
+    }
+    .footer-contacts__font {
+    }
+    .footer-contacts__info-block {
+      .footer-contacts__header-btn {
+        margin-bottom: 44px;
+      }
+      .footer-contacts__logo-address {
+        .logo {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   .tablet-d-none_768 {

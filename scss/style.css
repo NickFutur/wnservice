@@ -2270,7 +2270,6 @@ a:hover {
   margin-left: 129px;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
   gap: 72px;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block,

@@ -1,4 +1,50 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "TT Hoves Pro Trial Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Regular"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Hoves Pro Trial Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Italic"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Hoves Pro Trial Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Medium"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Hoves Pro Trial Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Bold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Hoves Pro Trial DemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial DemiBold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Hoves Pro Trial Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Hoves Pro Trial Light"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Neoris Trial Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Neoris Trial Regular"), url("../fonts/tt_neoris/tt_neoris_regular.woff") format("woff");
+}
+:root {
+  font-size: 10px;
+}
+
 @media (max-width: 1439px) {
   .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right {
     gap: 20px;
@@ -158,6 +204,14 @@
     justify-content: space-between;
     width: 100%;
   }
+  .footer-contacts .footer-contacts__font {
+    top: 45%;
+  }
+}
+@media (min-width: 1025px) {
+  .lap-d-none_min-1025 {
+    display: none !important;
+  }
 }
 @media (max-width: 1024px) {
   .lap-d-none_1024 {
@@ -291,6 +345,7 @@
   }
   .work-block .work-block__wrap {
     margin-bottom: 50px;
+    padding: 0 12px;
   }
   .work-block .work-block__wrap .work-block__header-block {
     align-items: end;
@@ -300,6 +355,9 @@
   }
   .work-block .work-block__wrap .work-block__header-block .component__title-block .component__title-text {
     font-size: 2.6rem;
+  }
+  .work-block .work-block__slider {
+    padding-left: 12px;
   }
   .work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide {
     width: 228px !important;
@@ -336,11 +394,146 @@
     padding-left: 12px;
     padding-bottom: 3px;
   }
-  .footer-contacts .footer-contacts__info-block .footer-contacts__header-btn {
+  .footer-contacts .footer-contacts__feedback-block .component-feedback {
+    max-width: 618px;
+    padding: 49px 31px;
+  }
+  .footer-contacts .footer-contacts__feedback-block .component-feedback .component__title-block .component__title-text {
+    font-size: 3rem;
+    margin-bottom: 41px;
+  }
+  .footer-contacts .footer-contacts_mob {
+    padding: 0px 30px 37px 30px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__header-btn {
     margin-bottom: 44px;
   }
-  .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .logo {
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address {
+    padding-bottom: 61px;
+    margin-bottom: 21px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .logo {
     width: 100%;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    gap: 50px 64px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel h5,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email h5 {
+    font-family: "TT Hoves Pro Trial Regular", sans-serif;
+    font-size: 1.4rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel a,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email a {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel .footer-contacts__firm-time,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email .footer-contacts__firm-time {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel .footer-contacts__firm-time p,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email .footer-contacts__firm-time p {
+    font-family: "TT Hoves Pro Trial Regular", sans-serif;
+    font-size: 1.2rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel .footer-contacts__firm-time p span,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email .footer-contacts__firm-time p span {
+    font-family: "TT Hoves Pro Trial Bold", sans-serif;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a svg {
+    transition: all 0.3s ease;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:hover svg {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__rating {
+    height: 58px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__rating img {
+    height: 100%;
+    width: auto;
+  }
+  .footer-contacts .footer-contacts_mob .logo-address_mob {
+    padding-bottom: 0;
+    border-bottom: none;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  .footer-contacts .footer-contacts_mob .logo-address_mob .footer-contacts__address:nth-child(1) {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info {
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 52px;
+    gap: 32px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-right: 120px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__nav ul {
+    display: grid;
+    gap: 11px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__nav ul li a {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__nav ul li a:hover {
+    opacity: rgba(255, 255, 255, 0.8);
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details {
+    max-width: 312px;
+    width: 100%;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details h5 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details p {
+    font-size: 1.2rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details div {
+    margin-bottom: 3px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__func-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.2rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links a,
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links p {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media (max-width: 768px) {

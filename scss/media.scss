@@ -1,3 +1,4 @@
+@import "variants";
 @media (max-width: 1439px) {
   .modal-menu {
     .modal-menu_wrap {
@@ -212,6 +213,16 @@
       }
     }
   }
+  .footer-contacts {
+    .footer-contacts__font {
+      top: 45%;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .lap-d-none_min-1025 {
+    display: none !important;
+  }
 }
 @media (max-width: 1024px) {
   .lap-d-none_1024 {
@@ -379,6 +390,7 @@
   .work-block {
     .work-block__wrap {
       margin-bottom: 50px;
+      padding: 0 12px;
       .work-block__header-block {
         align-items: end;
 
@@ -391,6 +403,7 @@
       }
     }
     .work-block__slider {
+      padding-left: 12px;
       .work-block__slider-swiper {
         .swiper-wrapper {
           .work-block__slide {
@@ -443,16 +456,157 @@
   }
   .footer-contacts {
     .footer-contacts__feedback-block {
+      .component-feedback {
+        max-width: 618px;
+        padding: 49px 31px;
+        .component__title-block {
+          .component__title-text {
+            font-size: 3rem;
+            margin-bottom: 41px;
+          }
+        }
+      }
     }
     .footer-contacts__font {
     }
-    .footer-contacts__info-block {
+    .footer-contacts_mob {
+      padding: 0px 30px 37px 30px;
       .footer-contacts__header-btn {
         margin-bottom: 44px;
       }
       .footer-contacts__logo-address {
+        padding-bottom: 61px;
+        margin-bottom: 21px;
         .logo {
           width: 100%;
+        }
+        .footer-contacts__firm-contacts {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: flex-start;
+          gap: 50px 64px;
+
+          .footer-contacts__firm-graf-tel,
+          .footer-contacts__firm-email {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h5 {
+              font-family: $font-family-reg;
+              font-size: 1.4rem;
+            }
+            a {
+              font-family: $font-family-med;
+              font-weight: 500;
+              font-size: 2rem;
+            }
+            .footer-contacts__firm-time {
+              display: flex;
+              align-items: center;
+              gap: 9px;
+              p {
+                font-family: $font-family-reg;
+                font-size: 1.2rem;
+                span {
+                  font-family: $font-family-bold;
+                }
+              }
+            }
+          }
+          .footer-contacts__messangers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            a {
+              svg {
+                transition: $transition-default;
+              }
+              &:hover {
+                svg {
+                  transform: scale(1.1);
+                  transition: $transition-default;
+                }
+              }
+            }
+          }
+          .footer-contacts__rating {
+            height: 58px;
+
+            img {
+              height: 100%;
+              width: auto;
+            }
+          }
+        }
+      }
+      .logo-address_mob {
+        padding-bottom: 0;
+        border-bottom: none;
+        flex-wrap: nowrap;
+        align-items: stretch;
+
+        .footer-contacts__address {
+          &:nth-child(1) {
+            border-left: none;
+            padding-left: 0;
+          }
+        }
+      }
+      .footer-contacts__firm-info {
+        justify-content: flex-start;
+        position: relative;
+        margin-bottom: 52px;
+        gap: 32px;
+        .footer-contacts__firm-desc {
+          max-width: fit-content;
+          margin-right: 120px;
+          .footer-contacts__nav {
+            ul {
+              display: grid;
+              gap: 11px;
+              li {
+                a {
+                  font-family: $font-family-med;
+                  font-weight: 500;
+                  font-size: 1.5rem;
+
+                  &:hover {
+                    opacity: $opacity-white;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .footer-contacts__firm-details {
+          max-width: 312px;
+          width: 100%;
+          h5 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+          div {
+            margin-bottom: 3px;
+          }
+        }
+        .footer-contacts__func-block {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      .footer-contacts__police-links {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 1.2rem;
+
+        a,
+        p {
+          width: fit-content;
         }
       }
     }
@@ -495,6 +649,8 @@
       }
     }
   }
+}
+@media (max-width: 700px) {
 }
 @media (max-width: 480px) {
   .mob-d-none_480 {

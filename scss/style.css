@@ -1784,6 +1784,10 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+footer {
+  overflow: hidden;
+}
+
 .footer-maintenance .footer-maintenance__title {
   display: flex;
   justify-content: center;

@@ -323,6 +323,89 @@
       }
     }
   }
+  .service-block {
+    .service-block__info-block_mob {
+      .service-block__card {
+        max-height: 320px;
+        .service-block__card-text {
+          h4 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 120%;
+            color: $white;
+          }
+        }
+      }
+      .service-block__info-wrap-1 {
+        flex-direction: column;
+
+        .service-block__card-wrapper {
+          .service-block__card {
+            .service-block__card-text {
+              h4 {
+                font-size: 2.6rem;
+              }
+            }
+          }
+
+          &:nth-child(1) {
+            max-height: 320px;
+            .service-block__card-vertical {
+              display: flex;
+              align-items: anchor-center;
+            }
+          }
+          &:nth-child(2) {
+            flex-direction: row;
+            .service-block__card {
+              flex: 1;
+
+              img {
+                height: 100%;
+              }
+              &:nth-child(2) {
+                .service-block__card-text {
+                  justify-content: flex-start;
+                  gap: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .service-block__info-wrap-2 {
+        .service-block__card {
+          .service-block__card-text {
+            justify-content: space-between;
+            h4 {
+              font-size: 2.6rem;
+            }
+          }
+        }
+        .service-block__card-wrapper {
+          display: flex;
+          flex-direction: row-reverse;
+          gap: 20px;
+          flex-wrap: wrap;
+          .service-block__card {
+            &:nth-child(2) {
+              .service-block__card-text {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+      .service-block__info-wrap-3 {
+        flex-direction: column;
+      }
+    }
+  }
+
   .partners-block {
     height: 853px;
     .partners-block__wrap {

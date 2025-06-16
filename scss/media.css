@@ -294,6 +294,63 @@
   .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card .advantages-block__info-text h4 {
     font-size: 1.6rem;
   }
+  .service-block .service-block__info-block_mob .service-block__card {
+    max-height: 320px;
+  }
+  .service-block .service-block__info-block_mob .service-block__card .service-block__card-text h4 {
+    font-size: 2.6rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__card .service-block__card-text p {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 {
+    flex-direction: column;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text h4 {
+    font-size: 2.6rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) {
+    max-height: 320px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card-vertical {
+    display: flex;
+    align-items: anchor-center;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) {
+    flex-direction: row;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card {
+    flex: 1;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card img {
+    height: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card:nth-child(2) .service-block__card-text {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text {
+    justify-content: space-between;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text h4 {
+    font-size: 2.6rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card:nth-child(2) .service-block__card-text {
+    justify-content: flex-start;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-3 {
+    flex-direction: column;
+  }
   .partners-block {
     height: 853px;
   }

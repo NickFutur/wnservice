@@ -1066,7 +1066,7 @@ a:hover {
   backdrop-filter: blur(15px);
   background: #ffffff;
   border-radius: 14px;
-  padding: 4px 9px;
+  padding: 5px 9px;
   transition: all 0.3s ease;
 }
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:hover {

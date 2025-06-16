@@ -1673,7 +1673,6 @@ a:hover {
 }
 .work-block .work-block__wrap .work-block__header-block {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 .work-block .work-block__wrap .work-block__header-block .component__title-text {

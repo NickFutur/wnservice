@@ -1382,8 +1382,14 @@ a:hover {
   }
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
     margin-left: 0;
-    margin-top: -50px;
+    margin-top: -5%;
     max-width: none;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
+    gap: 33px;
+  }
+  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
+    gap: 18px;
   }
 }
 @media (max-width: 768px) {

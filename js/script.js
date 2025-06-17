@@ -108,11 +108,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Добавляем проверку существования элемента
     if (bgOverlay) {
-      bgOverlay.style.transform = `translateY(${
-        1800 - scrollPosition * scrollSpeed
-      }px)`;
-      // Или, если нужно именно top:
-      // bgOverlay.style.top = `${scrollPosition * scrollSpeed}px`;
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 768) {
+        bgOverlay.style.transform = `translateY(${
+          3000 - scrollPosition * scrollSpeed
+        }px)`;
+      } else if (screenWidth < 1024) {
+        bgOverlay.style.transform = `translateY(${
+          2100 - scrollPosition * scrollSpeed
+        }px)`;
+      } else {
+        bgOverlay.style.transform = `translateY(${
+          1800 - scrollPosition * scrollSpeed
+        }px)`;
+      }
     }
   });
 });

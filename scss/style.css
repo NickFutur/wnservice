@@ -968,7 +968,7 @@ a:hover {
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-btn:hover {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(1) .advantages-block__pluse-desc {
@@ -1287,7 +1287,7 @@ a:hover {
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title {
   display: flex;
   justify-content: space-between;
-  gap: 92px;
+  gap: 80px;
   margin: 25px 25px 0px 45px;
   flex: 1;
   padding-bottom: 25px;
@@ -1304,8 +1304,7 @@ a:hover {
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__text h2 {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
-  font-size: 26px;
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   line-height: 1.08;
   letter-spacing: -0.01em;
   margin-bottom: 15px;
@@ -1811,14 +1810,18 @@ footer {
   justify-content: center;
 }
 .footer-maintenance .footer-maintenance__block .footer-maintenance__card {
+  border-radius: 30px;
+  width: 289px;
+  height: 238px;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper {
   overflow: hidden;
   border-radius: 30px;
   width: 289px;
   height: 238px;
-  background-color: #0775b5;
   position: relative;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1827,17 +1830,17 @@ footer {
   text-decoration: none;
   padding: 17px;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link svg {
   align-self: flex-end;
   transition: all 0.3s ease;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg rect {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link svg rect {
   fill: #ffffff;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link svg path {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link svg path {
   fill: #1c75a8;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link p {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link p {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -1847,29 +1850,36 @@ footer {
   padding: 5px;
   transition: all 0.3s ease;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link:hover svg {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link:hover svg {
   transform: rotate(45deg);
   transition: all 0.3s ease;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link:hover p {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link:hover p {
   color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
 }
-.footer-maintenance .footer-maintenance__block .footer-maintenance__card img {
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper img {
   width: 100%;
   height: auto;
 }
 .footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(1) {
-  transform: rotate(-4deg);
   z-index: 2;
 }
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(1) .footer-maintenance__card-wrapper {
+  transform: rotate(-4deg);
+  background-color: #0775b5;
+}
 .footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(2) {
-  transform: rotate(8deg);
   z-index: 1;
 }
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(2) .footer-maintenance__card-wrapper {
+  transform: rotate(8deg);
+}
 .footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(3) {
-  transform: rotate(-13deg);
   z-index: 0;
+}
+.footer-maintenance .footer-maintenance__block .footer-maintenance__card:nth-child(3) .footer-maintenance__card-wrapper {
+  transform: rotate(-13deg);
 }
 
 .footer-contacts {

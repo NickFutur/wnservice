@@ -81,15 +81,30 @@ advantagesPluses.forEach((advantagesPlus) => {
     ".advantages-block__pluse-desc"
   );
   const plusBtn = advantagesPlus.querySelector(".advantages-block__pluse-btn");
+  let timer;
+  let timeOut = 5000;
 
   plusBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     plusDesc.classList.toggle("pluse-desc-open");
+
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    if (plusDesc.classList.contains("pluse-desc-open")) {
+      timer = setTimeout(() => {
+        plusDesc.classList.remove("pluse-desc-open");
+      }, timeOut);
+    }
   });
 
   document.addEventListener("click", (e) => {
     if (!advantagesPlus.contains(e.target)) {
       plusDesc.classList.remove("pluse-desc-open");
+      if (timer) {
+        clearTimeout(timer);
+      }
     }
   });
 });
@@ -110,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (bgOverlay) {
       const screenWidth = window.innerWidth;
 
-      if (screenWidth < 768) {
+      if (screenWidth < 680) {
         bgOverlay.style.transform = `translateY(${
           3000 - scrollPosition * scrollSpeed
         }px)`;
@@ -120,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }px)`;
       } else {
         bgOverlay.style.transform = `translateY(${
-          1800 - scrollPosition * scrollSpeed
+          1900 - scrollPosition * scrollSpeed
         }px)`;
       }
     }

@@ -32,6 +32,9 @@
       width: 637px;
       height: 730px;
       // top: 93px;
+      -webkit-overflow-scrolling: auto;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
       filter: blur(94px);
       transform: translateY(0px);
     }
@@ -86,7 +89,7 @@
         }
 
         p {
-          font-family: $font-family-reg;
+          font-family: $font-family-light;
           font-weight: 400;
           font-size: 1.2rem;
         }

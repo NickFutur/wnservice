@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     padding: 0px 50px 69px 50px;
-    font-family: $font-family-reg;
+    font-family: $font-family-light;
     font-weight: 400;
     color: $white;
     a {
@@ -98,7 +98,7 @@
           width: 100%;
           max-width: 258px;
           p {
-            font-family: $font-family-reg;
+            font-family: $font-family-light;
             font-weight: 400;
             font-size: 1.4rem;
             line-height: normal;
@@ -124,7 +124,7 @@
         flex-direction: column;
         gap: 40px;
         color: $white;
-        font-family: $font-family-reg;
+        font-family: $font-family-light;
         font-weight: 400;
         font-size: 1.2rem;
         line-height: 125%;
@@ -243,6 +243,13 @@
         .footer-contacts__rating {
           width: 100%;
           max-width: 175px;
+          a {
+            display: flex;
+            width: 100%;
+            height: 58px;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
           img {
             width: 100%;
             height: auto;

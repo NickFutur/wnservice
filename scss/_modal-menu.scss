@@ -112,7 +112,7 @@
                   gap: 9px;
                   align-items: center;
                   p {
-                    font-family: $font-family-reg;
+                    font-family: $font-family-light;
                     font-size: 400;
                     span {
                       font-family: $font-family-demibold;
@@ -126,7 +126,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                font-family: $font-family-reg;
+                font-family: $font-family-light;
                 h5 {
                   font-weight: 400;
                   font-size: 1.4rem;
@@ -205,7 +205,7 @@
               align-items: center;
               gap: 15px;
               color: $white;
-              font-family: $font-family-reg;
+              font-family: $font-family-light;
               font-weight: 400;
               font-size: 1.2rem;
               line-height: 108%;
@@ -254,7 +254,7 @@
       gap: 25px;
 
       a {
-        font-family: $font-family-reg;
+        font-family: $font-family-light;
         font-weight: 400;
         font-size: 1.5rem;
         letter-spacing: 0em;

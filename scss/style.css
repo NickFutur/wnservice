@@ -50,7 +50,7 @@ html {
 }
 
 * {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   box-sizing: border-box;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 }
 .component__tltle-link .component__tltle {
   text-decoration: none;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: #000000;
@@ -176,7 +176,7 @@ a:hover {
 }
 
 .leave-request-btn_backrgound a {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   color: #1f1f1f;
   background-color: #ffffff;
@@ -251,7 +251,7 @@ a:hover {
   color: #13a9e1;
 }
 .component__title-block .component__title-text p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   text-align: center;
@@ -291,7 +291,7 @@ a:hover {
 .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text],
 .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel],
 .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number] {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(31, 31, 31, 0.8);
@@ -348,7 +348,7 @@ a:hover {
   outline: none;
   padding: 18px 20px;
   color: rgba(31, 31, 31, 0.8);
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   min-width: 200px;
 }
@@ -366,7 +366,7 @@ a:hover {
 }
 .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy {
   margin-bottom: 29px;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: -0.01em;
@@ -412,7 +412,7 @@ a:hover {
 }
 
 .header-wrap {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 108%;
@@ -598,7 +598,7 @@ a:hover {
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-clients .achievements-block__title,
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-skill .achievements-block__title,
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-partners .achievements-block__title {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   letter-spacing: -0.04em;
@@ -644,7 +644,7 @@ a:hover {
   margin-bottom: 21px;
 }
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-skill .achievements-block__text a {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-decoration: underline;
@@ -683,14 +683,14 @@ a:hover {
   gap: 6px;
 }
 .header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs a {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
 .header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.8);
@@ -777,7 +777,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   width: 99%;
@@ -1310,7 +1310,7 @@ a:hover {
   margin-bottom: 15px;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__text p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1432,6 +1432,9 @@ a:hover {
   border-radius: 500px;
   width: 637px;
   height: 730px;
+  -webkit-overflow-scrolling: auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
   filter: blur(94px);
   transform: translateY(0px);
 }
@@ -1479,7 +1482,7 @@ a:hover {
   line-height: 100%;
 }
 .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap .reg-maintenance-block__desc p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -1934,7 +1937,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 0px 50px 69px 50px;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   color: #ffffff;
 }
@@ -1980,7 +1983,7 @@ footer {
   max-width: 258px;
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: normal;
@@ -2003,7 +2006,7 @@ footer {
   flex-direction: column;
   gap: 40px;
   color: #ffffff;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 125%;
@@ -2112,6 +2115,13 @@ footer {
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__rating {
   width: 100%;
   max-width: 175px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__rating a {
+  display: flex;
+  width: 100%;
+  height: 58px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__rating img {
   width: 100%;
@@ -2246,7 +2256,7 @@ footer {
   align-items: center;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel .modal-menu__firm-time p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-size: 400;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel .modal-menu__firm-time p span {
@@ -2258,7 +2268,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-graf-tel h5,
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__firm-contacts-block .modal-menu__firm-email h5 {
@@ -2335,7 +2345,7 @@ footer {
   align-items: center;
   gap: 15px;
   color: #ffffff;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 108%;
@@ -2377,7 +2387,7 @@ footer {
   gap: 25px;
 }
 .fixed-menu .fixed-menu__navigation nav a {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0em;

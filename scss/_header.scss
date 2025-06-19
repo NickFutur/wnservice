@@ -1,5 +1,5 @@
 .header-wrap {
-  font-family: $font-family-reg;
+  font-family: $font-family-light;
   font-weight: 400;
   font-size: 12px;
   line-height: 108%;
@@ -198,7 +198,7 @@
         flex-direction: column;
         justify-content: space-between;
         .achievements-block__title {
-          font-family: $font-family-reg;
+          font-family: $font-family-light;
           font-weight: 400;
           font-size: 4rem;
           letter-spacing: -0.04em;
@@ -246,7 +246,7 @@
             margin-bottom: 21px;
           }
           a {
-            font-family: $font-family-reg;
+            font-family: $font-family-light;
             font-weight: 400;
             font-size: 14px;
             text-decoration: underline;
@@ -288,14 +288,14 @@
           align-items: center;
           gap: 6px;
           a {
-            font-family: $font-family-reg;
+            font-family: $font-family-light;
             font-weight: 400;
             font-size: 1.4rem;
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
           }
           p {
-            font-family: $font-family-reg;
+            font-family: $font-family-light;
             font-weight: 400;
             font-size: 1.4rem;
             color: rgba(255, 255, 255, 0.8);

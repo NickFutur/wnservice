@@ -6,7 +6,7 @@
   margin-bottom: 60px;
   .component__tltle {
     text-decoration: none;
-    font-family: $font-family-reg;
+    font-family: $font-family-light;
     font-weight: 400;
     font-size: 1.4rem;
     color: $black;
@@ -41,7 +41,7 @@
     justify-content: center;
     transition: $transition-default;
     &:hover {
-          backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
       background: rgba(255, 255, 255, 0.1);
       transition: $transition-default;
     }
@@ -82,7 +82,7 @@
 
 .leave-request-btn_backrgound {
   a {
-    font-family: $font-family-reg;
+    font-family: $font-family-light;
     font-weight: 400;
     color: $light-black;
     background-color: $white;
@@ -174,7 +174,7 @@
       color: $blue;
     }
     p {
-      font-family: $font-family-reg;
+      font-family: $font-family-light;
       font-weight: 400;
       font-size: 1.4rem;
       text-align: center;
@@ -217,7 +217,7 @@
         input[type="text"],
         input[type="tel"],
         input[type="number"] {
-          font-family: $font-family-reg;
+          font-family: $font-family-light;
           font-weight: 400;
           font-size: 1.4rem;
           color: rgba(31, 31, 31, 0.8);
@@ -270,7 +270,7 @@
           outline: none;
           padding: 18px 20px;
           color: rgba(31, 31, 31, 0.8);
-          font-family: $font-family-reg;
+          font-family: $font-family-light;
           font-weight: 400;
           min-width: 200px;
           &::placeholder {
@@ -283,7 +283,7 @@
       }
       .component-feedback__form-policy {
         margin-bottom: 29px;
-        font-family: $font-family-reg;
+        font-family: $font-family-light;
         font-weight: 400;
         font-size: 1.2rem;
         letter-spacing: -0.01em;

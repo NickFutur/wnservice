@@ -110,34 +110,49 @@ advantagesPluses.forEach((advantagesPlus) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const parallaxContainer = document.querySelector(
-    ".reg-maintenance-block__wrap"
-  );
   const bgOverlay = document.querySelector(".reg-maintenance-block__font");
 
-  // Используем скролл окна, а не элемента
-  window.addEventListener("scroll", function () {
-    const scrollPosition =
-      window.pageYOffset || document.documentElement.scrollTop;
+  if (!bgOverlay) return;
+
+  bgOverlay.style.willChange = "transform";
+  let ticking = false;
+  let lastScroll = 0;
+
+  function updateParallax() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
     const scrollSpeed = 0.3;
+    const screenWidth = Math.min(
+      window.innerWidth,
+      document.documentElement.clientWidth
+    );
 
-    // Добавляем проверку существования элемента
-    if (bgOverlay) {
-      const screenWidth = window.innerWidth;
-
-      if (screenWidth < 680) {
-        bgOverlay.style.transform = `translateY(${
-          3000 - scrollPosition * scrollSpeed
-        }px)`;
-      } else if (screenWidth < 1024) {
-        bgOverlay.style.transform = `translateY(${
-          2100 - scrollPosition * scrollSpeed
-        }px)`;
-      } else {
-        bgOverlay.style.transform = `translateY(${
-          1900 - scrollPosition * scrollSpeed
-        }px)`;
-      }
+    let translateValue;
+    if (screenWidth < 680) {
+      translateValue = 3000 - scrollPosition * scrollSpeed;
+    } else if (screenWidth < 1024) {
+      translateValue = 2100 - scrollPosition * scrollSpeed;
+    } else {
+      translateValue = 1900 - scrollPosition * scrollSpeed;
     }
-  });
+
+    bgOverlay.style.transform = `translateY(${translateValue}px)`;
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      lastScroll = window.scrollY;
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          updateParallax();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+
+  // Инициализация при загрузке
+  updateParallax();
 });

@@ -487,10 +487,15 @@
     width: 226px;
     height: 186px;
   }
-  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link {
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link {
     padding: 14px;
   }
-  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-link p {
+  .footer-maintenance .footer-maintenance__block .footer-maintenance__card .footer-maintenance__card-wrapper .footer-maintenance__card-link p {
     font-size: 1.6rem;
     padding-left: 12px;
     padding-bottom: 3px;

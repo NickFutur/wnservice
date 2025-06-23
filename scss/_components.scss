@@ -333,6 +333,17 @@
           background-size: contain;
         }
       }
+
+      .leave-request-btn {
+        a {
+          font-size: 1.4rem;
+          gap: 12px;
+          width: 178px;
+          span {
+            text-align: end;
+          }
+        }
+      }
     }
   }
 }

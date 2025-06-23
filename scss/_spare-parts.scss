@@ -159,6 +159,7 @@
 
         .leave-request-btn_backrgound {
           a {
+            width: 140px;
             &:hover {
               border: 1px solid $white;
             }
@@ -171,55 +172,7 @@
 
 // Responsive adjustments
 @media (max-width: 1024px) {
-  .spare-parts-block {
-    .spare-parts-block__wrap {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-
-      .spare-parts-block__image-wrapper {
-        width: 100%;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .spare-parts-block__info-wrapper {
-        margin-left: 0;
-        margin-top: -5%;
-        max-width: none;
-
-        .spare-parts-block__info-pluses {
-          gap: 33px;
-
-          .info-pluses__list {
-            gap: 18px;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 768px) {
-  .spare-parts-block {
-    .spare-parts-block__wrap {
-      .spare-parts-block__image-wrapper {
-        height: 464px;
-      }
-
-      .spare-parts-block__info-wrapper {
-        .spare-parts-block__info-pluses {
-          gap: 33px;
-          padding-bottom: 42px;
-          .info-pluses__list {
-            gap: 18px;
-          }
-        }
-      }
-    }
-  }
 }

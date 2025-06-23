@@ -410,6 +410,14 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a {
+  font-size: 1.4rem;
+  gap: 12px;
+  width: 178px;
+}
+.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a span {
+  text-align: end;
+}
 
 .header-wrap {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
@@ -466,7 +474,7 @@ a:hover {
 .header-wrap .header-wrap__contacts .header-wrap__block-search .header-wrap__search-form input[type=text] {
   border: none;
   outline: none;
-  font-size: 13px;
+  font-size: 1.2rem;
   line-height: 92%;
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 0.5);
@@ -1206,6 +1214,9 @@ a:hover {
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__image img {
   width: 100%;
 }
+.ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__desc {
+  width: 80%;
+}
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__desc h3 {
   display: inline-block;
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
@@ -1366,45 +1377,13 @@ a:hover {
   width: 100%;
   max-width: 330px;
 }
+.spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .leave-request-btn_backrgound a {
+  width: 140px;
+}
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .leave-request-btn_backrgound a:hover {
   border: 1px solid #ffffff;
 }
 
-@media (max-width: 1024px) {
-  .spare-parts-block .spare-parts-block__wrap {
-    flex-direction: column;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
-    width: 100%;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper img {
-    width: 100%;
-    height: auto;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
-    margin-left: 0;
-    margin-top: -5%;
-    max-width: none;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
-    gap: 33px;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
-    gap: 18px;
-  }
-}
-@media (max-width: 768px) {
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__image-wrapper {
-    height: 464px;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses {
-    gap: 33px;
-    padding-bottom: 42px;
-  }
-  .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
-    gap: 18px;
-  }
-}
 .reg-maintenance-block {
   overflow: hidden;
   display: flex;
@@ -1971,6 +1950,14 @@ footer {
   margin-bottom: 72px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 38px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .logo {
+  width: 343px;
+  height: 53px;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .logo svg {
+  width: 343px;
+  height: 53px;
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address {
   border-left: 1px solid rgba(255, 255, 255, 0.3);

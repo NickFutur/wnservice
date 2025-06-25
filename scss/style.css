@@ -3,43 +3,50 @@
   font-family: "TT Hoves Pro Trial Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("TT Hoves Pro Trial Regular"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Regular.woff") format("woff");
+  src: local("TT Hoves Pro Trial Regular"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Regular.ttf") format("ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Italic";
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial Italic"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Italic.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("TT Hoves Pro Trial Medium"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Medium.woff") format("woff");
+  src: local("TT Hoves Pro Trial Medium"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Medium.ttf") format("ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Bold";
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial Bold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Bold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial DemiBold";
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial DemiBold"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Light";
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial Light"), url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Light.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Neoris Trial Regular";
   font-style: normal;
   font-weight: normal;
   src: local("TT Neoris Trial Regular"), url("../fonts/tt_neoris/tt_neoris_regular.woff") format("woff");
+  font-display: swap;
 }
 :root {
   font-size: 10px;
@@ -52,6 +59,12 @@ html {
 * {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased; /* Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox на Mac */
+  text-rendering: optimizeLegibility;
 }
 
 p {
@@ -484,7 +497,7 @@ a:hover {
 .header-wrap .header-wrap__info {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/header-image-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -579,8 +592,8 @@ a:hover {
   color: #13a9e1;
 }
 .header-wrap .header-wrap__info .header-wrap__title-block p {
-  font-family: "TT Hoves Pro Trial Medium", sans-serif;
-  font-weight: 500;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
   font-size: 2rem;
   text-align: center;
   color: #ffffff;
@@ -588,11 +601,13 @@ a:hover {
 .header-wrap .header-wrap__info .header-wrap__achievements-block {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 47px;
   gap: 14px;
   position: relative;
   z-index: 2;
   color: #ffffff;
+  padding: 0px 12px;
 }
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-clients,
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-skill,
@@ -867,6 +882,7 @@ a:hover {
   color: #13a9e1;
 }
 .advantages-block .advantages-block__wrap .advantages-block__info-text p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
   font-size: 1.8rem;
   line-height: 111%;
   letter-spacing: -0.01em;
@@ -942,16 +958,17 @@ a:hover {
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse .advantages-block__pluse-desc {
   display: none;
   opacity: 0;
+  height: 64px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 16px;
   background: #ffffff;
   color: #000000;
   position: absolute;
   bottom: 52px;
-  left: 26px;
+  left: 29px;
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   line-height: normal;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   transition: all 0.3s ease;
 }
@@ -982,13 +999,13 @@ a:hover {
   transition: all 0.3s ease;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(1) .advantages-block__pluse-desc {
-  width: 199px;
+  width: 167px;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(2) .advantages-block__pluse-desc {
-  width: 138px;
+  width: 188px;
 }
 .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(3) .advantages-block__pluse-desc {
-  width: 191px;
+  width: 258px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1215,7 +1232,8 @@ a:hover {
   width: 100%;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__desc {
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link .ship-equipment-block__desc h3 {
   display: inline-block;
@@ -1385,7 +1403,6 @@ a:hover {
 }
 
 .reg-maintenance-block {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1418,6 +1435,21 @@ a:hover {
   -webkit-transform-style: preserve-3d;
   filter: blur(94px);
   transform: translateY(0px);
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .reg-maintenance-block .reg-maintenance-block__wrap img {
   height: 863px;
@@ -2092,7 +2124,8 @@ footer {
   max-width: 250px;
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__menu-rating .footer-contacts__nav a {
-  font-weight: 500;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0em;
 }

@@ -8,6 +8,12 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  -webkit-font-smoothing: antialiased; /* Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox на Mac */
+  text-rendering: optimizeLegibility;
+}
+
 p {
   line-height: normal;
 }

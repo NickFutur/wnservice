@@ -29,7 +29,8 @@
         }
 
         .ship-equipment-block__desc {
-          width: 80%;
+          width: 100%;
+          text-align: center;
           h3 {
             display: inline-block;
             font-family: $font-family-med;

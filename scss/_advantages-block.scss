@@ -61,6 +61,7 @@
         }
       }
       p {
+        font-family: $font-family-reg;
         font-size: 1.8rem;
         line-height: 111%;
         letter-spacing: -0.01em;
@@ -142,16 +143,17 @@
         .advantages-block__pluse-desc {
           display: none;
           opacity: 0;
+          height: 64px;
           border-radius: 10px;
-          padding: 10px;
+          padding: 16px;
           background: $white;
           color: $black;
           position: absolute;
           bottom: 52px;
-          left: 26px;
+          left: 29px;
           font-family: $font-family-light;
           line-height: normal;
-          font-size: 1rem;
+          font-size: 1.3rem;
           font-weight: 300;
           transition: $transition-default;
         }
@@ -183,17 +185,17 @@
 
         &:nth-child(1) {
           .advantages-block__pluse-desc {
-            width: 199px;
+            width: 167px;
           }
         }
         &:nth-child(2) {
           .advantages-block__pluse-desc {
-            width: 138px;
+            width: 188px;
           }
         }
         &:nth-child(3) {
           .advantages-block__pluse-desc {
-            width: 191px;
+            width: 258px;
           }
         }
       }

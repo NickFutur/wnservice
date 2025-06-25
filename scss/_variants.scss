@@ -3,7 +3,8 @@
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial Regular"),
-    url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Regular.woff") format("woff");
+    url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Regular.ttf") format("ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Italic";
@@ -11,13 +12,15 @@
   font-weight: normal;
   src: local("TT Hoves Pro Trial Italic"),
     url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Italic.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Medium";
   font-style: normal;
   font-weight: normal;
   src: local("TT Hoves Pro Trial Medium"),
-    url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Medium.woff") format("woff");
+    url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Medium.ttf") format("ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Bold";
@@ -25,6 +28,7 @@
   font-weight: normal;
   src: local("TT Hoves Pro Trial Bold"),
     url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Bold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial DemiBold";
@@ -32,6 +36,7 @@
   font-weight: normal;
   src: local("TT Hoves Pro Trial DemiBold"),
     url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-DemiBold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Hoves Pro Trial Light";
@@ -39,6 +44,7 @@
   font-weight: normal;
   src: local("TT Hoves Pro Trial Light"),
     url("../fonts/tt_hoves_pro/TT-Hoves-Pro-Trial-Light.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "TT Neoris Trial Regular";
@@ -46,6 +52,7 @@
   font-weight: normal;
   src: local("TT Neoris Trial Regular"),
     url("../fonts/tt_neoris/tt_neoris_regular.woff") format("woff");
+  font-display: swap;
 }
 :root {
   font-size: 10px;

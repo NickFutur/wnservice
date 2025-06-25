@@ -938,8 +938,8 @@
 
               li {
                 a {
-                  font-family: $font-family-med;
-                  font-weight: 500;
+                  font-family: $font-family-reg;
+                  font-weight: 400;
                   font-size: 1.5rem;
 
                   &:hover {
@@ -1280,6 +1280,74 @@
     .footer-contacts__font {
       top: 24%;
       // height: 500px;
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  .header-wrap {
+    .header-wrap__info {
+      .header-wrap__achievements-block {
+        .header-wrap__achievements-partners {
+          .achievements-block__images {
+            .image-desk {
+              display: block;
+            }
+            .image-mob {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header-wrap {
+    .header-wrap__info {
+      .header-wrap__achievements-block {
+        padding: 0px 12px;
+        .header-wrap__achievements-clients,
+        .header-wrap__achievements-skill,
+        .header-wrap__achievements-partners {
+          .achievements-block__title {
+            font-size: 3rem;
+          }
+          .achievements-block__text {
+            .achievements-block__title {
+              font-size: 3rem;
+            }
+            .achievements-block__desc {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .header-wrap__achievements-clients {
+          width: 160px;
+          padding: 24px 19px 13px 19px;
+          gap: 10px;
+        }
+        .header-wrap__achievements-skill {
+          width: 160px;
+          padding: 11px 12px 24px 18px;
+          gap: 9px;
+        }
+        .header-wrap__achievements-partners {
+          width: 100%;
+          max-width: 330px;
+          flex-direction: row;
+
+          .achievements-block__images {
+            .image-desk {
+              display: none;
+            }
+            .image-mob {
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 }

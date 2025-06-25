@@ -109,50 +109,51 @@ advantagesPluses.forEach((advantagesPlus) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const bgOverlay = document.querySelector(".reg-maintenance-block__font");
+// фон для блока reg-maintenance-block
+// document.addEventListener("DOMContentLoaded", function () {
+//   const bgOverlay = document.querySelector(".reg-maintenance-block__font");
 
-  if (!bgOverlay) return;
+//   if (!bgOverlay) return;
 
-  bgOverlay.style.willChange = "transform";
-  let ticking = false;
-  let lastScroll = 0;
+//   bgOverlay.style.willChange = "transform";
+//   let ticking = false;
+//   let lastScroll = 0;
 
-  function updateParallax() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    const scrollSpeed = 0.3;
-    const screenWidth = Math.min(
-      window.innerWidth,
-      document.documentElement.clientWidth
-    );
+//   function updateParallax() {
+//     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+//     const scrollSpeed = 0.3;
+//     const screenWidth = Math.min(
+//       window.innerWidth,
+//       document.documentElement.clientWidth
+//     );
 
-    let translateValue;
-    if (screenWidth < 680) {
-      translateValue = 3000 - scrollPosition * scrollSpeed;
-    } else if (screenWidth < 1024) {
-      translateValue = 2100 - scrollPosition * scrollSpeed;
-    } else {
-      translateValue = 1900 - scrollPosition * scrollSpeed;
-    }
+//     let translateValue;
+//     if (screenWidth < 680) {
+//       translateValue = 3000 - scrollPosition * scrollSpeed;
+//     } else if (screenWidth < 1024) {
+//       translateValue = 2100 - scrollPosition * scrollSpeed;
+//     } else {
+//       translateValue = 1900 - scrollPosition * scrollSpeed;
+//     }
 
-    bgOverlay.style.transform = `translateY(${translateValue}px)`;
-  }
+//     bgOverlay.style.transform = `translateY(${translateValue}px)`;
+//   }
 
-  window.addEventListener(
-    "scroll",
-    function () {
-      lastScroll = window.scrollY;
-      if (!ticking) {
-        window.requestAnimationFrame(function () {
-          updateParallax();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    },
-    { passive: true }
-  );
+//   window.addEventListener(
+//     "scroll",
+//     function () {
+//       lastScroll = window.scrollY;
+//       if (!ticking) {
+//         window.requestAnimationFrame(function () {
+//           updateParallax();
+//           ticking = false;
+//         });
+//         ticking = true;
+//       }
+//     },
+//     { passive: true }
+//   );
 
-  // Инициализация при загрузке
-  updateParallax();
-});
+//   // Инициализация при загрузке
+//   updateParallax();
+// });

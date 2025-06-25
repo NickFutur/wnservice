@@ -1096,7 +1096,139 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
+  .reg-maintenance-block {
+    overflow: hidden;
+    .reg-maintenance-block__wrap {
+      .reg-maintenance-block__font {
+        position: absolute;
+        z-index: -1;
+        width: 560px;
+        height: 730px;
+        // top: 93px;
+        filter: blur(94px);
+        transform: translateY(0px);
+      }
+
+      img {
+        height: auto;
+        width: auto;
+      }
+
+      .reg-maintenance-block__desc-wrap {
+        top: 0;
+        left: 0;
+        transform: translateX(0%) translateZ(0);
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        justify-self: center;
+        height: auto;
+
+        .reg-maintenance-block__desc {
+          position: relative;
+          height: min-content;
+          top: auto;
+          left: 0;
+          right: auto;
+          bottom: auto;
+          &:nth-child(1) {
+            width: 284px;
+
+            &::after {
+              content: url("data:image/svg+xml,%3Csvg width='93' height='66' viewBox='0 0 93 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='88' cy='61' r='4.5' fill='white' stroke='url(%23paint0_linear_1140_3086)'/%3E%3Cpath d='M0 1.05556C0 1.05556 28.9892 1.05603 45.9675 1.05556C62.9459 1.05509 77.44 -2.94296 88 57' stroke='url(%23paint1_linear_1140_3086)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3086' x1='83.1647' y1='59.4252' x2='90.2138' y2='57.1776' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3086' x1='1.44941' y1='20.181' x2='56.0742' y2='-7.18813' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              bottom: 0px;
+              right: -78px;
+              width: 93px;
+              /* Ширина как в SVG */
+              height: 67px;
+              /* Высота как в SVG */
+            }
+          }
+
+          &:nth-child(2) {
+            width: 231px;
+            top: auto;
+            left: 0;
+
+            &::after {
+              content: url("data:image/svg+xml,%3Csvg width='118' height='66' viewBox='0 0 118 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4.5' transform='matrix(1 0 0 -1 108 10)' fill='white' stroke='url(%23paint0_linear_1140_3092)'/%3E%3Cpath d='M0 64.9444C0 64.9444 37.2247 64.944 59.0265 64.9444C80.8282 64.9449 99.44 68.943 113 9' stroke='url(%23paint1_linear_1140_3092)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3092' x1='0.164706' y1='3.42517' x2='7.21375' y2='1.17764' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3092' x1='1.86118' y1='45.819' x2='63.9233' y2='85.7485' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              top: 0px;
+              right: -118px;
+              width: 118px;
+              /* Ширина как в SVG */
+              height: 66px;
+              /* Высота как в SVG */
+            }
+          }
+
+          &:nth-child(3) {
+            width: 219px;
+            top: auto;
+            left: 0;
+
+            &::after {
+              content: url("data:image/svg+xml,%3Csvg width='130' height='66' viewBox='0 0 130 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4.5' transform='matrix(1 0 0 -1 120 10)' fill='white' stroke='url(%23paint0_linear_1140_3101)'/%3E%3Cpath d='M0 64.9444C0 64.9444 41.1778 64.944 65.2948 64.9444C89.4118 64.9449 110 68.943 125 9' stroke='url(%23paint1_linear_1140_3101)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3101' x1='0.164706' y1='3.42517' x2='7.21375' y2='1.17764' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3101' x1='2.05883' y1='45.819' x2='66.4926' y2='91.6766' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              top: -20px;
+              right: -130px;
+              width: 130px;
+              /* Ширина как в SVG */
+              height: 66px;
+              /* Высота как в SVG */
+            }
+          }
+
+          &:nth-child(4) {
+            width: 264px;
+            top: auto;
+            left: 0;
+
+            &::after {
+              content: url("data:image/svg+xml,%3Csvg width='93' height='66' viewBox='0 0 93 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4.5' transform='matrix(-1 0 0 1 10 56)' fill='white' stroke='url(%23paint0_linear_1140_3089)'/%3E%3Cpath d='M93 1.05556C93 1.05556 64.0108 1.05603 47.0325 1.05556C30.0541 1.05509 15.56 -2.94296 5 57' stroke='url(%23paint1_linear_1140_3089)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3089' x1='0.164706' y1='3.42517' x2='7.21375' y2='1.17764' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3089' x1='91.5506' y1='20.181' x2='36.9258' y2='-7.18813' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              top: 60px;
+              right: -93px;
+              width: 93px;
+              /* Ширина как в SVG */
+              height: 66px;
+              /* Высота как в SVG */
+            }
+          }
+
+          &:nth-child(5) {
+            width: 247px;
+            top: auto;
+            left: 0;
+
+            &:after {
+              content: url("data:image/svg+xml,%3Csvg width='118' height='66' viewBox='0 0 118 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4.5' transform='rotate(180 5 5)' fill='white' stroke='url(%23paint0_linear_1140_3095)'/%3E%3Cpath d='M118 64.9444C118 64.9444 80.7753 64.944 58.9735 64.9444C37.1718 64.9449 18.56 68.943 5 9' stroke='url(%23paint1_linear_1140_3095)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3095' x1='0.164706' y1='3.42517' x2='7.21375' y2='1.17764' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3095' x1='116.139' y1='45.819' x2='54.0767' y2='85.7485' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              top: -15px;
+              right: -118px;
+              width: 118px;
+              /* Ширина как в SVG */
+              height: 66px;
+              /* Высота как в SVG */
+            }
+          }
+
+          &:nth-child(6) {
+            width: 238px;
+            top: auto;
+            left: 0;
+
+            &:after {
+              content: url("data:image/svg+xml,%3Csvg width='118' height='66' viewBox='0 0 118 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4.5' transform='rotate(180 5 5)' fill='white' stroke='url(%23paint0_linear_1140_3098)'/%3E%3Cpath d='M118 64.9444C118 64.9444 80.7753 64.944 58.9735 64.9444C37.1718 64.9449 18.56 68.943 5 9' stroke='url(%23paint1_linear_1140_3098)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1140_3098' x1='0.164706' y1='3.42517' x2='7.21375' y2='1.17764' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1140_3098' x1='116.139' y1='45.819' x2='54.0767' y2='85.7485' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.235' stop-color='%23FAF6F6' stop-opacity='0.3'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+              top: -5px;
+              right: -118px;
+              width: 118px;
+              /* Ширина как в SVG */
+              height: 66px;
+              /* Высота как в SVG */
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {
@@ -1345,6 +1477,93 @@
             .image-mob {
               display: block;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .special-offers {
+    .special-offers__cards-block {
+      gap: 15px;
+      .special-offers__card {
+        width: 100%;
+        max-width: 355px;
+        height: 355px;
+        .special-offers__icon {
+          margin: 20px;
+        }
+        .special-offers__card-desc {
+          margin: 25px;
+          h6,
+          .special-offers__card-title {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+            width: 92%;
+          }
+          .leave-request-btn {
+            a {
+              width: 159px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          flex-direction: column;
+          .special-offers__card-desc {
+            p {
+              width: 70%;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .special-offers__card-desc {
+            p {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .advantages-block {
+    margin-top: 70px;
+    padding: 0;
+
+    .advantages-block__font {
+      left: 0;
+      right: 0;
+      border-radius: 16px;
+      background-image: url(../images/advantages-font-mob.png);
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .advantages-block__font {
+        background-image: url(../images/advantages-font-2x-mob.png);
+      }
+    }
+    .advantages-block__wrap {
+      border-radius: 16px;
+
+      .advantages-block__cards {
+        .advantages-block__card {
+          background: rgba(255, 255, 255, 0.2);
+
+          &:nth-child(4) {
+            background: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+  }
+
+  .spare-parts-block {
+    .spare-parts-block__wrap {
+      .spare-parts-block__info-wrapper {
+        .spare-parts-block__info-title {
+          .info-title__image {
+            display: none;
           }
         }
       }

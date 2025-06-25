@@ -1188,9 +1188,6 @@ a:hover {
   color: rgb(7, 117, 181);
   transition: all 0.3s ease;
 }
-.service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card {
-  min-width: 450px;
-}
 .service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card:hover img {
   transform: scale(1.1);
   transition: all 0.8s ease;

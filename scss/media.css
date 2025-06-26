@@ -1021,6 +1021,12 @@
   }
 }
 @media (max-width: 600px) {
+  .container_mt_120 {
+    margin-top: 70px;
+  }
+  .container_padding {
+    padding: 0px 10px;
+  }
   .header-wrap .header-wrap__info .header-wrap__achievements-block {
     padding: 0px 12px;
   }
@@ -1095,7 +1101,6 @@
     width: 80%;
   }
   .advantages-block {
-    margin-top: 70px;
     padding: 0;
   }
   .advantages-block .advantages-block__font {
@@ -1139,6 +1144,125 @@
   .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card .advantages-block__info-text {
     padding: 0;
   }
+  .service-block .component__title-block .component__tltle-link {
+    margin-bottom: 15px;
+  }
+  .service-block .component__title-block .component__tltle-link .component__tltle {
+    padding: 14px 16px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  .service-block .component__title-block .component__title-text {
+    font-size: 2.4rem;
+    padding: 0 30px;
+    margin-bottom: 61px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 {
+    align-items: center;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) {
+    max-height: 100%;
+    border-radius: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card {
+    height: 355px;
+    width: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text {
+    right: 14px;
+    gap: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text h4 {
+    font-size: 2.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text .service-block__card-links-block {
+    gap: 4px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text .service-block__card-links-block a {
+    font-size: 1.2rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card {
+    height: 355px;
+    flex: auto;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card .service-block__card-text {
+    right: 14px;
+    gap: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card .service-block__card-text h4 {
+    font-size: 2.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card .service-block__card-text p {
+    font-size: 1.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card .service-block__card-text .service-block__card-links-block {
+    gap: 4px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(2) .service-block__card .service-block__card-text .service-block__card-links-block a {
+    font-size: 1.2rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 {
+    align-items: center;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card {
+    height: 355px;
+    flex: auto;
+    max-height: 100%;
+    min-width: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card img {
+    width: auto;
+    height: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text {
+    right: 14px;
+    gap: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text h4 {
+    font-size: 2.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text p {
+    font-size: 1.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text .service-block__card-links-block {
+    gap: 4px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card .service-block__card-text .service-block__card-links-block a {
+    font-size: 1.2rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper {
+    width: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card {
+    height: 355px;
+    flex: auto;
+    max-height: 100%;
+    min-width: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card img {
+    width: 100%;
+    height: auto;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text {
+    right: 14px;
+    gap: 16px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text h4 {
+    font-size: 2.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text p {
+    font-size: 1.4rem;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block {
+    gap: 4px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a {
+    font-size: 1.2rem;
+  }
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__image {
     display: none;
   }
@@ -1181,5 +1305,26 @@
   }
   .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(3) {
     margin-left: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .service-block .component__title-block .component__title-text {
+    padding: 0 10px;
+  }
+  .service-block .component__title-block .component__title-text h3 {
+    max-width: 315px;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card {
+    height: 100%;
+    width: auto;
+  }
+}
+@media (max-width: 320px) {
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) {
+    max-height: auto;
+  }
+  .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card {
+    height: auto;
+    width: 100%;
   }
 }/*# sourceMappingURL=media.css.map */

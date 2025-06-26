@@ -386,11 +386,7 @@
       .advantages-block__cards {
         .advantages-block__card {
           &:nth-child(4) {
-            background: none;
-          }
-
-          &:nth-child(5) {
-            background: #0775b5;
+            order: 1;
           }
 
           .advantages-block__info-text {
@@ -1545,13 +1541,38 @@
     }
     .advantages-block__wrap {
       border-radius: 16px;
+      gap: 35px;
+
+      .component__tltle-link {
+        .component__tltle-light {
+          font-size: 1.2rem;
+          padding: 14px;
+          height: 44px;
+        }
+      }
+
+      .component__title-block {
+        .component__tltle-link {
+          margin-bottom: 15px;
+        }
+      }
+      .advantages-block__info-text {
+        padding: 0px 45px;
+        h3 {
+          font-size: 3.2rem;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
 
       .advantages-block__cards {
         .advantages-block__card {
           background: rgba(255, 255, 255, 0.2);
 
-          &:nth-child(4) {
-            background: rgba(255, 255, 255, 0.2);
+          .advantages-block__info-text {
+            padding: 0;
           }
         }
       }
@@ -1574,6 +1595,56 @@
 @media (max-width: 480px) {
   .mob-d-none_480 {
     display: none;
+  }
+
+  .advantages-block {
+    .advantages-block__wrap {
+      padding-top: 44px;
+      padding-bottom: 54px;
+      .advantages-block__cards {
+        gap: 15px;
+        margin-bottom: 25px;
+        .advantages-block__card {
+          width: 90%;
+          max-width: 271px;
+          padding: 16px;
+
+          &:nth-child(4) {
+            order: 0;
+          }
+
+          .advantages-block__image {
+            svg {
+              top: 8px;
+              left: 8px;
+            }
+          }
+
+          .advantages-block__info-text {
+            h4 {
+              margin-bottom: 6px;
+            }
+          }
+        }
+      }
+      .advantages-block__pluses {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 28px;
+
+        .advantages-block__pluse {
+          &:nth-child(1) {
+          }
+          &:nth-child(2) {
+            align-self: flex-end;
+            margin-right: 18px;
+          }
+          &:nth-child(3) {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
   }
 }
 

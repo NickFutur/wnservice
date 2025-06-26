@@ -941,6 +941,10 @@ a:hover {
   font-size: 1.2rem;
   line-height: normal;
 }
+.advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card .advantages-block__info-text p span {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+}
 .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card:nth-child(1), .advantages-block .advantages-block__wrap .advantages-block__cards .advantages-block__card:nth-child(4) {
   background: #0775b5;
   border: 1px solid rgba(255, 255, 255, 0.2);

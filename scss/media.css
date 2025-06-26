@@ -1174,6 +1174,7 @@
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text h4 {
     font-size: 2.4rem;
+    line-height: 100%;
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card .service-block__card-text .service-block__card-links-block {
     gap: 4px;
@@ -1253,6 +1254,7 @@
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text h4 {
     font-size: 2.4rem;
+    line-height: 104%;
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text p {
     font-size: 1.4rem;
@@ -1262,6 +1264,19 @@
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a {
     font-size: 1.2rem;
+  }
+  .ship-equipment-block .component__title-block .component__tltle-link {
+    margin-bottom: 15px;
+  }
+  .ship-equipment-block .component__title-block .component__tltle-link .component__tltle {
+    font-size: 1.2rem;
+    padding: 13px 15px;
+    height: 42px;
+  }
+  .ship-equipment-block .component__title-block .component__title-text {
+    font-size: 2.4rem;
+    line-height: 104%;
+    margin-bottom: 42px;
   }
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-title .info-title__image {
     display: none;
@@ -1305,6 +1320,28 @@
   }
   .advantages-block .advantages-block__wrap .advantages-block__pluses .advantages-block__pluse:nth-child(3) {
     margin-left: 15px;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap {
+    gap: 10px;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card {
+    width: 172px;
+    height: 172px;
+    border-radius: 16px;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card .ship-equipment-block__link {
+    padding: 18px 20px;
+    gap: 4px;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link {
+    background: #ddeef8;
+    padding: 9px 12px 20px 18px;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link:hover {
+    background: #cde8f8;
+  }
+  .ship-equipment-block .ship-equipment-block__wrap .ship-equipment-block__card-all .ship-equipment-block__link .ship-equipment-block__desc h3 {
+    color: #1f1f1f !important;
   }
 }
 @media (max-width: 425px) {

@@ -1620,6 +1620,7 @@
 
                 h4 {
                   font-size: 2.4rem;
+                  line-height: 100%;
                 }
 
                 .service-block__card-links-block {
@@ -1714,6 +1715,7 @@
 
               h4 {
                 font-size: 2.4rem;
+                line-height: 104%;
               }
 
               p {
@@ -1731,6 +1733,24 @@
         }
       }
       .service-block__info-wrap-3 {
+      }
+    }
+  }
+
+  .ship-equipment-block {
+    .component__title-block {
+      .component__tltle-link {
+        margin-bottom: 15px;
+        .component__tltle {
+          font-size: 1.2rem;
+          padding: 13px 15px;
+          height: 42px;
+        }
+      }
+      .component__title-text {
+        font-size: 2.4rem;
+        line-height: 104%;
+        margin-bottom: 42px;
       }
     }
   }
@@ -1797,6 +1817,42 @@
           }
           &:nth-child(3) {
             margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .ship-equipment-block {
+    .ship-equipment-block__wrap {
+      gap: 10px;
+      .ship-equipment-block__card {
+        width: 172px;
+        height: 172px;
+        border-radius: 16px;
+
+        .ship-equipment-block__link {
+          padding: 18px 20px;
+          gap: 4px;
+
+          .ship-equipment-block__image {
+            // transform: scale(0.9);
+          }
+        }
+      }
+      .ship-equipment-block__card-all {
+        .ship-equipment-block__link {
+          background: #ddeef8;
+          padding: 9px 12px 20px 18px;
+
+          &:hover {
+            background: #cde8f8;
+          }
+
+          .ship-equipment-block__desc {
+            h3 {
+              color: $light-black !important;
+            }
           }
         }
       }

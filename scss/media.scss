@@ -1910,6 +1910,23 @@
       }
     }
   }
+  .footer-maintenance {
+    .footer-maintenance__title {
+      .component__title-block {
+        .component__title-text {
+          margin-bottom: 54px;
+          h3 {
+            font-size: 2.4rem;
+          }
+          p {
+            font-size: 1.4rem;
+            // max-width: 300px;
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -2020,6 +2037,19 @@
           height: 44px;
           right: 16px;
           top: 16px;
+        }
+      }
+    }
+  }
+
+  .footer-maintenance {
+    .footer-maintenance__title {
+      .component__title-block {
+        .component__title-text {
+          p {
+            max-width: 300px;
+            width: 95%;
+          }
         }
       }
     }

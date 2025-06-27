@@ -1297,6 +1297,8 @@ a:hover {
   position: absolute;
   top: 21px;
   left: 20px;
+  width: 60px;
+  height: 60px;
 }
 .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper {
   -webkit-box-flex: 1;

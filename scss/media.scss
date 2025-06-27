@@ -1864,11 +1864,65 @@
       }
     }
   }
+  .work-block {
+    .work-block__wrap {
+      margin-bottom: 30px;
+      .work-block__title-block {
+        .component__title-block {
+          .component__tltle-link {
+            margin-bottom: 18px;
+            .component__tltle {
+              font-size: 1.2rem;
+              padding: 14px 17px;
+            }
+          }
+        }
+      }
+      .work-block__header-block {
+        gap: 23px;
+        .component__title-block {
+          .component__title-text {
+            font-size: 1.8rem;
+            h3 {
+              max-width: 325px;
+            }
+          }
+        }
+      }
+    }
+    .work-block__slider {
+      .work-block__slider-swiper {
+        .swiper-wrapper {
+          .work-block__slide {
+            width: 210px !important;
+            height: 210px;
+
+            .work-block__slide-link {
+              padding: 15px;
+
+              .work-block__slide-title {
+                font-size: 1.2rem;
+                padding: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
   .mob-d-none_480 {
     display: none;
+  }
+  .work-block {
+    .work-block__wrap {
+      .work-block__header-block {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
 
   .advantages-block {

@@ -1329,6 +1329,50 @@
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .leave-request-btn a {
     height: 48px;
   }
+  .partners-block {
+    height: 648px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos {
+    margin-top: 46px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper {
+    height: 341px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block {
+    grid-template-columns: repeat(10, 80px);
+    gap: 7px 6px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo,
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not {
+    overflow: hidden;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo img,
+  .partners-block .partners-block__wrap .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: flex;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block {
+    margin-left: 20px;
+    margin-bottom: 28px;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block .component__title-block .component__tltle-link {
+    margin-bottom: 20px;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block .component__title-block .component__tltle-link a {
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+  .partners-block .partners-block__wrap .partners-block__text-block .component__title-block .partner-block__desc {
+    font-size: 1.4rem;
+    max-width: 285px;
+    width: 95%;
+  }
 }
 @media (max-width: 480px) {
   .mob-d-none_480 {

@@ -404,9 +404,13 @@ a:hover {
 }
 .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label:before {
   content: "";
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 17px;
   height: 17px;
+  min-width: 17px;
+  min-height: 17px;
   border: 0.5px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   background: rgba(217, 217, 217, 0.2);
@@ -416,7 +420,6 @@ a:hover {
   content: "";
   position: absolute;
   left: 2px;
-  top: 2px;
   width: 14px;
   height: 14px;
   background-image: url("../images/feedback-done.svg");

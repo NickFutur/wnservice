@@ -428,6 +428,7 @@
           }
         }
       }
+
       .service-block__info-wrap-2 {
         .service-block__card {
           .service-block__card-text {
@@ -438,6 +439,7 @@
           }
         }
       }
+
       .service-block__card {
         max-height: 320px;
 
@@ -991,6 +993,7 @@
   .tablet-d-none_768 {
     display: none !important;
   }
+
   .header-wrap {
     .header-wrap__info {
       .header-wrap__navigation {
@@ -1006,6 +1009,7 @@
 
         .header-wrap__func-block {
           flex-direction: row-reverse;
+
           .leave-request-btn {
             a {
               width: 160px;
@@ -1014,6 +1018,7 @@
               gap: 5px;
             }
           }
+
           .func-block__btn-menu {
             button {
               width: 48px;
@@ -1068,14 +1073,17 @@
             h2 {
               font-size: 3rem;
             }
+
             p {
               font-size: 1.5rem;
             }
           }
         }
+
         .spare-parts-block__info-pluses {
           gap: 33px;
           padding-bottom: 42px;
+
           .info-pluses__list {
             gap: 18px;
           }
@@ -1329,6 +1337,10 @@
   }
 
   .footer-contacts {
+    .footer-contacts_mob {
+      padding: 0px 20px 33px 20px;
+    }
+
     .footer-contacts__feedback-block {
       min-height: 700px;
 
@@ -1387,12 +1399,7 @@
 
             .component-feedback__form-policy {
               margin-bottom: 31px;
-
-              .component-feedback__form-policy-label {
-                &::after {
-                  // top: 7px;
-                }
-              }
+              font-size: 1.1rem;
             }
           }
         }
@@ -1400,8 +1407,138 @@
     }
 
     .footer-contacts__font {
-      top: 24%;
+      top: 30%;
       // height: 500px;
+    }
+
+    .footer-contacts_mob {
+      .footer-contacts__header-btn {
+        margin-bottom: 30px;
+
+        .component__title-block {
+          .component__tltle-link {
+            .component__tltle-light {
+              font-size: 1.2rem;
+              padding: 13px 22px;
+            }
+          }
+        }
+      }
+
+      .footer-contacts__logo-address {
+        gap: 55px;
+
+        .logo {
+          svg {
+            width: 233px;
+            height: 36px;
+          }
+        }
+
+        .footer-contacts__firm-contacts {
+          width: 100%;
+          gap: 28px 50px;
+
+          .footer-contacts__firm-graf-tel,
+          .footer-contacts__firm-email {
+            h5 {
+              font-size: 1.2rem;
+            }
+
+            a {
+              font-size: 1.8rem;
+            }
+          }
+
+          .footer-contacts__messangers {
+            a {
+              svg {
+                width: 44px;
+                height: 44px;
+              }
+            }
+          }
+
+          .footer-contacts__rating {
+            height: 44px;
+            width: 133px;
+          }
+        }
+      }
+
+      .footer-contacts__firm-info {
+        margin-bottom: 33px;
+
+        .footer-contacts__firm-desc {
+          .footer-contacts__nav {
+            ul {
+              gap: 4px;
+
+              li {
+                a {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+
+        .footer-contacts__firm-details {
+          h5 {
+            font-size: 1.2rem;
+            margin-bottom: 7px;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .footer-contacts__police-links {
+        gap: 4px;
+
+        p,
+        a {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .footer-contacts__info-block {
+      .footer-contacts__logo-address {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 55px;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+
+        .footer-contacts__address {
+          border: none;
+          padding: 0;
+
+          .footer-contacts__address-city {
+            max-width: 100%;
+
+            p,
+            a {
+              font-size: 1.2rem;
+
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-contacts_mob {
+      .logo-address_mob {
+        gap: 25px;
+        margin-bottom: 53px;
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -1415,6 +1552,7 @@
             .image-desk {
               display: block;
             }
+
             .image-mob {
               display: none;
             }
@@ -1430,41 +1568,50 @@
   .container_mt_110 {
     margin-top: 70px;
   }
+
   .border_radius_20 {
     border-radius: 16px;
   }
+
   .container_padding {
     padding: 0px 10px;
   }
+
   .header-wrap {
     .header-wrap__info {
       .header-wrap__achievements-block {
         padding: 0px 12px;
+
         .header-wrap__achievements-clients,
         .header-wrap__achievements-skill,
         .header-wrap__achievements-partners {
           .achievements-block__title {
             font-size: 3rem;
           }
+
           .achievements-block__text {
             .achievements-block__title {
               font-size: 3rem;
             }
+
             .achievements-block__desc {
               font-size: 1.2rem;
             }
           }
         }
+
         .header-wrap__achievements-clients {
           width: 160px;
           padding: 24px 19px 13px 19px;
           gap: 10px;
         }
+
         .header-wrap__achievements-skill {
           width: 160px;
           padding: 11px 12px 24px 18px;
           gap: 9px;
         }
+
         .header-wrap__achievements-partners {
           width: 100%;
           max-width: 330px;
@@ -1474,6 +1621,7 @@
             .image-desk {
               display: none;
             }
+
             .image-mob {
               display: block;
             }
@@ -1486,37 +1634,46 @@
   .special-offers {
     .special-offers__cards-block {
       gap: 15px;
+
       .special-offers__card {
         width: 100%;
         max-width: 355px;
         height: 355px;
+
         .special-offers__icon {
           margin: 20px;
         }
+
         .special-offers__card-desc {
           margin: 25px;
+
           h6,
           .special-offers__card-title {
             font-size: 2.6rem;
           }
+
           p {
             font-size: 1.4rem;
             width: 92%;
           }
+
           .leave-request-btn {
             a {
               width: 159px;
             }
           }
         }
+
         &:nth-child(2) {
           flex-direction: column;
+
           .special-offers__card-desc {
             p {
               width: 70%;
             }
           }
         }
+
         &:nth-child(3) {
           .special-offers__card-desc {
             p {
@@ -1537,11 +1694,13 @@
       border-radius: 16px;
       background-image: url(../images/advantages-font-mob.png);
     }
+
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .advantages-block__font {
         background-image: url(../images/advantages-font-2x-mob.png);
       }
     }
+
     .advantages-block__wrap {
       border-radius: 16px;
       gap: 35px;
@@ -1559,12 +1718,15 @@
           margin-bottom: 15px;
         }
       }
+
       .advantages-block__info-text {
         padding: 0px 45px;
+
         h3 {
           font-size: 3.2rem;
           margin-bottom: 20px;
         }
+
         p {
           font-size: 1.4rem;
         }
@@ -1586,12 +1748,14 @@
     .component__title-block {
       .component__tltle-link {
         margin-bottom: 15px;
+
         .component__tltle {
           padding: 14px 16px;
           height: 44px;
           font-size: 1.2rem;
         }
       }
+
       .component__title-text {
         font-size: 2.4rem;
         padding: 0 30px;
@@ -1602,6 +1766,7 @@
     .service-block__info-block_mob {
       .service-block__info-wrap-1 {
         align-items: center;
+
         .service-block__card-wrapper {
           &:nth-child(1) {
             // max-width: 355px;
@@ -1623,6 +1788,7 @@
 
                 .service-block__card-links-block {
                   gap: 4px;
+
                   a {
                     font-size: 1.2rem;
                   }
@@ -1630,10 +1796,12 @@
               }
             }
           }
+
           &:nth-child(2) {
             .service-block__card {
               height: 355px;
               flex: auto;
+
               .service-block__card-text {
                 right: 14px;
                 gap: 16px;
@@ -1648,6 +1816,7 @@
 
                 .service-block__card-links-block {
                   gap: 4px;
+
                   a {
                     font-size: 1.2rem;
                   }
@@ -1657,6 +1826,7 @@
           }
         }
       }
+
       .service-block__info-wrap-2 {
         align-items: center;
 
@@ -1672,6 +1842,7 @@
             width: auto;
             height: 100%;
           }
+
           .service-block__card-text {
             right: 14px;
             gap: 16px;
@@ -1686,6 +1857,7 @@
 
             .service-block__card-links-block {
               gap: 4px;
+
               a {
                 font-size: 1.2rem;
               }
@@ -1695,6 +1867,7 @@
 
         .service-block__card-wrapper {
           width: 100%;
+
           .service-block__card {
             height: 355px;
             flex: auto;
@@ -1707,6 +1880,7 @@
               width: 100%;
               height: auto;
             }
+
             .service-block__card-text {
               right: 14px;
               gap: 16px;
@@ -1722,6 +1896,7 @@
 
               .service-block__card-links-block {
                 gap: 4px;
+
                 a {
                   font-size: 1.2rem;
                 }
@@ -1739,12 +1914,14 @@
     .component__title-block {
       .component__tltle-link {
         margin-bottom: 15px;
+
         .component__tltle {
           font-size: 1.2rem;
           padding: 13px 15px;
           height: 42px;
         }
       }
+
       .component__title-text {
         font-size: 2.4rem;
         line-height: 104%;
@@ -1780,29 +1957,38 @@
           border-bottom-right-radius: 0;
         }
       }
+
       .spare-parts-block__info-wrapper {
         margin-top: -20px;
         gap: 25px;
+
         .spare-parts-block__info-title {
           margin: 40px 15px 0px 22px;
+
           .info-title__image {
             display: none;
           }
+
           .info-title__text {
             margin-top: 0;
             margin-right: 15px;
+
             h2 {
               font-size: 2.4rem;
             }
+
             p {
               font-size: 1.4rem;
             }
           }
         }
+
         .spare-parts-block__info-pluses {
           padding: 0px 15px 33px 22px;
+
           .info-pluses__list {
             font-size: 1.2rem;
+
             li {
               flex-flow: row nowrap;
             }
@@ -1820,9 +2006,11 @@
 
   .partners-block {
     height: 648px;
+
     .partners-block__wrap {
       .partners-block__logos {
         margin-top: 46px;
+
         .partners-block__logos-wrapper {
           height: 341px;
 
@@ -1847,17 +2035,21 @@
           }
         }
       }
+
       .partners-block__text-block {
         margin-left: 20px;
         margin-bottom: 28px;
+
         .component__title-block {
           .component__tltle-link {
             margin-bottom: 20px;
+
             a {
               font-size: 1.1rem;
               padding: 14px 20px;
             }
           }
+
           .partner-block__desc {
             font-size: 1.4rem;
             max-width: 285px;
@@ -1867,13 +2059,16 @@
       }
     }
   }
+
   .work-block {
     .work-block__wrap {
       margin-bottom: 30px;
+
       .work-block__title-block {
         .component__title-block {
           .component__tltle-link {
             margin-bottom: 18px;
+
             .component__tltle {
               font-size: 1.2rem;
               padding: 14px 17px;
@@ -1881,11 +2076,14 @@
           }
         }
       }
+
       .work-block__header-block {
         gap: 23px;
+
         .component__title-block {
           .component__title-text {
             font-size: 1.8rem;
+
             h3 {
               max-width: 325px;
             }
@@ -1893,6 +2091,7 @@
         }
       }
     }
+
     .work-block__slider {
       .work-block__slider-swiper {
         .swiper-wrapper {
@@ -1913,17 +2112,19 @@
       }
     }
   }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
         .component__title-text {
           margin-bottom: 54px;
+
           h3 {
             font-size: 2.4rem;
           }
+
           p {
             font-size: 1.4rem;
-            // max-width: 300px;
             width: 95%;
           }
         }
@@ -1936,6 +2137,7 @@
   .mob-d-none_480 {
     display: none;
   }
+
   .work-block {
     .work-block__wrap {
       .work-block__header-block {
@@ -1949,9 +2151,11 @@
     .advantages-block__wrap {
       padding-top: 44px;
       padding-bottom: 54px;
+
       .advantages-block__cards {
         gap: 15px;
         margin-bottom: 25px;
+
         .advantages-block__card {
           width: 90%;
           max-width: 271px;
@@ -1975,6 +2179,7 @@
           }
         }
       }
+
       .advantages-block__pluses {
         flex-direction: column;
         gap: 30px;
@@ -1987,6 +2192,7 @@
             align-self: flex-end;
             margin-right: 18px;
           }
+
           &:nth-child(3) {
             margin-left: 15px;
           }
@@ -1998,6 +2204,7 @@
   .ship-equipment-block {
     .ship-equipment-block__wrap {
       gap: 10px;
+
       .ship-equipment-block__card {
         width: 172px;
         height: 172px;
@@ -2012,6 +2219,7 @@
           }
         }
       }
+
       .ship-equipment-block__card-all {
         .ship-equipment-block__link {
           background: #ddeef8;
@@ -2030,6 +2238,7 @@
       }
     }
   }
+
   .spare-parts-block {
     .spare-parts-block__wrap {
       .spare-parts-block__image-wrapper {
@@ -2057,6 +2266,19 @@
       }
     }
   }
+
+  .footer-contacts {
+    .footer-contacts_mob {
+      .footer-contacts__logo-address {
+        .footer-contacts__firm-contacts {
+          .footer-contacts__firm-graf-tel,
+          .footer-contacts__firm-email {
+            grid-column: 1 / -1;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -2064,11 +2286,13 @@
     .component__title-block {
       .component__title-text {
         padding: 0 10px;
+
         h3 {
           max-width: 315px;
         }
       }
     }
+
     .service-block__info-block_mob {
       .service-block__info-wrap-2 {
         .service-block__card-wrapper {
@@ -2083,6 +2307,18 @@
 }
 
 @media (max-width: 375px) {
+  .footer-contacts {
+    .footer-contacts_mob {
+      .footer-contacts__logo-address {
+        .footer-contacts__firm-contacts {
+          .footer-contacts__messangers,
+          .footer-contacts__rating {
+            grid-column: 1 / -1;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 320px) {

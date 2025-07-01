@@ -44,10 +44,12 @@
           transform: scale(1);
           opacity: 1;
         }
+
         50% {
           transform: scale(1.2);
           opacity: 0.8;
         }
+
         100% {
           transform: scale(1);
           opacity: 1;
@@ -70,7 +72,6 @@
 
       .reg-maintenance-block__desc {
         position: absolute;
-        padding: 20px;
         width: 294px;
         background: rgba(255, 255, 255, 0.6); // Fallback
         color: $black;
@@ -81,16 +82,39 @@
         justify-content: space-between;
         gap: 10px;
 
-        @supports (
-          (-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))
-        ) {
+        .reg-maintenance-block__desc-font {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          border-radius: 20px;
+
+          @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+            -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+            background: rgba(255, 255, 255, 0.3);
+          }
+
+          @supports not (gap: 10px) {
+            >*:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
           -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
           background: rgba(255, 255, 255, 0.3);
         }
 
         @supports not (gap: 10px) {
-          > *:not(:last-child) {
+          >*:not(:last-child) {
             margin-bottom: 10px;
           }
         }
@@ -121,10 +145,13 @@
             position: absolute;
             bottom: 10px;
             right: -174px;
-            width: 168px; /* Ширина как в SVG */
-            height: 65px; /* Высота как в SVG */
+            width: 168px;
+            /* Ширина как в SVG */
+            height: 65px;
+            /* Высота как в SVG */
           }
         }
+
         &:nth-child(2) {
           top: 259px;
           left: -47px;
@@ -135,36 +162,47 @@
             position: absolute;
             top: -20px;
             right: -182px;
-            width: 182px; /* Ширина как в SVG */
-            height: 73px; /* Высота как в SVG */
+            width: 182px;
+            /* Ширина как в SVG */
+            height: 73px;
+            /* Высота как в SVG */
           }
         }
+
         &:nth-child(3) {
           bottom: -26px;
           left: 26px;
+
           &::after {
             content: url('data:image/svg+xml;utf8,<svg width="203" height="72" viewBox="0 0 182 73" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="matrix(1 0 0 -1 172 10)" fill="white" stroke="url(%23paint0_linear_654_1990)"/><path d="M0 71.9355C0 71.9355 57.9783 71.935 91.9351 71.9355C125.892 71.9361 154.88 76.5767 176 7" stroke="url(%23paint1_linear_654_1990)"/><defs><linearGradient id="paint0_linear_654_1990" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1990" x1="2.89883" y1="49.7364" x2="81.2079" y2="117.343" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
             display: block;
             position: absolute;
             top: -20px;
             right: -203px;
-            width: 203px; /* Ширина как в SVG */
-            height: 72px; /* Высота как в SVG */
+            width: 203px;
+            /* Ширина как в SVG */
+            height: 72px;
+            /* Высота как в SVG */
           }
         }
+
         &:nth-child(4) {
           top: 33px;
           right: -6px;
+
           &::after {
             content: url('data:image/svg+xml;utf8,<svg width="168" height="66" viewBox="0 0 168 66" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="matrix(-1 0 0 1 10 56)" fill="white" stroke="url(%23paint0_linear_654_1964)"/><path d="M168 1.05556C168 1.05556 114.304 1.05603 82.8556 1.05556C51.4071 1.05509 24.56 -2.94296 5 57" stroke="url(%23paint1_linear_654_1964)"/><defs><linearGradient id="paint0_linear_654_1964" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1964" x1="165.315" y1="20.181" x2="97.3087" y2="-42.9331" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
             display: block;
             position: absolute;
             top: 40px;
             left: -168px;
-            width: 168px; /* Ширина как в SVG */
-            height: 65px; /* Высота как в SVG */
+            width: 168px;
+            /* Ширина как в SVG */
+            height: 65px;
+            /* Высота как в SVG */
           }
         }
+
         &:nth-child(5) {
           top: 208px;
           right: -47px;
@@ -175,10 +213,13 @@
             position: absolute;
             top: -20px;
             left: -205px;
-            width: 205px; /* Ширина как в SVG */
-            height: 73px; /* Высота как в SVG */
+            width: 205px;
+            /* Ширина как в SVG */
+            height: 73px;
+            /* Высота как в SVG */
           }
         }
+
         &:nth-child(6) {
           bottom: 33px;
           right: -21px;
@@ -189,8 +230,10 @@
             position: absolute;
             top: -20px;
             left: -148px;
-            width: 148px; /* Ширина как в SVG */
-            height: 76px; /* Высота как в SVG */
+            width: 148px;
+            /* Ширина как в SVG */
+            height: 76px;
+            /* Высота как в SVG */
           }
         }
       }

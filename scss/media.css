@@ -1013,7 +1013,7 @@
     font-size: 1.1rem;
   }
   .footer-contacts .footer-contacts__font {
-    top: 24%;
+    top: 30%;
   }
   .footer-contacts .footer-contacts_mob .footer-contacts__header-btn {
     margin-bottom: 30px;
@@ -1030,6 +1030,7 @@
     height: 36px;
   }
   .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts {
+    width: 100%;
     gap: 28px 50px;
   }
   .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel h5,
@@ -1048,15 +1049,33 @@
     height: 44px;
     width: 133px;
   }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info {
+    margin-bottom: 33px;
+  }
   .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__nav ul {
     gap: 4px;
   }
   .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-desc .footer-contacts__nav ul li a {
     font-size: 1.4rem;
   }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details h5 {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__firm-details p {
+    font-size: 1.1rem;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links {
+    gap: 4px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links p,
+  .footer-contacts .footer-contacts_mob .footer-contacts__police-links a {
+    font-size: 1.1rem;
+  }
   .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address {
     flex-direction: column;
-    gap: 25px;
+    align-items: flex-start;
+    gap: 55px;
     padding-bottom: 35px;
     margin-bottom: 35px;
   }
@@ -1074,6 +1093,11 @@
   .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city p br,
   .footer-contacts .footer-contacts__info-block .footer-contacts__logo-address .footer-contacts__address .footer-contacts__address-city a br {
     display: none;
+  }
+  .footer-contacts .footer-contacts_mob .logo-address_mob {
+    gap: 25px;
+    margin-bottom: 53px;
+    padding-bottom: 0;
   }
 }
 @media (min-width: 601px) {
@@ -1477,22 +1501,6 @@
     font-size: 1.4rem;
     width: 95%;
   }
-  .footer-contacts .footer-contacts__font {
-    top: 30%;
-  }
-  .footer-contacts .footer-contacts_mob .footer-contacts__header-btn {
-    margin-bottom: 30px;
-  }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address {
-    gap: 55px;
-  }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts {
-    gap: 28px 50px;
-  }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a svg {
-    width: 44px;
-    height: 44px;
-  }
 }
 @media (max-width: 480px) {
   .mob-d-none_480 {
@@ -1572,6 +1580,10 @@
     max-width: 300px;
     width: 95%;
   }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email {
+    grid-column: 1/-1;
+  }
 }
 @media (max-width: 425px) {
   .service-block .component__title-block .component__title-text {
@@ -1583,6 +1595,12 @@
   .service-block .service-block__info-block_mob .service-block__info-wrap-2 .service-block__card-wrapper .service-block__card {
     height: 100%;
     width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers,
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__rating {
+    grid-column: 1/-1;
   }
 }
 @media (max-width: 320px) {

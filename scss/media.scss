@@ -1412,7 +1412,7 @@
     }
 
     .footer-contacts__font {
-      top: 24%;
+      top: 30%;
       // height: 500px;
     }
 
@@ -1441,6 +1441,7 @@
         }
 
         .footer-contacts__firm-contacts {
+          width: 100%;
           gap: 28px 50px;
 
           .footer-contacts__firm-graf-tel,
@@ -1471,6 +1472,8 @@
       }
 
       .footer-contacts__firm-info {
+        margin-bottom: 33px;
+
         .footer-contacts__firm-desc {
           .footer-contacts__nav {
             ul {
@@ -1484,13 +1487,34 @@
             }
           }
         }
+
+        .footer-contacts__firm-details {
+          h5 {
+            font-size: 1.2rem;
+            margin-bottom: 7px;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .footer-contacts__police-links {
+        gap: 4px;
+
+        p,
+        a {
+          font-size: 1.1rem;
+        }
       }
     }
 
     .footer-contacts__info-block {
       .footer-contacts__logo-address {
         flex-direction: column;
-        gap: 25px;
+        align-items: flex-start;
+        gap: 55px;
         padding-bottom: 35px;
         margin-bottom: 35px;
 
@@ -1511,6 +1535,16 @@
             }
           }
         }
+      }
+
+
+    }
+
+    .footer-contacts_mob {
+      .logo-address_mob {
+        gap: 25px;
+        margin-bottom: 53px;
+        padding-bottom: 0;
       }
     }
   }
@@ -2099,34 +2133,7 @@
     }
   }
 
-  .footer-contacts {
-    .footer-contacts__font {
-      top: 30%;
-    }
 
-    .footer-contacts_mob {
-      .footer-contacts__header-btn {
-        margin-bottom: 30px;
-      }
-
-      .footer-contacts__logo-address {
-        gap: 55px;
-
-        .footer-contacts__firm-contacts {
-          gap: 28px 50px;
-
-          .footer-contacts__messangers {
-            a {
-              svg {
-                width: 44px;
-                height: 44px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 480px) {
@@ -2262,6 +2269,21 @@
       }
     }
   }
+
+  .footer-contacts {
+    .footer-contacts_mob {
+      .footer-contacts__logo-address {
+        .footer-contacts__firm-contacts {
+
+          .footer-contacts__firm-graf-tel,
+          .footer-contacts__firm-email {
+            grid-column: 1 / -1;
+          }
+
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -2289,7 +2311,22 @@
   }
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .footer-contacts {
+    .footer-contacts_mob {
+      .footer-contacts__logo-address {
+        .footer-contacts__firm-contacts {
+
+          .footer-contacts__messangers,
+          .footer-contacts__rating {
+            grid-column: 1 / -1;
+          }
+
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 320px) {
   .service-block {

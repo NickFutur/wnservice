@@ -16,12 +16,14 @@
 
   .modal-menu_wrap {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+
+    // display: flex;
+    // flex-direction: column;
     // padding-bottom: 20px;
     .modal-menu__margin-bottom {
       padding: 10px;
     }
+
     .header-wrap__contacts {
       height: auto;
       padding: 13px 0;
@@ -31,6 +33,7 @@
       height: auto;
       flex: 1;
       justify-content: normal;
+      gap: 0;
 
       .modal-menu_info-font {
         backdrop-filter: blur(250px);
@@ -41,6 +44,7 @@
         height: 86px;
         padding-bottom: 30px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
         .header-wrap__func-block {
           .func-block__btn-close-menu {
             button {
@@ -48,6 +52,8 @@
               height: 56px;
               background-image: url("../images/menu-icon-close.svg");
               background-color: rgba(0, 0, 0, 0);
+              background-size: contain;
+              background-repeat: no-repeat;
               border: none;
               border-radius: 50%;
               cursor: pointer;
@@ -62,6 +68,7 @@
           }
         }
       }
+
       .modal-menu_info-wrapper {
         position: relative;
         z-index: 1;
@@ -69,6 +76,70 @@
         height: 100%;
         justify-content: space-between;
         margin: 40px 50px 53px 50px;
+
+        .modal-menu__podmenu-mob {
+          display: none;
+          flex-direction: column;
+
+          .modal-menu__podmenu-back {
+            display: flex;
+            margin-bottom: 20px;
+
+            button {
+              background: none;
+              cursor: pointer;
+              color: $white;
+              display: flex;
+              gap: 3px;
+              border: none;
+              outline: none;
+              font-size: 1.8rem;
+              font-family: $font-family-med;
+              padding: 0;
+
+              &:hover,
+              &:focus,
+              &:active {
+                border: none;
+                outline: none;
+                opacity: $opacity-hover;
+
+                &::before {
+                  content: "<";
+                  opacity: $opacity-hover;
+                }
+              }
+
+              &::before {
+                content: "<";
+
+              }
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+              a {
+                font-family: $font-family-med;
+                font-weight: 400;
+                font-size: 1.4rem;
+                letter-spacing: 0em;
+                color: $white;
+
+                &:hover,
+                &:focus,
+                &:active {
+                  text-decoration: none;
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
 
         .modal-menu_info-left {
           display: flex;
@@ -78,17 +149,21 @@
           width: 100%;
           max-width: 313px;
           border-right: 1px solid rgba(255, 255, 255, 0.3);
+
           .modal-menu_info-nav-left {
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
             padding-bottom: 35px;
+
             ul {
               display: flex;
               flex-direction: column;
               gap: 15px;
               font-size: 2rem;
+
               li {
                 a {
                   color: $white;
+
                   &:hover {
                     color: rgba(255, 255, 255, 0.8);
                   }
@@ -96,6 +171,7 @@
               }
             }
           }
+
           .modal-menu_info-more-info {
             display: flex;
             flex-direction: column;
@@ -104,16 +180,20 @@
             color: $white;
             gap: 40px;
             padding-top: 35px;
+
             .modal-menu__firm-contacts-block {
               .modal-menu__firm-graf-tel {
                 margin-bottom: 30px;
+
                 .modal-menu__firm-time {
                   display: flex;
                   gap: 9px;
                   align-items: center;
+
                   p {
                     font-family: $font-family-light;
                     font-size: 400;
+
                     span {
                       font-family: $font-family-demibold;
                       font-size: 600;
@@ -121,30 +201,36 @@
                   }
                 }
               }
+
               .modal-menu__firm-graf-tel,
               .modal-menu__firm-email {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 font-family: $font-family-light;
+
                 h5 {
                   font-weight: 400;
                   font-size: 1.4rem;
                 }
+
                 a {
                   font-size: 2rem;
                   color: $white;
+
                   &:hover {
                     color: rgba(255, 255, 255, 0.8);
                   }
                 }
               }
-              .modal-menu__firm-email {
-              }
+
+              .modal-menu__firm-email {}
             }
+
             .modal-menu__messangers {
               display: flex;
               gap: 12px;
+
               a {
                 svg {
                   transition: $transition-default;
@@ -160,6 +246,7 @@
             }
           }
         }
+
         .modal-menu_info-right {
           display: flex;
           margin-left: 129px;
@@ -185,14 +272,17 @@
                 color: $white;
                 margin-bottom: 35px;
               }
+
               ul {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+
                 li {
                   a {
                     color: $white;
                     font-size: 1.4rem;
+
                     &:hover {
                       color: rgba(255, 255, 255, 0.8);
                     }
@@ -200,6 +290,7 @@
                 }
               }
             }
+
             .modal-menu_info-right-dop {
               display: flex;
               align-items: center;
@@ -265,6 +356,7 @@
         }
       }
     }
+
     .header-wrap__func-block {
       display: flex;
       gap: 6px;
@@ -275,6 +367,7 @@
           height: 56px;
         }
       }
+
       .func-block__btn-menu {
         button {
           width: 56px;
@@ -282,6 +375,8 @@
           background-image: url("../images/menu-icon-dark.svg");
           background-color: rgba(0, 0, 0, 0);
           border: none;
+          background-repeat: no-repeat;
+          background-size: contain;
           border-radius: 50%;
           cursor: pointer;
           transition: $transition-default;

@@ -2237,10 +2237,12 @@
           </div>
         </div>
         <div class="modal-menu_info-wrapper">
-          <div class="modal-menu_info-left">
+          <div class="modal-menu_info-left js-modal-main-menu-mob">
             <div class="modal-menu_info-nav-left">
               <ul>
                 <li><a href="#">О компании</a></li>
+                <li class="mob-d-none_651"><a class="modal-menu__get-podmenu" href="#">Услуги</a></li>
+                <li class="mob-d-none_651"><a class="modal-menu__get-podmenu" href="#">Оборудование</a></li>
                 <li><a href="#">Наши работы</a></li>
                 <li><a href="#">Продажа запчастей</a></li>
                 <li><a href="#">Вакансии</a></li>
@@ -2297,6 +2299,23 @@
                   </svg>
                 </a>
               </div>
+
+              <div class="modal-menu_search-mob mob-d-none_651">
+                <form action="/search" method="" class="header-wrap__search-form">
+                  <label for="search-input"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.929 10.858C8.6534 10.858 10.858 8.65341 10.858 5.92901C10.858 3.2046 8.6534 1 5.929 1C3.20459 1 1 3.2046 1 5.92901C1 8.65341 3.20459 10.858 5.929 10.858ZM5.929 1.94483C8.11753 1.94483 9.91317 3.72441 9.91317 5.92901C9.91256 8.1336 8.11769 9.91318 5.929 9.91318C3.74047 9.91318 1.94483 8.1336 1.94483 5.92901C1.94483 3.72441 3.72441 1.94483 5.929 1.94483Z"
+                        fill="#13A9E1" stroke="#13A9E1" stroke-width="0.6" />
+                      <path
+                        d="M8.96777 10.5591L10.9522 12.7011C11.1257 12.8899 11.3773 13 11.6295 13C11.8657 13 12.0859 12.9053 12.2594 12.7478C12.4328 12.5743 12.5429 12.3541 12.5583 12.1019C12.5743 11.8497 12.4796 11.6135 12.3061 11.4407L10.3223 9.29938C9.9446 9.78718 9.48755 10.2122 8.96777 10.5591Z"
+                        fill="#13A9E1" />
+                    </svg></label>
+                  <input type="text" id="search-input" name="query" placeholder="Поиск" title="Поиск" required />
+                </form>
+              </div>
+
+
               <div class="modal-menu_info-right-dop lap-d-none_min-1251">
                 <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -2317,8 +2336,50 @@
                 </svg>
                 <p>Выезд к заказчику в любой город</p>
               </div>
+              <div class="modal-menu_info-right-dop mob-d-none_651">
+                <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.99709 0.417786C2.68323 0.417786 0 3.1039 0 6.41487C0 8.71888 2.8993 12.714 4.6673 14.9381C5.25072 15.6755 6.32279 15.7969 7.05728 15.2135C7.15797 15.1336 7.24977 15.0418 7.3327 14.9381C9.1007 12.717 12 8.71888 12 6.41487C11.9941 3.1039 9.3111 0.417786 5.99709 0.417786ZM5.99709 8.79288C4.68515 8.79288 3.62197 7.7297 3.61894 6.41775C3.61597 5.10581 4.68211 4.0396 5.99406 4.0396C7.306 4.0396 8.37221 5.10278 8.37221 6.41472C8.37221 7.72964 7.30903 8.79288 5.99709 8.79288Z"
+                    fill="#13A9E1"></path>
+                </svg>
+                <p>Москва | Санкт-Петербург | Сочи</p>
+              </div>
             </div>
           </div>
+
+          <div class="modal-menu__podmenu-mob" id="modal-podmenu">
+            <div class="modal-menu__podmenu-back">
+              <button id="podmenu-back-btn">Назад</button>
+            </div>
+            <ul class="js-podmenu-service">
+              <li><a href="#">Все услуги</a></li>
+              <li><a href="#">Техническое обслуживание и ремонт</a></li>
+              <li><a href="#">Предпродажная и сезонная подготовка</a></li>
+              <li><a href="#">Мойка и химчистка</a></li>
+              <li><a href="#">Корпусные и инженерные работы</a></li>
+              <li><a href="#">Палубы и покрытия</a></li>
+              <li><a href="#">Тенты и чехлы</a></li>
+              <li><a href="#">Модернизация интерьера</a></li>
+              <li><a href="#">Ремонт винтов</a></li>
+              <li><a href="#">Управление яхтами</a></li>
+              <li><a href="#">Обслуживание автодомов</a></li>
+            </ul>
+            <ul class="js-podmenu-equipment">
+              <li><a href="#">Все оборудование</a></li>
+              <li><a href="#">Судовые генераторы</a></li>
+              <li><a href="#">Стабилизаторы качки</a></li>
+              <li><a href="#">Климатическое оборудование</a></li>
+              <li><a href="#">Навигационное оборудование</a></li>
+              <li><a href="#">Спутниковое оборудование</a></li>
+              <li><a href="#">Причальное оборужование</a></li>
+              <li><a href="#">Якорно-швартовое оборудование</a></li>
+              <li><a href="#">Метеостанции</a></li>
+              <li><a href="#">Подруливающие устройства Side-Power</a></li>
+              <li><a href="#">Yacht-Controller</a></li>
+              <li><a href="#">Автопилоты</a></li>
+            </ul>
+          </div>
+
           <div class="modal-menu_info-right">
             <div class="modal-menu_left-block">
               <div class="modal-menu_info-right-menu">

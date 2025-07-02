@@ -3,14 +3,17 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   font-family: $font-family-light;
   box-sizing: border-box;
 }
 
 body {
-  -webkit-font-smoothing: antialiased; /* Safari */
-  -moz-osx-font-smoothing: grayscale; /* Firefox на Mac */
+  -webkit-font-smoothing: antialiased;
+  /* Safari */
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox на Mac */
   text-rendering: optimizeLegibility;
 }
 
@@ -25,6 +28,7 @@ p {
 .container_mt_200 {
   margin-top: 200px;
 }
+
 .container_mt_120 {
   margin-top: 120px;
 }
@@ -36,6 +40,7 @@ p {
 .border_radius_20 {
   border-radius: 20px;
 }
+
 a {
   font-family: $font-family-med;
   font-weight: 500;
@@ -60,6 +65,14 @@ a {
 /* Добавляем параллакс-эффект при скролле */
 .parallax-element:hover {
   transform: translateY(-10px);
+}
+
+.display-none {
+  display: none !important;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 @import "components";

@@ -109,6 +109,40 @@ advantagesPluses.forEach((advantagesPlus) => {
   });
 });
 
+const DISPLAY_NONE = "display-none";
+const DISPLAY_FLEX = "display-flex";
+const modalPodmenu = document.getElementById("modal-podmenu");
+const modalMainMenu = document.querySelector(".js-modal-main-menu-mob");
+const getPodmenuLinks = document.querySelectorAll(".modal-menu__get-podmenu");
+const podmenuBackBtn = modalPodmenu.querySelector("#podmenu-back-btn");
+const podmenuService = modalPodmenu.querySelector(".js-podmenu-service");
+const podmenuEquipment = modalPodmenu.querySelector(".js-podmenu-equipment");
+
+getPodmenuLinks.forEach((getPodmenuLink) => {
+  getPodmenuLink.addEventListener("click", (e) => {
+    e.preventDefault;
+    modalMainMenu.classList.add(DISPLAY_NONE);
+    modalPodmenu.classList.add(DISPLAY_FLEX);
+    if (getPodmenuLink.textContent == "Услуги") {
+      podmenuEquipment.classList.add(DISPLAY_NONE);
+      podmenuService.classList.add(DISPLAY_FLEX);
+    } else if (getPodmenuLink.textContent == "Оборудование") {
+      podmenuEquipment.classList.add(DISPLAY_FLEX);
+      podmenuService.classList.add(DISPLAY_NONE);
+    } else {}
+  });
+});
+
+podmenuBackBtn.addEventListener("click", () => {
+  modalMainMenu.classList.remove(DISPLAY_NONE);
+  modalPodmenu.classList.remove(DISPLAY_FLEX);
+  podmenuService.classList.remove(DISPLAY_NONE);
+  podmenuService.classList.remove(DISPLAY_FLEX);
+  podmenuEquipment.classList.remove(DISPLAY_NONE);
+  podmenuEquipment.classList.remove(DISPLAY_FLEX);
+});
+
+
 // фон для блока reg-maintenance-block
 // document.addEventListener("DOMContentLoaded", function () {
 //   const bgOverlay = document.querySelector(".reg-maintenance-block__font");

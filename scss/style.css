@@ -62,8 +62,10 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased; /* Safari */
-  -moz-osx-font-smoothing: grayscale; /* Firefox на Mac */
+  -webkit-font-smoothing: antialiased;
+  /* Safari */
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox на Mac */
   text-rendering: optimizeLegibility;
 }
 
@@ -110,6 +112,14 @@ a:hover {
 /* Добавляем параллакс-эффект при скролле */
 .parallax-element:hover {
   transform: translateY(-10px);
+}
+
+.display-none {
+  display: none !important;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 .component__tltle-link {
@@ -2228,8 +2238,6 @@ footer {
 }
 .modal-menu .modal-menu_wrap {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .modal-menu .modal-menu_wrap .modal-menu__margin-bottom {
   padding: 10px;
@@ -2242,6 +2250,7 @@ footer {
   height: auto;
   flex: 1;
   justify-content: normal;
+  gap: 0;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-font {
   -webkit-backdrop-filter: blur(250px);
@@ -2258,6 +2267,8 @@ footer {
   height: 56px;
   background-image: url("../images/menu-icon-close.svg");
   background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -2274,6 +2285,54 @@ footer {
   height: 100%;
   justify-content: space-between;
   margin: 40px 50px 53px 50px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob {
+  display: none;
+  flex-direction: column;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back {
+  display: flex;
+  margin-bottom: 20px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button {
+  background: none;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  gap: 3px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  padding: 0;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:hover, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:focus, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:active {
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:hover::before, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:focus::before, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button:active::before {
+  content: "<";
+  opacity: 0.8;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob .modal-menu__podmenu-back button::before {
+  content: "<";
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob ul li a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob ul li a:hover, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob ul li a:focus, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu__podmenu-mob ul li a:active {
+  text-decoration: none;
+  opacity: 0.8;
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left {
   display: flex;
@@ -2472,6 +2531,8 @@ footer {
   background-image: url("../images/menu-icon-dark.svg");
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;

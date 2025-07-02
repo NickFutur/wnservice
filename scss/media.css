@@ -780,6 +780,21 @@
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
     gap: 18px;
   }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__func-block {
+    position: fixed;
+    bottom: 2%;
+    top: auto;
+    left: auto;
+    right: 1%;
+    z-index: 900;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up svg {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up svg rect {
+    fill: rgba(187, 180, 180, 0.4);
+  }
 }
 @media (max-width: 760px) {
   .reg-maintenance-block {
@@ -1385,7 +1400,7 @@
     height: 355px;
     flex: auto;
     max-height: 100%;
-    min-width: none;
+    min-width: 0;
     width: 100%;
     max-width: 100%;
   }

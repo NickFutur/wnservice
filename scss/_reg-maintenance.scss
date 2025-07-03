@@ -92,14 +92,17 @@
           padding: 20px;
           border-radius: 20px;
 
-          @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+          @supports (
+            (-webkit-backdrop-filter: blur(50px)) or
+              (backdrop-filter: blur(50px))
+          ) {
             -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
             background: rgba(255, 255, 255, 0.3);
           }
 
           @supports not (gap: 10px) {
-            >*:not(:last-child) {
+            > *:not(:last-child) {
               margin-bottom: 10px;
             }
           }
@@ -107,14 +110,16 @@
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
         }
 
-        @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+        @supports (
+          (-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))
+        ) {
           -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
           background: rgba(255, 255, 255, 0.3);
         }
 
         @supports not (gap: 10px) {
-          >*:not(:last-child) {
+          > *:not(:last-child) {
             margin-bottom: 10px;
           }
         }
@@ -154,7 +159,7 @@
 
         &:nth-child(2) {
           top: 259px;
-          left: -47px;
+          left: -35px;
 
           &::after {
             content: url('data:image/svg+xml;utf8,<svg width="182" height="73" viewBox="0 0 182 73" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4.5" transform="matrix(1 0 0 -1 172 10)" fill="white" stroke="url(%23paint0_linear_654_1990)"/><path d="M0 71.9355C0 71.9355 57.9783 71.935 91.9351 71.9355C125.892 71.9361 154.88 76.5767 176 7" stroke="url(%23paint1_linear_654_1990)"/><defs><linearGradient id="paint0_linear_654_1990" x1="0.164706" y1="3.42517" x2="7.21375" y2="1.17764" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1990" x1="2.89883" y1="49.7364" x2="81.2079" y2="117.343" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');
@@ -221,8 +226,8 @@
         }
 
         &:nth-child(6) {
-          bottom: 33px;
-          right: -21px;
+          bottom: 43px;
+          right: -6px;
 
           &:after {
             content: url('data:image/svg+xml;utf8,<svg width="148" height="76" viewBox="0 0 148 76" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.5" cy="3.5" r="3" transform="matrix(-1 0 0 1 7 0)" fill="white" stroke="url(%23paint0_linear_654_1958)"/><path d="M148 74.9326C148 74.9326 100.563 74.932 72.7804 74.9326C44.9976 74.9331 21.28 79.7879 4 7" stroke="url(%23paint1_linear_654_1958)" stroke-width="0.7"/><defs><linearGradient id="paint0_linear_654_1958" x1="0.115294" y1="2.39762" x2="5.04963" y2="0.824346" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint1_linear_654_1958" x1="145.628" y1="51.7088" x2="68.8192" y2="103.57" gradientUnits="userSpaceOnUse"><stop offset="0.235" stop-color="%23FAF6F6" stop-opacity="0.3"/><stop offset="1" stop-color="white"/></linearGradient></defs></svg>');

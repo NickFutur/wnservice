@@ -782,7 +782,7 @@
   }
   .footer-contacts .footer-contacts_mob .footer-contacts__firm-info .footer-contacts__func-block {
     position: fixed;
-    bottom: 2%;
+    bottom: 25px;
     top: auto;
     left: auto;
     right: 20px;
@@ -820,8 +820,9 @@
     transform: translateY(0px);
   }
   .reg-maintenance-block .reg-maintenance-block__wrap img {
-    height: 780px;
+    height: 910px;
     width: auto;
+    left: -65px;
     top: 40px;
     position: relative;
   }
@@ -1684,7 +1685,7 @@
     top: 16px;
   }
   .reg-maintenance-block .reg-maintenance-block__wrap img {
-    left: -90px;
+    left: -156px;
   }
   .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__font {
     left: 30%;

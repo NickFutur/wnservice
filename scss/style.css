@@ -89,6 +89,10 @@ p {
   margin-top: 110px;
 }
 
+.container_mt_80 {
+  margin-top: 80px;
+}
+
 .border_radius_20 {
   border-radius: 20px;
 }
@@ -702,39 +706,46 @@ a:hover {
   margin-bottom: 6px;
 }
 
-.header-wrap__dop-block .header-wrap__info {
-  height: 458px;
+.header-wrap__service-block .header-wrap__info {
+  height: 100%;
+  gap: 129px;
+  min-height: 458px;
+  background-position: center;
   background-image: url("../images/header-service-image-1.png");
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block {
+.header-wrap__service-block .header-wrap__info .header-wrap__navigation {
+  margin: 50px 50px 0px 50px;
+}
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block {
   flex-direction: row;
-  margin: 0px 50px 50px 50px;
+  margin: 0px 52px 54px 56px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main {
-  width: 650px;
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main {
+  width: 400px;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-bottom: 20px;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs a {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs a {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs p {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs p {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main h1 {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main h1 {
   text-align: left;
   line-height: 100%;
   letter-spacing: -0.03em;
@@ -744,16 +755,16 @@ a:hover {
   -webkit-text-fill-color: transparent;
   padding-bottom: 5px;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func {
   display: flex;
   flex-direction: column;
   gap: 38px;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc {
   width: 100%;
   max-width: 335px;
 }
-.header-wrap__dop-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc p {
+.header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc p {
   font-size: 1.5rem;
   text-align: left;
 }
@@ -762,8 +773,7 @@ a:hover {
   .header-wrap .header-wrap__info {
     background-image: url("../images/header-image-1-2x.png");
   }
-  .header-wrap__dop-block .header-wrap__info {
-    height: 458px;
+  .header-wrap__service-block .header-wrap__info {
     background-image: url("../images/header-service-image-1-2x.png");
   }
 }

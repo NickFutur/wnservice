@@ -1100,6 +1100,9 @@
   }
 
   .footer-contacts {
+    .footer-contacts__feedback-block {
+      background-position: center calc(50% + 0px);
+    }
     .footer-contacts_mob {
       .footer-contacts__firm-info {
         .footer-contacts__func-block {

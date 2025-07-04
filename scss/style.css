@@ -723,11 +723,13 @@ a:hover {
   flex-wrap: wrap;
 }
 .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main {
-  width: 400px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 20px;
 }
@@ -1985,7 +1987,8 @@ footer {
   background-image: url(../images/footer-background-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Это создаст эффект параллакса */
+  background-attachment: fixed;
+  /* Это создаст эффект параллакса */
   background-position: center;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -2216,6 +2219,10 @@ footer {
   justify-content: flex-end;
   width: 100%;
   max-width: 185px;
+  position: fixed;
+  bottom: 70px;
+  right: 71px;
+  z-index: 100;
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up {
   width: 78px;
@@ -2224,6 +2231,9 @@ footer {
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up svg {
   transition: all 0.3s ease;
+}
+.footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up svg rect {
+  fill: rgba(187, 180, 180, 0.4);
 }
 .footer-contacts .footer-contacts__info-block .footer-contacts__firm-info .footer-contacts__func-block .footer-contacts__btn-up:hover svg {
   transform: scale(1.1);

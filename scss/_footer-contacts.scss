@@ -17,6 +17,7 @@
     filter: blur(50px);
     background: $dark-green;
   }
+
   .footer-contacts__feedback-block {
     min-height: 1000px;
     display: flex;
@@ -25,17 +26,21 @@
     background-image: url(../images/footer-background-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Это создаст эффект параллакса */
+    background-attachment: fixed;
+    /* Это создаст эффект параллакса */
     background-position: center;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     position: relative;
+
     // Retina поддержка
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
       & {
         background-image: url("../images/footer-background-1-2x.png");
       }
     }
+
     &:before {
       content: "";
       width: 300%;
@@ -46,6 +51,7 @@
       filter: blur(15px);
     }
   }
+
   .footer-contacts__info-block {
     position: relative;
     display: flex;
@@ -54,6 +60,7 @@
     font-family: $font-family-light;
     font-weight: 400;
     color: $white;
+
     a {
       color: $white;
       text-decoration: none;
@@ -67,9 +74,11 @@
 
     .footer-contacts__header-btn {
       margin-bottom: 62px;
+
       .component__title-block {
         display: flex;
         justify-content: flex-start;
+
         .component__tltle-link {
           margin-bottom: 0px;
         }
@@ -107,6 +116,7 @@
         .footer-contacts__address-city {
           width: 100%;
           max-width: 258px;
+
           p {
             font-family: $font-family-light;
             font-weight: 400;
@@ -114,6 +124,7 @@
             line-height: normal;
             color: $white;
           }
+
           a {
             font-family: $font-family-demibold;
             font-weight: 600;
@@ -123,6 +134,7 @@
         }
       }
     }
+
     .footer-contacts__firm-info {
       display: flex;
       flex-wrap: wrap;
@@ -140,23 +152,28 @@
         line-height: 125%;
         width: 100%;
         max-width: 312px;
+
         .footer-contacts__firm-details {
           display: flex;
           flex-direction: column;
           gap: 3px;
+
           h5 {
             font-size: 1.4rem;
             margin-bottom: 12px;
           }
         }
+
         .footer-contacts__police-links {
           display: flex;
           flex-direction: column;
+
           h5 {
             font-size: 1.4rem;
           }
         }
       }
+
       .footer-contacts__firm-contacts {
         display: flex;
         flex-direction: column;
@@ -164,25 +181,30 @@
         gap: 40px;
         width: 100%;
         max-width: 312px;
+
         .footer-contacts__firm-contacts-block {
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           gap: 43px;
+
           h5 {
             font-size: 1.4rem;
           }
+
           a {
             font-family: $font-family-med;
             font-weight: 500;
             font-size: 2rem;
           }
+
           .footer-contacts__firm-graf-tel {
             display: flex;
             flex-direction: column;
             gap: 10px;
             font-size: 1.2rem;
+
             .footer-contacts__firm-time {
               display: flex;
               gap: 9px;
@@ -193,12 +215,14 @@
               }
             }
           }
+
           .footer-contacts__firm-email {
             h5 {
               margin-bottom: 3px;
             }
           }
         }
+
         .footer-contacts__messangers {
           display: flex;
           flex-wrap: wrap;
@@ -208,6 +232,7 @@
 
           a {
             text-decoration: none;
+
             svg {
               transition: $transition-default;
             }
@@ -221,6 +246,7 @@
           }
         }
       }
+
       .footer-contacts__menu-rating {
         display: flex;
         flex-direction: column;
@@ -228,6 +254,7 @@
         gap: 15px;
         width: 100%;
         max-width: 312px;
+
         .footer-contacts__nav {
           display: flex;
           flex-wrap: wrap;
@@ -235,25 +262,29 @@
           justify-content: space-between;
           width: 100%;
           max-width: 250px;
+
           a {
             font-family: $font-family-reg;
             font-weight: 400;
             font-size: 1.5rem;
             letter-spacing: 0em;
           }
+
           ul {
             display: flex;
             flex-direction: column;
             gap: 11px;
           }
-          .footer-contacts__nav-block-1 {
-          }
-          .footer-contacts__nav-block-2 {
-          }
+
+          .footer-contacts__nav-block-1 {}
+
+          .footer-contacts__nav-block-2 {}
         }
+
         .footer-contacts__rating {
           width: 100%;
           max-width: 175px;
+
           a {
             display: flex;
             width: 100%;
@@ -261,6 +292,7 @@
             background-size: contain;
             background-repeat: no-repeat;
           }
+
           img {
             width: 100%;
             height: auto;
@@ -268,12 +300,18 @@
           }
         }
       }
+
       .footer-contacts__func-block {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
         width: 100%;
         max-width: 185px;
+        position: fixed;
+        bottom: 70px;
+        right: 71px;
+        z-index: 100;
+
 
         .footer-contacts__btn-up {
           width: 78px;
@@ -282,6 +320,10 @@
 
           svg {
             transition: $transition-default;
+
+            rect {
+              fill: rgba(187, 180, 180, 0.4);
+            }
           }
 
           &:hover {

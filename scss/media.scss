@@ -88,6 +88,7 @@
               gap: 30px;
 
               .modal-menu__firm-contacts-block {
+
                 .modal-menu__firm-graf-tel,
                 .modal-menu__firm-email {
                   a {
@@ -481,11 +482,9 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(
-                  0deg,
-                  rgba(0, 0, 0, 0) 0%,
-                  rgba(0, 0, 0, 1) 54%
-                );
+                background: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 1) 54%);
                 opacity: 0.4;
               }
             }
@@ -805,8 +804,7 @@
       }
     }
 
-    .footer-contacts__font {
-    }
+    .footer-contacts__font {}
 
     .footer-contacts_mob {
       padding: 0px 30px 37px 30px;
@@ -967,11 +965,11 @@
           }
         }
 
-        .footer-contacts__func-block {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
+        // .footer-contacts__func-block {
+        //   position: absolute;
+        //   right: 0;
+        //   top: 0;
+        // }
       }
 
       .footer-contacts__police-links {
@@ -993,6 +991,7 @@
   .tablet-d-none_768 {
     display: none !important;
   }
+
   .container_mt_80 {
     margin-top: 50px;
   }
@@ -1037,15 +1036,19 @@
     .header-wrap__info {
       border-radius: 20px;
       background-image: url(../images/header-service-image-1-mob.png);
+
       .header-wrap__info-font {
         border-radius: 20px;
       }
+
       .header-wrap__navigation {
         margin: 27px 28px 0px 28px;
       }
+
       .header-wrap__title-block {
         margin: 0px 28px 28px 28px;
         gap: 10px;
+
         .header-wrap__title-block-main {
           h1 {
             font-size: 4.2rem;
@@ -1054,7 +1057,9 @@
         }
       }
     }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
       .header-wrap__service-block {
         .header-wrap__info {
           background-image: url(../images/header-service-image-1-2x-mob.png);
@@ -1127,8 +1132,7 @@
 
   .work-block {
     .work-block__wrap {
-      .work-block__header-block {
-      }
+      .work-block__header-block {}
     }
   }
 
@@ -1136,10 +1140,11 @@
     .footer-contacts__feedback-block {
       background-position: center calc(50% + 0px);
     }
+
     .footer-contacts_mob {
       .footer-contacts__firm-info {
         .footer-contacts__func-block {
-          position: fixed;
+          // position: fixed;
           bottom: 25px;
           top: auto;
           left: auto;
@@ -1149,12 +1154,11 @@
           .footer-contacts__btn-up {
             width: 50px;
             height: 50px;
+
             svg {
               width: 100%;
               height: 100%;
-              rect {
-                fill: rgba(187, 180, 180, 0.4);
-              }
+
             }
           }
         }
@@ -1170,8 +1174,7 @@
     gap: 70px;
 
     .component__title-block {
-      .component__title-text {
-      }
+      .component__title-text {}
     }
 
     .reg-maintenance-block__wrap {
@@ -1384,21 +1387,27 @@
   .header-wrap__service-block {
     .header-wrap__info {
       gap: 149px;
+
       .header-wrap__navigation {
         margin: 18px 18px 0px 18px;
       }
+
       .header-wrap__title-block {
         margin: 0px 23px 18px 18px;
         padding: 0;
+
         .header-wrap__title-block-main {
           .breadcrumbs {
+
             a,
             p {
               font-size: 1.2rem;
             }
+
             h1 {
               font-size: 2.8rem;
             }
+
             .header-wrap__title-block-func {
               .header-wrap__func-desc {
                 font-size: 1.3rem;
@@ -1800,10 +1809,12 @@
 }
 
 @media (max-width: 600px) {
+
   .container_mt_120,
   .container_mt_110 {
     margin-top: 70px;
   }
+
   .container_mt_80 {
     margin-top: 34px;
   }
@@ -1934,7 +1945,8 @@
       background-image: url(../images/advantages-font-mob.png);
     }
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
       .advantages-block__font {
         background-image: url(../images/advantages-font-2x-mob.png);
       }
@@ -2001,9 +2013,11 @@
         margin-bottom: 61px;
       }
     }
+
     .service-block__service-page {
       .component__title-text {
         font-size: 1.8rem;
+
         h3 {
           width: 100%;
           max-width: 100%;
@@ -2154,8 +2168,7 @@
         }
       }
 
-      .service-block__info-wrap-3 {
-      }
+      .service-block__info-wrap-3 {}
     }
   }
 
@@ -2435,8 +2448,7 @@
         padding: 0px 28px;
 
         .advantages-block__pluse {
-          &:nth-child(1) {
-          }
+          &:nth-child(1) {}
 
           &:nth-child(2) {
             align-self: flex-end;
@@ -2539,6 +2551,7 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
+
           .footer-contacts__firm-graf-tel,
           .footer-contacts__firm-email {
             grid-column: 1 / -1;
@@ -2560,6 +2573,7 @@
         }
       }
     }
+
     .service-block__service-page {
       .component__title-text {
         h3 {
@@ -2587,6 +2601,7 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
+
           .footer-contacts__messangers,
           .footer-contacts__rating {
             grid-column: 1 / -1;

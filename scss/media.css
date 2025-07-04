@@ -803,6 +803,16 @@
   .spare-parts-block .spare-parts-block__wrap .spare-parts-block__info-wrapper .spare-parts-block__info-pluses .info-pluses__list {
     gap: 18px;
   }
+  .sections-menu {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sections-menu .sections-menu__card .sections-menu__card-link {
+    padding: 18px;
+  }
+  .sections-menu .sections-menu__card .sections-menu__card-link .sections-menu__card-title {
+    padding: 2px;
+  }
   .footer-contacts .footer-contacts__feedback-block {
     background-position: center calc(50% + 0px);
   }

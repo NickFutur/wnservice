@@ -1890,6 +1890,9 @@ a:hover {
   bottom: 0;
   width: 100%;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sections-menu .sections-menu__card .sections-menu__card-photo .sections-menu__card-font {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, #000 100%);
@@ -1907,6 +1910,8 @@ a:hover {
   height: auto;
   position: relative;
   z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sections-menu .sections-menu__card .sections-menu__card-link {
   display: flex;
@@ -1949,6 +1954,11 @@ a:hover {
 .sections-menu .sections-menu__card .sections-menu__card-link:hover .sections-menu__card-title {
   color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
+}
+
+.subsections-menu .sections-menu__card .sections-menu__card-photo img {
+  height: 100%;
+  width: auto;
 }
 
 footer {

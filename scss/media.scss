@@ -88,7 +88,6 @@
               gap: 30px;
 
               .modal-menu__firm-contacts-block {
-
                 .modal-menu__firm-graf-tel,
                 .modal-menu__firm-email {
                   a {
@@ -482,9 +481,11 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 1) 54%);
+                background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 54%
+                );
                 opacity: 0.4;
               }
             }
@@ -804,7 +805,8 @@
       }
     }
 
-    .footer-contacts__font {}
+    .footer-contacts__font {
+    }
 
     .footer-contacts_mob {
       padding: 0px 30px 37px 30px;
@@ -1058,8 +1060,7 @@
       }
     }
 
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .header-wrap__service-block {
         .header-wrap__info {
           background-image: url(../images/header-service-image-1-2x-mob.png);
@@ -1132,7 +1133,8 @@
 
   .work-block {
     .work-block__wrap {
-      .work-block__header-block {}
+      .work-block__header-block {
+      }
     }
   }
 
@@ -1173,7 +1175,6 @@
             svg {
               width: 100%;
               height: 100%;
-
             }
           }
         }
@@ -1189,7 +1190,8 @@
     gap: 70px;
 
     .component__title-block {
-      .component__title-text {}
+      .component__title-text {
+      }
     }
 
     .reg-maintenance-block__wrap {
@@ -1413,7 +1415,6 @@
 
         .header-wrap__title-block-main {
           .breadcrumbs {
-
             a,
             p {
               font-size: 1.2rem;
@@ -1824,7 +1825,6 @@
 }
 
 @media (max-width: 600px) {
-
   .container_mt_120,
   .container_mt_110 {
     margin-top: 70px;
@@ -1960,8 +1960,7 @@
       background-image: url(../images/advantages-font-mob.png);
     }
 
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .advantages-block__font {
         background-image: url(../images/advantages-font-2x-mob.png);
       }
@@ -2183,7 +2182,8 @@
         }
       }
 
-      .service-block__info-wrap-3 {}
+      .service-block__info-wrap-3 {
+      }
     }
   }
 
@@ -2463,7 +2463,8 @@
         padding: 0px 28px;
 
         .advantages-block__pluse {
-          &:nth-child(1) {}
+          &:nth-child(1) {
+          }
 
           &:nth-child(2) {
             align-self: flex-end;
@@ -2549,6 +2550,28 @@
     }
   }
 
+  .sections-menu {
+    .sections-menu__card {
+      width: 100%;
+      max-width: 355px;
+      height: 355px;
+
+      .sections-menu__card-photo {
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      .sections-menu__card-link {
+        padding: 20px;
+
+        .sections-menu__card-title {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -2566,7 +2589,6 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
-
           .footer-contacts__firm-graf-tel,
           .footer-contacts__firm-email {
             grid-column: 1 / -1;
@@ -2616,7 +2638,6 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
-
           .footer-contacts__messangers,
           .footer-contacts__rating {
             grid-column: 1 / -1;

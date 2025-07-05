@@ -1755,6 +1755,21 @@
   .reg-maintenance-block .reg-maintenance-block__wrap .reg-maintenance-block__desc-wrap {
     left: 0;
   }
+  .sections-menu .sections-menu__card {
+    width: 100%;
+    max-width: 355px;
+    height: 355px;
+  }
+  .sections-menu .sections-menu__card .sections-menu__card-photo img {
+    height: 100%;
+    width: auto;
+  }
+  .sections-menu .sections-menu__card .sections-menu__card-link {
+    padding: 20px;
+  }
+  .sections-menu .sections-menu__card .sections-menu__card-link .sections-menu__card-title {
+    padding: 5px;
+  }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text p {
     max-width: 300px;
     width: 95%;

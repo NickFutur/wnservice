@@ -81,7 +81,7 @@
         position: relative;
         font-family: $font-family-med;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 2.6rem;
         line-height: 110%;
         letter-spacing: -0.01em;
         color: $white;
@@ -106,6 +106,7 @@
 }
 
 .subsections-menu {
+  margin-top: 120px;
   .sections-menu__card {
     .sections-menu__card-photo {
       img {

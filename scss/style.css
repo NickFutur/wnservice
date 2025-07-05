@@ -1939,7 +1939,7 @@ a:hover {
   position: relative;
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.6rem;
   line-height: 110%;
   letter-spacing: -0.01em;
   color: #ffffff;
@@ -1956,9 +1956,63 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.subsections-menu {
+  margin-top: 120px;
+}
 .subsections-menu .sections-menu__card .sections-menu__card-photo img {
   height: 100%;
   width: auto;
+}
+
+.service-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+.service-desc .service-desc__title-block .component__title-block .component__tltle-link {
+  margin-bottom: 0px;
+}
+.service-desc .service-desc__title-block .component__title-block .component__tltle-link .component__tltle {
+  width: 111px;
+}
+.service-desc .service-desc__info-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.service-desc .service-desc__info-block .service-desc__text-block {
+  flex: 1;
+  max-width: 630px;
+}
+.service-desc .service-desc__info-block .service-desc__text-block h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-bottom: 36px;
+}
+.service-desc .service-desc__info-block .service-desc__text-block p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #000000;
+}
+.service-desc .service-desc__info-block .service-desc__photo-block {
+  width: 251px;
+}
+.service-desc .service-desc__info-block .service-desc__photo-block img {
+  width: 251px;
+  height: 251px;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {

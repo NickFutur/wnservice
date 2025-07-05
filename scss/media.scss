@@ -1141,6 +1141,7 @@
   .sections-menu {
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: 30px;
 
     .sections-menu__card {
       .sections-menu__card-link {
@@ -1148,6 +1149,31 @@
 
         .sections-menu__card-title {
           padding: 2px;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .subsections-menu {
+    margin-top: 80px;
+  }
+
+  .service-desc {
+    .service-desc__info-block {
+      .service-desc__text-block {
+        max-width: 450px;
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .service-desc__photo-block {
+        width: 166px;
+        img {
+          width: 166px;
+          height: 166px;
         }
       }
     }
@@ -2567,6 +2593,44 @@
 
         .sections-menu__card-title {
           padding: 5px;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .subsections-menu {
+    .sections-menu__card {
+      .sections-menu__card-link {
+        .sections-menu__card-title {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .service-desc {
+    gap: 18px;
+    .service-desc__info-block {
+      .service-desc__text-block {
+        padding-left: 5px;
+        padding-right: 14px;
+        width: 100%;
+        max-width: 100%;
+        flex: auto;
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .service-desc__photo-block {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 250px;
+          border-radius: 16px;
         }
       }
     }
@@ -2632,6 +2696,7 @@
     }
   }
   .subsections-menu {
+    margin-top: 70px;
     .sections-menu__card {
       width: 100%;
       height: 170px;
@@ -2640,6 +2705,12 @@
         img {
           height: 100%;
           width: 100%;
+        }
+      }
+      .sections-menu__card-link {
+        padding: 16px;
+        .sections-menu__card-title {
+          padding: 4px;
         }
       }
     }

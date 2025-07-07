@@ -1969,6 +1969,7 @@ a:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 50px;
+  padding: 0px 70px;
 }
 .service-desc .service-desc__title-block .component__title-block .component__tltle-link {
   margin-bottom: 0px;
@@ -2017,6 +2018,7 @@ a:hover {
 
 .service-cont-txt {
   margin-top: 85px;
+  padding: 0px 70px;
 }
 .service-cont-txt p {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;

@@ -2094,6 +2094,110 @@ a:hover {
   border-radius: 30px;
 }
 
+.service-leave-req {
+  margin-top: 120px;
+}
+.service-leave-req .service-leave-req__wrap {
+  position: relative;
+  background-image: url("../images/service-leave-req-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+  min-height: 438px;
+  gap: 20px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__font {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 46%);
+  z-index: 1;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block .component__title-block .component__tltle-link {
+  margin-bottom: 15px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block .component__title-block .component__tltle-link a {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block .component__title-block .component__tltle-link a:hover, .service-leave-req .service-leave-req__wrap .service-leave-req__title-block .component__title-block .component__tltle-link a:focus, .service-leave-req .service-leave-req__wrap .service-leave-req__title-block .component__title-block .component__tltle-link a:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block .service-leave-req__title-txt h3 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__title-block .service-leave-req__title-txt p {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 125%;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form {
+  width: 100%;
+  max-width: 533px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback {
+  padding: 41px 40px 41px 45px;
+  height: 100%;
+  width: 100%;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs {
+  flex-direction: column;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-text,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel {
+  padding: 18px 20px;
+  max-height: 54px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy {
+  align-self: flex-start;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label p {
+  max-width: 300px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn {
+  align-self: flex-start;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a {
+  max-width: 168px;
+  gap: 5px;
+  padding: 5px 6px 5px 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .service-leave-req .service-leave-req__wrap {
+    background-image: url("../images/service-leave-req-1-2x.png");
+  }
+}
 footer {
   overflow: hidden;
 }

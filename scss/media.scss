@@ -745,6 +745,55 @@
     }
   }
 
+  .service-leave-req {
+
+    .service-leave-req__wrap {
+      padding-top: 37px;
+      padding-bottom: 73px;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("../images/service-leave-req-1-mob.png");
+
+      .service-leave-req__title-block {
+        align-items: center;
+
+        .service-leave-req__title-txt {
+          text-align: center;
+        }
+      }
+
+      .service-leave-req__form {
+        .component-feedback {
+          .component-feedback__block {
+            .component-feedback__form {
+              .component-feedback__form-policy {
+                .component-feedback__form-policy-label {
+                  p {
+                    max-width: 100%;
+                  }
+                }
+              }
+
+              .leave-request-btn {
+                align-self: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    .service-leave-req {
+      .service-leave-req__wrap {
+        background-image: url("../images/service-leave-req-1-2x-mob.png");
+      }
+
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -1191,6 +1240,41 @@
       font-size: 1.5rem;
       margin-bottom: 20px;
       max-width: 525px;
+    }
+  }
+
+  .service-leave-req {
+    margin-top: 30px;
+
+    .service-leave-req__wrap {
+      gap: 29px;
+
+      .service-leave-req__title-block {
+
+        .service-leave-req__title-txt {
+          h3 {
+            margin-bottom: 12px;
+          }
+
+          p {
+            font-size: 1.5rem;
+            max-width: 466px;
+          }
+        }
+      }
+
+      .service-leave-req__form {
+        max-width: 522px;
+
+        .component-feedback {
+          padding: 37px;
+
+          .component-feedback__form-inputs {
+            gap: 15px;
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
   }
 
@@ -2716,6 +2800,54 @@
     .service-advantages__photo {
       max-width: 100%;
       height: 250px;
+    }
+  }
+
+  .service-leave-req {
+    margin-top: 46px;
+
+    .service-leave-req__wrap {
+      padding: 32px 18px 40px 18px;
+
+      .service-leave-req__title-block {
+        .component__title-block {
+          .component__tltle-link {
+            margin-bottom: 20px;
+          }
+        }
+
+        .service-leave-req__title-txt {
+          h3 {
+            font-size: 2.4rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            max-width: 300px;
+          }
+        }
+      }
+
+      .service-leave-req__form {
+        .component-feedback {
+          padding: 21px;
+
+          .component-feedback__block {
+            .component-feedback__form {
+              .component-feedback__form-inputs {
+                gap: 10px;
+
+                .component-feedback__form-input-text,
+                .component-feedback__form-input-tel {
+                  max-height: 40px;
+                  border-radius: 10px;
+                  min-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 

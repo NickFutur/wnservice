@@ -2,8 +2,9 @@
   display: flex;
   // flex-wrap: wrap;
   gap: 15px;
-  margin-top: 20px;
+  padding-top: 20px;
   justify-content: center;
+  overflow: hidden;
 
   .sections-menu__card {
     width: clamp(
@@ -106,7 +107,7 @@
 }
 
 .subsections-menu {
-  margin-top: 120px;
+  padding-top: 120px;
   .sections-menu__card {
     .sections-menu__card-photo {
       img {

@@ -834,6 +834,14 @@
     width: 166px;
     height: 166px;
   }
+  .service-cont-txt {
+    margin-top: 50px;
+  }
+  .service-cont-txt p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    max-width: 525px;
+  }
   .footer-contacts .footer-contacts__feedback-block {
     background-position: center calc(50% + 0px);
   }
@@ -1818,6 +1826,13 @@
     width: 100%;
     height: 250px;
     border-radius: 16px;
+  }
+  .service-cont-txt {
+    margin-top: 35px;
+  }
+  .service-cont-txt p {
+    font-size: 1.2rem;
+    max-width: 100%;
   }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text p {
     max-width: 300px;

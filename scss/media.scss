@@ -88,6 +88,7 @@
               gap: 30px;
 
               .modal-menu__firm-contacts-block {
+
                 .modal-menu__firm-graf-tel,
                 .modal-menu__firm-email {
                   a {
@@ -481,11 +482,9 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(
-                  0deg,
-                  rgba(0, 0, 0, 0) 0%,
-                  rgba(0, 0, 0, 1) 54%
-                );
+                background: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 1) 54%);
                 opacity: 0.4;
               }
             }
@@ -805,8 +804,7 @@
       }
     }
 
-    .footer-contacts__font {
-    }
+    .footer-contacts__font {}
 
     .footer-contacts_mob {
       padding: 0px 30px 37px 30px;
@@ -1060,7 +1058,8 @@
       }
     }
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
       .header-wrap__service-block {
         .header-wrap__info {
           background-image: url(../images/header-service-image-1-2x-mob.png);
@@ -1133,8 +1132,7 @@
 
   .work-block {
     .work-block__wrap {
-      .work-block__header-block {
-      }
+      .work-block__header-block {}
     }
   }
 
@@ -1154,6 +1152,7 @@
       }
     }
   }
+
   .subsections-menu {
     margin-top: 80px;
   }
@@ -1162,20 +1161,34 @@
     .service-desc__info-block {
       .service-desc__text-block {
         max-width: 450px;
+
         h2 {
           font-size: 3rem;
         }
+
         p {
           font-size: 1.5rem;
         }
       }
+
       .service-desc__photo-block {
         width: 166px;
+
         img {
           width: 166px;
           height: 166px;
         }
       }
+    }
+  }
+
+  .service-cont-txt {
+    margin-top: 50px;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      max-width: 525px;
     }
   }
 
@@ -1216,8 +1229,7 @@
     gap: 70px;
 
     .component__title-block {
-      .component__title-text {
-      }
+      .component__title-text {}
     }
 
     .reg-maintenance-block__wrap {
@@ -1441,6 +1453,7 @@
 
         .header-wrap__title-block-main {
           .breadcrumbs {
+
             a,
             p {
               font-size: 1.2rem;
@@ -1851,6 +1864,7 @@
 }
 
 @media (max-width: 600px) {
+
   .container_mt_120,
   .container_mt_110 {
     margin-top: 70px;
@@ -1986,7 +2000,8 @@
       background-image: url(../images/advantages-font-mob.png);
     }
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
       .advantages-block__font {
         background-image: url(../images/advantages-font-2x-mob.png);
       }
@@ -2208,8 +2223,7 @@
         }
       }
 
-      .service-block__info-wrap-3 {
-      }
+      .service-block__info-wrap-3 {}
     }
   }
 
@@ -2489,8 +2503,7 @@
         padding: 0px 28px;
 
         .advantages-block__pluse {
-          &:nth-child(1) {
-          }
+          &:nth-child(1) {}
 
           &:nth-child(2) {
             align-self: flex-end;
@@ -2588,6 +2601,7 @@
           width: auto;
         }
       }
+
       .sections-menu__card-link {
         padding: 20px;
 
@@ -2611,6 +2625,7 @@
 
   .service-desc {
     gap: 18px;
+
     .service-desc__info-block {
       .service-desc__text-block {
         padding-left: 5px;
@@ -2618,21 +2633,34 @@
         width: 100%;
         max-width: 100%;
         flex: auto;
+
         h2 {
           font-size: 2.4rem;
         }
+
         p {
           font-size: 1.2rem;
         }
       }
+
       .service-desc__photo-block {
         width: 100%;
+
         img {
           width: 100%;
           height: 250px;
           border-radius: 16px;
         }
       }
+    }
+  }
+
+  .service-cont-txt {
+    margin-top: 35px;
+
+    p {
+      font-size: 1.2rem;
+      max-width: 100%;
     }
   }
 
@@ -2653,6 +2681,7 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
+
           .footer-contacts__firm-graf-tel,
           .footer-contacts__firm-email {
             grid-column: 1 / -1;
@@ -2695,20 +2724,25 @@
       }
     }
   }
+
   .subsections-menu {
     margin-top: 70px;
+
     .sections-menu__card {
       width: 100%;
       height: 170px;
       max-width: 100%;
+
       .sections-menu__card-photo {
         img {
           height: 100%;
           width: 100%;
         }
       }
+
       .sections-menu__card-link {
         padding: 16px;
+
         .sections-menu__card-title {
           padding: 4px;
         }
@@ -2722,6 +2756,7 @@
     .footer-contacts_mob {
       .footer-contacts__logo-address {
         .footer-contacts__firm-contacts {
+
           .footer-contacts__messangers,
           .footer-contacts__rating {
             grid-column: 1 / -1;

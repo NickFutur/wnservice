@@ -2015,6 +2015,23 @@ a:hover {
      object-fit: cover;
 }
 
+.service-cont-txt {
+  margin-top: 85px;
+}
+.service-cont-txt p {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 642px;
+}
+.service-cont-txt p:last-child {
+  margin-bottom: 0;
+}
+
 footer {
   overflow: hidden;
 }

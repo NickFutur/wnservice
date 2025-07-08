@@ -800,7 +800,24 @@
       }
     }
   }
-
+  .service-info-block {
+    .service-info-block__cards {
+      .service-info-block__card {
+        &:nth-child(1) {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 2;
+        }
+        &:nth-child(3) {
+          order: 4;
+        }
+        &:nth-child(4) {
+          order: 3;
+        }
+      }
+    }
+  }
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -1347,6 +1364,37 @@
       height: 415px;
     }
   }
+
+  .service-info-block {
+    .service-info-block__cards {
+      gap: 12px;
+      .service-info-block__card {
+        width: 366px;
+        height: 366px;
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          padding: 20px;
+          .service-info-block__card-text {
+            padding: 5px;
+
+            h4 {
+              font-size: 2.4rem;
+              max-width: 90%;
+            }
+            .service-info-block__card-tags {
+              margin-top: 13px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          p {
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 760px) {
@@ -1463,6 +1511,18 @@
               transform: scaleY(-1);
             }
           }
+        }
+      }
+    }
+  }
+  .service-info-block {
+    .service-info-block__cards {
+      .service-info-block__card {
+        &:nth-child(3) {
+          order: 3;
+        }
+        &:nth-child(4) {
+          order: 4;
         }
       }
     }
@@ -2891,6 +2951,34 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .service-info-block {
+    .service-info-block__cards {
+      gap: 8px;
+      .service-info-block__card {
+        width: 355px;
+        height: 355px;
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          padding: 25px 16px 16px 25px;
+          .service-info-block__card-text {
+            padding: 0px 0px 2px 0px;
+
+            h4 {
+              font-size: 2.4rem;
+              max-width: 90%;
+            }
+          }
+        }
+        &:nth-child(2) {
+          p {
+            max-width: 90%;
           }
         }
       }

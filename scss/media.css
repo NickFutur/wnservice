@@ -533,6 +533,12 @@
     font-size: 1.6rem;
     width: 99%;
   }
+  .watch-more .work-block__wrap {
+    gap: 50px;
+  }
+  .watch-more .work-block__wrap .work-block__header-block {
+    align-items: flex-start;
+  }
   .service-leave-req .service-leave-req__wrap {
     padding-top: 37px;
     padding-bottom: 73px;
@@ -767,6 +773,7 @@
   }
   .header-wrap__service-block .header-wrap__info {
     border-radius: 20px;
+    background-position: center;
     background-image: url(../images/header-service-image-1-mob.png);
   }
   .header-wrap__service-block .header-wrap__info .header-wrap__info-font {
@@ -788,8 +795,20 @@
   .header-wrap__service-block .header-wrap__service-block .header-wrap__info {
     background-image: url(../images/header-service-image-1-2x-mob.png);
   }
+  .header-wrap__service-block .header-wrap__service-block .header-wrap__info-mebel {
+    background-image: url("../images/header-mebel-img-2x.png");
+  }
+  .header-wrap__service-block .header-wrap__service-block .header-wrap__info-stabilizer {
+    background-image: url("../images/header-service-font-2x.png");
+  }
 }
 @media (max-width: 768px) {
+  .header-wrap__service-block .header-wrap__info-mebel {
+    background-image: url("../images/header-mebel-img.png");
+  }
+  .header-wrap__service-block .header-wrap__info-stabilizer {
+    background-image: url("../images/header-service-font.png");
+  }
   .advantages-block {
     margin-top: 35px;
     min-height: 744px;
@@ -1761,6 +1780,22 @@
   .work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link .work-block__slide-title {
     font-size: 1.2rem;
     padding: 1px;
+  }
+  .watch-more .work-block__wrap {
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+  }
+  .watch-more .work-block__wrap .work-block__title-block .component__title-block .component__tltle-link .component__tltle {
+    padding: 14px 16px;
+    height: 44px;
+  }
+  .watch-more .work-block__wrap .work-block__header-block {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .watch-more .work-block__wrap .work-block__header-block .component__title-block .component__title-text {
+    font-size: 2.4rem;
   }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
     margin-bottom: 54px;

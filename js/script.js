@@ -9,7 +9,7 @@ AOS.init({
 });
 
 // ф-ция вывода слайдера на главной
-const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
+const workBlockSwiper = new Swiper("#work-block", {
   // Optional parameters
   slidesPerView: 4,
   direction: "horizontal",
@@ -18,8 +18,23 @@ const workBlockSwiper = new Swiper(".work-block__slider-swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".work-block__swiper-button-next",
-    prevEl: ".work-block__swiper-button-prev",
+    nextEl: ".js-work-block-next",
+    prevEl: ".js-work-block-prev",
+  },
+});
+
+// ф-ция вывода слайдера на главной
+const wathcMorekBlockSwiper = new Swiper("#watch-more-slider", {
+  // Optional parameters
+  slidesPerView: 4,
+  direction: "horizontal",
+  loop: true,
+  spaceBetween: 14,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".js-watch-more-next",
+    prevEl: ".js-watch-more-prev",
   },
 });
 
@@ -129,7 +144,8 @@ getPodmenuLinks.forEach((getPodmenuLink) => {
     } else if (getPodmenuLink.textContent == "Оборудование") {
       podmenuEquipment.classList.add(DISPLAY_FLEX);
       podmenuService.classList.add(DISPLAY_NONE);
-    } else {}
+    } else {
+    }
   });
 });
 
@@ -141,7 +157,6 @@ podmenuBackBtn.addEventListener("click", () => {
   podmenuEquipment.classList.remove(DISPLAY_NONE);
   podmenuEquipment.classList.remove(DISPLAY_FLEX);
 });
-
 
 // фон для блока reg-maintenance-block
 // document.addEventListener("DOMContentLoaded", function () {

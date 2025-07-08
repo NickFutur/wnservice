@@ -151,3 +151,37 @@
     }
   }
 }
+
+.watch-more {
+  .work-block__wrap {
+    gap: 192px;
+    .work-block__title-block {
+      .component__title-block {
+        .component__tltle-link {
+          .component__tltle {
+            padding: 10px 16px;
+          }
+        }
+      }
+    }
+    .work-block__header-block {
+      flex: 1;
+      justify-content: space-between;
+    }
+  }
+  .work-block__slider {
+    .work-block__slider-swiper {
+      .swiper-wrapper {
+        .work-block__slide {
+          background: $light-blue-2;
+
+          .work-block__slide-link {
+            .work-block__slide-title {
+              color: $blue-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}

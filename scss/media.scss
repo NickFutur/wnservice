@@ -240,6 +240,21 @@
       }
     }
   }
+  .how-work-block {
+    .how-work-block__wrap {
+      .how-work-block__info {
+        gap: 50px;
+        .how-work-block__image {
+          margin-left: 0;
+        }
+        .how-work-block__text {
+          .how-work-block__icons {
+            gap: 25px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1150px) {
@@ -1059,6 +1074,38 @@
       }
     }
   }
+
+  .how-work-block {
+    .how-work-block__wrap {
+      padding: 45px 20px 20px 20px;
+      .how-work-block__info {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        .how-work-block__image {
+        }
+        .how-work-block__text {
+          align-items: center;
+          text-align: center;
+          max-width: 518px;
+          .component__tltle-link {
+            margin-bottom: 12px;
+            .component__tltle {
+            }
+          }
+          .how-work-block__title {
+            margin-bottom: 25px;
+          }
+          p {
+            margin-bottom: 51px;
+          }
+          .how-work-block__icons {
+            gap: 35px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -1415,6 +1462,67 @@
         &:nth-child(2) {
           p {
             max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .how-work-block {
+    .how-work-block__wrap {
+      gap: 23px;
+      padding: 43px 7px 7px 7px;
+      .how-work-block__info {
+        .how-work-block__image {
+          img {
+            max-width: 506px;
+            max-height: 380px;
+          }
+        }
+        .how-work-block__text {
+          .component__tltle-link {
+            .component__tltle {
+              font-size: 1.2rem;
+            }
+          }
+          .how-work-block__title {
+            font-size: 3rem;
+            width: 85%;
+          }
+          p {
+            font-size: 1.3rem;
+            color: rgba(31, 31, 31, 0.7);
+          }
+          .how-work-block__icons {
+            height: 39px;
+            img {
+              &:nth-child(1) {
+                width: 75px;
+                height: 21px;
+              }
+              &:nth-child(2) {
+                width: 58px;
+                height: 33px;
+              }
+              &:nth-child(3) {
+                width: 46px;
+                height: 39px;
+              }
+              &:nth-child(4) {
+                width: 40px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+      .how-work-block__cards {
+        gap: 10px;
+        .how-work-block__card {
+          width: 227px;
+          height: 150px;
+          p {
+            font-size: 1.5rem;
+            width: 89%;
           }
         }
       }
@@ -3027,6 +3135,67 @@
         &:nth-child(2) {
           p {
             max-width: 266px;
+          }
+        }
+      }
+    }
+  }
+
+  .how-work-block {
+    padding: 0px 8px;
+    .how-work-block__wrap {
+      gap: 32px;
+      .how-work-block__info {
+        gap: 64px;
+        .how-work-block__image {
+          img {
+            max-width: 324px;
+            max-height: 243px;
+          }
+        }
+        .how-work-block__text {
+          .how-work-block__title {
+            font-size: 2.4rem;
+            width: 85%;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 1.2rem;
+            margin-bottom: 38px;
+          }
+          .how-work-block__icons {
+            height: 36px;
+            gap: 24px;
+            img {
+              &:nth-child(1) {
+                width: 69px;
+                height: 19px;
+              }
+              &:nth-child(2) {
+                width: 54px;
+                height: 31px;
+              }
+              &:nth-child(3) {
+                width: 42px;
+                height: 36px;
+              }
+              &:nth-child(4) {
+                width: 37px;
+                height: 27px;
+              }
+            }
+          }
+        }
+      }
+      .how-work-block__cards {
+        .how-work-block__card {
+          width: 167px;
+          height: 150px;
+          padding: 12px;
+          p {
+            font-size: 1.4rem;
+            width: 89%;
+            padding: 3px;
           }
         }
       }

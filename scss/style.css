@@ -2356,6 +2356,136 @@ img {
   order: 4;
 }
 
+.how-work-block {
+  margin-top: 20px;
+}
+.how-work-block .how-work-block__wrap {
+  padding: 35px 30px;
+  width: 100%;
+  background-image: url("../images/how-work-font-1.png");
+  background-color: rgba(234, 234, 234, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 38px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info {
+  display: flex;
+  margin-top: 39px;
+  justify-content: center;
+  gap: 63px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__image {
+  display: flex;
+  align-items: center;
+  margin-left: -162px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__image img {
+  max-width: 552px;
+  max-height: 415px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 430px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .component__tltle-link {
+  margin-bottom: 25px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .component__tltle-link .component__tltle {
+  font-size: 1.3rem;
+  color: rgba(31, 31, 31, 0.5);
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .component__tltle-link .component__tltle:hover, .how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .component__tltle-link .component__tltle:active, .how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .component__tltle-link .component__tltle:focus {
+  color: rgba(31, 31, 31, 0.8);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  color: #13a9e1;
+  margin-bottom: 30px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 131%;
+  letter-spacing: 0em;
+  color: rgba(31, 31, 31, 0.5);
+  opacity: 0.7;
+  margin-bottom: 52px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons {
+  display: flex;
+  gap: 40px;
+  height: 44px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons img:nth-child(1) {
+  width: 84px;
+  height: 24px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons img:nth-child(2) {
+  width: 66px;
+  height: 38px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons img:nth-child(3) {
+  width: 52px;
+  height: 44px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons img:nth-child(4) {
+  width: 46px;
+  height: 33px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__cards .how-work-block__card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 18px;
+  width: 210px;
+  height: 161px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  box-shadow: inset 0 0 4px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(255, 252, 252, 0.4);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.how-work-block .how-work-block__wrap .how-work-block__cards .how-work-block__card svg {
+  align-self: flex-end;
+}
+.how-work-block .how-work-block__wrap .how-work-block__cards .how-work-block__card p {
+  padding: 4px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 112%;
+  color: #1f1f1f;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .how-work-block .how-work-block__wrap {
+    background-image: url("../images/how-work-font-1-2x-mob.png");
+  }
+}
 footer {
   overflow: hidden;
 }

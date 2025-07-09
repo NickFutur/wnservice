@@ -586,6 +586,12 @@
   .service-info-block .service-info-block__cards .service-info-block__card:nth-child(4) {
     order: 3;
   }
+  .adv-service .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% + 20px);
+    z-index: 1;
+  }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
     max-width: 435px;
     margin-bottom: 50px;

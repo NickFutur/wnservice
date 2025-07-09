@@ -2486,6 +2486,210 @@ img {
     background-image: url("../images/how-work-font-1-2x-mob.png");
   }
 }
+.adv-service {
+  margin-top: 97px;
+}
+.adv-service .adv-service__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+.adv-service .adv-service__wrap .adv-service__head {
+  width: 100%;
+  max-width: 744px;
+}
+.adv-service .adv-service__wrap .adv-service__head .component__tltle-link {
+  margin-bottom: 30px;
+}
+.adv-service .adv-service__wrap .adv-service__head .component__tltle-link .component__tltle {
+  color: #1f1f1f;
+}
+.adv-service .adv-service__wrap .adv-service__head .component__tltle-link .component__tltle:hover, .adv-service .adv-service__wrap .adv-service__head .component__tltle-link .component__tltle:focus, .adv-service .adv-service__wrap .adv-service__head .component__tltle-link .component__tltle:active {
+  border-color: #1f1f1f;
+}
+.adv-service .adv-service__wrap .adv-service__head .adv-service__title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1f1f1f;
+}
+.adv-service .adv-service__wrap .adv-service__head .adv-service__title span {
+  color: #13a9e1;
+}
+.adv-service .adv-service__wrap .adv-service__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 516px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-text {
+  display: flex;
+  flex: 1 1 50%;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card h3 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-image {
+  position: relative;
+  display: flex;
+  flex: 1 1 50%;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-image .adv-service__card-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  fill: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(16.8401985168px);
+          backdrop-filter: blur(16.8401985168px);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) {
+  background: rgba(221, 238, 248, 0.7);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text {
+  padding: 45px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-block:nth-child(2) {
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  padding-top: 34px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) h3 {
+  color: #13a9e1;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) {
+  background: #d9d9d9;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text {
+  padding: 20px 20px 36px 45px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-text-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt {
+  width: 100%;
+  max-width: 375px;
+  margin-top: 23px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img img {
+  border-radius: 13px;
+  width: calc(102px + 80 * (100vw - 768px) / 672);
+  height: calc(102px + 80 * (100vw - 768px) / 672);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 33px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item {
+  display: flex;
+  gap: 22px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p:nth-child(1) {
+  color: #13a9e1;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item img {
+  width: 36px;
+  height: 35px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-image .adv-service__card-icon {
+  right: auto;
+  left: 20px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) h3 {
+  color: #1f1f1f;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) {
+  background: #0775b5;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) h3 {
+  color: #ffffff;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) p {
+  color: #ffffff;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text {
+  padding: 20px 20px 45px 45px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 41px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt {
+  width: 100%;
+  max-width: 365px;
+  margin-top: 23px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img img {
+  border-radius: 13px;
+  width: calc(89px + 32 * (100vw - 768px) / 672);
+  height: calc(89px + 32 * (100vw - 768px) / 672);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .leave-request-btn {
+  z-index: 1;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .adv-service__card-btn__img {
+  position: relative;
+  overflow: hidden;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .adv-service__card-btn__img .adv-service__card-btn__img-font {
+  position: absolute;
+  top: -40px;
+  left: -110px;
+  width: 226px;
+  height: 286px;
+  filter: blur(41px);
+  background: #0775b5;
+  transform: rotate(-180deg);
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .adv-service__card-btn__img img {
+  height: 114px;
+  width: auto;
+  margin-left: -67px;
+}
+
 footer {
   overflow: hidden;
 }

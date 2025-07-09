@@ -1,0 +1,241 @@
+.adv-service {
+  margin-top: 97px;
+  .adv-service__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    .adv-service__head {
+      width: 100%;
+      max-width: 744px;
+      .component__tltle-link {
+        margin-bottom: 30px;
+        .component__tltle {
+          color: $light-black;
+          &:hover,
+          &:focus,
+          &:active {
+            border-color: $light-black;
+          }
+        }
+      }
+      .adv-service__title {
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 105%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: $light-black;
+        span {
+          color: $blue;
+        }
+      }
+    }
+
+    .adv-service__desc {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .adv-service__card {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 516px;
+        border-radius: 20px;
+        overflow: hidden;
+        .adv-service__card-text {
+          display: flex;
+          flex: 1 1 50%;
+        }
+        h3 {
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 2.6rem;
+          line-height: 108%;
+          letter-spacing: -0.01em;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: $font-family-light;
+          font-weight: 300;
+          font-size: 1.6rem;
+          letter-spacing: 0em;
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        .adv-service__card-image {
+          position: relative;
+          display: flex;
+          flex: 1 1 50%;
+
+          .adv-service__card-icon {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            border-radius: 100%;
+            fill: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(16.840198516845703px);
+          }
+          .adv-service__card-img {
+          }
+        }
+
+        &:nth-child(1) {
+          background: rgba(221, 238, 248, 0.7);
+          .adv-service__card-text {
+            padding: 45px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .adv-service__card-text-block {
+              &:nth-child(2) {
+                border-top: 1px solid rgba(0, 0, 0, 0.04);
+                padding-top: 34px;
+              }
+            }
+          }
+          h3 {
+            color: $blue;
+          }
+        }
+        &:nth-child(2) {
+          background: $light-gray;
+          .adv-service__card-text {
+            padding: 20px 20px 36px 45px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .adv-service__card-text-img {
+              display: flex;
+              justify-content: space-between;
+              gap: 30px;
+
+              .adv-service__card-txt {
+                width: 100%;
+                max-width: 375px;
+                margin-top: 23px;
+              }
+              .adv-service__card-img {
+                img {
+                  border-radius: 13px;
+                  width: calc(
+                    102px + (182 - 102) * (100vw - 768px) / (1440 - 768)
+                  );
+                  height: calc(
+                    102px + (182 - 102) * (100vw - 768px) / (1440 - 768)
+                  );
+                }
+              }
+            }
+
+            .adv-service__card-list {
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              padding-top: 33px;
+              border-top: 1px solid rgba(0, 0, 0, 0.04);
+              .adv-service__card-list-item {
+                display: flex;
+                gap: 22px;
+
+                div {
+                  p {
+                    &:nth-child(1) {
+                      color: $blue;
+                    }
+                  }
+                }
+
+                img {
+                  width: 36px;
+                  height: 35px;
+                }
+              }
+            }
+          }
+          .adv-service__card-image {
+            .adv-service__card-icon {
+              right: auto;
+              left: 20px;
+            }
+          }
+          h3 {
+            color: $light-black;
+          }
+        }
+        &:nth-child(3) {
+          background: $blue-link;
+          h3 {
+            color: $white;
+          }
+          p {
+            color: $white;
+          }
+          .adv-service__card-text {
+            padding: 20px 20px 45px 45px;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 41px;
+
+            .adv-service__card-text-img {
+              display: flex;
+              justify-content: space-between;
+              gap: 30px;
+
+              .adv-service__card-txt {
+                width: 100%;
+                max-width: 365px;
+                margin-top: 23px;
+              }
+              .adv-service__card-img {
+                img {
+                  border-radius: 13px;
+                  width: calc(
+                    89px + (121 - 89) * (100vw - 768px) / (1440 - 768)
+                  );
+                  height: calc(
+                    89px + (121 - 89) * (100vw - 768px) / (1440 - 768)
+                  );
+                }
+              }
+            }
+            .adv-service__card-btn {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 100%;
+
+              .leave-request-btn {
+                z-index: 1;
+              }
+
+              .adv-service__card-btn__img {
+                position: relative;
+                overflow: hidden;
+                .adv-service__card-btn__img-font {
+                  position: absolute;
+                  top: -40px;
+                  left: -110px;
+                  width: 226px;
+                  height: 286px;
+                  filter: blur(41px);
+                  background: $blue-link;
+                  transform: rotate(-180deg);
+                }
+                img {
+                  height: 114px;
+                  width: auto;
+                  margin-left: -67px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

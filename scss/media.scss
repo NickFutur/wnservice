@@ -1958,6 +1958,7 @@
       }
       .adv-service__desc {
         .adv-service__card {
+          position: relative;
           flex-direction: column-reverse;
           height: auto;
           .adv-service__card-text {

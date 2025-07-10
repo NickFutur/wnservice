@@ -1376,6 +1376,7 @@
     font-size: 1.8rem;
   }
   .adv-service .adv-service__wrap .adv-service__desc .adv-service__card {
+    position: relative;
     flex-direction: column-reverse;
     height: auto;
   }

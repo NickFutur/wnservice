@@ -2524,14 +2524,17 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+  height: 100%;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card {
-  position: relative;
+  position: sticky;
   display: flex;
   width: 100%;
   height: 516px;
   border-radius: 20px;
   overflow: hidden;
+  top: 5%;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-text {
   display: flex;
@@ -2569,6 +2572,7 @@ img {
           backdrop-filter: blur(16.8401985168px);
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) {
+  z-index: 1;
   background: rgba(221, 238, 248, 0.7);
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text {
@@ -2584,6 +2588,7 @@ img {
   color: #13a9e1;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) {
+  z-index: 2;
   background: #d9d9d9;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text {
@@ -2633,6 +2638,7 @@ img {
   color: #1f1f1f;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) {
+  z-index: 3;
   background: #0775b5;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) h3 {

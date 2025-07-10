@@ -1,0 +1,182 @@
+.service-catalog {
+  margin-top: 120px;
+  width: 100%;
+  padding: 0px 68px;
+  .service-catalog__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service-catalog__head {
+      width: 100%;
+      max-width: 680px;
+      margin-bottom: 45px;
+      .component__tltle-link {
+        margin-bottom: 50px;
+        .component__tltle {
+          width: 111px;
+          height: 48px;
+        }
+      }
+      .service-catalog__title {
+        h2 {
+          font-family: $font-family-med;
+          font-weight: 500;
+          font-size: 4rem;
+          line-height: 112%;
+          letter-spacing: -0.01em;
+          text-align: center;
+          color: $blue;
+          margin-bottom: 27px;
+        }
+        p {
+          font-family: $font-family-light;
+          font-weight: 300;
+          font-size: 1.6rem;
+          line-height: 137%;
+          letter-spacing: 0em;
+          text-align: center;
+          color: rgba(31, 31, 31, 0.5);
+        }
+      }
+    }
+
+    .service-catalog__products-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 51px;
+      .service-catalog__products-menu {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        .service-catalog__products-link {
+          border-radius: 15px;
+          width: 220px;
+          height: 105px;
+          overflow: hidden;
+          position: relative;
+
+          .service-catalog__link {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px 15px 16px 25px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+
+            svg {
+              width: 36px;
+              height: 36px;
+              align-self: flex-end;
+              transition: $transition-default;
+            }
+            p {
+              font-family: $font-family-med;
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 135%;
+              letter-spacing: -0.01em;
+              color: $white;
+              align-self: flex-start;
+              transition: $transition-default;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              border: none;
+              outline: none;
+              background: none;
+
+              svg {
+                transform: rotate(45deg);
+                transition: $transition-default;
+              }
+              p {
+                opacity: 0.8;
+                transition: $transition-default;
+              }
+            }
+          }
+        }
+      }
+      .service-catalog__products {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .service-catalog__product {
+          border-radius: 20px;
+          width: 314px;
+          height: 314px;
+          overflow: hidden;
+          .service-catalog__product-link {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0px;
+            padding: 18px 18px 25px 25px;
+            background-color: $light-blue-2;
+
+            svg {
+              position: absolute;
+              top: 18px;
+              right: 18px;
+              width: 50px;
+              height: 50px;
+              align-self: flex-end;
+              transition: $transition-default;
+            }
+            img {
+              width: 220px;
+              height: 220px;
+              object-fit: contain;
+            }
+            p {
+              align-self: flex-start;
+              font-family: $font-family-med;
+              font-weight: 500;
+              font-size: 2.6rem;
+              line-height: 104%;
+              letter-spacing: -0.01em;
+              color: $blue-link;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: #0775b52d;
+              svg {
+                transform: rotate(45deg);
+                transition: $transition-default;
+              }
+            }
+          }
+        }
+      }
+      .products-seakeeper {
+        display: none;
+      }
+      .products-jiwu {
+      }
+    }
+  }
+}
+
+.active {
+  display: flex;
+}

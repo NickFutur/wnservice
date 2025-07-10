@@ -206,3 +206,31 @@ podmenuBackBtn.addEventListener("click", () => {
 //   // Инициализация при загрузке
 //   updateParallax();
 // });
+
+// открытие и скрытие блоков jiwu и seakeeper
+const productsJiwuBlock = document.querySelector(".products-jiwu");
+const productsSeakeeperBlock = document.querySelector(".products-seakeeper");
+const seakeeperBtn = document.querySelector(
+  ".js-service-catalog__link-seakeeper"
+);
+const jiwuBtn = document.querySelector(".js-service-catalog__link-jiwu");
+
+function hideAllBlocks() {
+  productsJiwuBlock.style.display = "none";
+  productsSeakeeperBlock.style.display = "none";
+}
+
+seakeeperBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  hideAllBlocks();
+  productsSeakeeperBlock.style.display = "flex";
+});
+
+jiwuBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  hideAllBlocks();
+  productsJiwuBlock.style.display = "flex";
+});
+
+hideAllBlocks();
+productsJiwuBlock.style.display = "flex";

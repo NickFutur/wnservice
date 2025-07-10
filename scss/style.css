@@ -2619,6 +2619,7 @@ img {
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p:nth-child(1) {
   color: #13a9e1;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item img {
   width: 36px;
@@ -2649,12 +2650,15 @@ img {
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 32px;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt {
   width: 100%;
   max-width: 365px;
   margin-top: 23px;
+}
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt p br {
+  display: none;
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img img {
   border-radius: 13px;

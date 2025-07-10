@@ -146,6 +146,7 @@
                   p {
                     &:nth-child(1) {
                       color: $blue;
+                      font-family: $font-family-med;
                     }
                   }
                 }
@@ -184,12 +185,18 @@
             .adv-service__card-text-img {
               display: flex;
               justify-content: space-between;
-              gap: 30px;
+              gap: 32px;
 
               .adv-service__card-txt {
                 width: 100%;
                 max-width: 365px;
                 margin-top: 23px;
+
+                p {
+                  br {
+                    display: none;
+                  }
+                }
               }
               .adv-service__card-img {
                 img {

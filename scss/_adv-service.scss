@@ -224,6 +224,13 @@
 
               .leave-request-btn {
                 z-index: 1;
+                a {
+                  &:hover,
+                  &:focus,
+                  &:active {
+                    border-color: $white;
+                  }
+                }
               }
 
               .adv-service__card-btn__img {

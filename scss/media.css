@@ -269,6 +269,19 @@
   .header-wrap .header-wrap__info .header-wrap__title-block p {
     font-size: 1.8rem;
   }
+  .header-wrap .header-wrap__info-stabilizer .header-wrap__title-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main h1 {
+    max-width: 370px;
+  }
+  .header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-image {
+    width: 326px;
+    height: 299px;
+    left: auto;
+    right: 0px;
+  }
   .special-offers .component__tltle-link {
     margin-bottom: 35px;
   }
@@ -1386,6 +1399,24 @@
   .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main .breadcrumbs .header-wrap__title-block-func .header-wrap__func-desc {
     font-size: 1.3rem;
   }
+  .header-wrap__service-block .header-wrap__info-stabilizer {
+    gap: 48px;
+  }
+  .header-wrap__service-block .header-wrap__info-stabilizer .header-wrap__title-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-wrap__service-block .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main {
+    max-width: 100%;
+  }
+  .header-wrap__service-block .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main h1 {
+    max-width: 370px;
+  }
+  .header-wrap__service-block .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-image {
+    position: relative;
+    width: 295px;
+    height: 270px;
+  }
   .fixed-menu {
     margin-top: 0;
   }
@@ -2259,6 +2290,9 @@
   .mob-d-none_480 {
     display: none;
   }
+  .header-wrap__service-block .header-wrap__info-stabilizer {
+    background-image: url("../images/header-service-font-mob.png");
+  }
   .work-block .work-block__wrap .work-block__header-block {
     flex-direction: column;
     align-items: flex-start;
@@ -2586,5 +2620,9 @@
   .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) .service-block__card {
     height: auto;
     width: 100%;
+  }
+  .adv-service .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-text .adv-service__card-text-img {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=media.css.map */

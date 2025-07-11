@@ -296,6 +296,33 @@
       }
     }
   }
+  .header-wrap__info-stabilizer {
+    overflow: hidden;
+    .header-wrap__title-block {
+      position: relative;
+      .header-wrap__title-block-main,
+      .header-wrap__title-block-func {
+        position: relative;
+        z-index: 1;
+      }
+
+      .header-wrap__title-block-main {
+        h1 {
+          max-width: 570px;
+        }
+      }
+      .header-wrap__title-block-image {
+        position: absolute;
+        width: 455px;
+        height: 417px;
+        z-index: 0;
+        left: 38%;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
 }
 
 .header-wrap__service-block {

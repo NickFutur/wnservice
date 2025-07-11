@@ -107,6 +107,28 @@
               }
             }
           }
+
+          &:nth-child(2) {
+            .service-catalog__link {
+              background: linear-gradient(
+                  180deg,
+                  rgba(0, 0, 0, 0.01) 0%,
+                  rgba(0, 0, 0, 0.5) 100%
+                ),
+                rgba(0, 0, 0, 0.05);
+
+              &:hover,
+              &:focus,
+              &:active {
+                background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.01) 0%,
+                    rgba(0, 0, 0, 0.5) 100%
+                  ),
+                  rgba(0, 0, 0, 0.05);
+              }
+            }
+          }
         }
       }
       .service-catalog__products {

@@ -712,6 +712,31 @@ img {
 .header-wrap .header-wrap__info .header-wrap__achievements-block .header-wrap__achievements-partners .achievements-block__title {
   margin-bottom: 6px;
 }
+.header-wrap .header-wrap__info-stabilizer {
+  overflow: hidden;
+}
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block {
+  position: relative;
+}
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main,
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-func {
+  position: relative;
+  z-index: 1;
+}
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main h1 {
+  max-width: 570px;
+}
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-image {
+  position: absolute;
+  width: 455px;
+  height: 417px;
+  z-index: 0;
+  left: 38%;
+}
+.header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .header-wrap__service-block .header-wrap__info {
   height: 100%;
@@ -2680,6 +2705,9 @@ img {
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .leave-request-btn {
   z-index: 1;
 }
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .leave-request-btn a:hover, .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .leave-request-btn a:focus, .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .leave-request-btn a:active {
+  border-color: #ffffff;
+}
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-btn .adv-service__card-btn__img {
   position: relative;
   overflow: hidden;
@@ -2804,6 +2832,12 @@ img {
 .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link .service-catalog__link:hover p, .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link .service-catalog__link:focus p, .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link .service-catalog__link:active p {
   opacity: 0.8;
   transition: all 0.3s ease;
+}
+.service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link:nth-child(2) .service-catalog__link {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.5) 100%), rgba(0, 0, 0, 0.05);
+}
+.service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link:nth-child(2) .service-catalog__link:hover, .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link:nth-child(2) .service-catalog__link:focus, .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products-menu .service-catalog__products-link:nth-child(2) .service-catalog__link:active {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.5) 100%), rgba(0, 0, 0, 0.05);
 }
 .service-catalog .service-catalog__wrap .service-catalog__products-wrap .service-catalog__products {
   display: flex;

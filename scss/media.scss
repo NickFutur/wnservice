@@ -1217,6 +1217,13 @@
         }
       }
     }
+    .how-work-block__wrap-cond {
+      .how-work-block__cards {
+        .how-work-block__card {
+          width: 345px;
+        }
+      }
+    }
   }
 }
 
@@ -1543,6 +1550,38 @@
     }
   }
 
+  .adv-service-cond {
+    margin-top: 40px;
+    .adv-service__wrap {
+      align-items: normal;
+      .adv-service__desc {
+        .adv-service__card-cond {
+          .adv-service__card-text {
+            padding: 30px 29px 20px 25px !important;
+            gap: 44px !important;
+
+            .adv-service__card-text-img {
+              .adv-service__card-txt {
+              }
+              .adv-service__card-img {
+                img {
+                  display: none;
+                }
+              }
+            }
+            .adv-service__card-btn {
+              .adv-service__card-btn__img {
+                img {
+                  height: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .footer-contacts {
     .footer-contacts__feedback-block {
       background-position: center calc(50% + 0px);
@@ -1708,6 +1747,14 @@
             font-size: 1.5rem;
             width: 89%;
           }
+        }
+      }
+    }
+    .how-work-block__wrap-cond {
+      .how-work-block__cards {
+        .how-work-block__card {
+          width: 345px;
+          height: 161px;
         }
       }
     }
@@ -2189,6 +2236,39 @@
                   img {
                     height: 77px;
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .adv-service-cond {
+    margin-top: 30px;
+    .adv-service__wrap {
+      .adv-service__desc {
+        .adv-service__card-cond {
+          .adv-service__card-text {
+            padding: 35px 17px 39px 23px !important;
+
+            .adv-service__card-text-img {
+              gap: 0;
+              .adv-service__card-txt {
+                margin-top: 0px;
+                h3 {
+                  max-width: 150px;
+                }
+              }
+            }
+            .adv-service__card-btn {
+              flex-direction: column-reverse;
+              gap: 45px;
+
+              .adv-service__card-btn__img {
+                img {
+                  height: 77px;
                 }
               }
             }
@@ -3634,6 +3714,21 @@
             font-size: 1.4rem;
             width: 89%;
             padding: 3px;
+          }
+        }
+      }
+    }
+    .how-work-block__wrap-cond {
+      .how-work-block__cards {
+        .how-work-block__card {
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          height: 100%;
+          min-height: 75px;
+          svg {
+            align-self: center;
           }
         }
       }

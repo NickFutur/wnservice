@@ -1,5 +1,6 @@
 .how-work-block {
   margin-top: 20px;
+  overflow: hidden;
   .how-work-block__wrap {
     padding: 35px 30px;
     width: 100%;
@@ -77,6 +78,8 @@
           align-items: center;
           flex-wrap: wrap;
           img {
+            height: 100%;
+            width: auto;
             &:nth-child(1) {
               width: 84px;
               height: 24px;
@@ -128,6 +131,37 @@
           line-height: 112%;
           color: $light-black;
         }
+      }
+    }
+  }
+  .how-work-block__wrap-cond {
+    .how-work-block__info {
+      .how-work-block__text {
+        max-width: 576px;
+        justify-content: center;
+
+        p {
+          max-width: 424px;
+        }
+        .how-work-block__icons {
+          img {
+            height: 100%;
+            width: auto;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              height: 100%;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .how-work-block__cards {
+      .how-work-block__card {
+        width: 322px;
+        height: 161px;
       }
     }
   }

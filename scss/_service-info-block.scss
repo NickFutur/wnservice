@@ -115,4 +115,20 @@
       }
     }
   }
+  .service-info-block__cards-cond {
+    .service-info-block__card {
+      &:nth-child(2) {
+        background: $blue-link;
+
+        .service-info-block__card-text {
+          p {
+            max-width: 100%;
+          }
+        }
+      }
+      &:nth-child(4) {
+        background: $blue;
+      }
+    }
+  }
 }

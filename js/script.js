@@ -208,12 +208,10 @@ podmenuBackBtn.addEventListener("click", () => {
 // });
 
 // открытие и скрытие блоков jiwu и seakeeper
-const productsJiwuBlock = document.querySelector(".products-jiwu");
-const productsSeakeeperBlock = document.querySelector(".products-seakeeper");
-const seakeeperBtn = document.querySelector(
-  ".js-service-catalog__link-seakeeper"
-);
-const jiwuBtn = document.querySelector(".js-service-catalog__link-jiwu");
+const productsJiwuBlock = document.querySelector(".products-1");
+const productsSeakeeperBlock = document.querySelector(".products-2");
+const seakeeperBtn = document.querySelector(".js-service-catalog__link-2");
+const jiwuBtn = document.querySelector(".js-service-catalog__link-1");
 
 function hideAllBlocks() {
   productsJiwuBlock.style.display = "none";

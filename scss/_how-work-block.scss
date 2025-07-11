@@ -70,6 +70,40 @@
           opacity: 0.7;
           margin-bottom: 52px;
         }
+        .how-work-block__txt {
+          color: $light-black;
+          opacity: 1;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 29px;
+            font-family: $font-family-light;
+            font-weight: 300;
+            font-size: 1.3rem;
+            letter-spacing: 0em;
+            line-height: normal;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: left;
+
+            &::before {
+              content: "";
+              background-image: url("../images/check-mark-li.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              width: 29px;
+              height: 28px;
+              min-width: 29px;
+              min-height: 28px;
+            }
+          }
+        }
 
         .how-work-block__icons {
           display: flex;
@@ -98,6 +132,9 @@
             }
           }
         }
+      }
+      .how-work-block__text-gen {
+        max-width: 519px;
       }
     }
     .how-work-block__cards {
@@ -143,6 +180,7 @@
         p {
           max-width: 424px;
         }
+
         .how-work-block__icons {
           img {
             height: 100%;

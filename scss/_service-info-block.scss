@@ -15,6 +15,9 @@
         }
       }
       .service-info-block__info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h3 {
           font-family: $font-family-med;
           font-weight: 500;
@@ -124,6 +127,48 @@
           p {
             max-width: 100%;
           }
+        }
+      }
+      &:nth-child(4) {
+        background: $blue;
+      }
+    }
+  }
+}
+
+.service-info-block-gen {
+  .service-info-block__title {
+    .component__title-block {
+      max-width: 750px;
+      .service-info-block__info-text {
+        p {
+          max-width: 570px;
+        }
+      }
+    }
+  }
+  .service-info-block__cards {
+    .service-info-block__card {
+      &:nth-child(2) {
+        background: $blue-link;
+      }
+      &:nth-child(3) {
+        position: relative;
+        flex-direction: row-reverse;
+        img {
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+        }
+        svg {
+          position: relative;
+          align-self: flex-start;
+          margin: 25px 25px 0px 0px;
+        }
+        .service-info-block__card-text {
+          position: relative;
+          margin: 25px 0px 0px 25px;
         }
       }
       &:nth-child(4) {

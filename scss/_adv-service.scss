@@ -260,6 +260,28 @@
         }
       }
     }
+    .adv-service__desc-gen {
+      .adv-service__card {
+        &::nth-child(2) {
+          .adv-service__card-text {
+            .adv-service__card-list {
+              .adv-service__card-list-item {
+                div {
+                  p {
+                    font-family: $font-family-light;
+                    color: rgba(0, 0, 0, 0.5);
+                    span {
+                      font-family: $font-family-med;
+                      color: $blue;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

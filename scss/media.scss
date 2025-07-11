@@ -1690,6 +1690,20 @@
       }
     }
   }
+  .service-info-block-gen {
+    .service-info-block__cards {
+      .service-info-block__card {
+        &:nth-child(3) {
+          svg {
+            margin: 20px 20px 0px 0px;
+          }
+          .service-info-block__card-text {
+            margin: 20px 0px 0px 20px;
+          }
+        }
+      }
+    }
+  }
   .how-work-block {
     .how-work-block__wrap {
       gap: 23px;

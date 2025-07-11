@@ -2290,6 +2290,11 @@ img {
   padding: 10px 15px;
   width: 124px;
 }
+.service-info-block .service-info-block__title .component__title-block .service-info-block__info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .service-info-block .service-info-block__title .component__title-block .service-info-block__info-text h3 {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
@@ -2395,6 +2400,38 @@ img {
   background: #13a9e1;
 }
 
+.service-info-block-gen .service-info-block__title .component__title-block {
+  max-width: 750px;
+}
+.service-info-block-gen .service-info-block__title .component__title-block .service-info-block__info-text p {
+  max-width: 570px;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(2) {
+  background: #0775b5;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(3) {
+  position: relative;
+  flex-direction: row-reverse;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(3) img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(3) svg {
+  position: relative;
+  align-self: flex-start;
+  margin: 25px 25px 0px 0px;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(3) .service-info-block__card-text {
+  position: relative;
+  margin: 25px 0px 0px 25px;
+}
+.service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(4) {
+  background: #13a9e1;
+}
+
 .how-work-block {
   margin-top: 20px;
   overflow: hidden;
@@ -2465,6 +2502,38 @@ img {
   opacity: 0.7;
   margin-bottom: 52px;
 }
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__txt {
+  color: #1f1f1f;
+  opacity: 1;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text ul li {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text ul li::before {
+  content: "";
+  background-image: url("../images/check-mark-li.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 29px;
+  height: 28px;
+  min-width: 29px;
+  min-height: 28px;
+}
 .how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons {
   display: flex;
   gap: 40px;
@@ -2491,6 +2560,9 @@ img {
 .how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text .how-work-block__icons img:nth-child(4) {
   width: 46px;
   height: 33px;
+}
+.how-work-block .how-work-block__wrap .how-work-block__info .how-work-block__text-gen {
+  max-width: 519px;
 }
 .how-work-block .how-work-block__wrap .how-work-block__cards {
   display: flex;
@@ -2764,6 +2836,14 @@ img {
   height: 114px;
   width: auto;
   margin-left: -67px;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card::nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card::nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p span {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  color: #13a9e1;
 }
 
 .adv-service-cond {

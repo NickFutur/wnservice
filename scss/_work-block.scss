@@ -1,5 +1,6 @@
 .work-block {
   overflow: hidden;
+
   .work-block__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -7,15 +8,18 @@
     width: 100%;
     padding: 0px 70px;
     margin-bottom: 94px;
-    .work-block__title-block {
-    }
+
+    .work-block__title-block {}
+
     .work-block__header-block {
       display: flex;
       gap: 30px;
+
       .component__title-text {
         margin-bottom: 0;
         text-align: left;
       }
+
       .work-block__work-pagination {
         position: relative;
         display: flex;
@@ -32,6 +36,7 @@
               fill: $blue-link;
               transition: $transition-default;
             }
+
             path {
               fill: $white;
             }
@@ -43,21 +48,22 @@
                 fill: rgba(7, 117, 181, 0.9);
                 transition: $transition-default;
               }
-              path {
-              }
+
+              path {}
             }
           }
         }
 
-        .work-block__swiper-button-prev {
-        }
-        .work-block__swiper-button-next {
-        }
+        .work-block__swiper-button-prev {}
+
+        .work-block__swiper-button-next {}
       }
     }
   }
+
   .work-block__slider {
     padding-left: 71px;
+
     .work-block__slider-swiper {
       .swiper-wrapper {
         .work-block__slide {
@@ -78,11 +84,9 @@
             z-index: 0;
 
             .work-block__slide-photo-font {
-              background: linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0) 51%,
-                #000 100%
-              );
+              background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0) 51%,
+                  #000 100%);
               opacity: 0.6;
 
               position: absolute;
@@ -93,6 +97,7 @@
               width: 100%;
               z-index: 1;
             }
+
             img {
               width: 100%;
               height: auto;
@@ -110,17 +115,22 @@
             text-decoration: none;
             position: relative;
             padding: 17px;
+
             svg {
               align-self: flex-end;
               position: relative;
+
               rect {
                 fill: $white;
               }
+
               path {
                 fill: $sea-blue;
               }
+
               transition: $transition-default;
             }
+
             .work-block__slide-title {
               position: relative;
               font-family: $font-family-med;
@@ -141,6 +151,7 @@
               transform: rotate(45deg);
               transition: $transition-default;
             }
+
             .work-block__slide-title {
               color: rgba(255, 255, 255, 0.8);
               transition: $transition-default;
@@ -155,6 +166,7 @@
 .watch-more {
   .work-block__wrap {
     gap: 192px;
+
     .work-block__title-block {
       .component__title-block {
         .component__tltle-link {
@@ -164,11 +176,13 @@
         }
       }
     }
+
     .work-block__header-block {
       flex: 1;
       justify-content: space-between;
     }
   }
+
   .work-block__slider {
     .work-block__slider-swiper {
       .swiper-wrapper {
@@ -178,6 +192,56 @@
           .work-block__slide-link {
             .work-block__slide-title {
               color: $blue-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.watch-more-eqip {
+  .work-block__wrap {
+    gap: 220px;
+    margin-bottom: 30px;
+
+    .work-block__header-block {
+      flex: 1;
+      justify-content: space-between;
+
+      .component__title-block {
+        .component__title-text {
+          max-width: 570px;
+        }
+      }
+    }
+  }
+
+  .work-block__slider {
+    .work-block__slider-swiper {
+      .swiper-wrapper {
+        .work-block__slide {
+          background: $light-blue-2;
+          width: 338px !important;
+          height: 314px;
+
+          .work-block__slide-link {
+            gap: 10px;
+            padding: 20px;
+
+            img {
+              height: 180px;
+              width: auto;
+              object-fit: contain;
+            }
+
+            .work-block__slide-title {
+              font-weight: 500;
+              font-size: 2.6rem;
+              line-height: 104%;
+              letter-spacing: -0.01em;
+              color: $blue-link;
+              padding: 0px 0px 5px 5px;
             }
           }
         }

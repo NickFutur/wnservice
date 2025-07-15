@@ -1933,6 +1933,41 @@ img {
   color: #0775b5;
 }
 
+.watch-more-eqip .work-block__wrap {
+  gap: 220px;
+  margin-bottom: 30px;
+}
+.watch-more-eqip .work-block__wrap .work-block__header-block {
+  flex: 1;
+  justify-content: space-between;
+}
+.watch-more-eqip .work-block__wrap .work-block__header-block .component__title-block .component__title-text {
+  max-width: 570px;
+}
+.watch-more-eqip .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide {
+  background: #ddeef8;
+  width: 338px !important;
+  height: 314px;
+}
+.watch-more-eqip .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link {
+  gap: 10px;
+  padding: 20px;
+}
+.watch-more-eqip .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link img {
+  height: 180px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.watch-more-eqip .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-link .work-block__slide-title {
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  color: #0775b5;
+  padding: 0px 0px 5px 5px;
+}
+
 .sections-menu {
   display: flex;
   gap: 15px;
@@ -2757,7 +2792,8 @@ img {
   display: flex;
   gap: 22px;
 }
-.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p:nth-child(1) {
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div .blue-text,
+.adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div span {
   color: #13a9e1;
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
 }
@@ -2837,13 +2873,40 @@ img {
   width: auto;
   margin-left: -67px;
 }
-.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card::nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p {
-  font-family: "TT Hoves Pro Trial Light", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-list {
+  padding-top: 28px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
-.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card::nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p span {
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item img {
+  width: 36px;
+  height: 35px;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div span {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   color: #13a9e1;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(2) .adv-service__card-text {
+  gap: 24px;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list {
+  gap: 28px;
+  padding-top: 28px;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item {
+  width: 100%;
+  max-width: 540px;
+  align-items: flex-start;
+}
+.adv-service .adv-service__wrap .adv-service__desc-gen .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item p {
+  line-height: 107%;
 }
 
 .adv-service-cond {

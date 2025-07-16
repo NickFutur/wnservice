@@ -1,0 +1,25 @@
+.charact-equip {
+    display: flex;
+
+    .charact-equip__desc {
+        display: flex;
+        flex: 1;
+        background-image: url("../images/charact-equip-image-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .charact-equip__desc-wrap {
+            background-color: $blue-link;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .charact-equip__image {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}

@@ -1,0 +1,78 @@
+.desc-eqip {
+    margin-top: 80px;
+    display: flex;
+    gap: 41px;
+    padding: 0px 62px;
+    justify-content: center;
+
+    .desc-eqip__image {
+        max-width: 673px;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .desc-eqip__text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        flex: 1;
+        max-width: 520px;
+
+        h2 {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 4rem;
+            line-height: 105%;
+            letter-spacing: -0.01em;
+            color: $blue;
+            margin-bottom: 17px;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-image: url("../images/icon-desc-eqip-1.svg");
+                position: absolute;
+                display: block;
+                top: 0;
+                left: -65px;
+                width: 41px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+        h4 {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: -0.01em;
+            color: $black;
+            margin-bottom: 42px;
+        }
+
+        p {
+            font-family: $font-family-light;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 137%;
+            letter-spacing: 0em;
+            color: rgba(31, 31, 31, 0.5);
+            margin-bottom: 32px;
+        }
+
+        .leave-request-btn {
+            a {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                width: 181px;
+                height: 48px;
+            }
+        }
+    }
+}

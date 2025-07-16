@@ -1008,6 +1008,60 @@
     }
   }
 
+  .desc-eqip {
+    margin-top: 90px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .desc-eqip__image {
+      max-width: 506px;
+    }
+
+    .desc-eqip__text {
+      max-width: 100%;
+      width: 572px;
+      align-items: center;
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 12px;
+        display: flex;
+        gap: 15px;
+        text-align: center;
+        flex-wrap: wrap;
+
+        &::before {
+          position: relative;
+          display: flex;
+          flex: 1;
+          left: 0;
+          width: 36px;
+          height: 34px;
+        }
+      }
+
+      h4 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .leave-request-btn {
+        a {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          width: 181px;
+          height: 48px;
+        }
+      }
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -1859,6 +1913,16 @@
   }
 
   .service-info-block-gen {
+    .service-info-block__title {
+      .component__title-block {
+        h4 {
+          width: 110%;
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
     .service-info-block__cards {
       .service-info-block__card {
         &:nth-child(3) {
@@ -3600,6 +3664,50 @@
     }
   }
 
+  .desc-eqip {
+    padding: 0px 11px;
+    gap: 18px;
+
+    .desc-eqip__image {
+      max-width: 100%;
+    }
+
+    .desc-eqip__text {
+      width: 100%;
+      max-width: 99%;
+
+      h2 {
+        font-size: 2.4rem;
+
+        &::before {
+          position: relative;
+          left: 0;
+          width: 26px;
+          height: 25px;
+        }
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        max-width: 315px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 353px;
+      }
+
+      .leave-request-btn {
+        a {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          width: 181px;
+          height: 48px;
+        }
+      }
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -3972,6 +4080,18 @@
           p {
             max-width: 266px;
           }
+        }
+      }
+    }
+  }
+
+  .service-info-block-gen {
+    .service-info-block__title {
+      .component__title-block {
+        h4 {
+          width: 100%;
+          font-size: 1.4rem;
+          margin-bottom: 20px
         }
       }
     }

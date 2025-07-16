@@ -3236,25 +3236,121 @@ img {
 
 .charact-equip {
   display: flex;
+  gap: 15px;
 }
 .charact-equip .charact-equip__desc {
+  position: relative;
   display: flex;
-  flex: 1;
+  flex: 1 1 50%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.charact-equip .charact-equip__desc::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/charact-equip-image-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap {
   background-color: #0775b5;
   opacity: 0.8;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 43px 40px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  fill: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(16.8401985168px);
+          backdrop-filter: blur(16.8401985168px);
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div img {
+  width: 27px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap h4 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block {
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 12px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block:last-child {
+  margin-bottom: 0;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item p {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item p:nth-child(2) {
+  text-align: left;
+  width: 140px;
 }
 .charact-equip .charact-equip__image {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  align-items: center;
+  flex: 1 1 50%;
+  padding: 52px 49px 91px 49px;
+  gap: 56px;
+  background: #e8f4fb;
+  border-radius: 20px;
+}
+.charact-equip .charact-equip__image .charact-equip__sm-image {
+  width: 324px;
+  height: 48px;
+}
+.charact-equip .charact-equip__image .charact-equip__big-image {
+  width: 594px;
+  height: 463px;
 }
 
 footer {

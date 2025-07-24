@@ -3393,6 +3393,126 @@ img {
   color: #ffffff;
 }
 
+.works-title-block {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.works-title-block h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1f1f1f;
+  max-width: 857px;
+  width: 100%;
+  text-align: center;
+}
+.works-title-block h2 span {
+  color: #13a9e1;
+}
+.works-title-block p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgba(31, 31, 31, 0.5);
+  max-width: 745px;
+  width: 100%;
+  text-align: center;
+}
+
+.works-catalog {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  padding: 0px 20px;
+}
+.works-catalog .works-catalog__card {
+  width: 315px;
+  height: 315px;
+  background: #d9d9d9;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 31px;
+}
+.works-catalog .works-catalog__card .works-catalog__card-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+.works-catalog .works-catalog__card .works-catalog__card-photo .works-catalog__card-photo-font {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, #000 100%);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.works-catalog .works-catalog__card .works-catalog__card-photo img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 17px;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link svg {
+  align-self: flex-end;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link svg rect {
+  fill: #ffffff;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link svg path {
+  fill: #1c75a8;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link .works-catalog__card-title {
+  position: relative;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  padding: 9px;
+  max-width: 230px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link:hover svg, .works-catalog .works-catalog__card .works-catalog__card-link:focus svg, .works-catalog .works-catalog__card .works-catalog__card-link:active svg {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+.works-catalog .works-catalog__card .works-catalog__card-link:hover .works-catalog__card-title, .works-catalog .works-catalog__card .works-catalog__card-link:focus .works-catalog__card-title, .works-catalog .works-catalog__card .works-catalog__card-link:active .works-catalog__card-title {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
 footer {
   overflow: hidden;
 }

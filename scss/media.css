@@ -734,6 +734,11 @@
     width: 181px;
     height: 48px;
   }
+  .charact-equip {
+    flex-direction: column;
+    padding: 0px 12px;
+    gap: 15px;
+  }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
     max-width: 435px;
     margin-bottom: 50px;
@@ -1206,6 +1211,51 @@
   }
   .watch-more-eqip .work-block__wrap .work-block__header-block .component__title-block .component__title-text h3 {
     max-width: 420px;
+  }
+  .charact-equip {
+    margin-top: 90px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap {
+    padding: 50px 43px 44px 43px;
+    gap: 14px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block {
+    margin-bottom: 13px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block h2 {
+    font-size: 4.2rem;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div {
+    width: 56px;
+    height: 56px;
+    margin-top: -21px;
+    margin-right: -15px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div img {
+    width: 23px;
+    height: 25px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block {
+    padding: 13px 16px;
+  }
+  .charact-equip .charact-equip__image {
+    gap: 24px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__sm-image {
+    max-width: 348px;
+    max-height: 51px;
+    margin-bottom: 49px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__big-image {
+    max-width: 572px;
+    max-height: 446px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__coast {
+    width: 147px;
+    height: 38px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__coast p {
+    font-size: 1.8rem;
   }
   .footer-contacts .footer-contacts__feedback-block {
     background-position: center calc(50% + 0px);
@@ -2789,6 +2839,64 @@
   }
   .how-work-block .how-work-block__wrap-cond .how-work-block__cards .how-work-block__card svg {
     align-self: center;
+  }
+  .charact-equip {
+    margin-top: 74px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap {
+    padding: 15px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block {
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block h2 {
+    font-size: 2.4rem;
+    margin-left: 10px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div {
+    width: 44px;
+    height: 44px;
+    margin-top: -6px;
+    margin-right: 5px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block div img {
+    width: 18px;
+    height: 20px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block {
+    padding: 18px;
+    gap: 12px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item p {
+    font-size: 1.2rem;
+  }
+  .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item p:last-child {
+    opacity: 0.6;
+  }
+  .charact-equip .charact-equip__image {
+    padding: 31px;
+    gap: 19px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__sm-image {
+    max-width: 165px;
+    max-height: 24px;
+    margin-bottom: 14px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__big-image {
+    max-width: 250px;
+    max-height: 195px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__coast {
+    width: 117px;
+    height: 26px;
+  }
+  .charact-equip .charact-equip__image .charact-equip__coast p {
+    font-size: 1.4rem;
   }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text p {
     max-width: 300px;

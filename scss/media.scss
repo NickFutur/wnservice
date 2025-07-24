@@ -1062,6 +1062,12 @@
     }
   }
 
+  .charact-equip {
+    flex-direction: column;
+    padding: 0px 12px;
+    gap: 15px;
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -1789,6 +1795,66 @@
           }
         }
 
+      }
+    }
+  }
+
+  .charact-equip {
+    margin-top: 90px;
+
+    .charact-equip__desc {
+
+      .charact-equip__desc-wrap {
+        padding: 50px 43px 44px 43px;
+        gap: 14px;
+
+        .charact-equip__desc-title-block {
+          margin-bottom: 13px;
+
+          h2 {
+            font-size: 4.2rem;
+          }
+
+          div {
+            width: 56px;
+            height: 56px;
+            margin-top: -21px;
+            margin-right: -15px;
+
+            img {
+              width: 23px;
+              height: 25px;
+            }
+          }
+        }
+
+        .charact-equip__desc-block {
+          padding: 13px 16px;
+        }
+      }
+    }
+
+    .charact-equip__image {
+      gap: 24px;
+
+      .charact-equip__sm-image {
+        max-width: 348px;
+        max-height: 51px;
+        margin-bottom: 49px;
+      }
+
+      .charact-equip__big-image {
+        max-width: 572px;
+        max-height: 446px;
+      }
+
+      .charact-equip__coast {
+        width: 147px;
+        height: 38px;
+
+        p {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -4182,6 +4248,82 @@
           svg {
             align-self: center;
           }
+        }
+      }
+    }
+  }
+
+  .charact-equip {
+    margin-top: 74px;
+
+    .charact-equip__desc {
+
+      .charact-equip__desc-wrap {
+        padding: 15px;
+
+        .charact-equip__desc-title-block {
+          margin-bottom: 16px;
+          flex-wrap: wrap;
+
+          h2 {
+            font-size: 2.4rem;
+            margin-left: 10px;
+          }
+
+          div {
+            width: 44px;
+            height: 44px;
+            margin-top: -6px;
+            margin-right: 5px;
+
+            img {
+              width: 18px;
+              height: 20px;
+            }
+          }
+        }
+
+        .charact-equip__desc-block {
+          padding: 18px;
+          gap: 12px;
+
+          .charact-equip__desc-item {
+            flex-direction: column;
+            gap: 4px;
+
+            p {
+              font-size: 1.2rem;
+
+              &:last-child {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .charact-equip__image {
+      padding: 31px;
+      gap: 19px;
+
+      .charact-equip__sm-image {
+        max-width: 165px;
+        max-height: 24px;
+        margin-bottom: 14px;
+      }
+
+      .charact-equip__big-image {
+        max-width: 250px;
+        max-height: 195px;
+      }
+
+      .charact-equip__coast {
+        width: 117px;
+        height: 26px;
+
+        p {
+          font-size: 1.4rem;
         }
       }
     }

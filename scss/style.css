@@ -3237,6 +3237,8 @@ img {
 .charact-equip {
   display: flex;
   gap: 15px;
+  padding: 0px 20px;
+  margin-top: 80px;
 }
 .charact-equip .charact-equip__desc {
   position: relative;
@@ -3292,7 +3294,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  fill: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(16.8401985168px);
           backdrop-filter: blur(16.8401985168px);
 }
@@ -3309,12 +3311,15 @@ img {
   color: #ffffff;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   border-radius: 20px;
   padding: 15px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
   background: rgba(255, 255, 255, 0.2);
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block:last-child {
   margin-bottom: 0;
@@ -3329,10 +3334,12 @@ img {
   font-weight: 500;
   font-size: 1.3rem;
   color: #ffffff;
+  width: 70%;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block .charact-equip__desc-item p:nth-child(2) {
   text-align: left;
-  width: 140px;
+  width: 30%;
+  max-width: 150px;
 }
 .charact-equip .charact-equip__image {
   display: flex;
@@ -3340,17 +3347,50 @@ img {
   align-items: center;
   flex: 1 1 50%;
   padding: 52px 49px 91px 49px;
-  gap: 56px;
+  gap: 14px;
   background: #e8f4fb;
   border-radius: 20px;
 }
 .charact-equip .charact-equip__image .charact-equip__sm-image {
-  width: 324px;
-  height: 48px;
+  max-width: 324px;
+  max-height: 48px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 42px;
 }
 .charact-equip .charact-equip__image .charact-equip__big-image {
-  width: 594px;
-  height: 463px;
+  max-width: 594px;
+  max-height: 463px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.charact-equip .charact-equip__image .charact-equip__coast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 130px;
+  height: 34px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background: #0775b5;
+}
+.charact-equip .charact-equip__image .charact-equip__coast p {
+  display: flex;
+  gap: 5px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.charact-equip .charact-equip__image .charact-equip__coast p span {
+  color: #ffffff;
 }
 
 footer {

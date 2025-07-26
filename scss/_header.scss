@@ -87,11 +87,9 @@
       width: 100%;
       height: 100%;
       border-radius: 30px;
-      background: linear-gradient(
-          180deg,
+      background: linear-gradient(180deg,
           rgba(0, 0, 0, 0.3) 28.85%,
-          rgba(0, 0, 0, 0.3) 100%
-        ),
+          rgba(0, 0, 0, 0.3) 100%),
         rgba(0, 0, 0, 0.05);
       z-index: 1;
     }
@@ -259,8 +257,7 @@
         padding: 15px 20px 24px 20px;
         gap: 40px;
 
-        .achievements-block__title {
-        }
+        .achievements-block__title {}
 
         .achievements-block__text {
           p {
@@ -296,10 +293,13 @@
       }
     }
   }
+
   .header-wrap__info-stabilizer {
     overflow: hidden;
+
     .header-wrap__title-block {
       position: relative;
+
       .header-wrap__title-block-main,
       .header-wrap__title-block-func {
         position: relative;
@@ -311,16 +311,19 @@
           max-width: 570px;
         }
       }
+
       .header-wrap__title-block-image {
         position: absolute;
         width: 455px;
         height: 417px;
         z-index: 0;
         left: 38%;
+
         img {
           object-fit: contain;
         }
       }
+
       .header-wrap__title-block-image-cond {
         width: 342px;
         height: auto;
@@ -377,7 +380,7 @@
 
         h1 {
           text-align: left;
-          line-height: 100%;
+          line-height: 120%;
           letter-spacing: -0.03em;
           background: linear-gradient(180deg, #fff 0%, #d9d9d9 100%);
           background-clip: text;
@@ -404,15 +407,22 @@
       }
     }
   }
+
   .header-wrap__info-mebel {
     background-image: url("../images/header-mebel-img.png");
   }
+
   .header-wrap__info-stabilizer {
     background-image: url("../images/header-service-font.png");
   }
+
+  .header-wrap__info-works {
+    background-image: url("../images/header-works.png");
+  }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .header-wrap .header-wrap__info {
     background-image: url("../images/header-image-1-2x.png");
   }
@@ -421,11 +431,17 @@
     .header-wrap__info {
       background-image: url("../images/header-service-image-1-2x.png");
     }
+
     .header-wrap__info-mebel {
       background-image: url("../images/header-mebel-img-2x.png");
     }
+
     .header-wrap__info-stabilizer {
       background-image: url("../images/header-service-font-2x.png");
+    }
+
+    .header-wrap__info-works {
+      background-image: url("../images/header-works.png");
     }
   }
 }

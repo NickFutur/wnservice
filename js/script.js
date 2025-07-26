@@ -38,6 +38,23 @@ const wathcMorekBlockSwiper = new Swiper("#watch-more-slider", {
   },
 });
 
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 8,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
 const modalMenuDesktop = document.querySelector("#modal-menu-desktop");
 const modalMenuBtns = document.querySelectorAll(".js-modal-menu-btn");
 const modalMenuCloseBtn = document.querySelector("#modal-menu-close-btn");
@@ -144,8 +161,7 @@ getPodmenuLinks.forEach((getPodmenuLink) => {
     } else if (getPodmenuLink.textContent == "Оборудование") {
       podmenuEquipment.classList.add(DISPLAY_FLEX);
       podmenuService.classList.add(DISPLAY_NONE);
-    } else {
-    }
+    } else {}
   });
 });
 

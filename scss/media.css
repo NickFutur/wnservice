@@ -602,7 +602,7 @@
     align-self: center;
   }
 }
-@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (min-resolution: 192dpi) {
+@media (max-width: 1024px) and (min-resolution: 192dpi) {
   .service-leave-req .service-leave-req__wrap {
     background-image: url("../images/service-leave-req-1-2x-mob.png");
   }
@@ -945,6 +945,11 @@
     width: 345px;
   }
 }
+@media (min-width: 769px) {
+  .tablet-d-none_min-769 {
+    display: none !important;
+  }
+}
 @media (max-width: 768px) {
   .tablet-d-none_768 {
     display: none !important;
@@ -993,7 +998,7 @@
     padding-bottom: 0;
   }
 }
-@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi) {
+@media (max-width: 768px) and (min-resolution: 192dpi) {
   .header-wrap__service-block .header-wrap__service-block .header-wrap__info {
     background-image: url(../images/header-service-image-1-2x-mob.png);
   }
@@ -1010,6 +1015,12 @@
   }
   .header-wrap__service-block .header-wrap__info-stabilizer {
     background-image: url("../images/header-service-font.png");
+  }
+  .header-wrap__service-block .header-wrap__info-works {
+    background-image: url("../images/header-works.png");
+  }
+  .header-wrap__info-works {
+    background-image: url("../images/header-works.png");
   }
   .advantages-block {
     margin-top: 35px;
@@ -1432,6 +1443,35 @@
   .how-work-block .how-work-block__wrap-cond .how-work-block__cards .how-work-block__card {
     width: 345px;
     height: 161px;
+  }
+  .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-main {
+    width: 100%;
+  }
+  .title-desc-works {
+    margin-top: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .title-desc-works .component__title-block .component__tltle-link {
+    margin-bottom: 56px;
+  }
+  .title-desc-works .component__title-block .component__tltle-link .component__tltle {
+    height: 42px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text {
+    max-width: 450px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text h2 {
+    margin-bottom: 25px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__image img {
+    border-radius: 20px;
+    width: 166px;
+    height: 166px;
   }
 }
 @media (max-width: 760px) {
@@ -2208,7 +2248,7 @@
     background-image: url(../images/advantages-font-mob.png);
   }
 }
-@media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 600px) and (min-resolution: 192dpi) {
+@media (max-width: 600px) and (min-resolution: 192dpi) {
   .advantages-block .advantages-block__font {
     background-image: url(../images/advantages-font-2x-mob.png);
   }
@@ -2584,6 +2624,10 @@
   }
   .header-wrap__service-block .header-wrap__info-stabilizer {
     background-image: url("../images/header-service-font-mob.png");
+  }
+  .header-wrap__service-block .header-wrap__info-works .header-wrap__title-block .header-wrap__title-block-main h1 {
+    font-size: 3.2rem;
+    width: 100%;
   }
   .work-block .work-block__wrap .work-block__header-block {
     flex-direction: column;
@@ -2966,6 +3010,38 @@
   .works-catalog .works-catalog__card .works-catalog__card-link .works-catalog__card-title {
     font-size: 1.6rem;
     padding: 0;
+  }
+  .title-desc-works {
+    margin-top: 40px;
+    padding-left: 14px;
+    padding-right: 25px;
+  }
+  .title-desc-works .component__title-block .component__tltle-link {
+    margin-bottom: 18px;
+  }
+  .title-desc-works .component__title-block .component__tltle-link .component__tltle {
+    width: 81px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text {
+    max-width: 100%;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__image {
+    display: none;
+  }
+  .title-desc-works .title-desc-works__desc .title-desc-works__image img {
+    border-radius: 20px;
+    width: 166px;
+    height: 166px;
   }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text p {
     max-width: 300px;

@@ -92,17 +92,14 @@
           padding: 20px;
           border-radius: 20px;
 
-          @supports (
-            (-webkit-backdrop-filter: blur(50px)) or
-              (backdrop-filter: blur(50px))
-          ) {
+          @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
             -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
             background: rgba(255, 255, 255, 0.3);
           }
 
           @supports not (gap: 10px) {
-            > *:not(:last-child) {
+            >*:not(:last-child) {
               margin-bottom: 10px;
             }
           }
@@ -110,16 +107,14 @@
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
         }
 
-        @supports (
-          (-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))
-        ) {
+        @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
           -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
           background: rgba(255, 255, 255, 0.3);
         }
 
         @supports not (gap: 10px) {
-          > *:not(:last-child) {
+          >*:not(:last-child) {
             margin-bottom: 10px;
           }
         }

@@ -1354,6 +1354,26 @@
       }
     }
   }
+
+  .desc-info-work {
+    // padding: 0px 30px;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .desc-info-work__card-list {
+      grid-template-columns: repeat(3, 1fr);
+
+      .desc-info-work__card {}
+    }
+
+    .desc-info-work__slider {
+      max-width: 100%;
+
+      .desc-info-work__slider-main {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) {
@@ -1905,6 +1925,40 @@
         .works-catalog__card-title {
           font-size: 1.6rem;
         }
+      }
+    }
+  }
+
+  .desc-info-work {
+    padding: 0px 30px;
+    margin-top: 50px;
+    gap: 9px;
+
+    .desc-info-work__card-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+
+      .desc-info-work__card {
+        max-width: 228px;
+        height: 208px;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .desc-info-work__slider {
+      height: 570px;
+
+      .desc-info-work__slider-main {
+        height: 570px;
+      }
+
+      .desc-info-work__slider-small {
+        max-width: 520px;
       }
     }
   }
@@ -4533,6 +4587,53 @@
           border-radius: 20px;
           width: 166px;
           height: 166px;
+        }
+      }
+    }
+  }
+
+  .desc-info-work {
+    padding: 0px 10px;
+    margin-top: 40px;
+    gap: 12px;
+    flex-direction: column;
+
+    .desc-info-work__card-list {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+
+      .desc-info-work__card {
+        max-width: 100%;
+        height: 90px;
+        min-height: 90px;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 50px;
+        border-radius: 14px;
+
+        p {
+          font-size: 1.3rem;
+          flex: 1;
+        }
+      }
+    }
+
+    .desc-info-work__slider {
+      height: 355px;
+
+      .desc-info-work__slider-main {
+        height: 355px;
+      }
+
+      .desc-info-work__slider-small {
+        max-width: 325px;
+
+        .swiper-slide {
+          width: 50px !important;
+          height: 50px !important;
         }
       }
     }

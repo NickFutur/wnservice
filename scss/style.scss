@@ -1,4 +1,4 @@
-@import "variants";
+@use "variants"as *;
 
 html {
   scroll-behavior: smooth;

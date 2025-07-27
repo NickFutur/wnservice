@@ -213,3 +213,66 @@
     }
   }
 }
+
+.service-info-block-spare {
+  .service-info-block__title {
+    .component__title-block {
+      .service-info-block__info-text {
+        p {
+          max-width: 732px;
+        }
+      }
+    }
+  }
+
+  .service-info-block__cards {
+    .service-info-block__card {
+      width: 267px;
+      height: 357px;
+
+      &:nth-child(1) {
+        position: relative;
+        overflow: hidden;
+        // justify-content: flex-end;
+        align-items: flex-start;
+
+
+        .font-image {
+          position: absolute;
+          z-index: -1;
+        }
+
+        .service-info-block__card-text {
+          margin: 25px;
+        }
+
+        .icon-image {
+          width: 50px;
+          height: 50px;
+          backdrop-filter: blur(3px);
+          border-radius: 50%;
+          align-self: flex-end;
+          margin: 20px;
+        }
+      }
+
+      &:nth-child(2) {
+        background: $blue;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &:nth-child(4) {
+        background: $blue-link;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

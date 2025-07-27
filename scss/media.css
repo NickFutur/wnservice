@@ -734,6 +734,28 @@
     width: 181px;
     height: 48px;
   }
+  .desc-spare {
+    gap: 0;
+  }
+  .desc-spare .desc-eqip__image {
+    max-width: 505px;
+  }
+  .desc-spare .desc-eqip__text {
+    padding-top: 0;
+    width: 525px;
+  }
+  .desc-spare .desc-eqip__text h2 {
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .desc-spare .desc-eqip__text h2::before {
+    display: inline;
+    flex: auto;
+  }
+  .desc-spare .desc-eqip__text p {
+    margin-bottom: 32px;
+  }
   .charact-equip {
     flex-direction: column;
     padding: 0px 12px;
@@ -1430,6 +1452,21 @@
   }
   .service-info-block-gen .service-info-block__cards .service-info-block__card:nth-child(3) .service-info-block__card-text {
     margin: 20px 0px 0px 20px;
+  }
+  .service-info-block-spare .service-info-block__title .component__title-block .service-info-block__info-text {
+    max-width: 700px;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(1) .icon-image {
+    width: 48px;
+    height: 48px;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(2) img {
+    width: 48px;
+    height: 48px;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(4) img {
+    width: 48px;
+    height: 48px;
   }
   .how-work-block .how-work-block__wrap {
     gap: 23px;
@@ -2647,6 +2684,25 @@
     width: 181px;
     height: 48px;
   }
+  .desc-spare {
+    gap: 0;
+  }
+  .desc-spare .desc-eqip__text {
+    padding-top: 0;
+    width: 525px;
+  }
+  .desc-spare .desc-eqip__text h2 {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+  .desc-spare .desc-eqip__text h2::before {
+    display: flex;
+    flex: 1;
+  }
+  .desc-spare .desc-eqip__text p {
+    margin-bottom: 30px;
+  }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
     margin-bottom: 54px;
   }
@@ -2892,6 +2948,27 @@
     width: 100%;
     font-size: 1.4rem;
     margin-bottom: 20px;
+  }
+  .service-info-block-spare .service-info-block__title .component__title-block .service-info-block__info-text {
+    max-width: 100%;
+  }
+  .service-info-block-spare .service-info-block__title .component__title-block .service-info-block__info-text h3 {
+    font-size: 1.8rem;
+  }
+  .service-info-block-spare .service-info-block__title .component__title-block .service-info-block__info-text h4 {
+    font-size: 1.2rem;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(1) .icon-image {
+    width: 44px;
+    height: 44px;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(2) img {
+    width: 44px;
+    height: 44px;
+  }
+  .service-info-block-spare .service-info-block__cards .service-info-block__card:nth-child(4) img {
+    width: 44px;
+    height: 44px;
   }
   .how-work-block {
     padding: 0px 8px;

@@ -1,4 +1,4 @@
-@import "variants";
+@use "variants"as *;
 
 @media (max-width: 1439px) {
   .modal-menu {
@@ -1062,6 +1062,34 @@
     }
   }
 
+  .desc-spare {
+    gap: 0;
+
+    .desc-eqip__image {
+      max-width: 505px;
+    }
+
+    .desc-eqip__text {
+      padding-top: 0;
+      width: 525px;
+
+      h2 {
+        margin-bottom: 20px;
+        flex-wrap: nowrap;
+        gap: 0;
+
+        &::before {
+          display: inline;
+          flex: auto;
+        }
+      }
+
+      p {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
   .charact-equip {
     flex-direction: column;
     padding: 0px 12px;
@@ -2102,6 +2130,42 @@
 
           .service-info-block__card-text {
             margin: 20px 0px 0px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .service-info-block-spare {
+    .service-info-block__title {
+      .component__title-block {
+        .service-info-block__info-text {
+          max-width: 700px;
+        }
+      }
+    }
+
+    .service-info-block__cards {
+      .service-info-block__card {
+
+        &:nth-child(1) {
+          .icon-image {
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        &:nth-child(2) {
+          img {
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        &:nth-child(4) {
+          img {
+            width: 48px;
+            height: 48px;
           }
         }
       }
@@ -3928,6 +3992,30 @@
     }
   }
 
+  .desc-spare {
+    gap: 0;
+
+    .desc-eqip__text {
+      padding-top: 0;
+      width: 525px;
+
+      h2 {
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 13px;
+
+        &::before {
+          display: flex;
+          flex: 1;
+        }
+      }
+
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -4329,6 +4417,50 @@
           width: 100%;
           font-size: 1.4rem;
           margin-bottom: 20px
+        }
+      }
+    }
+  }
+
+  .service-info-block-spare {
+    .service-info-block__title {
+      .component__title-block {
+        .service-info-block__info-text {
+          max-width: 100%;
+
+          h3 {
+            font-size: 1.8rem;
+          }
+
+          h4 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .service-info-block__cards {
+      .service-info-block__card {
+
+        &:nth-child(1) {
+          .icon-image {
+            width: 44px;
+            height: 44px;
+          }
+        }
+
+        &:nth-child(2) {
+          img {
+            width: 44px;
+            height: 44px;
+          }
+        }
+
+        &:nth-child(4) {
+          img {
+            width: 44px;
+            height: 44px;
+          }
         }
       }
     }

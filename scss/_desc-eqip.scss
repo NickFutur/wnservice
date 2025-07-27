@@ -76,3 +76,27 @@
         }
     }
 }
+
+.desc-spare {
+    align-items: center;
+
+    .desc-eqip__image {
+        max-width: 588px;
+    }
+
+    .desc-eqip__text {
+        padding-top: 0;
+
+        h2 {
+            margin-bottom: 30px;
+
+            &::before {
+                background-image: url("../images/icon-desc-spare-1.svg");
+            }
+        }
+
+        p {
+            margin-bottom: 60px;
+        }
+    }
+}

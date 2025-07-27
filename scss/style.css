@@ -3785,6 +3785,169 @@ img {
   transition: all 0.3s ease;
 }
 
+.spare-info-block {
+  margin-top: 120px;
+}
+.spare-info-block .spare-info-block__wrap {
+  display: flex;
+  justify-content: center;
+  background: rgba(221, 238, 248, 0.7);
+  height: 600px;
+  border-radius: 20px;
+  width: 100%;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text {
+  flex: 1 1 50%;
+  padding: 43px 23px 45px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 404px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-1 h3 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: #13a9e1;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-1 p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(31, 31, 31, 0.04);
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top {
+  display: flex;
+  gap: 22px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top::before {
+  content: "";
+  background-image: url("../images/spare-info-block-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 36px;
+  height: 34px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 356px;
+  width: 100%;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top p span {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  color: #13a9e1;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-bot {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-bot .leave-request-btn {
+  align-self: flex-start;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-bot img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 295px;
+  max-height: 210px;
+  margin-right: 20px;
+  justify-self: flex-end;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image {
+  position: relative;
+  flex: 1 1 50%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .spare-info-block__image-font {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes scrollDownSpare {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  gap: 8px;
+  will-change: transform;
+  animation: scrollDownSpare 50s linear infinite;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block {
+  display: grid;
+  grid-template-columns: repeat(5, 124px);
+  gap: 8px;
+  will-change: transform;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 124px;
+  -webkit-backdrop-filter: blur(44px);
+          backdrop-filter: blur(44px);
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 23px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo img {
+  width: auto;
+  height: auto;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not {
+  width: 124px;
+  height: 124px;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob {
+  opacity: 0;
+  background: none;
+}
+.spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob img {
+  display: none;
+}
+
 footer {
   overflow: hidden;
 }

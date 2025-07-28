@@ -2951,6 +2951,7 @@
   .header-wrap__service-block .header-wrap__info-spare .header-wrap__title-block .header-wrap__title-block-main h1 {
     font-size: 3.2rem;
     width: 100%;
+    word-wrap: break-word;
   }
   .header-wrap__service-block .header-wrap__info-spare {
     background: url("../images/header-spares-mob.png");

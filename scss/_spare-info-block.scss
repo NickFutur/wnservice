@@ -9,6 +9,7 @@
         height: 600px;
         border-radius: 20px;
         width: 100%;
+        overflow: hidden;
 
         .spare-info-block__text {
             flex: 1 1 50%;
@@ -63,6 +64,8 @@
                         display: block;
                         width: 36px;
                         height: 34px;
+                        min-width: 36px;
+                        min-height: 34px;
                     }
 
                     p {
@@ -145,7 +148,7 @@
 
                     .partners-block__logos-block {
                         display: grid;
-                        grid-template-columns: repeat(5, 124px);
+                        grid-template-columns: repeat(5, 1fr);
                         gap: 8px;
                         will-change: transform;
 
@@ -153,21 +156,21 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 124px;
-                            height: 124px;
+                            padding: 15px;
+                            width: calc(75px + (124 - 75) * ((100vw - 1024px) / (1440 - 1024)));
+                            height: calc(75px + (124 - 75) * ((100vw - 1024px) / (1440 - 1024)));
                             backdrop-filter: blur(44px);
                             background: rgba(217, 217, 217, 0.5);
                             border-radius: 23px;
 
                             img {
-                                width: auto;
-                                height: auto;
+                                object-fit: contain;
                             }
                         }
 
                         .partners-block__logo-back-not {
-                            width: 124px;
-                            height: 124px;
+                            width: calc(75px + (124 - 75) * ((100vw - 1024px) / (1440 - 1024)));
+                            height: calc(75px + (124 - 75) * ((100vw - 1024px) / (1440 - 1024)));
                         }
 
                         .logo-back-not-mob {

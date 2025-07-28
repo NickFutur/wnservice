@@ -2335,6 +2335,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .service-info-block .service-info-block__title .component__title-block .service-info-block__info-text h3 {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
@@ -3795,6 +3796,7 @@ img {
   height: 600px;
   border-radius: 20px;
   width: 100%;
+  overflow: hidden;
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__text {
   flex: 1 1 50%;
@@ -3846,6 +3848,8 @@ img {
   display: block;
   width: 36px;
   height: 34px;
+  min-width: 36px;
+  min-height: 34px;
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top p {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
@@ -3917,7 +3921,7 @@ img {
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block {
   display: grid;
-  grid-template-columns: repeat(5, 124px);
+  grid-template-columns: repeat(5, 1fr);
   gap: 8px;
   will-change: transform;
 }
@@ -3925,20 +3929,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 124px;
-  height: 124px;
+  padding: 15px;
+  width: calc(75px + 49 * (100vw - 1024px) / 416);
+  height: calc(75px + 49 * (100vw - 1024px) / 416);
   -webkit-backdrop-filter: blur(44px);
           backdrop-filter: blur(44px);
   background: rgba(217, 217, 217, 0.5);
   border-radius: 23px;
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo img {
-  width: auto;
-  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .partners-block__logo-back-not {
-  width: 124px;
-  height: 124px;
+  width: calc(75px + 49 * (100vw - 1024px) / 416);
+  height: calc(75px + 49 * (100vw - 1024px) / 416);
 }
 .spare-info-block .spare-info-block__wrap .spare-info-block__image .partners-block__logos .partners-block__logos-wrapper .partners-block__logos-block .logo-back-not-mob {
   opacity: 0;

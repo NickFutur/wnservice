@@ -4018,6 +4018,86 @@ img {
   display: none;
 }
 
+.politika-text {
+  margin-top: 120px;
+  padding: 0px 70px;
+}
+.politika-text h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  margin-bottom: 28px;
+}
+.politika-text .politika-text__multi-level {
+  counter-reset: item;
+  list-style-type: none;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.5;
+}
+.politika-text .politika-text__multi-level li {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.politika-text .politika-text__multi-level > li:before {
+  counter-increment: item;
+  content: counter(item) ".";
+  font-weight: bold;
+}
+.politika-text .politika-text__multi-level ol {
+  counter-reset: subitem;
+}
+.politika-text .politika-text__multi-level ol li {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.politika-text .politika-text__multi-level ol li:nth-child(1) {
+  margin-top: 20px;
+}
+.politika-text .politika-text__multi-level ol li::before {
+  counter-increment: subitem;
+  content: counter(item) "." counter(subitem) " ";
+}
+.politika-text .politika-text__multi-level ol li p {
+  margin-top: 0px;
+}
+.politika-text .politika-text__multi-level ol li p:last-child {
+  margin-bottom: 10px;
+}
+.politika-text .politika-text__multi-level ul {
+  margin-bottom: 20px;
+}
+.politika-text .politika-text__multi-level ul li:nth-child(1) {
+  margin-top: 0;
+}
+.politika-text .politika-text__multi-level ul li::before {
+  content: "-";
+  margin-right: 4px;
+}
+.politika-text .politika-text__multi-level p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.politika-text .politika-text__multi-level a {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  color: #1f1f1f;
+}
+.politika-text .politika-text__multi-level a:hover, .politika-text .politika-text__multi-level a:focus, .politika-text .politika-text__multi-level a:active {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+}
+
 footer {
   overflow: hidden;
 }

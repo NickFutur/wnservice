@@ -2477,6 +2477,15 @@
       }
     }
   }
+
+  .politika-text {
+    margin-top: 60px;
+    padding: 0px 40px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 @media (max-width: 760px) {
@@ -5123,6 +5132,19 @@
           }
         }
       }
+    }
+  }
+
+  .politika-text {
+    margin-top: 50px;
+    padding: 0px 15px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .politika-text__multi-level {
+      font-size: 1.2rem;
     }
   }
 }

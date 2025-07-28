@@ -1667,6 +1667,13 @@
   .spare-info-block .spare-info-block__wrap .spare-info-block__text .spare-info-block__text-block-2 .spare-info-block__txt-block-2-top {
     gap: 16px;
   }
+  .politika-text {
+    margin-top: 60px;
+    padding: 0px 40px;
+  }
+  .politika-text h2 {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 760px) {
   .reg-maintenance-block {
@@ -3432,6 +3439,16 @@
   .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-graf-tel,
   .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email {
     grid-column: 1/-1;
+  }
+  .politika-text {
+    margin-top: 50px;
+    padding: 0px 15px;
+  }
+  .politika-text h2 {
+    font-size: 1.6rem;
+  }
+  .politika-text .politika-text__multi-level {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {

@@ -419,6 +419,10 @@
   .header-wrap__info-works {
     background-image: url("../images/header-works.png");
   }
+
+  .header-wrap__info-spare {
+    background-image: url("../images/header-spares.png");
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -442,6 +446,10 @@
 
     .header-wrap__info-works {
       background-image: url("../images/header-works.png");
+    }
+
+    .header-wrap__info-spare {
+      background-image: url("../images/header-spares.png");
     }
   }
 }

@@ -1078,8 +1078,15 @@
   .header-wrap__service-block .header-wrap__info-works {
     background-image: url("../images/header-works.png");
   }
+  .header-wrap__service-block .header-wrap__info-spare {
+    background-image: url("../images/header-spares.png");
+  }
   .header-wrap__info-works {
     background-image: url("../images/header-works.png");
+  }
+  .header-wrap__info-spare {
+    background-image: url("../images/header-spares.png");
+    background-position-x: left;
   }
   .advantages-block {
     margin-top: 35px;
@@ -2834,9 +2841,16 @@
   .header-wrap__service-block .header-wrap__info-stabilizer {
     background-image: url("../images/header-service-font-mob.png");
   }
-  .header-wrap__service-block .header-wrap__info-works .header-wrap__title-block .header-wrap__title-block-main h1 {
+  .header-wrap__service-block .header-wrap__info-works .header-wrap__title-block .header-wrap__title-block-main h1,
+  .header-wrap__service-block .header-wrap__info-spare .header-wrap__title-block .header-wrap__title-block-main h1 {
     font-size: 3.2rem;
     width: 100%;
+  }
+  .header-wrap__service-block .header-wrap__info-spare {
+    background: url("../images/header-spares-mob.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .work-block .work-block__wrap .work-block__header-block {
     flex-direction: column;

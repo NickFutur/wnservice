@@ -816,6 +816,9 @@ img {
 .header-wrap__service-block .header-wrap__info-works {
   background-image: url("../images/header-works.png");
 }
+.header-wrap__service-block .header-wrap__info-spare {
+  background-image: url("../images/header-spares.png");
+}
 
 @media (min-resolution: 192dpi) {
   .header-wrap .header-wrap__info {
@@ -832,6 +835,9 @@ img {
   }
   .header-wrap__service-block .header-wrap__info-works {
     background-image: url("../images/header-works.png");
+  }
+  .header-wrap__service-block .header-wrap__info-spare {
+    background-image: url("../images/header-spares.png");
   }
 }
 .logo {

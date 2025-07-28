@@ -282,6 +282,15 @@
     left: auto;
     right: 0px;
   }
+  .header-404 .header-wrap__info {
+    background-image: url("../images/header-404.png");
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block h1 {
+    font-size: 20rem;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block p {
+    font-size: 2rem;
+  }
   .special-offers .component__tltle-link {
     margin-bottom: 35px;
   }
@@ -1037,6 +1046,61 @@
     width: 48px;
     height: 48px;
   }
+  .header-404 .header-wrap__info {
+    min-height: 965px;
+    background-image: url("../images/header-404-tablet.png");
+    gap: 62px;
+    background-position: center;
+  }
+  .header-404 .header-wrap__info .header-wrap__navigation {
+    margin: 27px 28px 0px 28px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__title-block-wrapper {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    align-items: center;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block h1 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    font-size: 24.3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 161px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block p {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, #d9d9d9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns .leave-request-btn:nth-child(1) a {
+    width: 174px;
+    height: 48px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns .leave-request-btn:nth-child(2) a {
+    width: 138px;
+    height: 48px;
+  }
   .header-wrap__service-block .header-wrap__info {
     border-radius: 20px;
     background-position: center;
@@ -1759,6 +1823,41 @@
   }
   .header-wrap .header-wrap__info .header-wrap__achievements-block {
     gap: 10px;
+  }
+  .header-404 .header-wrap__info {
+    min-height: 671px;
+    background-image: url("../images/header-404-tablet.png");
+    gap: 66px;
+    background-position: center;
+  }
+  .header-404 .header-wrap__info .header-wrap__navigation {
+    margin: 15px 15px 0px 15px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__title-block-wrapper {
+    width: 100%;
+    max-width: 309px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block h1 {
+    font-size: 13.9rem;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block p {
+    font-size: 1.6rem;
+    max-width: 293px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns {
+    gap: 15px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns .leave-request-btn:nth-child(1) a {
+    width: 164px;
+    height: 44px;
+  }
+  .header-404 .header-wrap__info .header-wrap__title-block .header-wrap__btns .leave-request-btn:nth-child(2) a {
+    width: 130px;
+    height: 44px;
   }
   .header-wrap__service-block .header-wrap__info {
     gap: 149px;

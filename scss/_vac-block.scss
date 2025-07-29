@@ -134,6 +134,103 @@
     }
 }
 
+.vac-maket-title {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-med;
+    font-weight: 500;
+    gap: 20px;
+    margin-top: 120px;
+    padding: 0px 70px;
+
+    h2 {
+        font-size: 4rem;
+        line-height: 112%;
+        letter-spacing: -0.01em;
+        color: $blue-link;
+        width: 100%;
+        max-width: 880px;
+
+        &:before {
+            content: '>';
+            margin-right: 5px;
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 130%;
+        letter-spacing: 0em;
+        color: $light-black;
+        width: 100%;
+        max-width: 880px;
+    }
+
+    .vac-maket-title__info-btns {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 880px;
+
+        div {
+            font-size: 1.6rem;
+            letter-spacing: 0em;
+            color: $white;
+            min-width: 103px;
+            height: 40px;
+            padding: 10px 21px;
+            background-color: $blue-link;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.vac-maket-desc {
+    margin-top: 72px;
+    padding: 0px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+
+    .vac-maket-desc__col {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h4 {
+            font-family: $font-family-med;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 130%;
+            letter-spacing: 0em;
+            color: $light-black;
+        }
+
+        ul {
+            margin-left: 15px;
+
+            li {
+                font-family: $font-family-light;
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 150%;
+                letter-spacing: 0em;
+                color: $light-black;
+                opacity: 0.5;
+                list-style-type: disc;
+            }
+        }
+    }
+}
+
 .vac-active {
     outline: none;
     color: $white !important;

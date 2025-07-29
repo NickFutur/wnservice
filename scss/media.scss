@@ -2543,6 +2543,32 @@
       font-size: 1.8rem;
     }
   }
+
+  .vac-maket-title {
+    padding: 0px 30px;
+    margin-top: 70px;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .vac-maket-desc {
+    margin-top: 70px;
+    padding: 0px 30px;
+    gap: 60px;
+    margin-bottom: 70px;
+
+    .vac-maket-desc__col {
+      h4 {
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 760px) {
@@ -5228,6 +5254,47 @@
       }
     }
   }
+
+  .vac-maket-title {
+    padding: 0px 15px;
+    margin-top: 40px;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .vac-maket-title__info-btns {
+      div {
+        font-size: 1.4rem;
+        height: 30px;
+        padding: 5px 10px;
+        min-width: 81px;
+      }
+    }
+  }
+
+  .vac-maket-desc {
+    margin-top: 58px;
+    padding: 0px 15px;
+    gap: 40px;
+    margin-bottom: 70px;
+
+    .vac-maket-desc__col {
+      gap: 14px;
+
+      ul {
+        li {
+          font-size: 1.4rem;
+        }
+
+      }
+    }
+  }
+
 
   .footer-maintenance {
     .footer-maintenance__title {

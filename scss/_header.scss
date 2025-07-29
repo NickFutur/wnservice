@@ -420,6 +420,11 @@
     background-image: url("../images/header-works.png");
   }
 
+  .header-wrap__info-vac {
+    background-image: url("../images/header-info.png");
+    background-position-y: top;
+  }
+
   .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
   }
@@ -446,6 +451,10 @@
 
     .header-wrap__info-works {
       background-image: url("../images/header-works.png");
+    }
+
+    .header-wrap__info-vac {
+      background-image: url("../images/header-info.png");
     }
 
     .header-wrap__info-spare {

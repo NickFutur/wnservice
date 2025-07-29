@@ -1,0 +1,143 @@
+.vac-title {
+    padding: 0px 70px;
+    margin-top: 120px;
+
+    h2 {
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 112%;
+        letter-spacing: -0.01em;
+        color: $black;
+        width: 100%;
+        max-width: 941px;
+    }
+}
+
+.vac-block {
+    padding: 0px 70px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .vac-block__nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 5px;
+
+            li {
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 141px;
+                    height: 48px;
+                    font-family: $font-family-med;
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    letter-spacing: 0em;
+                    color: $light-black;
+                    background: $white;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: $transition-default;
+
+                    // &:hover,
+                    // &:focus,
+                    // &:active {
+                    //     outline: none;
+                    //     color: $white;
+                    //     background: $blue-link;
+                    //     border-color: $blue-link;
+                    //     transition: $transition-default;
+                    // }
+                }
+            }
+        }
+    }
+
+    .vac-block__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .vac-block__card {
+            width: 313px;
+            height: 233px;
+            border-radius: 15px;
+            overflow: hidden;
+
+            .vac-block__card-link {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 24px 19px 24px 27px;
+                background: $blue-link;
+                color: $white;
+                font-family: $font-family-med;
+                font-weight: 500;
+                width: 100%;
+                height: 100%;
+                transition: $transition-default;
+
+                .vac-block__card-title {
+                    h3 {
+                        font-size: 2rem;
+                        line-height: 100%;
+                        margin-bottom: 16px;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 106%;
+                    }
+                }
+
+                .vac-block__card-desc {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    p {
+                        font-size: 1.3rem;
+                        line-height: 154%;
+                    }
+
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                        min-width: 50px;
+                        min-height: 50px;
+                        transition: $transition-default;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $sea-blue;
+                    transition: $transition-default;
+
+                    .vac-block__card-desc {
+                        svg {
+                            transform: rotate(45deg);
+                            transition: $transition-default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vac-active {
+    outline: none;
+    color: $white !important;
+    background: $blue-link !important;
+    border-color: $blue-link !important;
+    transition: $transition-default;
+}

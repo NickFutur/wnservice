@@ -236,22 +236,67 @@ const productsSeakeeperBlock = document.querySelector(".products-2");
 const seakeeperBtn = document.querySelector(".js-service-catalog__link-2");
 const jiwuBtn = document.querySelector(".js-service-catalog__link-1");
 
-function hideAllBlocks() {
-  productsJiwuBlock.style.display = "none";
-  productsSeakeeperBlock.style.display = "none";
-}
+if (seakeeperBtn && jiwuBtn) {
+  function hideAllBlocks() {
+    productsJiwuBlock.style.display = "none";
+    productsSeakeeperBlock.style.display = "none";
+  }
 
-seakeeperBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  hideAllBlocks();
-  productsSeakeeperBlock.style.display = "flex";
-});
+  seakeeperBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    hideAllBlocks();
+    productsSeakeeperBlock.style.display = "flex";
+  });
 
-jiwuBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+
+  jiwuBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    hideAllBlocks();
+    productsJiwuBlock.style.display = "flex";
+  });
+
+
   hideAllBlocks();
   productsJiwuBlock.style.display = "flex";
-});
+}
 
-hideAllBlocks();
-productsJiwuBlock.style.display = "flex";
+// vacancience
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const vacCategBtns = document.querySelectorAll(".vac-block__nav button");
+  const vacCatalogCards = document.querySelectorAll(".vac-block__card");
+
+  // Активируем кнопку "Все города" по умолчанию
+  vacCategBtns.forEach(btn => {
+    // if (btn.textContent.trim() === "Все города") {
+    //   btn.classList.add('vac-active');
+    // }
+  });
+
+  // Обработчик кликов для кнопок фильтрации
+  vacCategBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      // Удаляем активный класс у всех кнопок
+      vacCategBtns.forEach(b => b.classList.remove('vac-active'));
+      // Добавляем активный класс текущей кнопке
+      this.classList.add('vac-active');
+
+      const cityName = this.textContent.trim();
+      filterCardsByCity(cityName);
+    });
+  });
+
+  // Функция фильтрации карточек по городу
+  function filterCardsByCity(city) {
+    vacCatalogCards.forEach(card => {
+      if (city === "Все города") {
+        card.style.display = 'block';
+      } else {
+        const cardCity = card.dataset.city;
+        card.style.display = cardCity === city ? 'block' : 'none';
+      }
+    });
+  }
+});

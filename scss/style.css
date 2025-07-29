@@ -816,6 +816,10 @@ img {
 .header-wrap__service-block .header-wrap__info-works {
   background-image: url("../images/header-works.png");
 }
+.header-wrap__service-block .header-wrap__info-vac {
+  background-image: url("../images/header-info.png");
+  background-position-y: top;
+}
 .header-wrap__service-block .header-wrap__info-spare {
   background-image: url("../images/header-spares.png");
 }
@@ -835,6 +839,9 @@ img {
   }
   .header-wrap__service-block .header-wrap__info-works {
     background-image: url("../images/header-works.png");
+  }
+  .header-wrap__service-block .header-wrap__info-vac {
+    background-image: url("../images/header-info.png");
   }
   .header-wrap__service-block .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
@@ -4099,6 +4106,117 @@ img {
 .politika-text .politika-text__multi-level a:hover, .politika-text .politika-text__multi-level a:focus, .politika-text .politika-text__multi-level a:active {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
+}
+
+.vac-title {
+  padding: 0px 70px;
+  margin-top: 120px;
+}
+.vac-title h2 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  width: 100%;
+  max-width: 941px;
+}
+
+.vac-block {
+  padding: 0px 70px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.vac-block .vac-block__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+}
+.vac-block .vac-block__nav ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 141px;
+  height: 48px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.vac-block .vac-block__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.vac-block .vac-block__wrap .vac-block__card {
+  width: 313px;
+  height: 233px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 19px 24px 27px;
+  background: #0775b5;
+  color: #ffffff;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title h3 {
+  font-size: 2rem;
+  line-height: 100%;
+  margin-bottom: 16px;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title p {
+  font-size: 1.6rem;
+  line-height: 106%;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc p {
+  font-size: 1.3rem;
+  line-height: 154%;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc svg {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  transition: all 0.3s ease;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:hover, .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:focus, .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:active {
+  background: #1c75a8;
+  transition: all 0.3s ease;
+}
+.vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:hover .vac-block__card-desc svg, .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:focus .vac-block__card-desc svg, .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link:active .vac-block__card-desc svg {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.vac-active {
+  outline: none;
+  color: #ffffff !important;
+  background: #0775b5 !important;
+  border-color: #0775b5 !important;
+  transition: all 0.3s ease;
 }
 
 footer {

@@ -81,6 +81,7 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
 
         .reg-maintenance-block__desc-font {
           display: flex;
@@ -91,6 +92,7 @@
           height: 100%;
           padding: 20px;
           border-radius: 20px;
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
 
           @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
             -webkit-backdrop-filter: blur(50px);
@@ -104,7 +106,7 @@
             }
           }
 
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+
         }
 
         @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
@@ -119,7 +121,7 @@
           }
         }
 
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+
 
         h4 {
           font-family: $font-family-med;

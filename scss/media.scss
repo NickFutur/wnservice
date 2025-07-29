@@ -1463,6 +1463,55 @@
       }
     }
   }
+
+  .vac-title {
+    padding: 0px 34px;
+    margin-top: 70px;
+
+    h2 {
+      font-size: 3rem;
+      max-width: 941px;
+    }
+  }
+
+  .vac-block {
+    padding: 0 34px;
+    gap: 40px;
+
+    .vac-block__wrap {
+      gap: 14px;
+
+      .vac-block__card {
+        width: 224px;
+        height: 200px;
+
+        .vac-block__card-link {
+          .vac-block__card-title {
+            h3 {
+              font-size: 1.8rem;
+            }
+
+            p {
+              font-size: 1.4rem;
+            }
+          }
+
+          .vac-block__card-desc {
+            p {
+              font-size: 1.4rem;
+            }
+
+            svg {
+              width: 36px;
+              height: 36px;
+              min-width: 36px;
+              min-height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) {
@@ -1647,6 +1696,10 @@
       background-image: url("../images/header-works.png");
     }
 
+    .header-wrap__info-vac {
+      background-image: url("../images/header-info.png");
+    }
+
     .header-wrap__info-spare {
       background-image: url("../images/header-spares.png");
     }
@@ -1654,6 +1707,10 @@
 
   .header-wrap__info-works {
     background-image: url("../images/header-works.png");
+  }
+
+  .header-wrap__info-vac {
+    background-image: url("../images/header-info.png");
   }
 
   .header-wrap__info-spare {
@@ -4343,6 +4400,66 @@
     }
   }
 
+  .vac-title {
+    padding: 0px 15px;
+    margin-top: 60px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .vac-block {
+    padding: 0 15px;
+    gap: 40px;
+
+    .vac-block__nav {
+      ul {
+        justify-content: center;
+
+        li {
+          button {
+            min-width: 170px;
+            height: 38px;
+          }
+        }
+      }
+    }
+
+    .vac-block__wrap {
+      gap: 15px;
+
+      .vac-block__card {
+        width: 100%;
+
+        .vac-block__card-link {
+          .vac-block__card-title {
+            h3 {
+              font-size: 1.8rem;
+            }
+
+            p {
+              font-size: 1.4rem;
+            }
+          }
+
+          .vac-block__card-desc {
+            p {
+              font-size: 1.4rem;
+            }
+
+            svg {
+              width: 36px;
+              height: 36px;
+              min-width: 36px;
+              min-height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .footer-maintenance {
     .footer-maintenance__title {
       .component__title-block {
@@ -4388,6 +4505,10 @@
           }
         }
       }
+    }
+
+    .header-wrap__info-vac {
+      background-position-x: 30%;
     }
 
     .header-wrap__info-spare {

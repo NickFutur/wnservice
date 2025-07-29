@@ -1012,6 +1012,40 @@
   .desc-info-work .desc-info-work__slider .desc-info-work__slider-main {
     max-width: 100%;
   }
+  .vac-title {
+    padding: 0px 34px;
+    margin-top: 70px;
+  }
+  .vac-title h2 {
+    font-size: 3rem;
+    max-width: 941px;
+  }
+  .vac-block {
+    padding: 0 34px;
+    gap: 40px;
+  }
+  .vac-block .vac-block__wrap {
+    gap: 14px;
+  }
+  .vac-block .vac-block__wrap .vac-block__card {
+    width: 224px;
+    height: 200px;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title h3 {
+    font-size: 1.8rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title p {
+    font-size: 1.4rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc p {
+    font-size: 1.4rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc svg {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
 }
 @media (min-width: 769px) {
   .tablet-d-none_min-769 {
@@ -1142,11 +1176,17 @@
   .header-wrap__service-block .header-wrap__info-works {
     background-image: url("../images/header-works.png");
   }
+  .header-wrap__service-block .header-wrap__info-vac {
+    background-image: url("../images/header-info.png");
+  }
   .header-wrap__service-block .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
   }
   .header-wrap__info-works {
     background-image: url("../images/header-works.png");
+  }
+  .header-wrap__info-vac {
+    background-image: url("../images/header-info.png");
   }
   .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
@@ -2929,6 +2969,45 @@
   .desc-spare .desc-eqip__text p {
     margin-bottom: 30px;
   }
+  .vac-title {
+    padding: 0px 15px;
+    margin-top: 60px;
+  }
+  .vac-title h2 {
+    font-size: 1.8rem;
+  }
+  .vac-block {
+    padding: 0 15px;
+    gap: 40px;
+  }
+  .vac-block .vac-block__nav ul {
+    justify-content: center;
+  }
+  .vac-block .vac-block__nav ul li button {
+    min-width: 170px;
+    height: 38px;
+  }
+  .vac-block .vac-block__wrap {
+    gap: 15px;
+  }
+  .vac-block .vac-block__wrap .vac-block__card {
+    width: 100%;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title h3 {
+    font-size: 1.8rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-title p {
+    font-size: 1.4rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc p {
+    font-size: 1.4rem;
+  }
+  .vac-block .vac-block__wrap .vac-block__card .vac-block__card-link .vac-block__card-desc svg {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
   .footer-maintenance .footer-maintenance__title .component__title-block .component__title-text {
     margin-bottom: 54px;
   }
@@ -2952,6 +3031,9 @@
     font-size: 3.2rem;
     width: 100%;
     word-wrap: break-word;
+  }
+  .header-wrap__service-block .header-wrap__info-vac {
+    background-position-x: 30%;
   }
   .header-wrap__service-block .header-wrap__info-spare {
     background: url("../images/header-spares-mob.png");

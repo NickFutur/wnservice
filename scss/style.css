@@ -3285,6 +3285,7 @@ img {
   gap: 41px;
   padding: 0px 62px;
   justify-content: center;
+  overflow: hidden;
 }
 .desc-eqip .desc-eqip__image {
   max-width: 673px;
@@ -3373,6 +3374,7 @@ img {
   gap: 15px;
   padding: 0px 20px;
   margin-top: 80px;
+  overflow: hidden;
 }
 .charact-equip .charact-equip__desc {
   position: relative;
@@ -3651,6 +3653,7 @@ img {
   margin-top: 78px;
   padding-left: 71px;
   padding-right: 78px;
+  overflow: hidden;
 }
 .title-desc-works .component__title-block .component__tltle-link {
   justify-content: flex-start;

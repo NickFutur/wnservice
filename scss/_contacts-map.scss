@@ -1,0 +1,204 @@
+@use "variants" as var;
+
+@mixin card-text-1($def-size, $tablet-size, $mob-size) {
+  font-family: var.$font-family-reg;
+  font-weight: 400;
+  font-size: $def-size;
+  letter-spacing: 0em;
+  color: var.$light-black;
+  opacity: 0.7;
+  margin-bottom: 8px;
+  @media (max-width: 768px) {
+    font-size: $tablet-size;
+  }
+
+  @media (max-width: 600px) {
+    font-size: $mob-size;
+  }
+}
+
+@mixin card-text-2($def-size, $tablet-size, $mob-size) {
+  font-family: var.$font-family-reg;
+  font-weight: 400;
+  font-size: $def-size;
+  letter-spacing: 0em;
+  color: var.$light-black;
+  line-height: 114%;
+  @media (max-width: 768px) {
+    font-size: $tablet-size;
+  }
+
+  @media (max-width: 600px) {
+    font-size: $mob-size;
+  }
+}
+
+.contacts-map {
+  margin-top: 120px;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  .contacts-maps__city {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .contacts-maps__city-title {
+      h3 {
+        font-family: var.$font-family-med;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 112%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var.$light-black;
+        text-align: center;
+      }
+    }
+    .contacts-maps__city-map {
+      position: relative;
+      .contacts-maps__city-card {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        justify-content: space-between;
+        border-radius: 20px;
+        width: 273px;
+        height: auto;
+        background: var.$white;
+        padding: 30px 26px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        .contacts-maps__city-title {
+          display: none;
+        }
+        .contacts-maps__city-card-info {
+          display: flex;
+          flex-direction: column;
+          gap: 19px;
+          div {
+            p {
+              &:nth-child(1) {
+                @include card-text-1(12px, 14px, 12px);
+              }
+
+              &:nth-child(2) {
+                @include card-text-2(14px, 18px, 16px);
+              }
+            }
+            a {
+              font-family: var.$font-family-med;
+              font-weight: 500;
+              font-size: 1.8rem;
+              line-height: 89%;
+              letter-spacing: 0em;
+              color: var.$blue;
+            }
+          }
+        }
+        .leave-request-btn {
+          a {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+      .contacts-maps__city-map-wrap {
+        height: 500px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-map {
+    margin-top: 90px;
+    padding: 0px 30px;
+    gap: 70px;
+    .contacts-maps__city {
+      gap: 40px;
+
+      .contacts-maps__city-title {
+        h3 {
+          font-size: 2.6rem;
+        }
+      }
+
+      .contacts-maps__city-map {
+        .contacts-maps__city-card {
+          width: 317px;
+          height: auto;
+          padding: 26px;
+          gap: 65px;
+          top: 20px;
+          left: 20px;
+
+          .contacts-maps__city-card-info {
+            div {
+              a {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+        .contacts-maps__city-map-wrap {
+          height: 707px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-map {
+    margin-top: 70px;
+    padding: 0px 10px;
+    gap: 35px;
+    .contacts-maps__city {
+      gap: 40px;
+
+      .contacts-maps__city-title {
+        display: none;
+      }
+
+      .contacts-maps__city-map {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .contacts-maps__city-card {
+          position: relative;
+          width: 100%;
+          padding: 26px;
+          gap: 25px;
+          top: auto;
+          left: auto;
+          border: 1px solid rgba(31, 31, 31, 0.1);
+          border-radius: 20px;
+
+          .contacts-maps__city-title {
+            display: block;
+            h3 {
+              text-align: left;
+              font-size: 1.8rem;
+            }
+          }
+
+          .contacts-maps__city-card-info {
+            padding-bottom: 15px;
+            div {
+              a {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+        .contacts-maps__city-map-wrap {
+          height: 355px;
+        }
+      }
+    }
+  }
+}

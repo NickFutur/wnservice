@@ -1,5 +1,6 @@
-@use "variants"as *;
+@use "variants" as *;
 @forward "contacts-info";
+@forward "contacts-map";
 
 html {
   scroll-behavior: smooth;

@@ -449,6 +449,8 @@
   .contacts-info .contacts-info__wrap {
     gap: 30px;
     flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.2);
   }
   .contacts-info .contacts-info__wrap .contacts-info__block-left {
     gap: 31px;
@@ -483,6 +485,8 @@
   .contacts-info .contacts-info__wrap {
     flex-direction: column;
     gap: 58px;
+    padding-bottom: 0px;
+    border-bottom: none;
   }
   .contacts-info .contacts-info__wrap .contacts-info__block-left {
     border-right: none;
@@ -540,6 +544,179 @@
 @media (max-width: 320px) {
   .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contacts-map {
+  margin-top: 120px;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.contacts-map .contacts-maps__city {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-title h3 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1f1f1f;
+  text-align: center;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map {
+  position: relative;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 273px;
+  height: auto;
+  background: #ffffff;
+  padding: 30px 26px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-title {
+  display: none;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(1) {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(1) {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(1) {
+    font-size: 12px;
+  }
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(2) {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  line-height: 114%;
+}
+@media (max-width: 768px) {
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 89%;
+  letter-spacing: 0em;
+  color: #13a9e1;
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .leave-request-btn a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-map-wrap {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contacts-map {
+    margin-top: 90px;
+    padding: 0px 30px;
+    gap: 70px;
+  }
+  .contacts-map .contacts-maps__city {
+    gap: 40px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-title h3 {
+    font-size: 2.6rem;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card {
+    width: 317px;
+    height: auto;
+    padding: 26px;
+    gap: 65px;
+    top: 20px;
+    left: 20px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div a {
+    font-size: 1.8rem;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-map-wrap {
+    height: 707px;
+  }
+}
+@media (max-width: 600px) {
+  .contacts-map {
+    margin-top: 70px;
+    padding: 0px 10px;
+    gap: 35px;
+  }
+  .contacts-map .contacts-maps__city {
+    gap: 40px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-title {
+    display: none;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card {
+    position: relative;
+    width: 100%;
+    padding: 26px;
+    gap: 25px;
+    top: auto;
+    left: auto;
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 20px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-title {
+    display: block;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-title h3 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info {
+    padding-bottom: 15px;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-card .contacts-maps__city-card-info div a {
+    font-size: 1.8rem;
+  }
+  .contacts-map .contacts-maps__city .contacts-maps__city-map .contacts-maps__city-map-wrap {
+    height: 355px;
   }
 }
 html {

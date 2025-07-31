@@ -232,16 +232,35 @@
 
           a {
             text-decoration: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 58px;
+            height: 58px;
+            transition: $transition-default;
 
-            svg {
-              transition: $transition-default;
+            &:nth-child(1) {
+              background-image: url('../images/icon-youtube.svg');
             }
 
+            &:nth-child(2) {
+              background-image: url('../images/icon-telegram.svg');
+            }
+
+            &:nth-child(3) {
+              background-image: url('../images/icon-whatsapp.svg');
+            }
+
+            // svg {
+            //   transition: $transition-default;
+            // }
+
             &:hover {
-              svg {
-                transform: scale(1.1);
-                transition: $transition-default;
-              }
+              transform: scale(1.1);
+              transition: $transition-default;
+              // svg {
+              //   transform: scale(1.1);
+              //   transition: $transition-default;
+              // }
             }
           }
         }
@@ -271,14 +290,11 @@
           }
 
           ul {
-            display: flex;
-            flex-direction: column;
-            gap: 11px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            gap: 11px 54px;
           }
-
-          .footer-contacts__nav-block-1 {}
-
-          .footer-contacts__nav-block-2 {}
         }
 
         .footer-contacts__rating {

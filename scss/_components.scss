@@ -94,8 +94,7 @@
     border: 1px solid $white;
     transition: $transition-default;
 
-    span {
-    }
+    span {}
 
     svg {
       rect {
@@ -133,8 +132,7 @@
     border: 1px solid $white;
     transition: $transition-default;
 
-    span {
-    }
+    span {}
 
     svg {
       rect {
@@ -354,12 +352,9 @@
           }
         }
 
-        .component-feedback__form-policy-check:checked
-          + .component-feedback__form-policy-label:before {
-        }
+        .component-feedback__form-policy-check:checked+.component-feedback__form-policy-label:before {}
 
-        .component-feedback__form-policy-check:checked
-          + .component-feedback__form-policy-label:after {
+        .component-feedback__form-policy-check:checked+.component-feedback__form-policy-label:after {
           content: "";
           position: absolute;
           left: 2px;
@@ -372,6 +367,49 @@
       }
 
       .leave-request-btn {
+        button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.4rem;
+          border-radius: 50px;
+          padding: 5px 8px 5px 15px;
+          gap: 12px;
+          width: 178px;
+          height: 48px;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          color: $light-black;
+          background: $white;
+          transition: $transition-default;
+
+          &::after {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 36px;
+            background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.808594' y='0.807617' width='36.3848' height='36.3848' rx='18.1924' fill='%230775B5'/%3E%3Cpath d='M23.4028 13.8002L16.4398 13.4368C16.0591 13.4266 15.5946 13.7566 15.5943 14.1895C15.5941 14.6225 16.006 15.0317 16.4388 15.0284L21.5435 15.298L14.0215 22.82C13.7178 23.1237 13.7305 23.6289 14.0499 23.9483C14.3694 24.2678 14.8745 24.2805 15.1783 23.9768L22.7002 16.4548L22.9698 21.5595C22.9665 21.9923 23.3781 22.4328 23.8087 22.4039C24.2066 22.3773 24.6088 21.9912 24.5614 21.5585L24.1981 14.5955C24.1904 14.3074 23.9107 13.8088 23.4028 13.8002Z' fill='white'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            transition: $transition-default;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: $blue-link;
+            color: $white;
+            transition: $transition-default;
+
+            &::after {
+              transform: rotate(45deg);
+              background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.808594' y='0.807617' width='36.3848' height='36.3848' rx='18.1924' fill='%23ffffff'/%3E%3Cpath d='M23.4028 13.8002L16.4398 13.4368C16.0591 13.4266 15.5946 13.7566 15.5943 14.1895C15.5941 14.6225 16.006 15.0317 16.4388 15.0284L21.5435 15.298L14.0215 22.82C13.7178 23.1237 13.7305 23.6289 14.0499 23.9483C14.3694 24.2678 14.8745 24.2805 15.1783 23.9768L22.7002 16.4548L22.9698 21.5595C22.9665 21.9923 23.3781 22.4328 23.8087 22.4039C24.2066 22.3773 24.6088 21.9912 24.5614 21.5585L24.1981 14.5955C24.1904 14.3074 23.9107 13.8088 23.4028 13.8002Z' fill='%230775b5'/%3E%3C/svg%3E");
+            }
+          }
+        }
+
         a {
           font-size: 1.4rem;
           gap: 12px;

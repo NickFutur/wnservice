@@ -1,4 +1,5 @@
 @use "variants"as *;
+@forward "contacts-info";
 
 html {
   scroll-behavior: smooth;
@@ -113,5 +114,6 @@ img {
 @import "spare-info-block";
 @import "politika-text";
 @import "vac-block";
+
 @import "footer";
 @import "modal-menu";

@@ -52,6 +52,496 @@
   font-size: 10px;
 }
 
+.contacts-info {
+  margin-top: 80px;
+  padding: 0 70px;
+}
+.contacts-info .contacts-info__wrap {
+  display: flex;
+  gap: 57px;
+  flex-wrap: wrap;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-right: 1px solid rgba(31, 31, 31, 0.2);
+  padding-right: 28px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+  padding-bottom: 25px;
+  width: 403px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__time {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  color: #1f1f1f;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__time {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__time {
+    font-size: 1.8rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__time svg {
+  width: 27px;
+  height: 27px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  letter-spacing: -0.01em;
+  color: #13a9e1;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a:hover, .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a:focus, .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a:active {
+  color: #0775b5;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones .contacts-info__phone a {
+    font-size: 2rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  letter-spacing: -0.01em;
+  color: #13a9e1;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a:hover, .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a:focus, .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a:active {
+  color: #0775b5;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__mail a {
+    font-size: 2rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a {
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 58px;
+  height: 58px;
+  transition: all 0.3s ease;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a:nth-child(1) {
+  background-image: url("../images/icon-youtube-rev.svg");
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a:nth-child(2) {
+  background-image: url("../images/icon-telegram-rev.svg");
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a:nth-child(3) {
+  background-image: url("../images/icon-whatsapp-rev.svg");
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  padding-bottom: 29px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__details-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__details-title .contacts-info__details-txt {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  color: #1f1f1f;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__details-title .contacts-info__details-txt {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__details-title .contacts-info__details-txt {
+    font-size: 1.8rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__details-title .contacts-info__details-txt svg {
+  width: 21px;
+  height: 27px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+  max-width: 800px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(1) {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(1) {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(2) {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 10px;
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(1) {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(1) {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(2) {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+@media (max-width: 1024px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+.contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__details-func {
+  display: none;
+}
+
+.contacts-info__details-func a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+  color: #13a9e1;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.contacts-info__details-func a::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 11px;
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.79 6.63V1.08a.58.58 0 0 0-1.16 0v5.55L2.73 4.72a.58.58 0 0 0-.82.82L5.21 8.85l3.3-3.3a.58.58 0 1 0-.82-.82L5.79 6.63z' fill='%2313A9E1'/%3E%3Cpath d='M.58 8.03c.32 0 .58.26.58.58v.93c0 .45.36.81.81.81h6.48c.45 0 .81-.36.81-.81v-.93a.58.58 0 0 1 1.16 0v.93c0 1.09-.88 1.97-1.97 1.97H1.97C.88 11.5 0 10.62 0 9.53v-.93c0-.32.26-.58.58-.58z' fill='%2313A9E1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.contacts-info__details-func a:hover, .contacts-info__details-func a:focus, .contacts-info__details-func a:active {
+  color: #0775b5;
+}
+.contacts-info__details-func a:hover::before, .contacts-info__details-func a:focus::before, .contacts-info__details-func a:active::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.79 6.63V1.08a.58.58 0 0 0-1.16 0v5.55L2.73 4.72a.58.58 0 0 0-.82.82L5.21 8.85l3.3-3.3a.58.58 0 1 0-.82-.82L5.79 6.63z' fill='%230775b5'/%3E%3Cpath d='M.58 8.03c.32 0 .58.26.58.58v.93c0 .45.36.81.81.81h6.48c.45 0 .81-.36.81-.81v-.93a.58.58 0 0 1 1.16 0v.93c0 1.09-.88 1.97-1.97 1.97H1.97C.88 11.5 0 10.62 0 9.53v-.93c0-.32.26-.58.58-.58z' fill='%230775b5'/%3E%3C/svg%3E");
+  transition: all 0.3s ease;
+}
+
+.contacts-info__card-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contacts-info__card-bank div p:nth-child(1) {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+@media (max-width: 1024px) {
+  .contacts-info__card-bank div p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info__card-bank div p:nth-child(1) {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+.contacts-info__card-bank div p:nth-child(2) {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+}
+@media (max-width: 1024px) {
+  .contacts-info__card-bank div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .contacts-info__card-bank div p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts-info {
+    padding: 0px 30px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left {
+    padding-right: 19px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top {
+    width: 100%;
+    max-width: 355px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts-info {
+    margin-top: 90px;
+  }
+  .contacts-info .contacts-info__wrap {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left {
+    gap: 31px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top {
+    gap: 45px;
+    padding-bottom: 31px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right {
+    padding-bottom: 14px;
+  }
+  .contacts-info__details-func {
+    margin-top: 133px;
+    margin-bottom: 75px;
+  }
+  .contacts-info__card-bank {
+    flex: 1;
+    justify-content: flex-end;
+    padding-bottom: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .contacts-info {
+    margin-top: 50px;
+    padding: 0px 15px;
+  }
+  .contacts-info .contacts-info__wrap {
+    flex-direction: column;
+    gap: 58px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left {
+    border-right: none;
+    gap: 25px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top {
+    max-width: 100%;
+    gap: 30px;
+    padding-bottom: 25px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-top .contacts-info__phones {
+    gap: 20px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom {
+    gap: 30px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__block-bottom .contacts-info__messangers a {
+    width: 52px;
+    height: 52px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-left .contacts-info__card-bank {
+    display: none;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right {
+    gap: 34px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card {
+    gap: 34px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-first-info {
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+    order: 1;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info {
+    flex-direction: column;
+    gap: 25px;
+    order: 2;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-bank {
+    display: flex !important;
+    gap: 25px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 10px;
+  }
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__details-func {
+    order: 3;
+    margin-bottom: 0px;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .contacts-info .contacts-info__wrap .contacts-info__block-right .contacts-info__card .contacts-info__card-second-info .contacts-info__card-inn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -843,6 +1333,9 @@ img {
 .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func .header-wrap__func-desc p {
   font-size: 1.5rem;
   text-align: left;
+}
+.header-wrap__service-block .header-wrap__info-vac .header-wrap__title-block .header-wrap__title-block-func .leave-request-btn a {
+  width: 171px;
 }
 .header-wrap__service-block .header-wrap__info-mebel {
   background-image: url("../images/header-mebel-img.png");

@@ -34,8 +34,7 @@
     position: relative;
 
     // Retina поддержка
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       & {
         background-image: url("../images/footer-background-1-2x.png");
       }
@@ -239,15 +238,15 @@
             transition: $transition-default;
 
             &:nth-child(1) {
-              background-image: url('../images/icon-youtube.svg');
+              background-image: url("../images/icon-youtube.svg");
             }
 
             &:nth-child(2) {
-              background-image: url('../images/icon-telegram.svg');
+              background-image: url("../images/icon-telegram.svg");
             }
 
             &:nth-child(3) {
-              background-image: url('../images/icon-whatsapp.svg');
+              background-image: url("../images/icon-whatsapp.svg");
             }
 
             // svg {
@@ -327,7 +326,6 @@
         bottom: 70px;
         right: 71px;
         z-index: 100;
-
 
         .footer-contacts__btn-up {
           width: 78px;

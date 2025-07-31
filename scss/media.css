@@ -893,10 +893,24 @@
     flex-wrap: wrap;
     gap: 9px;
   }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a svg {
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 58px;
+    height: 58px;
     transition: all 0.3s ease;
   }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:hover svg {
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:nth-child(1) {
+    background-image: url("../images/icon-youtube.svg");
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:nth-child(2) {
+    background-image: url("../images/icon-telegram.svg");
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:nth-child(3) {
+    background-image: url("../images/icon-whatsapp.svg");
+  }
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
   }
@@ -2360,7 +2374,7 @@
   .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__firm-email a {
     font-size: 1.8rem;
   }
-  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a svg {
+  .footer-contacts .footer-contacts_mob .footer-contacts__logo-address .footer-contacts__firm-contacts .footer-contacts__messangers a {
     width: 44px;
     height: 44px;
   }

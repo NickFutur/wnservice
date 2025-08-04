@@ -1,0 +1,93 @@
+@use "variants" as var;
+
+// Миксины для медиа-запросов
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+.eqip-info-block__info-text {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    @include tablet {
+        margin-top: 90px;
+    }
+
+    @include mobile {
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-family: var.$font-family-med;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 105%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var.$blue;
+        margin-bottom: 12px;
+
+        @include tablet {
+            font-size: 3.2rem;
+        }
+
+        @include mobile {
+            font-size: 2.4rem;
+            max-width: 199px;
+        }
+    }
+
+    h4 {
+        font-family: var.$font-family-med;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 105%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var.$black;
+        margin-bottom: 34px;
+       
+        @include tablet {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        @include mobile {
+            margin-top: 1.5rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        font-family: var.$font-family-light;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 137%;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(31, 31, 31, 0.5);
+        max-width: 682px;
+
+        @include tablet {
+            font-size: 1.5rem;
+            max-width: 514px;
+        }
+
+        @include mobile {
+            margin-top: 1.2rem;
+           max-width: 327px;
+        }
+    }
+
+}

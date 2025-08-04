@@ -719,6 +719,89 @@
     height: 355px;
   }
 }
+.eqip-info-block__info-text {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .eqip-info-block__info-text {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 375px) {
+  .eqip-info-block__info-text {
+    margin-top: 60px;
+  }
+}
+.eqip-info-block__info-text h3 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #13a9e1;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .eqip-info-block__info-text h3 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 375px) {
+  .eqip-info-block__info-text h3 {
+    font-size: 2.4rem;
+    max-width: 199px;
+  }
+}
+.eqip-info-block__info-text h4 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 34px;
+}
+@media (max-width: 768px) {
+  .eqip-info-block__info-text h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .eqip-info-block__info-text h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+.eqip-info-block__info-text p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 137%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(31, 31, 31, 0.5);
+  max-width: 682px;
+}
+@media (max-width: 768px) {
+  .eqip-info-block__info-text p {
+    font-size: 1.5rem;
+    max-width: 514px;
+  }
+}
+@media (max-width: 375px) {
+  .eqip-info-block__info-text p {
+    margin-top: 1.2rem;
+    max-width: 327px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

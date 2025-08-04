@@ -57,7 +57,7 @@
         text-align: center;
         color: var.$black;
         margin-bottom: 34px;
-       
+
         @include tablet {
             font-size: 1.8rem;
             margin-bottom: 20px;
@@ -86,7 +86,116 @@
 
         @include mobile {
             margin-top: 1.2rem;
-           max-width: 327px;
+            max-width: 327px;
+        }
+    }
+
+}
+
+.equipment {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content:center;
+   
+    .equipment__first {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+       
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            .row-first {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .card-back {
+                    width: 453px;
+                    background-color: #DDEEF8;
+                    height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                    border-radius: 20px;
+                    background-image: var(--card-bg); // Переменная для фона
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-left: 25px;
+                        padding-right: 20px;
+                        padding-top: 28px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 194px;
+                            font-size: 3.6rem;
+
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-column {
+            width: 100%;
+
+            .card-back {
+                width: 453px;
+                background-color: #DDEEF8;
+                height: clamp(200px, calc(772 / 452 * 100%), 772px);
+                border-radius: 20px;
+                background-image: var(--card-bg); // Переменная для фона
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .content {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
         }
     }
 

@@ -1147,6 +1147,185 @@
   height: 50px;
 }
 
+@media (max-width: 1449px) {
+  .equipment {
+    display: none;
+  }
+  .equipment-tablet {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__first {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1400px;
+  }
+  .equipment-tablet .equipment__first .up-column {
+    display: flex;
+    justify-content: center;
+  }
+  .equipment-tablet .equipment__first .up-column .card-back {
+    width: 744px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__first .up-column .card-back .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__first .up-column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__first .up-column .card-back .content a img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__first .under-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__first .under-column .card-back {
+    width: 241px;
+    background-color: #DDEEF8;
+    height: clamp(100px, 82.9875518672vw, 200px);
+    border-radius: 20px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__first .under-column .card-back .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__first .under-column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__first .under-column .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__first .under-column .card-back .content img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__second {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .equipment-tablet .equipment__second .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first .card-back {
+    width: 241px;
+    background-color: #DDEEF8;
+    height: clamp(100px, 82.9875518672vw, 200px);
+    border-radius: 20px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first .card-back .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__second .left-column .row-first .card-back .content a img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__second .right-column {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .equipment-tablet .equipment__second .right-column .card-back {
+    width: 241px;
+    height: 410px;
+    border-radius: 10px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__second .right-column .card-back .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__second .right-column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__second .right-column .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__second .right-column .card-back .content a img {
+    width: 36px;
+    height: 36px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

@@ -89,7 +89,37 @@
             max-width: 327px;
         }
     }
+}
 
+// Общие стили для карточек-ссылок
+.card-back,
+.second-card,
+.second-card-long {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-5px);
+    }
+
+    .content,
+    .second-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img {
+        transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+        transform: rotate(45deg);
+    }
 }
 
 .equipment {
@@ -105,9 +135,9 @@
     .equipment__first {
         display: flex;
         gap: 20px;
-        max-width: 1400px; // Ограничиваем общую ширину
+        max-width: 1400px;
         width: 100%;
-        margin: 0 auto; // Центрируем
+        margin: 0 auto;
 
         .left-column {
             display: flex;
@@ -125,15 +155,12 @@
                     background-color: #DDEEF8;
                     height: clamp(200px, calc(376 / 453 * 100vw), 376px);
                     border-radius: 20px;
-                    background-image: var(--card-bg); // Переменная для фона
+                    background-image: var(--card-bg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     object-position: bottom;
 
                     .content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 25px;
                         padding-right: 20px;
                         padding-top: 28px;
@@ -168,15 +195,12 @@
                 background-color: #DDEEF8;
                 height: clamp(200px, calc(772 / 452 * 100%), 772px);
                 border-radius: 20px;
-                background-image: var(--card-bg); // Переменная для фона
+                background-image: var(--card-bg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 object-position: bottom;
 
                 .content {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     padding-left: 25px;
                     padding-right: 20px;
                     padding-top: 28px;
@@ -187,7 +211,6 @@
                         color: var.$blue-link;
                         max-width: 194px;
                         font-size: 3.6rem;
-
                     }
 
                     .white {
@@ -206,9 +229,9 @@
     .equipment__second {
         display: flex;
         gap: 20px;
-        max-width: 1400px; // Ограничиваем общую ширину
+        max-width: 1400px;
         width: 100%;
-        margin: 0 auto; // Центрируем
+        margin: 0 auto;
 
         .second-left {
             display: flex;
@@ -225,9 +248,6 @@
                     object-position: bottom;
 
                     .second-content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 25px;
                         padding-right: 20px;
                         padding-top: 28px;
@@ -240,13 +260,10 @@
                             font-size: 3.6rem;
                         }
 
-                        a {
-                            img {
-                                width: 50px;
-                                height: 50px;
-                            }
+                        img {
+                            width: 50px;
+                            height: 50px;
                         }
-
                     }
                 }
             }
@@ -261,15 +278,12 @@
                     background-color: #DDEEF8;
                     height: clamp(200px, calc(376 / 453 * 100vw), 376px);
                     border-radius: 20px;
-                    background-image: var(--card-bg); // Переменная для фона
+                    background-image: var(--card-bg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     object-position: bottom;
 
                     .second-content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 25px;
                         padding-right: 20px;
                         padding-top: 28px;
@@ -290,17 +304,13 @@
                             max-width: 388px;
                         }
 
-                        a {
-                            img {
-                                width: 50px;
-                                height: 50px;
-                            }
+                        img {
+                            width: 50px;
+                            height: 50px;
                         }
-
                     }
                 }
             }
-
         }
 
         .second-right {
@@ -313,15 +323,12 @@
                 background-color: #DDEEF8;
                 height: clamp(200px, calc(376 / 453 * 100vw), 376px);
                 border-radius: 20px;
-                background-image: var(--card-bg); // Переменная для фона
+                background-image: var(--card-bg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 object-position: bottom;
 
                 .second-content {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     padding-left: 25px;
                     padding-right: 20px;
                     padding-top: 28px;
@@ -340,16 +347,12 @@
 
                     .long-text {
                         max-width: 388px;
-
                     }
 
-                    a {
-                        img {
-                            width: 50px;
-                            height: 50px;
-                        }
+                    img {
+                        width: 50px;
+                        height: 50px;
                     }
-
                 }
             }
         }
@@ -359,9 +362,9 @@
         display: flex;
         gap: 20px;
         flex-direction: column;
-        max-width: 1400px; // Ограничиваем общую ширину
+        max-width: 1400px;
         width: 100%;
-        margin: 0 auto; // Центрируем
+        margin: 0 auto;
 
         .up-column {
             display: flex;
@@ -373,15 +376,12 @@
                 background-color: #DDEEF8;
                 height: clamp(200px, calc(376 / 453 * 100vw), 376px);
                 border-radius: 20px;
-                background-image: var(--card-bg); // Переменная для фона
+                background-image: var(--card-bg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 object-position: bottom;
 
                 .second-content {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     padding-left: 25px;
                     padding-right: 20px;
                     padding-top: 28px;
@@ -402,13 +402,10 @@
                         max-width: 388px;
                     }
 
-                    a {
-                        img {
-                            width: 50px;
-                            height: 50px;
-                        }
+                    img {
+                        width: 50px;
+                        height: 50px;
                     }
-
                 }
             }
         }
@@ -423,15 +420,12 @@
                 background-color: #DDEEF8;
                 height: clamp(200px, calc(376 / 453 * 100vw), 376px);
                 border-radius: 20px;
-                background-image: var(--card-bg); // Переменная для фона
+                background-image: var(--card-bg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 object-position: bottom;
 
                 .second-content {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     padding-left: 25px;
                     padding-right: 20px;
                     padding-top: 28px;
@@ -450,14 +444,11 @@
 
                     .long-text {
                         max-width: 388px;
-
                     }
 
-                    a {
-                        img {
-                            width: 50px;
-                            height: 50px;
-                        }
+                    img {
+                        width: 50px;
+                        height: 50px;
                     }
                 }
             }
@@ -471,9 +462,6 @@
                 object-position: bottom;
 
                 .second-content {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     padding-left: 25px;
                     padding-right: 20px;
                     padding-top: 28px;
@@ -492,20 +480,20 @@
 
                     .long-text {
                         max-width: 448px;
-
                     }
 
-                    a {
-                        img {
-                            width: 50px;
-                            height: 50px;
-                        }
+                    img {
+                        width: 50px;
+                        height: 50px;
                     }
                 }
             }
-
         }
     }
+}
+
+.equipment-tablet {
+    display: none;
 }
 
 @media(max-width:1449px) {
@@ -527,8 +515,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            max-width: 1400px; // Ограничиваем общую ширину
-           
+            max-width: 1400px;
 
             .up-column {
                 display: flex;
@@ -544,9 +531,6 @@
                     object-position: bottom;
 
                     .content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 15px;
                         padding-right: 15px;
                         padding-top: 15px;
@@ -558,12 +542,10 @@
                             max-width: 251px;
                             font-size: 2rem;
                         }
-                    
-                        a {
-                            img {
-                                width: 36px;
-                                height: 36px;
-                            }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
                         }
                     }
                 }
@@ -580,15 +562,12 @@
                     background-color: #DDEEF8;
                     height: clamp(100px, calc(200 / 241 * 100vw), 200px);
                     border-radius: 20px;
-                    background-image: var(--card-bg); // Переменная для фона
+                    background-image: var(--card-bg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     object-position: bottom;
 
                     .content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 15px;
                         padding-right: 15px;
                         padding-top: 15px;
@@ -618,7 +597,7 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
-            max-width: 1400px; // Ограничиваем общую ширину
+            max-width: 1400px;
             margin: 0 auto;
 
             .left-column {
@@ -636,15 +615,12 @@
                         background-color: #DDEEF8;
                         height: clamp(100px, calc(200 / 241 * 100vw), 200px);
                         border-radius: 20px;
-                        background-image: var(--card-bg); // Переменная для фона
+                        background-image: var(--card-bg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         object-position: bottom;
 
                         .content {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
                             padding-left: 15px;
                             padding-right: 15px;
                             padding-top: 15px;
@@ -656,15 +632,14 @@
                                 max-width: 251px;
                                 font-size: 2rem;
                             }
-                            .white{
-                            color: white;
+
+                            .white {
+                                color: white;
                             }
 
-                            a {
-                                img {
-                                    width: 36px;
-                                    height: 36px;
-                                }
+                            img {
+                                width: 36px;
+                                height: 36px;
                             }
                         }
                     }
@@ -673,7 +648,6 @@
 
             .right-column {
                 width: 100%;
-                padding-right: 20px;
 
                 .card-back {
                     width: 241px;
@@ -685,9 +659,6 @@
                     object-position: bottom;
 
                     .content {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
                         padding-left: 15px;
                         padding-right: 15px;
                         padding-top: 15px;
@@ -699,19 +670,151 @@
                             max-width: 251px;
                             font-size: 2rem;
                         }
-                         .white{
+
+                        .white {
                             color: white;
                         }
 
-                        a {
-                            img {
-                                width: 36px;
-                                height: 36px;
-                            }
+                        img {
+                            width: 36px;
+                            height: 36px;
                         }
                     }
                 }
             }
         }
+
+        .equipment__third {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+
+            .up-column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+            .under-column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+         .equipment__fourth {
+             display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+             .column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+
+         }
     }
 }

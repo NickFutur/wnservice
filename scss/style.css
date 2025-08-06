@@ -802,6 +802,42 @@
   }
 }
 
+.card-back,
+.second-card,
+.second-card-long {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+.card-back:hover,
+.second-card:hover,
+.second-card-long:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+}
+.card-back .content,
+.card-back .second-content,
+.second-card .content,
+.second-card .second-content,
+.second-card-long .content,
+.second-card-long .second-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-back img,
+.second-card img,
+.second-card-long img {
+  transition: transform 0.5s ease;
+}
+.card-back:hover img,
+.second-card:hover img,
+.second-card-long:hover img {
+  transform: rotate(45deg);
+}
+
 .equipment {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -842,9 +878,6 @@
      object-position: bottom;
 }
 .equipment .equipment__first .left-column .row-first .card-back .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -879,9 +912,6 @@
      object-position: bottom;
 }
 .equipment .equipment__first .right-column .card-back .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -922,9 +952,6 @@
      object-position: bottom;
 }
 .equipment .equipment__second .second-left .up-column .second-card .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -936,7 +963,7 @@
   max-width: 194px;
   font-size: 3.6rem;
 }
-.equipment .equipment__second .second-left .up-column .second-card .second-content a img {
+.equipment .equipment__second .second-left .up-column .second-card .second-content img {
   width: 50px;
   height: 50px;
 }
@@ -957,9 +984,6 @@
      object-position: bottom;
 }
 .equipment .equipment__second .second-left .under-column .second-card .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -977,7 +1001,7 @@
 .equipment .equipment__second .second-left .under-column .second-card .second-content .long-text {
   max-width: 388px;
 }
-.equipment .equipment__second .second-left .under-column .second-card .second-content a img {
+.equipment .equipment__second .second-left .under-column .second-card .second-content img {
   width: 50px;
   height: 50px;
 }
@@ -998,9 +1022,6 @@
      object-position: bottom;
 }
 .equipment .equipment__second .second-right .second-card .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -1018,7 +1039,7 @@
 .equipment .equipment__second .second-right .second-card .second-content .long-text {
   max-width: 388px;
 }
-.equipment .equipment__second .second-right .second-card .second-content a img {
+.equipment .equipment__second .second-right .second-card .second-content img {
   width: 50px;
   height: 50px;
 }
@@ -1047,9 +1068,6 @@
      object-position: bottom;
 }
 .equipment .equipment__third .up-column .second-card .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -1067,7 +1085,7 @@
 .equipment .equipment__third .up-column .second-card .second-content .long-text {
   max-width: 388px;
 }
-.equipment .equipment__third .up-column .second-card .second-content a img {
+.equipment .equipment__third .up-column .second-card .second-content img {
   width: 50px;
   height: 50px;
 }
@@ -1088,9 +1106,6 @@
      object-position: bottom;
 }
 .equipment .equipment__third .under-column .second-card .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -1108,7 +1123,7 @@
 .equipment .equipment__third .under-column .second-card .second-content .long-text {
   max-width: 388px;
 }
-.equipment .equipment__third .under-column .second-card .second-content a img {
+.equipment .equipment__third .under-column .second-card .second-content img {
   width: 50px;
   height: 50px;
 }
@@ -1122,9 +1137,6 @@
      object-position: bottom;
 }
 .equipment .equipment__third .under-column .second-card-long .second-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 20px;
   padding-top: 28px;
@@ -1142,9 +1154,13 @@
 .equipment .equipment__third .under-column .second-card-long .second-content .long-text {
   max-width: 448px;
 }
-.equipment .equipment__third .under-column .second-card-long .second-content a img {
+.equipment .equipment__third .under-column .second-card-long .second-content img {
   width: 50px;
   height: 50px;
+}
+
+.equipment-tablet {
+  display: none;
 }
 
 @media (max-width: 1449px) {
@@ -1182,9 +1198,6 @@
        object-position: bottom;
   }
   .equipment-tablet .equipment__first .up-column .card-back .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
@@ -1196,7 +1209,7 @@
     max-width: 251px;
     font-size: 2rem;
   }
-  .equipment-tablet .equipment__first .up-column .card-back .content a img {
+  .equipment-tablet .equipment__first .up-column .card-back .content img {
     width: 36px;
     height: 36px;
   }
@@ -1218,9 +1231,6 @@
        object-position: bottom;
   }
   .equipment-tablet .equipment__first .under-column .card-back .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
@@ -1268,9 +1278,6 @@
        object-position: bottom;
   }
   .equipment-tablet .equipment__second .left-column .row-first .card-back .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
@@ -1285,13 +1292,12 @@
   .equipment-tablet .equipment__second .left-column .row-first .card-back .content .white {
     color: white;
   }
-  .equipment-tablet .equipment__second .left-column .row-first .card-back .content a img {
+  .equipment-tablet .equipment__second .left-column .row-first .card-back .content img {
     width: 36px;
     height: 36px;
   }
   .equipment-tablet .equipment__second .right-column {
     width: 100%;
-    padding-right: 20px;
   }
   .equipment-tablet .equipment__second .right-column .card-back {
     width: 241px;
@@ -1304,9 +1310,6 @@
        object-position: bottom;
   }
   .equipment-tablet .equipment__second .right-column .card-back .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
@@ -1321,7 +1324,123 @@
   .equipment-tablet .equipment__second .right-column .card-back .content .white {
     color: white;
   }
-  .equipment-tablet .equipment__second .right-column .card-back .content a img {
+  .equipment-tablet .equipment__second .right-column .card-back .content img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__third {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .equipment-tablet .equipment__third .up-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__third .up-column .card-back {
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__third .up-column .card-back .content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__third .up-column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__third .up-column .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__third .up-column .card-back .content img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__third .under-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__third .under-column .card-back {
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__third .under-column .card-back .content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__third .under-column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__third .under-column .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__third .under-column .card-back .content img {
+    width: 36px;
+    height: 36px;
+  }
+  .equipment-tablet .equipment__fourth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .equipment-tablet .equipment__fourth .column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .equipment-tablet .equipment__fourth .column .card-back {
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-tablet .equipment__fourth .column .card-back .content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .equipment-tablet .equipment__fourth .column .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 251px;
+    font-size: 2rem;
+  }
+  .equipment-tablet .equipment__fourth .column .card-back .content .white {
+    color: white;
+  }
+  .equipment-tablet .equipment__fourth .column .card-back .content img {
     width: 36px;
     height: 36px;
   }

@@ -1445,6 +1445,58 @@
     height: 36px;
   }
 }
+@media (max-width: 764px) {
+  .equipment-tablet {
+    display: none;
+  }
+  .equipment-phone {
+    margin-top: 60px;
+    max-width: 760px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .equipment-phone .card-back {
+    width: 100%;
+    max-width: 355px;
+    padding-bottom: 320px;
+    background-color: #DDEEF8;
+    height: 200px;
+    border-radius: 20px;
+    background-image: var(--card-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .equipment-phone .card-back .content {
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 45px;
+    align-items: center;
+  }
+  .equipment-phone .card-back .content h2 {
+    font-family: "TT Hoves Pro Trial Medium", sans-serif;
+    font-weight: 500;
+    color: #0775b5;
+    max-width: 194px;
+    font-size: 2.4rem;
+  }
+  .equipment-phone .card-back .content .long-text {
+    max-width: 245px;
+  }
+  .equipment-phone .card-back .content .white {
+    color: white;
+  }
+  .equipment-phone .card-back .content img {
+    width: 44px;
+    height: 44px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

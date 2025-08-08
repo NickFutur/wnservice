@@ -37,6 +37,7 @@
         text-align: center;
         color: var.$blue;
         margin-bottom: 12px;
+        
 
         @include tablet {
             font-size: 3.2rem;
@@ -47,6 +48,9 @@
             max-width: 199px;
         }
     }
+    .long-text{
+                max-width: 614px;
+            }
 
     h4 {
         font-family: var.$font-family-med;
@@ -88,6 +92,11 @@
             margin-top: 1.2rem;
             max-width: 327px;
         }
+    }
+    .padding-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 588px;
     }
 }
 
@@ -495,9 +504,15 @@
 .equipment-tablet {
     display: none;
 }
+.equipment-phone{
+    display: none;
+}
 
 @media(max-width:1449px) {
     .equipment {
+        display: none;
+    }
+    .equipment-phone{
         display: none;
     }
 
@@ -852,8 +867,8 @@
             .content {
                 padding-left: 25px;
                 padding-right: 15px;
-                padding-top: 45px;
-                align-items: center; 
+                padding-top: 25px;
+                // align-items: center; 
 
                 h2 {
                     font-family: var.$font-family-med;

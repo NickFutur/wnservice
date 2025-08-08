@@ -757,6 +757,9 @@
     max-width: 199px;
   }
 }
+.eqip-info-block__info-text .long-text {
+  max-width: 614px;
+}
 .eqip-info-block__info-text h4 {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
   font-weight: 500;
@@ -800,6 +803,11 @@
     margin-top: 1.2rem;
     max-width: 327px;
   }
+}
+.eqip-info-block__info-text .padding-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 588px;
 }
 
 .card-back,
@@ -1163,8 +1171,15 @@
   display: none;
 }
 
+.equipment-phone {
+  display: none;
+}
+
 @media (max-width: 1449px) {
   .equipment {
+    display: none;
+  }
+  .equipment-phone {
     display: none;
   }
   .equipment-tablet {
@@ -1476,8 +1491,7 @@
   .equipment-phone .card-back .content {
     padding-left: 25px;
     padding-right: 15px;
-    padding-top: 45px;
-    align-items: center;
+    padding-top: 25px;
   }
   .equipment-phone .card-back .content h2 {
     font-family: "TT Hoves Pro Trial Medium", sans-serif;

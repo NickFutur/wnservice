@@ -1,0 +1,895 @@
+@use "variants" as var;
+
+// Миксины для медиа-запросов
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+.eqip-info-block__info-text {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    @include tablet {
+        margin-top: 90px;
+    }
+
+    @include mobile {
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-family: var.$font-family-med;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 105%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var.$blue;
+        margin-bottom: 12px;
+        
+
+        @include tablet {
+            font-size: 3.2rem;
+        }
+
+        @include mobile {
+            font-size: 2.4rem;
+            max-width: 199px;
+        }
+    }
+    .long-text{
+                max-width: 614px;
+            }
+
+    h4 {
+        font-family: var.$font-family-med;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 105%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var.$black;
+        margin-bottom: 34px;
+
+        @include tablet {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        @include mobile {
+            margin-top: 1.5rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        font-family: var.$font-family-light;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 137%;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(31, 31, 31, 0.5);
+        max-width: 682px;
+
+        @include tablet {
+            font-size: 1.5rem;
+            max-width: 514px;
+        }
+
+        @include mobile {
+            margin-top: 1.2rem;
+            max-width: 327px;
+        }
+    }
+    .padding-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 588px;
+    }
+}
+
+// Общие стили для карточек-ссылок
+.card-back,
+.second-card,
+.second-card-long {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-5px);
+    }
+
+    .content,
+    .second-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img {
+        transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+        transform: rotate(45deg);
+    }
+}
+
+.equipment {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .equipment__first {
+        display: flex;
+        gap: 20px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            .row-first {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .card-back {
+                    width: 453px;
+                    background-color: #DDEEF8;
+                    height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                    border-radius: 20px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 25px;
+                        padding-right: 20px;
+                        padding-top: 28px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 194px;
+                            font-size: 3.6rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-column {
+            width: 100%;
+            padding-right: 20px;
+
+            .card-back {
+                width: 453px;
+                background-color: #DDEEF8;
+                height: clamp(200px, calc(772 / 452 * 100%), 772px);
+                border-radius: 20px;
+                background-image: var(--card-bg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .content {
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .equipment__second {
+        display: flex;
+        gap: 20px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        .second-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .up-column {
+                .second-card {
+                    width: 926px;
+                    height: 376px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .second-content {
+                        padding-left: 25px;
+                        padding-right: 20px;
+                        padding-top: 28px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 194px;
+                            font-size: 3.6rem;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+
+            .under-column {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .second-card {
+                    width: 453px;
+                    background-color: #DDEEF8;
+                    height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                    border-radius: 20px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .second-content {
+                        padding-left: 25px;
+                        padding-right: 20px;
+                        padding-top: 28px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 194px;
+                            font-size: 3.6rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        .long-text {
+                            max-width: 388px;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .second-card {
+                width: 453px;
+                background-color: #DDEEF8;
+                height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                border-radius: 20px;
+                background-image: var(--card-bg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .second-content {
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    .long-text {
+                        max-width: 388px;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .equipment__third {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        .up-column {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .second-card {
+                width: 453px;
+                background-color: #DDEEF8;
+                height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                border-radius: 20px;
+                background-image: var(--card-bg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .second-content {
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    .long-text {
+                        max-width: 388px;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        .under-column {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .second-card {
+                width: 453px;
+                background-color: #DDEEF8;
+                height: clamp(200px, calc(376 / 453 * 100vw), 376px);
+                border-radius: 20px;
+                background-image: var(--card-bg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .second-content {
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    .long-text {
+                        max-width: 388px;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            .second-card-long {
+                width: 926px;
+                height: 376px;
+                background-image: var(--card-bg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-position: bottom;
+
+                .second-content {
+                    padding-left: 25px;
+                    padding-right: 20px;
+                    padding-top: 28px;
+
+                    h2 {
+                        font-family: var.$font-family-med;
+                        font-weight: 500;
+                        color: var.$blue-link;
+                        max-width: 194px;
+                        font-size: 3.6rem;
+                    }
+
+                    .white {
+                        color: white;
+                    }
+
+                    .long-text {
+                        max-width: 448px;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.equipment-tablet {
+    display: none;
+}
+.equipment-phone{
+    display: none;
+}
+
+@media(max-width:1449px) {
+    .equipment {
+        display: none;
+    }
+    .equipment-phone{
+        display: none;
+    }
+
+    .equipment-tablet {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .equipment__first {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1400px;
+
+            .up-column {
+                display: flex;
+                justify-content: center;
+
+                .card-back {
+                    width: 744px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+            .under-column {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+
+                .card-back {
+                    width: 241px;
+                    background-color: #DDEEF8;
+                    height: clamp(100px, calc(200 / 241 * 100vw), 200px);
+                    border-radius: 20px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .equipment__second {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+
+            .left-column {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .row-first {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    .card-back {
+                        width: 241px;
+                        background-color: #DDEEF8;
+                        height: clamp(100px, calc(200 / 241 * 100vw), 200px);
+                        border-radius: 20px;
+                        background-image: var(--card-bg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        object-position: bottom;
+
+                        .content {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            padding-top: 15px;
+
+                            h2 {
+                                font-family: var.$font-family-med;
+                                font-weight: 500;
+                                color: var.$blue-link;
+                                max-width: 251px;
+                                font-size: 2rem;
+                            }
+
+                            .white {
+                                color: white;
+                            }
+
+                            img {
+                                width: 36px;
+                                height: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-column {
+                width: 100%;
+
+                .card-back {
+                    width: 241px;
+                    height: 410px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .equipment__third {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+
+            .up-column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+            .under-column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .equipment__fourth {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+
+            .column {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .card-back {
+                    width: 240px;
+                    height: 200px;
+                    border-radius: 10px;
+                    background-image: var(--card-bg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-position: bottom;
+
+                    .content {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 15px;
+
+                        h2 {
+                            font-family: var.$font-family-med;
+                            font-weight: 500;
+                            color: var.$blue-link;
+                            max-width: 251px;
+                            font-size: 2rem;
+                        }
+
+                        .white {
+                            color: white;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media(max-width:764px) {
+    .equipment-tablet {
+        display: none;
+    }
+
+    .equipment-phone {
+        margin-top: 60px;
+        max-width: 760px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .card-back {
+            width: 100%;
+            max-width: 355px;
+            padding-bottom: 320px;
+            background-color: #DDEEF8;
+            height: 200px;
+            border-radius: 20px;
+            background-image: var(--card-bg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-position: bottom;
+
+            .content {
+                padding-left: 25px;
+                padding-right: 15px;
+                padding-top: 25px;
+                // align-items: center; 
+
+                h2 {
+                    font-family: var.$font-family-med;
+                    font-weight: 500;
+                    color: var.$blue-link;
+                    max-width: 194px;
+                    font-size: 2.4rem;
+                }
+                .long-text{
+                    max-width: 245px;
+                }
+
+                .white {
+                    color: white;
+                }
+
+                img {
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+}

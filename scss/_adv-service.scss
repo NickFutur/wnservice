@@ -60,7 +60,8 @@
           display: flex;
           flex: 1 1 50%;
 
-          .adv-service__card-text-img {}
+          .adv-service__card-text-img {
+          }
         }
 
         h3 {
@@ -96,7 +97,8 @@
             backdrop-filter: blur(16.840198516845703px);
           }
 
-          .adv-service__card-img {}
+          .adv-service__card-img {
+          }
         }
 
         &:nth-child(1) {
@@ -144,8 +146,14 @@
               .adv-service__card-img {
                 img {
                   border-radius: 13px;
-                  width: calc(102px + (182 - 102) * (100vw - 768px) / (1440 - 768));
-                  height: calc(102px + (182 - 102) * (100vw - 768px) / (1440 - 768));
+                  max-width: 182px;
+                  max-height: 182px;
+                  width: calc(
+                    102px + (182 - 102) * (100vw - 768px) / (1440 - 768)
+                  );
+                  height: calc(
+                    102px + (182 - 102) * (100vw - 768px) / (1440 - 768)
+                  );
                 }
               }
             }
@@ -162,7 +170,8 @@
                 gap: 22px;
 
                 div {
-                  p {}
+                  p {
+                  }
 
                   .blue-text,
                   span {
@@ -229,8 +238,12 @@
               .adv-service__card-img {
                 img {
                   border-radius: 13px;
-                  width: calc(89px + (121 - 89) * (100vw - 768px) / (1440 - 768));
-                  height: calc(89px + (121 - 89) * (100vw - 768px) / (1440 - 768));
+                  width: calc(
+                    89px + (121 - 89) * (100vw - 768px) / (1440 - 768)
+                  );
+                  height: calc(
+                    89px + (121 - 89) * (100vw - 768px) / (1440 - 768)
+                  );
                 }
               }
             }
@@ -245,7 +258,6 @@
                 z-index: 1;
 
                 a {
-
                   &:hover,
                   &:focus,
                   &:active {
@@ -283,7 +295,6 @@
 
     .adv-service__desc-gen {
       .adv-service__card {
-
         &:nth-child(1) {
           .adv-service__card-text {
             .adv-service__card-list {
@@ -304,9 +315,8 @@
                 }
 
                 div {
-
-
-                  p {}
+                  p {
+                  }
 
                   span {
                     font-family: $font-family-med;
@@ -319,7 +329,6 @@
         }
 
         &:nth-child(2) {
-
           .adv-service__card-text {
             gap: 24px;
 
@@ -390,7 +399,9 @@
               img {
                 border-radius: 13px;
                 width: calc(89px + (121 - 89) * (100vw - 768px) / (1440 - 768));
-                height: calc(89px + (121 - 89) * (100vw - 768px) / (1440 - 768));
+                height: calc(
+                  89px + (121 - 89) * (100vw - 768px) / (1440 - 768)
+                );
               }
             }
           }
@@ -405,7 +416,6 @@
               z-index: 1;
 
               a {
-
                 &:hover,
                 &:focus,
                 &:active {

@@ -3988,7 +3988,7 @@
 
         .service-block__card-wrapper {
           &:nth-child(1) {
-            // max-width: 355px;
+            width: 100%;
             max-height: 100%;
             border-radius: 16px;
 
@@ -5165,7 +5165,7 @@
       .works-catalog__card-photo {
         img {
           height: 100%;
-          width: auto;
+          width: 100%;
         }
       }
 

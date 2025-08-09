@@ -2682,6 +2682,7 @@
     align-items: center;
   }
   .service-block .service-block__info-block_mob .service-block__info-wrap-1 .service-block__card-wrapper:nth-child(1) {
+    width: 100%;
     max-height: 100%;
     border-radius: 16px;
   }
@@ -3468,7 +3469,7 @@
   }
   .works-catalog .works-catalog__card .works-catalog__card-photo img {
     height: 100%;
-    width: auto;
+    width: 100%;
   }
   .works-catalog .works-catalog__card .works-catalog__card-link {
     padding: 20px;

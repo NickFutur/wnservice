@@ -867,7 +867,7 @@
         </div>
 
         <!-- watch more block -->
-        <div class=" work-block watch-more container_mt_120">
+        <div class="work-block watch-more container_mt_120">
             <div class="work-block__wrap" data-aos="fade-left">
                 <div class="work-block__title-block">
                     <div class="component__title-block">
@@ -1043,7 +1043,128 @@
                 <div class="service-leave-req__form">
                     <div class="component-feedback" id="main-feedback-form" data-aos="fade-left">
                         <div class="component-feedback__block">
-                            <form class="component-feedback__form" action="">
+                            <div id="comp_0d37801fbb1356900dbe5a24483ab997">
+                                <form name="FEEDBACK_CATALOG_9nWXO"
+                                    action="/services/stabilizers/?bitrix_include_areas=N&amp;clear_cache=Y"
+                                    method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid"
+                                        id="bxajaxid_0d37801fbb1356900dbe5a24483ab997_8BACKi"
+                                        value="0d37801fbb1356900dbe5a24483ab997"><input type="hidden" name="AJAX_CALL"
+                                        value="Y">
+                                    <script>
+                                        function _processform_8BACKi() {
+                                            if (BX('bxajaxid_0d37801fbb1356900dbe5a24483ab997_8BACKi')) {
+                                                var obForm = BX('bxajaxid_0d37801fbb1356900dbe5a24483ab997_8BACKi').form;
+                                                BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_0d37801fbb1356900dbe5a24483ab997', true) });
+                                            }
+                                            BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
+                                        }
+                                        if (BX('bxajaxid_0d37801fbb1356900dbe5a24483ab997_8BACKi'))
+                                            _processform_8BACKi();
+                                        else
+                                            BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+                                    </script><input type="hidden" name="sessid" id="sessid"
+                                        value="a60a16ada2c6103c082042880ef30304"><input type="hidden" name="WEB_FORM_ID"
+                                        value="3">
+
+
+                                    <!--    <div class="form__group">-->
+                                    <!--        --><!--    </div>-->
+
+
+
+                                    <!--    <div class="form__group">-->
+                                    <!--        --><!--    </div>-->
+
+
+
+                                    <!--    <div class="form__group">-->
+                                    <!--        --><!--    </div>-->
+
+
+                                    <div class="component-feedback__form-inputs">
+                                        <div class="component-feedback__form-input-text">
+                                            <input type="text" name="form_text_9" value="" id="" class="form-control"
+                                                placeholder="Ваше имя">
+                                        </div>
+                                        <div class="component-feedback__form-input-tel">
+                                            <label for="form-input-tel">
+                                                <img src="../../images/feedback-tricolor.svg">
+                                            </label>
+                                            <input type="text" class="form-control" name="form_text_10" value=""
+                                                id="form-input-tel" placeholder="+7 (999) 999-99-99">
+                                        </div>
+                                    </div>
+                                    <div class="component-feedback__form-policy">
+                                        <input class="component-feedback__form-policy-check" type="checkbox"
+                                            name="form_checkbox_privacy[]" id="12" value="12" checked="">
+                                        <label class="component-feedback__form-policy-label" for="12">
+                                            <p>
+                                                Я ознакомлен и&nbsp;согласен с&nbsp;<a href="/privacy-policy/">политикой
+                                                    обработки
+                                                    персональных
+                                                    данных</a>
+                                            </p>
+                                        </label>
+                                    </div>
+
+                                    <!--<div class="form__group">-->
+                                    <!--    <input --><!-- type="submit"-->
+                                    <!--                                                                                      name="web_form_submit"-->
+                                    <!--                                                                                      class="btn btn--default"/>-->
+                                    <!---->
+                                    <!--</div>-->
+
+                                    <div class="leave-request-btn leave-request-btn_backrgound">
+                                        <button>
+                                            <input type="submit" name="web_form_submit" class="btn btn--default"
+                                                value="Оставить заявку" />
+                                        </button>
+                                    </div>
+                                    <!--    placeholder="Ваше имя" class="form-control"-->
+                                </form>
+                                <script>
+                                    function formatPhoneNumber(value, prefix, startPos) {
+                                        const digits = value.substring(startPos);
+                                        let formattedValue = prefix;
+
+                                        if (digits.length > 0) {
+                                            formattedValue += ` (${digits.substring(0, 3)}`;
+                                        }
+                                        if (digits.length > 3) {
+                                            formattedValue += `) ${digits.substring(3, 6)}`;
+                                        }
+                                        if (digits.length > 6) {
+                                            formattedValue += `-${digits.substring(6, 8)}`;
+                                        }
+                                        if (digits.length > 8) {
+                                            formattedValue += `-${digits.substring(8, 10)}`;
+                                        }
+
+                                        return formattedValue;
+                                    }
+
+                                    document.getElementById('form-input-tel').addEventListener('input', function (e) {
+                                        let cleanedValue = e.target.value.replace(/[^\d+]/g, '');
+
+                                        const hasPlus = cleanedValue.startsWith('+');
+                                        cleanedValue = cleanedValue.replace(/\+/g, '');
+                                        if (hasPlus) {
+                                            cleanedValue = '+' + cleanedValue;
+                                        }
+
+                                        if (cleanedValue.startsWith('+7') && cleanedValue.length > 2) {
+                                            cleanedValue = formatPhoneNumber(cleanedValue, '+7', 2);
+                                        } else if (cleanedValue.startsWith('8') && cleanedValue.length > 1) {
+                                            cleanedValue = formatPhoneNumber(cleanedValue, '8', 1);
+                                        }
+
+                                        e.target.value = cleanedValue;
+                                    });
+                                </script>
+
+
+                            </div>
+                            <!-- <form class="component-feedback__form" action="">
                                 <div class="component-feedback__form-inputs">
                                     <div class="component-feedback__form-input-text">
                                         <input type="text" name="" id="" placeholder="Ваше имя" />
@@ -1078,7 +1199,7 @@
                                         </svg>
                                     </a>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>

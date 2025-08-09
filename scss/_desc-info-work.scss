@@ -1,187 +1,197 @@
 .desc-info-work {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 71px;
-    margin-top: 120px;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 71px;
+  margin-top: 120px;
+  gap: 15px;
 
-    .desc-info-work__slider {
-        position: relative;
-        width: 100%;
-        max-width: 751px;
-        height: 632px;
+  .desc-info-work__slider {
+    position: relative;
+    width: 100%;
+    max-width: 751px;
+    height: 632px;
+    overflow: hidden;
+
+    .desc-info-work__slider-main {
+      width: 100%;
+      height: 632px;
+      max-width: 751px;
+      border-radius: 30px;
+
+      .swiper-button-next {
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        width: 36px;
+        height: 36px;
+        transition: $transition-default;
+
+        &:hover {
+          background-color: rgba(54, 53, 53, 0.3);
+          transition: $transition-default;
+        }
+
+        &::after {
+          content: "";
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 14px;
+          height: 12px;
+          background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.7893 5.43577L9.12266 0.255252C8.86073 -0.0211371 8.29894 -0.116273 7.9926 0.189683C7.68624 0.495636 7.68816 1.07625 7.99649 1.37997L11.4154 5.18015L0.777776 5.18015C0.348236 5.18015 0 5.54639 0 5.99813C0 6.4499 0.348236 6.8161 0.777776 6.8161L11.4154 6.8161L7.99649 10.6163C7.68813 10.92 7.66773 11.5225 7.9926 11.8066C8.2928 12.0691 8.85018 12.0805 9.12266 11.741L13.7893 6.56049C13.9876 6.35133 14.1424 5.801 13.7893 5.43577Z' fill='white'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+
+      .swiper-button-prev {
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        width: 36px;
+        height: 36px;
+        transition: $transition-default;
+
+        &:hover {
+          background-color: rgba(54, 53, 53, 0.3);
+          transition: $transition-default;
+        }
+
+        &::after {
+          content: "";
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 14px;
+          height: 12px;
+          background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.7893 5.43577L9.12266 0.255252C8.86073 -0.0211371 8.29894 -0.116273 7.9926 0.189683C7.68624 0.495636 7.68816 1.07625 7.99649 1.37997L11.4154 5.18015L0.777776 5.18015C0.348236 5.18015 0 5.54639 0 5.99813C0 6.4499 0.348236 6.8161 0.777776 6.8161L11.4154 6.8161L7.99649 10.6163C7.68813 10.92 7.66773 11.5225 7.9926 11.8066C8.2928 12.0691 8.85018 12.0805 9.12266 11.741L13.7893 6.56049C13.9876 6.35133 14.1424 5.801 13.7893 5.43577Z' fill='white'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .desc-info-work__slider-small {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      right: 28px;
+      width: 100%;
+      max-width: 696px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
         overflow: hidden;
+        border-radius: 15px;
+        width: 80px !important;
+        height: 80px !important;
 
-        .desc-info-work__slider-main {
-            width: 100%;
-            height: 632px;
-            max-width: 751px;
-            border-radius: 30px;
-
-            .swiper-button-next {
-                border-radius: 50px;
-                background-color: rgba(255, 255, 255, 0.3);
-                backdrop-filter: blur(20px);
-                width: 36px;
-                height: 36px;
-                transition: $transition-default;
-
-                &:hover {
-                    background-color: rgba(54, 53, 53, 0.3);
-                    transition: $transition-default;
-                }
-
-                &::after {
-                    content: '';
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 14px;
-                    height: 12px;
-                    background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.7893 5.43577L9.12266 0.255252C8.86073 -0.0211371 8.29894 -0.116273 7.9926 0.189683C7.68624 0.495636 7.68816 1.07625 7.99649 1.37997L11.4154 5.18015L0.777776 5.18015C0.348236 5.18015 0 5.54639 0 5.99813C0 6.4499 0.348236 6.8161 0.777776 6.8161L11.4154 6.8161L7.99649 10.6163C7.68813 10.92 7.66773 11.5225 7.9926 11.8066C8.2928 12.0691 8.85018 12.0805 9.12266 11.741L13.7893 6.56049C13.9876 6.35133 14.1424 5.801 13.7893 5.43577Z' fill='white'/%3E%3C/svg%3E");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-            }
-
-            .swiper-button-prev {
-                border-radius: 50px;
-                background-color: rgba(255, 255, 255, 0.3);
-                backdrop-filter: blur(20px);
-                width: 36px;
-                height: 36px;
-                transition: $transition-default;
-
-                &:hover {
-                    background-color: rgba(54, 53, 53, 0.3);
-                    transition: $transition-default;
-                }
-
-                &::after {
-                    content: '';
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 14px;
-                    height: 12px;
-                    background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.7893 5.43577L9.12266 0.255252C8.86073 -0.0211371 8.29894 -0.116273 7.9926 0.189683C7.68624 0.495636 7.68816 1.07625 7.99649 1.37997L11.4154 5.18015L0.777776 5.18015C0.348236 5.18015 0 5.54639 0 5.99813C0 6.4499 0.348236 6.8161 0.777776 6.8161L11.4154 6.8161L7.99649 10.6163C7.68813 10.92 7.66773 11.5225 7.9926 11.8066C8.2928 12.0691 8.85018 12.0805 9.12266 11.741L13.7893 6.56049C13.9876 6.35133 14.1424 5.801 13.7893 5.43577Z' fill='white'/%3E%3C/svg%3E");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                    transform: rotate(180deg);
-                }
-            }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+      }
 
-        .desc-info-work__slider-small {
-            position: absolute;
-            bottom: 28px;
-            left: 28px;
-            right: 28px;
-            width: 100%;
-            max-width: 696px;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: hidden;
-
-            .swiper-slide {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid rgba(255, 255, 255, 0.4);
-                overflow: hidden;
-                border-radius: 15px;
-                width: 80px !important;
-                height: 80px !important;
-
-                img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .swiper-slide-thumb-active {
-                border: 1px solid rgba(255, 255, 255, 1);
-            }
-        }
-
-
-
-
-
-
-        // .mySwiper {
-        //     height: 20%;
-        //     box-sizing: border-box;
-        //     padding: 10px 0;
-        // }
-
-        // .mySwiper .swiper-slide {
-        //     width: 25%;
-        //     height: 100%;
-        //     opacity: 0.4;
-        // }
-
-        .mySwiper .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+      .swiper-slide-thumb-active {
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
     }
 
-    .desc-info-work__card-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px 14px;
+    // .mySwiper {
+    //     height: 20%;
+    //     box-sizing: border-box;
+    //     padding: 10px 0;
+    // }
 
-        .desc-info-work__card {
-            width: 100%;
-            max-width: 258px;
-            min-height: 200px;
-            border-radius: 20px;
-            background: $light-blue;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 18px 18px 22px 18px;
+    // .mySwiper .swiper-slide {
+    //     width: 25%;
+    //     height: 100%;
+    //     opacity: 0.4;
+    // }
 
-            p {
-                font-family: $font-family-med;
-                font-weight: 500;
-                font-size: 1.4rem;
-                line-height: 120%;
-                letter-spacing: 0em;
-                color: $sea-blue;
-                width: 100%;
-                max-width: 180px;
-            }
-
-            &::before {
-                content: "";
-                display: flex;
-                background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='36' height='36' rx='18' fill='white'/%3E%3Cpath d='M22.4018 12.8003L15.4388 12.4369C15.0582 12.4267 14.5936 12.7567 14.5934 13.1897C14.5931 13.6226 15.005 14.0318 15.4378 14.0286L20.5425 14.2981L13.0205 21.8201C12.7168 22.1238 12.7295 22.629 13.0489 22.9485C13.3684 23.2679 13.8736 23.2806 14.1773 22.9769L21.6993 15.4549L21.9688 20.5596C21.9656 20.9924 22.3772 21.4329 22.8077 21.404C23.2056 21.3774 23.6079 20.9913 23.5605 20.5586L23.1971 13.5956C23.1894 13.3075 22.9097 12.8089 22.4018 12.8003Z' fill='%231C75A8'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 36px;
-                height: 36px;
-                transition: $transition-default;
-            }
-
-            &:hover {
-                &::before {
-                    transform: rotate(45deg);
-                    transition: $transition-default;
-                }
-            }
-        }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
     }
 
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .desc-info-work__card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 14px;
+
+    .desc-info-work__card {
+      width: 100%;
+      max-width: 258px;
+      min-height: 200px;
+      min-width: 200px;
+      border-radius: 20px;
+      background: $light-blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px 18px 22px 18px;
+
+      p {
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 120%;
+        letter-spacing: 0em;
+        color: $sea-blue;
+        width: 100%;
+        max-width: 180px;
+      }
+
+      &::before {
+        content: "";
+        display: flex;
+        background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='36' height='36' rx='18' fill='white'/%3E%3Cpath d='M22.4018 12.8003L15.4388 12.4369C15.0582 12.4267 14.5936 12.7567 14.5934 13.1897C14.5931 13.6226 15.005 14.0318 15.4378 14.0286L20.5425 14.2981L13.0205 21.8201C12.7168 22.1238 12.7295 22.629 13.0489 22.9485C13.3684 23.2679 13.8736 23.2806 14.1773 22.9769L21.6993 15.4549L21.9688 20.5596C21.9656 20.9924 22.3772 21.4329 22.8077 21.404C23.2056 21.3774 23.6079 20.9913 23.5605 20.5586L23.1971 13.5956C23.1894 13.3075 22.9097 12.8089 22.4018 12.8003Z' fill='%231C75A8'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 36px;
+        height: 36px;
+        transition: $transition-default;
+      }
+
+      &:hover {
+        &::before {
+          transform: rotate(45deg);
+          transition: $transition-default;
+        }
+      }
+    }
+  }
+}
+
+.back-btn {
+  a {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 5%;
+    color: $sea-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+    }
+  }
 }

@@ -719,6 +719,74 @@
     height: 355px;
   }
 }
+.service-products {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  padding: 0px 70px;
+  gap: 15px;
+  color: #1f1f1f;
+  justify-content: center;
+}
+.service-products .sk-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding: 15px;
+  background: #ddeef8;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.service-products .sk-product .sk-product__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.service-products .sk-product .sk-product__content .product__thumb img {
+  max-height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.service-products .sk-product .sk-product__content .sk-product__title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  color: #1c75a8;
+}
+.service-products .sk-product .sk-product__content .sk-product__desc {
+  font-size: 1.2rem;
+}
+.service-products .sk-product .sk-product__content .sk-product__text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.service-products .sk-product .sk-product__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: end;
+}
+.service-products .sk-product .sk-product__footer .sk-price {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+}
+.service-products .sk-product .leave-request-btn {
+  margin-top: 10px;
+}
+.service-products .sk-product .leave-request-btn a span {
+  text-align: center;
+}
+.service-products .sk-product:hover {
+  background: #ebf4f9;
+  transition: all 0.3s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -977,21 +1045,21 @@ img {
 .component-feedback .component__title-block .component__title-text {
   margin-bottom: 47px;
 }
-.component-feedback .component-feedback__block .component-feedback__form {
+.component-feedback .component-feedback__block form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs {
   margin-bottom: 15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text],
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel],
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number] {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=text],
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=tel],
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=number] {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1002,24 +1070,24 @@ img {
   height: 100%;
   display: block;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]::-moz-placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=text]::-moz-placeholder, .component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=tel]::-moz-placeholder, .component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=number]::-moz-placeholder {
   color: rgba(31, 31, 31, 0.5);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]::placeholder,
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]::placeholder,
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]::placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=text]::placeholder,
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=tel]::placeholder,
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=number]::placeholder {
   color: rgba(31, 31, 31, 0.5);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]:focus::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]:focus::-moz-placeholder, .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]:focus::-moz-placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=text]:focus::-moz-placeholder, .component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=tel]:focus::-moz-placeholder, .component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=number]:focus::-moz-placeholder {
   color: rgba(31, 31, 31, 0.8);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=text]:focus::placeholder,
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=tel]:focus::placeholder,
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs input[type=number]:focus::placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=text]:focus::placeholder,
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=tel]:focus::placeholder,
+.component-feedback .component-feedback__block form .component-feedback__form-inputs input[type=number]:focus::placeholder {
   color: rgba(31, 31, 31, 0.8);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-text,
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs .component-feedback__form-input-text,
+.component-feedback .component-feedback__block form .component-feedback__form-inputs .component-feedback__form-input-tel {
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -1031,17 +1099,17 @@ img {
   padding-left: 20px;
   min-width: 200px;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel label {
+.component-feedback .component-feedback__block form .component-feedback__form-inputs .component-feedback__form-input-tel label {
   display: flex;
   align-items: center;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea {
   margin-bottom: 21px;
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea textarea {
   width: 100%;
   height: 89px;
   resize: none;
@@ -1053,19 +1121,19 @@ img {
   font-weight: 400;
   min-width: 200px;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea::-moz-placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea textarea::-moz-placeholder {
   color: rgba(31, 31, 31, 0.5);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea::placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea textarea::placeholder {
   color: rgba(31, 31, 31, 0.5);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea:focus::-moz-placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea textarea:focus::-moz-placeholder {
   color: rgba(31, 31, 31, 0.8);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-textarea textarea:focus::placeholder {
+.component-feedback .component-feedback__block form .component-feedback__form-textarea textarea:focus::placeholder {
   color: rgba(31, 31, 31, 0.8);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy {
+.component-feedback .component-feedback__block form .component-feedback__form-policy {
   margin-bottom: 29px;
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
@@ -1073,24 +1141,24 @@ img {
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.7);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-check {
+.component-feedback .component-feedback__block form .component-feedback__form-policy .component-feedback__form-policy-check {
   position: relative;
   display: none;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label {
+.component-feedback .component-feedback__block form .component-feedback__form-policy .component-feedback__form-policy-label {
   display: flex;
   align-items: center;
   gap: 3px;
   position: relative;
   cursor: pointer;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label a {
+.component-feedback .component-feedback__block form .component-feedback__form-policy .component-feedback__form-policy-label a {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 0.7);
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label:before {
+.component-feedback .component-feedback__block form .component-feedback__form-policy .component-feedback__form-policy-label:before {
   content: "";
   display: flex;
   justify-content: center;
@@ -1104,7 +1172,7 @@ img {
   background: rgba(217, 217, 217, 0.2);
   margin-right: 10px;
 }
-.component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-check:checked + .component-feedback__form-policy-label:after {
+.component-feedback .component-feedback__block form .component-feedback__form-policy .component-feedback__form-policy-check:checked + .component-feedback__form-policy-label:after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1114,7 +1182,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button {
+.component-feedback .component-feedback__block form .leave-request-btn button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1124,14 +1192,22 @@ img {
   gap: 12px;
   width: 178px;
   height: 48px;
-  cursor: pointer;
   border: none;
   outline: none;
   color: #1f1f1f;
   background: #ffffff;
   transition: all 0.3s ease;
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button::after {
+.component-feedback .component-feedback__block form .leave-request-btn button input {
+  color: #1f1f1f;
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.component-feedback .component-feedback__block form .leave-request-btn button::after {
   content: "";
   display: block;
   width: 36px;
@@ -1142,21 +1218,25 @@ img {
   background-size: contain;
   transition: all 0.3s ease;
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:hover, .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:focus, .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:active {
+.component-feedback .component-feedback__block form .leave-request-btn button:hover, .component-feedback .component-feedback__block form .leave-request-btn button:focus, .component-feedback .component-feedback__block form .leave-request-btn button:active {
   background: #0775b5;
   color: #ffffff;
   transition: all 0.3s ease;
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:hover::after, .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:focus::after, .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn button:active::after {
+.component-feedback .component-feedback__block form .leave-request-btn button:hover::after, .component-feedback .component-feedback__block form .leave-request-btn button:focus::after, .component-feedback .component-feedback__block form .leave-request-btn button:active::after {
   transform: rotate(45deg);
   background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.808594' y='0.807617' width='36.3848' height='36.3848' rx='18.1924' fill='%23ffffff'/%3E%3Cpath d='M23.4028 13.8002L16.4398 13.4368C16.0591 13.4266 15.5946 13.7566 15.5943 14.1895C15.5941 14.6225 16.006 15.0317 16.4388 15.0284L21.5435 15.298L14.0215 22.82C13.7178 23.1237 13.7305 23.6289 14.0499 23.9483C14.3694 24.2678 14.8745 24.2805 15.1783 23.9768L22.7002 16.4548L22.9698 21.5595C22.9665 21.9923 23.3781 22.4328 23.8087 22.4039C24.2066 22.3773 24.6088 21.9912 24.5614 21.5585L24.1981 14.5955C24.1904 14.3074 23.9107 13.8088 23.4028 13.8002Z' fill='%230775b5'/%3E%3C/svg%3E");
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a {
+.component-feedback .component-feedback__block form .leave-request-btn button:hover input, .component-feedback .component-feedback__block form .leave-request-btn button:focus input, .component-feedback .component-feedback__block form .leave-request-btn button:active input {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.component-feedback .component-feedback__block form .leave-request-btn a {
   font-size: 1.4rem;
   gap: 12px;
   width: 178px;
 }
-.component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a span {
+.component-feedback .component-feedback__block form .leave-request-btn a span {
   text-align: end;
 }
 
@@ -2654,7 +2734,7 @@ img {
 }
 .work-block .work-block__slider .work-block__slider-swiper .swiper-wrapper .work-block__slide .work-block__slide-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   z-index: 0;
 }
@@ -2908,6 +2988,34 @@ img {
   margin-top: 85px;
   padding: 0px 70px;
   overflow: hidden;
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.service-cont-txt img {
+  border-radius: 15px;
+  max-height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.service-cont-txt a {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1c75a8;
+}
+.service-cont-txt a:hover, .service-cont-txt a:active, .service-cont-txt a:focus {
+  color: #1f1f1f;
+  opacity: 0.7;
+}
+.service-cont-txt img {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .service-cont-txt p {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
@@ -2921,6 +3029,32 @@ img {
 }
 .service-cont-txt p:last-child {
   margin-bottom: 0;
+}
+.service-cont-txt ul {
+  list-style-type: disc;
+}
+.service-cont-txt ul li {
+  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #000000;
+  width: 100%;
+  max-width: 642px;
+}
+.service-cont-txt table thead th {
+  font-weight: 600;
+  padding: 5px;
+}
+.service-cont-txt table tr {
+  border-bottom: 1px solid #1f1f1f;
+}
+.service-cont-txt table tr th {
+  font-weight: 600;
+  padding: 5px;
+}
+.service-cont-txt table tr td {
+  padding: 5px;
 }
 
 .service-advantages {
@@ -3063,27 +3197,171 @@ img {
   height: 100%;
   width: 100%;
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs {
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form {
+  display: flex;
   flex-direction: column;
+  align-items: start;
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-text,
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-inputs .component-feedback__form-input-tel {
-  padding: 18px 20px;
-  max-height: 54px;
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy {
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=text],
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=tel],
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=number] {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(31, 31, 31, 0.8);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=text]::-moz-placeholder, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=tel]::-moz-placeholder, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=number]::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=text]::placeholder,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=tel]::placeholder,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=number]::placeholder {
+  color: rgba(31, 31, 31, 0.5);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=text]:focus::-moz-placeholder, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=tel]:focus::-moz-placeholder, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=number]:focus::-moz-placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=text]:focus::placeholder,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=tel]:focus::placeholder,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs input[type=number]:focus::placeholder {
+  color: rgba(31, 31, 31, 0.8);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs .component-feedback__form-input-text,
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs .component-feedback__form-input-tel {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
+  height: 54px;
+  overflow: hidden;
+  gap: 16px;
+  padding-left: 20px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-inputs .component-feedback__form-input-tel label {
+  display: flex;
+  align-items: center;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy {
   align-self: flex-start;
+  margin-bottom: 29px;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.7);
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .component-feedback__form-policy .component-feedback__form-policy-label p {
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-check {
+  position: relative;
+  display: none;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+  cursor: pointer;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-label a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-label:before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  min-height: 17px;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(217, 217, 217, 0.2);
+  margin-right: 10px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-check:checked + .component-feedback__form-policy-label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/feedback-done.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .component-feedback__form-policy .component-feedback__form-policy-label p {
   max-width: 300px;
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn {
-  align-self: flex-start;
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  padding: 5px 8px 5px 15px;
+  gap: 12px;
+  width: 178px;
+  height: 48px;
+  border: none;
+  outline: none;
+  color: #1f1f1f;
+  background: #ffffff;
+  transition: all 0.3s ease;
 }
-.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block .component-feedback__form .leave-request-btn a {
-  max-width: 168px;
-  gap: 5px;
-  padding: 5px 6px 5px 10px;
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button input {
+  color: #1f1f1f;
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.808594' y='0.807617' width='36.3848' height='36.3848' rx='18.1924' fill='%230775B5'/%3E%3Cpath d='M23.4028 13.8002L16.4398 13.4368C16.0591 13.4266 15.5946 13.7566 15.5943 14.1895C15.5941 14.6225 16.006 15.0317 16.4388 15.0284L21.5435 15.298L14.0215 22.82C13.7178 23.1237 13.7305 23.6289 14.0499 23.9483C14.3694 24.2678 14.8745 24.2805 15.1783 23.9768L22.7002 16.4548L22.9698 21.5595C22.9665 21.9923 23.3781 22.4328 23.8087 22.4039C24.2066 22.3773 24.6088 21.9912 24.5614 21.5585L24.1981 14.5955C24.1904 14.3074 23.9107 13.8088 23.4028 13.8002Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:hover, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:focus, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:active {
+  background: #0775b5;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:hover::after, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:focus::after, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:active::after {
+  transform: rotate(45deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.808594' y='0.807617' width='36.3848' height='36.3848' rx='18.1924' fill='%23ffffff'/%3E%3Cpath d='M23.4028 13.8002L16.4398 13.4368C16.0591 13.4266 15.5946 13.7566 15.5943 14.1895C15.5941 14.6225 16.006 15.0317 16.4388 15.0284L21.5435 15.298L14.0215 22.82C13.7178 23.1237 13.7305 23.6289 14.0499 23.9483C14.3694 24.2678 14.8745 24.2805 15.1783 23.9768L22.7002 16.4548L22.9698 21.5595C22.9665 21.9923 23.3781 22.4328 23.8087 22.4039C24.2066 22.3773 24.6088 21.9912 24.5614 21.5585L24.1981 14.5955C24.1904 14.3074 23.9107 13.8088 23.4028 13.8002Z' fill='%230775b5'/%3E%3C/svg%3E");
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:hover input, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:focus input, .service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn button:active input {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn a {
+  font-size: 1.4rem;
+  gap: 12px;
+  width: 178px;
+}
+.service-leave-req .service-leave-req__wrap .service-leave-req__form .component-feedback .component-feedback__block div form .leave-request-btn a span {
+  text-align: end;
 }
 
 @media (min-resolution: 192dpi) {
@@ -3616,6 +3894,8 @@ img {
 }
 .adv-service .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img img {
   border-radius: 13px;
+  max-width: 182px;
+  max-height: 182px;
   width: calc(102px + 80 * (100vw - 768px) / 672);
   height: calc(102px + 80 * (100vw - 768px) / 672);
 }
@@ -4122,6 +4402,9 @@ img {
   flex-direction: column;
   gap: 15px;
   padding: 43px 40px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: normal;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-title-block {
   display: flex;
@@ -4316,7 +4599,7 @@ img {
 }
 .works-catalog .works-catalog__card .works-catalog__card-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   z-index: 0;
 }
@@ -4363,11 +4646,46 @@ img {
   transition: all 0.3s ease;
 }
 
+.works-catalog-pag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.works-catalog-pag font {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #1f1f1f;
+}
+.works-catalog-pag font a {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #1f1f1f;
+  opacity: 0.6;
+}
+.works-catalog-pag font a:hover, .works-catalog-pag font a:focus, .works-catalog-pag font a:active {
+  color: #1c75a8;
+}
+
 .title-desc-works {
   margin-top: 78px;
   padding-left: 71px;
   padding-right: 78px;
   overflow: hidden;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  margin-bottom: 36px;
 }
 .title-desc-works .component__title-block .component__tltle-link {
   justify-content: flex-start;
@@ -4417,7 +4735,7 @@ img {
 
 .desc-info-work {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px 71px;
   margin-top: 120px;
   gap: 15px;
@@ -4536,6 +4854,7 @@ img {
   width: 100%;
   max-width: 258px;
   min-height: 200px;
+  min-width: 200px;
   border-radius: 20px;
   background: #ebf4f9;
   display: flex;
@@ -4566,6 +4885,16 @@ img {
 .desc-info-work .desc-info-work__card-list .desc-info-work__card:hover::before {
   transform: rotate(45deg);
   transition: all 0.3s ease;
+}
+
+.back-btn a {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-left: 5%;
+  color: #1c75a8;
+}
+.back-btn a:hover, .back-btn a:active, .back-btn a:focus {
+  color: #13a9e1;
 }
 
 .spare-info-block {
@@ -4982,7 +5311,6 @@ img {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .vac-maket-desc .vac-maket-desc__col h4 {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;
@@ -4991,6 +5319,27 @@ img {
   line-height: 130%;
   letter-spacing: 0em;
   color: #1f1f1f;
+}
+.vac-maket-desc .vac-maket-desc__col p {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+.vac-maket-desc .vac-maket-desc__col strong {
+  display: block;
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .vac-maket-desc .vac-maket-desc__col ul {
   margin-left: 15px;
@@ -5004,6 +5353,19 @@ img {
   color: #1f1f1f;
   opacity: 0.5;
   list-style-type: disc;
+}
+.vac-maket-desc .vac-maket-desc__col ol {
+  margin-left: 15px;
+}
+.vac-maket-desc .vac-maket-desc__col ol li {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #1f1f1f;
+  opacity: 0.5;
+  list-style-type: auto;
 }
 
 .vac-active {

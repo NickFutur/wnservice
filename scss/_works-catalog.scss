@@ -1,103 +1,133 @@
 .works-catalog {
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 13px;
-    padding: 0px 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  padding: 0px 20px;
 
-    .works-catalog__card {
-        width: 315px;
-        height: 315px;
-        background: $light-gray;
+  .works-catalog__card {
+    width: 315px;
+    height: 315px;
+    background: $light-gray;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 31px;
+
+    .works-catalog__card-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 0;
+
+      .works-catalog__card-photo-font {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, #000 100%);
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
         position: relative;
-        border-radius: 30px;
-        overflow: hidden;
-        margin-bottom: 31px;
-
-
-
-        .works-catalog__card-photo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            z-index: 0;
-
-            .works-catalog__card-photo-font {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51%, #000 100%);
-                opacity: 0.6;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                z-index: 1;
-            }
-
-            img {
-                width: 100%;
-                height: auto;
-                position: relative;
-                z-index: 0;
-            }
-        }
-
-        .works-catalog__card-link {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100%;
-            height: 100%;
-            text-decoration: none;
-            position: relative;
-            padding: 17px;
-
-            svg {
-                align-self: flex-end;
-                position: relative;
-
-                rect {
-                    fill: $white;
-                }
-
-                path {
-                    fill: $sea-blue;
-                }
-
-                transition: $transition-default;
-            }
-
-            .works-catalog__card-title {
-                position: relative;
-                font-family: $font-family-med;
-                font-weight: 500;
-                font-size: 2rem;
-                line-height: 110%;
-                letter-spacing: -0.01em;
-                color: $white;
-                padding: 9px;
-                max-width: 230px;
-                width: 100%;
-                transition: $transition-default;
-            }
-
-            &:hover,
-            &:focus,
-            &:active {
-                svg {
-                    transform: rotate(45deg);
-                    transition: $transition-default;
-                }
-
-                .works-catalog__card-title {
-                    color: rgba(255, 255, 255, 0.8);
-                    transition: $transition-default;
-                }
-            }
-        }
+        z-index: 0;
+      }
     }
+
+    .works-catalog__card-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      position: relative;
+      padding: 17px;
+
+      svg {
+        align-self: flex-end;
+        position: relative;
+
+        rect {
+          fill: $white;
+        }
+
+        path {
+          fill: $sea-blue;
+        }
+
+        transition: $transition-default;
+      }
+
+      .works-catalog__card-title {
+        position: relative;
+        font-family: $font-family-med;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+        color: $white;
+        padding: 9px;
+        max-width: 230px;
+        width: 100%;
+        transition: $transition-default;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        svg {
+          transform: rotate(45deg);
+          transition: $transition-default;
+        }
+
+        .works-catalog__card-title {
+          color: rgba(255, 255, 255, 0.8);
+          transition: $transition-default;
+        }
+      }
+    }
+  }
+}
+
+.works-catalog-pag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  font {
+    font-family: $font-family-light;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: $light-black;
+    a {
+      font-family: $font-family-light;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 110%;
+      letter-spacing: -0.01em;
+      color: $light-black;
+      opacity: 0.6;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $sea-blue;
+      }
+    }
+  }
 }

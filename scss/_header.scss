@@ -442,6 +442,9 @@
   .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
   }
+  .header-wrap__info-equip {
+    background-image: url("../images/header-info-equip.png");
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -472,6 +475,9 @@
 
     .header-wrap__info-spare {
       background-image: url("../images/header-spares.png");
+    }
+    .header-wrap__info-equip {
+      background-image: url("../images/header-info-equip.png");
     }
   }
 }

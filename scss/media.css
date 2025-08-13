@@ -256,6 +256,9 @@
   .container_padding {
     padding: 0px 12px;
   }
+  .container_padding_70 {
+    padding: 0 30px;
+  }
   .header-wrap .header-wrap__contacts {
     gap: 40px;
   }
@@ -325,6 +328,10 @@
   .special-offers .special-offers__cards-block .special-offers__card .special-offers__card-desc .leave-request-btn a svg {
     width: 30px;
     height: 30px;
+  }
+  .special-offers-eqip .special-offers__cards-block .special-offers__card:nth-child(4) .special-offers__card-desc {
+    margin: 0;
+    padding: 15px;
   }
   .advantages-block {
     margin-top: 35px;
@@ -1196,6 +1203,9 @@
   .header-wrap__service-block .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
   }
+  .header-wrap__service-block .header-wrap__info-equip {
+    background-image: url("../images/header-info-equip-tablet.png");
+  }
   .header-wrap__info-works {
     background-image: url("../images/header-works.png");
   }
@@ -1205,6 +1215,9 @@
   .header-wrap__info-spare {
     background-image: url("../images/header-spares.png");
     background-position-x: left;
+  }
+  .header-wrap__info-equip {
+    background-image: url("../images/header-info-equip-tablet.png");
   }
   .advantages-block {
     margin-top: 35px;
@@ -1265,6 +1278,7 @@
   }
   .service-desc .service-desc__info-block .service-desc__text-block {
     max-width: 450px;
+    font-size: 1.5rem;
   }
   .service-desc .service-desc__info-block .service-desc__text-block h2 {
     font-size: 3rem;
@@ -1282,9 +1296,24 @@
   .service-cont-txt {
     margin-top: 50px;
     padding: 0 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
   .service-cont-txt p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+    max-width: 525px;
+  }
+  .service-cont-txt a {
+    font-size: 1.5rem;
+  }
+  .service-cont-txt h3 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    max-width: 525px;
+  }
+  .service-cont-txt h4 {
+    font-size: 2rem;
     margin-bottom: 20px;
     max-width: 525px;
   }
@@ -2538,7 +2567,8 @@
   .border_radius_20 {
     border-radius: 16px;
   }
-  .container_padding {
+  .container_padding,
+  .container_padding_70 {
     padding: 0px 10px;
   }
   .header-wrap .header-wrap__info .header-wrap__achievements-block {
@@ -2613,6 +2643,19 @@
   }
   .special-offers .special-offers__cards-block .special-offers__card:nth-child(3) .special-offers__card-desc p {
     width: 80%;
+  }
+  .special-offers-eqip .special-offers__cards-block .special-offers__card:nth-child(4) .special-offers__card-desc {
+    margin: 0;
+    padding: 20px;
+  }
+  .special-offers-eqip .special-offers__cards-block .special-offers__card .special-offers__icon {
+    width: 44px;
+    height: 44px;
+    margin: 15px;
+    border-radius: 100%;
+    fill: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(16.8401985168px);
+    backdrop-filter: blur(16.8401985168px);
   }
   .advantages-block {
     padding: 0;
@@ -3075,6 +3118,9 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .header-wrap__service-block .header-wrap__info-equip {
+    background-image: url("../images/header-info-equip-mob.png");
+  }
   .work-block .work-block__wrap .work-block__header-block {
     flex-direction: column;
     align-items: flex-start;
@@ -3182,6 +3228,7 @@
     width: 100%;
     max-width: 100%;
     flex: auto;
+    font-size: 1.2rem;
   }
   .service-desc .service-desc__info-block .service-desc__text-block h2 {
     font-size: 2.4rem;
@@ -3199,10 +3246,25 @@
   }
   .service-cont-txt {
     margin-top: 35px;
+    font-size: 1.2rem;
+    max-width: 100%;
   }
   .service-cont-txt p {
     font-size: 1.2rem;
     max-width: 100%;
+  }
+  .service-cont-txt a {
+    font-size: 1.2rem;
+  }
+  .service-cont-txt h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 525px;
+  }
+  .service-cont-txt h4 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    max-width: 525px;
   }
   .service-advantages {
     margin-top: 10px;

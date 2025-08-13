@@ -75,3 +75,30 @@
     }
   }
 }
+
+.special-offers-eqip {
+  .special-offers__cards-block {
+    .special-offers__card {
+      background-color: $blue;
+      &:nth-child(2) {
+        flex-direction: column;
+      }
+
+      &:nth-child(4) {
+        .special-offers__card-desc {
+          margin: 0;
+          padding: 20px;
+          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url("your-image.jpg") center/cover;
+        }
+      }
+
+      .special-offers__icon {
+        border-radius: 100%;
+        fill: rgba(255, 255, 255, 0.2);
+        -webkit-backdrop-filter: blur(16.8401985168px);
+        backdrop-filter: blur(16.8401985168px);
+      }
+    }
+  }
+}

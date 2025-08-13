@@ -102,32 +102,55 @@
 
 .works-catalog-pag {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 30px;
-  font {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
     font-family: $font-family-light;
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 110%;
     letter-spacing: -0.01em;
     color: $light-black;
-    a {
-      font-family: $font-family-light;
-      font-weight: 300;
-      font-size: 1.6rem;
-      line-height: 110%;
-      letter-spacing: -0.01em;
-      color: $light-black;
-      opacity: 0.6;
+    border-radius: 5px;
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: $sea-blue;
-      }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background: $sea-blue;
     }
+  }
+  .works-link {
+    width: 36px;
+    height: 36px;
+    &.active {
+      color: $white;
+      background: $sea-blue;
+    }
+  }
+  .works-link-prev,
+  .works-link-next {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .works-catalog-pag {
+    .works-link {
+      display: none;
+    }
+  }
+  .works-link-prev,
+  .works-link-next {
+    height: 30px;
+    width: 30px;
   }
 }

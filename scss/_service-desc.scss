@@ -29,6 +29,11 @@
     .service-desc__text-block {
       flex: 1;
       max-width: 630px;
+      font-family: $font-family-reg;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0em;
+      color: $black;
 
       h2 {
         font-family: $font-family-med;
@@ -46,6 +51,16 @@
         font-size: 2rem;
         letter-spacing: 0em;
         color: $black;
+      }
+      a {
+        color: $sea-blue;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $light-black;
+          opacity: 0.7;
+        }
       }
     }
 

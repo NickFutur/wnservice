@@ -3,9 +3,9 @@
 .about-page {
     .about-service {
         display: flex;
-        gap: 40px;
         align-items: flex-start;
-        padding: 40px 0;
+        margin-right: 72px;
+        // padding-right: 72px;
 
         &__left {
             .service-images__wrapper {
@@ -91,13 +91,15 @@
             align-items: flex-start;
             gap: 20px;
             position: relative;
-            .about-service__img{
+
+            .about-service__img {
                 position: absolute;
                 width: 160px;
                 height: 160px;
                 border-radius: 12px;
                 object-fit: cover;
-                bottom: 20px;
+                bottom: 240px;
+                right: 50px;
             }
 
             .about-service__img-small {
@@ -106,24 +108,57 @@
                 height: 93px;
                 border-radius: 12px;
                 object-fit: cover;
-            }
+                left: 95px;
 
+            }
+          
             .about-service__label {
-                position: absolute;
-                background-color: #007BFF;
+                top: 240px;
+                right: 25px;
+                position: relative; // Для позиционирования иконки
+                background-color: #0775B5;
                 color: #fff;
                 padding: 20px;
                 border-radius: 12px;
-                font-weight: bold;
-                max-width: 200px;
-                font-size: 16px;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end; // Текст прижат к низу
 
-                span {
-                    display: block;
-                    font-size: 14px;
-                    font-weight: normal;
+                .icon {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .text {
+                    position: absolute;
+                    right: 15px;
+                    left: 15px;
+                    h2 {
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 111%;
+                        margin: 0 0 8px 0;
+                        color: #fff;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 131%;
+                        margin: 0;
+                        color: #fff;
+                        white-space: nowrap;
+                    }
                 }
             }
         }
+         }
     }
-}

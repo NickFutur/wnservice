@@ -1521,9 +1521,8 @@
 }
 .about-page .about-service {
   display: flex;
-  gap: 40px;
   align-items: flex-start;
-  padding: 40px 0;
+  margin-right: 72px;
 }
 .about-page .about-service__left .service-images__wrapper {
   position: relative;
@@ -1609,7 +1608,8 @@
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
-  bottom: 20px;
+  bottom: 240px;
+  right: 50px;
 }
 .about-page .about-service__right .about-service__img-small {
   position: absolute;
@@ -1618,21 +1618,51 @@
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+  left: 95px;
 }
 .about-page .about-service__right .about-service__label {
-  position: absolute;
-  background-color: #007BFF;
+  top: 240px;
+  right: 25px;
+  position: relative;
+  background-color: #0775B5;
   color: #fff;
   padding: 20px;
   border-radius: 12px;
-  font-weight: bold;
-  max-width: 200px;
-  font-size: 16px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.about-page .about-service__right .about-service__label span {
-  display: block;
-  font-size: 14px;
-  font-weight: normal;
+.about-page .about-service__right .about-service__label .icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.about-page .about-service__right .about-service__label .text {
+  position: absolute;
+  right: 15px;
+  left: 15px;
+}
+.about-page .about-service__right .about-service__label .text h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 111%;
+  margin: 0 0 8px 0;
+  color: #fff;
+  white-space: nowrap;
+}
+.about-page .about-service__right .about-service__label .text p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 131%;
+  margin: 0;
+  color: #fff;
+  white-space: nowrap;
 }
 
 html {

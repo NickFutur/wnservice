@@ -1,3 +1,129 @@
 @use "variants" as var;
+
 .about-page {
+    .about-service {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        padding: 40px 0;
+
+        &__left {
+            .service-images__wrapper {
+                position: relative;
+                display: inline-block;
+            }
+
+            .service-images__small {
+                position: absolute;
+                top: -100px;
+                left: 40px;
+                width: 160px;
+                height: 160px;
+                border-radius: 12px;
+                object-fit: cover;
+                z-index: 2;
+            }
+
+            .service-images__big {
+                width: 533px;
+                height: auto;
+                border-radius: 20px;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        &__center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 500px;
+            margin-left: 126px;
+            margin-right: 107px;
+
+            .about-service__text {
+                width: 332px;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 138%;
+                letter-spacing: 0em;
+                color: rgba(31, 31, 31, 0.5);
+            }
+
+            .about-service__person {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 65px;
+            }
+
+            .about-service__avatar {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+            }
+
+            .about-service__name {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 131%;
+                letter-spacing: 0em;
+                color: #13a9e1;
+                margin-bottom: 6px;
+            }
+
+            .about-service__role {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 131%;
+                letter-spacing: 0em;
+                color: rgba(31, 31, 31, 0.5);
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+            .about-service__img{
+                position: absolute;
+                width: 160px;
+                height: 160px;
+                border-radius: 12px;
+                object-fit: cover;
+                bottom: 20px;
+            }
+
+            .about-service__img-small {
+                position: absolute;
+                width: 93px;
+                height: 93px;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+
+            .about-service__label {
+                position: absolute;
+                background-color: #007BFF;
+                color: #fff;
+                padding: 20px;
+                border-radius: 12px;
+                font-weight: bold;
+                max-width: 200px;
+                font-size: 16px;
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
 }

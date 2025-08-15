@@ -1,5 +1,27 @@
 footer {
   overflow: hidden;
+
+  .call-on-phone {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 170px;
+    right: 86px;
+    background-image: url("../images/phone-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1000;
+    border: 1px solid $sea-blue;
+    border-radius: 50%;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .footer-maintenance {

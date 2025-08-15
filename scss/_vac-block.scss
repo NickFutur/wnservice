@@ -214,6 +214,10 @@
       color: $light-black;
     }
 
+    img {
+      border-radius: 15px;
+    }
+
     p {
       font-family: $font-family-light;
       font-weight: 300;
@@ -275,4 +279,180 @@
   background: $blue-link !important;
   border-color: $blue-link !important;
   transition: $transition-default;
+}
+
+.yacht-sales-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  .yacht-sales-filter__wrap {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+    .vacancy-filter {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+      border: none;
+      .yacht-sales-filter__categories {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+        .yacht-sales-filter__category {
+          width: 100%;
+          max-width: 400px;
+          display: flex;
+          flex-direction: column;
+
+          h5 {
+            font-family: $font-family-med;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+          }
+
+          .filter-input {
+            height: 48px;
+            font-family: $font-family-light;
+            font-size: 1.8rem;
+
+            .select {
+              height: 48px;
+              border-radius: 10px;
+              background: $light-blue;
+              transition: $transition-default;
+
+              &:hover {
+                background: $sea-blue;
+                color: $white;
+                transition: $transition-default;
+
+                .new-select {
+                  &::after {
+                    transform: rotate(180deg);
+                    transition: $transition-default;
+                  }
+                }
+              }
+            }
+
+            .new-select__list {
+              .new-select__item {
+                span {
+                  background: $light-blue;
+                  border-radius: 10px;
+                  transition: $transition-default;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                  span {
+                    background: $sea-blue;
+                    color: $white;
+                    transition: $transition-default;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .btn-filter {
+        border-radius: 10px;
+        cursor: pointer;
+        background: $light-blue;
+        transition: $transition-default;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background: $sea-blue;
+          color: $white;
+          transition: $transition-default;
+        }
+      }
+    }
+  }
+}
+
+.yacht-sales-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .yacht-item {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    min-height: auto;
+    overflow: hidden;
+    .yacht-link {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+      background: $light-blue;
+      padding: 15px;
+      .yacht-link__img {
+        overflow: hidden;
+        border-radius: 15px;
+        height: auto;
+        .card-img-top {
+          transition: $transition-default;
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: $font-family-light;
+        font-size: 1.4rem;
+        color: $light-black;
+        .card-title {
+          font-family: $font-family-med;
+          font-size: 1.8rem;
+        }
+        .card-charact {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .card-charact__item {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            gap: 10px;
+            border-bottom: 1px solid #1f1f1f25;
+            div {
+              &:nth-child(1) {
+              }
+              &:nth-child(2) {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        .yacht-link__img {
+          .card-img-top {
+            transform: scale(1.1);
+            transition: $transition-default;
+          }
+        }
+      }
+    }
+  }
 }

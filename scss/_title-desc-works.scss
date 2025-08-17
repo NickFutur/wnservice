@@ -49,11 +49,26 @@
         color: $light-black;
         margin-bottom: 36px;
 
-        span {
+        span,
+        b {
           font-family: $font-family-reg;
           font-size: 400;
           display: inline-block;
           width: 100%;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: disc;
+        li {
+          font-family: $font-family-light;
+          font-weight: 300;
+          font-size: 2rem;
+          letter-spacing: 0em;
+          color: $light-black;
         }
       }
     }

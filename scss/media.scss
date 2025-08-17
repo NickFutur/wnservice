@@ -103,6 +103,20 @@
               .modal-menu_info-right-dop {
                 display: flex;
                 gap: 15px;
+
+                // font-size: 1.2rem;
+                // line-height: 108%;
+                a {
+                  font-family: $font-family-light;
+                  font-weight: 300;
+                  color: $white;
+
+                  &:hover,
+                  &:active,
+                  &:focus {
+                    opacity: 0.8;
+                  }
+                }
               }
             }
           }
@@ -2260,7 +2274,12 @@
       }
     }
   }
-
+  footer {
+    .call-on-phone {
+      bottom: 90px;
+      right: 20px;
+    }
+  }
   .footer-contacts {
     .footer-contacts__feedback-block {
       background-position: center calc(50% + 0px);
@@ -3722,6 +3741,8 @@
                 margin: 17px 0px;
 
                 a {
+                  width: 44px;
+                  height: 44px;
                   svg {
                     width: 44px;
                     height: 44px;

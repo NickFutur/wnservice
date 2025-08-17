@@ -312,6 +312,7 @@
       .header-wrap__title-block-main {
         h1 {
           max-width: 570px;
+          word-wrap: break-word;
         }
       }
 
@@ -390,6 +391,7 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           padding-bottom: 5px;
+          word-wrap: break-word;
         }
       }
 

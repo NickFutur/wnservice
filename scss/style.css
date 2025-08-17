@@ -2734,6 +2734,7 @@ img {
 }
 .header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-main h1 {
   max-width: 570px;
+  word-wrap: break-word;
 }
 .header-wrap .header-wrap__info-stabilizer .header-wrap__title-block .header-wrap__title-block-image {
   position: absolute;
@@ -2802,6 +2803,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 5px;
+  word-wrap: break-word;
 }
 .header-wrap__service-block .header-wrap__info .header-wrap__title-block .header-wrap__title-block-func {
   display: flex;
@@ -3222,6 +3224,7 @@ img {
 .service-block .service-block__info-block .service-block__info-wrap-1 {
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper {
   display: flex;
@@ -3390,6 +3393,69 @@ img {
 .service-block .service-block__info-block .service-block__info-wrap-3 .service-block__card .service-block__card-links-block {
   max-width: 441px;
 }
+.service-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.service-products .sk-product {
+  width: 100%;
+  max-width: 315px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #ddeef8;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 15px;
+}
+.service-products .sk-product:hover {
+  background: #ebf4f9;
+}
+.service-products .sk-product .sk-product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.service-products .sk-product .sk-product__content .product__thumb img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 200px;
+}
+.service-products .sk-product .sk-product__content .sk-product__title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.service-products .sk-product .sk-product__content .sk-product__text,
+.service-products .sk-product .sk-product__content .sk-product__desc {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-size: 1.4rem;
+}
+.service-products .sk-product .sk-product__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+}
+.service-products .sk-product .sk-product__footer .sk-price {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-size: 1.4rem;
+}
+.service-products .sk-product .sk-product__footer .leave-request-btn a span {
+  text-align: center;
+}
+.service-products .sk-product .leave-request-btn {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .ship-equipment-block .ship-equipment-block__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -4205,7 +4271,7 @@ img {
 .service-desc .service-desc__info-block .service-desc__text-block {
   flex: 1;
   max-width: 630px;
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 0em;
@@ -4221,7 +4287,7 @@ img {
   margin-bottom: 36px;
 }
 .service-desc .service-desc__info-block .service-desc__text-block p {
-  font-family: "TT Hoves Pro Trial Regular", sans-serif;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 0em;
@@ -5743,6 +5809,7 @@ img {
           backdrop-filter: blur(80px);
   background: rgba(255, 255, 255, 0.2);
   margin-bottom: 15px;
+  overflow: auto;
 }
 .charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block:last-child {
   margin-bottom: 0;
@@ -5763,6 +5830,53 @@ img {
   text-align: left;
   width: 30%;
   max-width: 150px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table {
+  width: 100%;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table thead tr th,
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table thead tr td {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table tr {
+  border-bottom: 1px solid #ffffff;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table tr td {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 10px;
+  min-width: 70px;
+  width: -moz-max-content;
+  width: max-content;
+  vertical-align: middle;
+  text-align: center;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table tbody tr th {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block table tbody tr td:nth-child(1) {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+.charact-equip .charact-equip__desc .charact-equip__desc-wrap .charact-equip__desc-block-tabel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+  overflow-x: auto;
 }
 .charact-equip .charact-equip__image {
   display: flex;
@@ -5786,10 +5900,11 @@ img {
 .charact-equip .charact-equip__image .charact-equip__big-image {
   max-width: 594px;
   max-height: 463px;
-  width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
 }
 .charact-equip .charact-equip__image .charact-equip__coast {
   display: flex;
@@ -6032,11 +6147,25 @@ img {
   color: #1f1f1f;
   margin-bottom: 36px;
 }
-.title-desc-works .title-desc-works__desc .title-desc-works__text p span {
+.title-desc-works .title-desc-works__desc .title-desc-works__text p span,
+.title-desc-works .title-desc-works__desc .title-desc-works__text p b {
   font-family: "TT Hoves Pro Trial Regular", sans-serif;
   font-size: 400;
   display: inline-block;
   width: 100%;
+}
+.title-desc-works .title-desc-works__desc .title-desc-works__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: disc;
+}
+.title-desc-works .title-desc-works__desc .title-desc-works__text ul li {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  color: #1f1f1f;
 }
 .title-desc-works .title-desc-works__desc .title-desc-works__image img {
   border-radius: 30px;
@@ -6631,6 +6760,9 @@ img {
   letter-spacing: 0em;
   color: #1f1f1f;
 }
+.vac-maket-desc .vac-maket-desc__col img {
+  border-radius: 15px;
+}
 .vac-maket-desc .vac-maket-desc__col p {
   font-family: "TT Hoves Pro Trial Light", sans-serif;
   font-weight: 300;
@@ -6687,8 +6819,170 @@ img {
   transition: all 0.3s ease;
 }
 
+.yacht-sales-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  flex-direction: column;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  border: none;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category h5 {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input {
+  height: 48px;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-size: 1.8rem;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .select {
+  height: 48px;
+  border-radius: 10px;
+  background: #ebf4f9;
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .select:hover {
+  background: #1c75a8;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .select:hover .new-select::after {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .new-select__list .new-select__item span {
+  background: #ebf4f9;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .new-select__list .new-select__item:hover span, .yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .new-select__list .new-select__item:focus span, .yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .yacht-sales-filter__categories .yacht-sales-filter__category .filter-input .new-select__list .new-select__item:active span {
+  background: #1c75a8;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .btn-filter {
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ebf4f9;
+  transition: all 0.3s ease;
+}
+.yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .btn-filter:hover, .yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .btn-filter:active, .yacht-sales-filter .yacht-sales-filter__wrap .vacancy-filter .btn-filter:focus {
+  background: #1c75a8;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.yacht-sales-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.yacht-sales-list .yacht-item {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  min-height: auto;
+  overflow: hidden;
+}
+.yacht-sales-list .yacht-item .yacht-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  background: #ebf4f9;
+  padding: 15px;
+}
+.yacht-sales-list .yacht-item .yacht-link .yacht-link__img {
+  overflow: hidden;
+  border-radius: 15px;
+  height: auto;
+}
+.yacht-sales-list .yacht-item .yacht-link .yacht-link__img .card-img-top {
+  transition: all 0.3s ease;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 15px;
+}
+.yacht-sales-list .yacht-item .yacht-link .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-size: 1.4rem;
+  color: #1f1f1f;
+}
+.yacht-sales-list .yacht-item .yacht-link .card-body .card-title {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-size: 1.8rem;
+}
+.yacht-sales-list .yacht-item .yacht-link .card-body .card-charact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.yacht-sales-list .yacht-item .yacht-link .card-body .card-charact .card-charact__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.1450980392);
+}
+.yacht-sales-list .yacht-item .yacht-link .card-body .card-charact .card-charact__item div:nth-child(2) {
+  opacity: 0.5;
+}
+.yacht-sales-list .yacht-item .yacht-link:hover .yacht-link__img .card-img-top, .yacht-sales-list .yacht-item .yacht-link:active .yacht-link__img .card-img-top, .yacht-sales-list .yacht-item .yacht-link:focus .yacht-link__img .card-img-top {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 footer {
   overflow: hidden;
+}
+footer .call-on-phone {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 170px;
+  right: 86px;
+  background-image: url("../images/phone-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1000;
+  border: 1px solid #1c75a8;
+  border-radius: 50%;
+}
+footer .call-on-phone:hover, footer .call-on-phone:active, footer .call-on-phone:focus {
+  transform: scale(1.1);
 }
 
 .footer-maintenance .footer-maintenance__title {
@@ -7259,12 +7553,29 @@ footer {
 }
 .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
 }
-.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a svg {
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a {
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 58px;
+  height: 58px;
   transition: all 0.3s ease;
 }
-.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:hover svg {
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:nth-child(1) {
+  background-image: url("../images/icon-youtube.svg");
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:nth-child(2) {
+  background-image: url("../images/icon-telegram.svg");
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:nth-child(3) {
+  background-image: url("../images/icon-whatsapp.svg");
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-left .modal-menu_info-more-info .modal-menu__messangers a:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
@@ -7322,6 +7633,24 @@ footer {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 108%;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-dop a,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-dop a,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-dop a {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 108%;
+  color: #ffffff;
+}
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-dop a:hover, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-dop a:active, .modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_left-block .modal-menu_info-right-dop a:focus,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-dop a:hover,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-dop a:active,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_center-block .modal-menu_info-right-dop a:focus,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-dop a:hover,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-dop a:active,
+.modal-menu .modal-menu_wrap .modal-menu_info .modal-menu_info-wrapper .modal-menu_info-right .modal-menu_right-block .modal-menu_info-right-dop a:focus {
+  opacity: 0.8;
 }
 
 .open-menu {

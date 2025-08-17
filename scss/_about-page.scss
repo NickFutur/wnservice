@@ -1,1 +1,439 @@
 @use "variants" as var;
+
+
+.about-page {
+    .about-service {
+        display: flex;
+        align-items: flex-start;
+        // margin-right: 72px;
+        // padding-right: 72px;
+
+        &__left {
+            .service-images__wrapper {
+                position: relative;
+                display: inline-block;
+            }
+
+            .service-images__small {
+                position: absolute;
+                top: -100px;
+                left: 40px;
+                width: 160px;
+                height: 160px;
+                border-radius: 12px;
+                object-fit: cover;
+                z-index: 2;
+                will-change: transform;
+                transition: transform 0.4s ease-out;
+            }
+
+            .service-images__big {
+                width: 533px;
+                height: auto;
+                border-radius: 20px;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        &__center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 500px;
+            margin-left: 126px;
+            margin-right: 107px;
+
+            .about-service__text {
+                width: 332px;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 138%;
+                letter-spacing: 0em;
+                color: rgba(31, 31, 31, 0.5);
+            }
+
+            .about-service__person {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 65px;
+            }
+
+            .about-service__avatar {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                will-change: transform;
+                transition: transform 0.1s linear;
+            }
+
+            .about-service__name {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 131%;
+                letter-spacing: 0em;
+                color: #13a9e1;
+                margin-bottom: 6px;
+            }
+
+            .about-service__role {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 131%;
+                letter-spacing: 0em;
+                color: rgba(31, 31, 31, 0.5);
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+
+            .about-service__img {
+                position: absolute;
+                width: 160px;
+                height: 160px;
+                border-radius: 12px;
+                object-fit: cover;
+                bottom: 240px;
+                right: 50px;
+                will-change: transform;
+                transition: transform 0.4s ease-out;
+            }
+
+            .about-service__img-small {
+                position: absolute;
+                width: 93px;
+                height: 93px;
+                border-radius: 12px;
+                object-fit: cover;
+                left: 95px;
+                will-change: transform;
+                transition: transform 0.4s ease-out;
+            }
+
+            .about-service__label {
+                top: 240px;
+                right: 25px;
+                position: relative; // Для позиционирования иконки
+                background-color: #0775B5;
+                color: #fff;
+                padding: 20px;
+                border-radius: 12px;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end; // Текст прижат к низу
+
+                .icon {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .text {
+                    position: absolute;
+                    right: 15px;
+                    left: 15px;
+
+                    h2 {
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 111%;
+                        margin: 0 0 8px 0;
+                        color: #fff;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 131%;
+                        margin: 0;
+                        color: #fff;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-service-tablet {
+        display: none;
+    }
+
+}
+
+@media (max-width:1300px) {
+    .about-service {
+        display: none !important;
+    }
+
+    .about-page {
+        .about-service-tablet {
+            display: flex;
+            flex-direction: row;
+            gap: 72px;
+
+            .about-service__left {
+                .service-images__wrapper {
+                    .service-images__small {
+                        width: 86px;
+                        height: 86px;
+                        top: -50px;
+                    }
+
+                    .service-images__big {
+                        width: 306px;
+                        height: 306px;
+                    }
+
+                    .about-service__img {
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        left: 200px;
+                        margin-top: 75px;
+                    }
+
+                    .about-service__label-double {
+                        display: none;
+                    }
+                }
+            }
+
+            .about-service__right {
+                .about-service__img-small {
+                    position: absolute;
+                    width: 82px;
+                    height: 82px;
+                    border-radius: 14px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    left: 250px;
+                    top: -150px;
+                    will-change: transform;
+                    transition: transform 0.4s ease-out;
+                }
+
+                p {
+                    max-width: 332px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 143%;
+                    letter-spacing: 0em;
+                    color: rgba(31, 31, 31, 0.5);
+                }
+
+                .about-service__person {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 18px;
+
+                    .about-service__avatar {
+                        border-radius: 14px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        .about-service__name {
+                            font-family: var(--font-family);
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 121%;
+                            letter-spacing: 0em;
+                            color: #13a9e1;
+
+                        }
+
+                        .about-service__role {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 142%;
+                            letter-spacing: 0em;
+                            color: rgba(31, 31, 31, 0.5);
+                        }
+                    }
+                }
+
+                .about-service__label {
+                    position: relative;
+                    background-color: #0775B5;
+                    color: #fff;
+                    padding: 20px;
+                    border-radius: 12px;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    top: 70px;
+                    left: clamp(100px, 16vw, 170px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:772px) {
+    .about-service {
+        display: none !important;
+    }
+
+    .about-page {
+        .about-service-tablet {
+            display: flex;
+            flex-direction: column;
+
+            .about-service__left {
+                order: 2;
+
+                .service-images__wrapper {
+                    .service-images__small {
+                        width: 86px;
+                        height: 86px;
+                        top: 375px;
+                        left: 45px;
+                    }
+
+                    .service-images__big {
+                        width: 354px;
+                        height: 354px;
+                        padding: 5px;
+                    }
+
+                    .about-service__img {
+                        z-index: 2;
+                        position: absolute;
+                        width: 82px;
+                        height: 82px;
+                        left: 200px;
+                        bottom: 90px;
+                        display: none;
+                    }
+
+                    .about-service__label-double {
+                        position: relative;
+                        background-color: #0775B5;
+                        color: #fff;
+                        padding: 20px;
+                        border-radius: 12px;
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        top: 70px;
+                        margin-left: 20px;
+
+                        img {
+                            position: absolute;
+                            top: 12px;
+                            right: 12px;
+                            width: 30px;
+                            height: 30px;
+                            width: 36px;
+                            height: 36px;
+                        }
+
+                    }
+
+                }
+            }
+
+            .about-service__right {
+                align-items: center;
+                order: 1;
+                gap: 30px;
+
+                .about-service__img-small {
+                    z-index: 2;
+                    position: absolute;
+                    width: 82px;
+                    height: 82px;
+                    border-radius: 14px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    top: 780px;
+                    left: 245px;
+                    will-change: transform;
+                    transition: transform 0.4s ease-out;
+                }
+
+                p {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 129%;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: rgba(31, 31, 31, 0.5);
+                    margin-bottom: 30px;
+                    max-width: 304px;
+                }
+
+                .about-service__person {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+
+                    .about-service__avatar {
+                        border-radius: 14px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        .about-service__name {
+                            font-family: var(--font-family);
+                            font-weight: medium;
+                            font-size: 14px;
+                            line-height: 121%;
+                            letter-spacing: 0em;
+                            color: #13a9e1;
+                            margin-bottom: 6px;
+                        }
+
+                        .about-service__role {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 142%;
+                            letter-spacing: 0em;
+                            color: rgba(31, 31, 31, 0.5);
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+
+                .about-service__label {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

@@ -47,8 +47,8 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     480: {
       spaceBetween: 4,
-    }
-  }
+    },
+  },
 });
 var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
@@ -168,7 +168,8 @@ getPodmenuLinks.forEach((getPodmenuLink) => {
     } else if (getPodmenuLink.textContent == "Оборудование") {
       podmenuEquipment.classList.add(DISPLAY_FLEX);
       podmenuService.classList.add(DISPLAY_NONE);
-    } else {}
+    } else {
+    }
   });
 });
 
@@ -248,13 +249,11 @@ if (seakeeperBtn && jiwuBtn) {
     productsSeakeeperBlock.style.display = "flex";
   });
 
-
   jiwuBtn.addEventListener("click", function (e) {
     e.preventDefault();
     hideAllBlocks();
     productsJiwuBlock.style.display = "flex";
   });
-
 
   hideAllBlocks();
   productsJiwuBlock.style.display = "flex";
@@ -262,26 +261,24 @@ if (seakeeperBtn && jiwuBtn) {
 
 // vacancience
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   const vacCategBtns = document.querySelectorAll(".vac-block__nav button");
   const vacCatalogCards = document.querySelectorAll(".vac-block__card");
 
   // Активируем кнопку "Все города" по умолчанию
-  vacCategBtns.forEach(btn => {
+  vacCategBtns.forEach((btn) => {
     // if (btn.textContent.trim() === "Все города") {
     //   btn.classList.add('vac-active');
     // }
   });
 
   // Обработчик кликов для кнопок фильтрации
-  vacCategBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
+  vacCategBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
       // Удаляем активный класс у всех кнопок
-      vacCategBtns.forEach(b => b.classList.remove('vac-active'));
+      vacCategBtns.forEach((b) => b.classList.remove("vac-active"));
       // Добавляем активный класс текущей кнопке
-      this.classList.add('vac-active');
+      this.classList.add("vac-active");
 
       const cityName = this.textContent.trim();
       filterCardsByCity(cityName);
@@ -290,13 +287,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Функция фильтрации карточек по городу
   function filterCardsByCity(city) {
-    vacCatalogCards.forEach(card => {
+    vacCatalogCards.forEach((card) => {
       if (city === "Все города") {
-        card.style.display = 'block';
+        card.style.display = "block";
       } else {
         const cardCity = card.dataset.city;
-        card.style.display = cardCity === city ? 'block' : 'none';
+        card.style.display = cardCity === city ? "block" : "none";
       }
     });
   }
 });
+
+//анимация параллакса 
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY;
+
+  // объект с селекторами и скоростями
+  const parallaxItems = [
+    { selector: ".about-service__img-small", speed: 0.05 },
+    { selector: ".about-service__img", speed: 0.05 },
+    { selector: ".service-images__small", speed: 0.02 },
+  ];
+
+  parallaxItems.forEach(item => {
+    const el = document.querySelector(item.selector);
+    if (el) {
+      el.style.transform = `translateY(${scrolled * item.speed}px)`;
+    }
+  });
+});
+

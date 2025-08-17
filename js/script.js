@@ -297,3 +297,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+const container = document.querySelector(".our-equip-block__content");
+const track = container.querySelector(".our-equip-block__content-scroll");
+
+function getScrollLen() {
+  const containerW = container.clientWidth;
+  const trackW = track.scrollWidth;
+  const gap = parseFloat(getComputedStyle(track).gap) || 0;
+  return track.scrollWidth - container.clientWidth + gap;
+}
+
+gsap.to(track, {
+  x: () => -getScrollLen(),
+  ease: "none",
+  scrollTrigger: {
+    trigger: container,
+    start: "top top",
+    end: () => "+=" + getScrollLen(),
+    pin: true,
+    scrub: true,
+    pinSpacing: true,
+    invalidateOnRefresh: true,
+  },
+});
+
+window.addEventListener("load", () => ScrollTrigger.refresh());
+window.addEventListener("resize", () => ScrollTrigger.refresh());

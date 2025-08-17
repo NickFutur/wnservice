@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../../scss/media.css" />
     <script defer src="../../js/swiper-bundle.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script defer src="../../js/script.js"></script>
 </head>
 
@@ -239,7 +241,7 @@
         </div>
     </header>
     <main>
-        <div class="adv-service container_padding about-page">
+        <div class="adv-service container_padding about-page" style="overflow: hidden;">
             <div class="adv-service__wrap">
                 <div class="adv-service__head">
                     <div class="component__tltle-link" data-aos="fade-down">
@@ -647,6 +649,145 @@
             </div>
         </div>
 
+
+        <!-- our equipment block -->
+        <div class="our-equip-block">
+            <div class="our-equip-block__wrap">
+                <div class="component__title-block">
+                    <div class="component__tltle-link" data-aos="fade-down">
+                        <a href="#" class="component__tltle">
+                            <h2>Наше оборудование</h2>
+                        </a>
+                    </div>
+                    <div class="component__title-text">
+                        <h3 data-aos="fade-down" data-aos-delay="200">
+                            Владеем <span>самым передовым оборудованием
+                                и&nbsp;площадками для&nbsp;хранения и&nbsp;ремонта водного транспорта</span>,
+                            обеспечивая высокое
+                            качество работ и&nbsp;их своевременное выполнение
+                        </h3>
+                    </div>
+                </div>
+                <div class="our-equip-block__content">
+                    <div class="our-equip-block__content-title">
+                        <p>Современное оборудование&nbsp;– залог обеспечения эффективных и&nbsp;безопасных работ
+                            по&nbsp;ремонту и&nbsp;обслуживанию яхт и&nbsp;катеров.</p>
+                    </div>
+                    <div class="our-equip-block__content-scroll">
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>01</p>
+                                <img src="../../images/our-equip-block-img-1.png" alt="фото краны"
+                                    srcset="../../images/our-equip-block-img-1-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Краны и&nbsp;подъемные системы</h3>
+                                <p>Подъемные краны и&nbsp;системы помогут поднять яхту из&nbsp;воды и&nbsp;опустить ее
+                                    на&nbsp;место для&nbsp;ремонта. У нас есть стационарные краны, портальные краны,
+                                    гидравлические системы
+                                    подъема, что&nbsp;обеспечивает грузоподъемные возможности для&nbsp;яхт различных
+                                    габаритов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>02</p>
+                                <img src="../../images/our-equip-block-img-2.png" alt="фото доки и стапели"
+                                    srcset="../../images/our-equip-block-img-2-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Доки<br>
+                                    и&nbsp;стапели</h3>
+                                <p>Особые плавучие конструкции, на&nbsp;которых можно ставить яхты для&nbsp;проведения
+                                    ремонтных
+                                    работ. Они обеспечивают удобство
+                                    доступа к&nbsp;яхте и&nbsp;позволяют свободный доступ со&nbsp;всех сторон.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>03</p>
+                                <img src="../../images/our-equip-block-img-3.png" alt="фото складские помещения"
+                                    srcset="../../images/our-equip-block-img-3-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Складские<br> помещения</h3>
+                                <p>Для хранения инструментов, запасных частей и &nbsp;материалов для &nbsp;емонта мы
+                                    располагаем
+                                    отдельными складскими помещениями, в&nbsp;которых достаточно места для&nbsp;хранения
+                                    различных предметов и&nbsp;оборудования.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>04</p>
+                                <img src="../../images/our-equip-block-img-4.png" alt="фото ремонтные ангары и верфи"
+                                    srcset="../../images/our-equip-block-img-4-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Ремонтные ангары
+                                    и&nbsp;верфи</h3>
+                                <p>Предназначены для&nbsp;таких видов работ, как: ремонт корпуса, покраска, замена
+                                    моторов и&nbsp;т.д. В&nbsp;нашем распоряжении
+                                    специальные инструменты, необходимые для&nbsp;качественного выполнения работ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>05</p>
+                                <img src="../../images/our-equip-block-img-5.png"
+                                    alt="фото подъемные механизмы и тележки"
+                                    srcset="../../images/our-equip-block-img-5-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Подъемные механизмы и&nbsp;тележки</h3>
+                                <p>Для перемещения яхт по&nbsp;стоянке для&nbsp;ремонта. Cпециальное оборудование
+                                    и&nbsp;места для&nbsp;стоянки для&nbsp;яхт и&nbsp;катеров от&nbsp;7 до&nbsp;35
+                                    метров и&nbsp;весом до&nbsp;160 тонн.
+                                    <br>
+                                    Перевозка и&nbsp;доставка яхты до&nbsp;места ремонта и&nbsp;хранения
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>06</p>
+                                <img src="../../images/our-equip-block-img-6.png" alt="фото электричество"
+                                    srcset="../../images/our-equip-block-img-6-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Электричество<br>
+                                    и&nbsp;вода</h3>
+                                <p>Для&nbsp;проведения ремонтных работ необходимо обеспечение доступа
+                                    к&nbsp;электричеству и&nbsp;воде. В&nbsp;нашем распоряжении и&nbsp;электрические
+                                    розетки, и&nbsp;компрессоры, и&nbsp;водяные краны и&nbsp;дренажные
+                                    системы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-equip-block__card">
+                            <div class="our-equip-block__card-top-block">
+                                <p>07</p>
+                                <img src="../../images/our-equip-block-img-7.png" alt="фото краны"
+                                    srcset="../../images/our-equip-block-img-7-2x.png">
+                            </div>
+                            <div class="our-equip-block__card-bottom-block">
+                                <h3>Безопасность<br>и&nbsp;охрана</h3>
+                                <p>Важно обеспечить безопасность оборудования и&nbsp;яхт на&nbsp;стоянке. У&nbsp;нас
+                                    есть системы
+                                    видеонаблюдения, ограждения, пожарные
+                                    сигнализации и&nbsp;другие меры безопасности.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- rest block -->
         <div class="rest-block">

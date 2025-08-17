@@ -1700,6 +1700,9 @@
     left: 200px;
     margin-top: 75px;
   }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__label-double {
+    display: none;
+  }
   .about-page .about-service-tablet .about-service__right .about-service__img-small {
     position: absolute;
     width: 82px;
@@ -1763,7 +1766,125 @@
     flex-direction: column;
     justify-content: flex-end;
     top: 70px;
-    left: 170px;
+    left: clamp(100px, 16vw, 170px);
+  }
+}
+@media (max-width: 772px) {
+  .about-service {
+    display: none !important;
+  }
+  .about-page .about-service-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .about-service-tablet .about-service__left {
+    order: 2;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .service-images__small {
+    width: 86px;
+    height: 86px;
+    top: 375px;
+    left: 45px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .service-images__big {
+    width: 354px;
+    height: 354px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__img {
+    z-index: 2;
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 200px;
+    bottom: 90px;
+    display: none;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__label-double {
+    position: relative;
+    background-color: #0775B5;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 70px;
+    margin-left: 20px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__label-double img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    width: 36px;
+    height: 36px;
+  }
+  .about-page .about-service-tablet .about-service__right {
+    align-items: center;
+    order: 1;
+    gap: 30px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__img-small {
+    z-index: 2;
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    border-radius: 14px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 780px;
+    left: 245px;
+    will-change: transform;
+    transition: transform 0.4s ease-out;
+  }
+  .about-page .about-service-tablet .about-service__right p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(31, 31, 31, 0.5);
+    margin-bottom: 30px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person .about-service__avatar {
+    border-radius: 14px;
+    width: 60px;
+    height: 60px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div .about-service__name {
+    font-family: var(--font-family);
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 121%;
+    letter-spacing: 0em;
+    color: #13a9e1;
+    margin-bottom: 6px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div .about-service__role {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142%;
+    letter-spacing: 0em;
+    color: rgba(31, 31, 31, 0.5);
+    margin-bottom: 47px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__label {
+    display: none;
   }
 }
 .rest-block {
@@ -1773,6 +1894,7 @@
   align-items: center;
   gap: 53px;
   padding: 0px 10px;
+  overflow: hidden;
 }
 .rest-block .rest-block__title {
   font-family: "TT Hoves Pro Trial Medium", sans-serif;

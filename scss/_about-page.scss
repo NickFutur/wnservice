@@ -208,6 +208,10 @@
                         left: 200px;
                         margin-top: 75px;
                     }
+
+                    .about-service__label-double {
+                        display: none;
+                    }
                 }
             }
 
@@ -283,9 +287,151 @@
                     flex-direction: column;
                     justify-content: flex-end;
                     top: 70px;
-                    left: 170px;
+                    left: clamp(100px, 16vw, 170px);
                 }
             }
         }
     }
+}
+
+@media (max-width:772px) {
+    .about-service {
+        display: none !important;
+    }
+
+    .about-page {
+        .about-service-tablet {
+            display: flex;
+            flex-direction: column;
+
+            .about-service__left {
+                order: 2;
+
+                .service-images__wrapper {
+                    .service-images__small {
+                        width: 86px;
+                        height: 86px;
+                        top: 375px;
+                        left: 45px;
+                    }
+
+                    .service-images__big {
+                        width: 354px;
+                        height: 354px;
+                    }
+
+                    .about-service__img {
+                        z-index: 2;
+                        position: absolute;
+                        width: 82px;
+                        height: 82px;
+                        left: 200px;
+                        bottom: 90px;
+                        display: none;
+                    }
+
+                    .about-service__label-double {
+                        position: relative;
+                        background-color: #0775B5;
+                        color: #fff;
+                        padding: 20px;
+                        border-radius: 12px;
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        top: 70px;
+                        margin-left: 20px;
+
+                        img {
+                            position: absolute;
+                            top: 12px;
+                            right: 12px;
+                            width: 30px;
+                            height: 30px;
+                            width: 36px;
+                            height: 36px;
+                        }
+
+                    }
+
+                }
+            }
+
+            .about-service__right {
+                align-items: center;
+                order: 1;
+                gap: 30px;
+
+                .about-service__img-small {
+                    z-index: 2;
+                    position: absolute;
+                    width: 82px;
+                    height: 82px;
+                    border-radius: 14px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    top: 780px;
+                    left: 245px;
+                    will-change: transform;
+                    transition: transform 0.4s ease-out;
+                }
+
+                p {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 129%;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: rgba(31, 31, 31, 0.5);
+                    margin-bottom: 30px;
+                }
+
+                .about-service__person {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+
+                    .about-service__avatar {
+                        border-radius: 14px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        .about-service__name {
+                            font-family: var(--font-family);
+                            font-weight: medium;
+                            font-size: 14px;
+                            line-height: 121%;
+                            letter-spacing: 0em;
+                            color: #13a9e1;
+                            margin-bottom: 6px;
+                        }
+
+                        .about-service__role {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 142%;
+                            letter-spacing: 0em;
+                            color: rgba(31, 31, 31, 0.5);
+                            margin-bottom: 47px;
+                        }
+                    }
+                }
+
+                .about-service__label {
+                    display: none;
+                }
+            }
+        }
+    }
+
 }

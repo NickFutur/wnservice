@@ -1522,7 +1522,6 @@
 .about-page .about-service {
   display: flex;
   align-items: flex-start;
-  margin-right: 72px;
 }
 .about-page .about-service__left .service-images__wrapper {
   position: relative;
@@ -1672,7 +1671,101 @@
   color: #fff;
   white-space: nowrap;
 }
+.about-page .about-service-tablet {
+  display: none;
+}
 
+@media (max-width: 1300px) {
+  .about-service {
+    display: none !important;
+  }
+  .about-page .about-service-tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .service-images__small {
+    width: 86px;
+    height: 86px;
+    top: -50px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .service-images__big {
+    width: 306px;
+    height: 306px;
+  }
+  .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 200px;
+    margin-top: 75px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__img-small {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    border-radius: 14px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    left: 250px;
+    top: -150px;
+    will-change: transform;
+    transition: transform 0.4s ease-out;
+  }
+  .about-page .about-service-tablet .about-service__right p {
+    max-width: 332px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0em;
+    color: rgba(31, 31, 31, 0.5);
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person .about-service__avatar {
+    border-radius: 14px;
+    width: 60px;
+    height: 60px;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div .about-service__name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121%;
+    letter-spacing: 0em;
+    color: #13a9e1;
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__person div .about-service__role {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142%;
+    letter-spacing: 0em;
+    color: rgba(31, 31, 31, 0.5);
+  }
+  .about-page .about-service-tablet .about-service__right .about-service__label {
+    position: relative;
+    background-color: #0775B5;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 70px;
+    left: 170px;
+  }
+}
 .rest-block {
   margin-top: 151px;
   display: flex;

@@ -1,5 +1,6 @@
 @use "variants" as var;
 
+
 .about-page {
     .about-service {
         display: flex;
@@ -22,6 +23,8 @@
                 border-radius: 12px;
                 object-fit: cover;
                 z-index: 2;
+                will-change: transform;
+                transition: transform 0.4s ease-out;
             }
 
             .service-images__big {
@@ -63,6 +66,8 @@
                 width: 60px;
                 height: 60px;
                 object-fit: cover;
+                will-change: transform;
+                transition: transform 0.1s linear;
             }
 
             .about-service__name {
@@ -100,6 +105,8 @@
                 object-fit: cover;
                 bottom: 240px;
                 right: 50px;
+                will-change: transform;
+                transition: transform 0.4s ease-out;
             }
 
             .about-service__img-small {
@@ -109,9 +116,10 @@
                 border-radius: 12px;
                 object-fit: cover;
                 left: 95px;
-
+                will-change: transform;
+                transition: transform 0.4s ease-out;
             }
-          
+
             .about-service__label {
                 top: 240px;
                 right: 25px;
@@ -138,6 +146,7 @@
                     position: absolute;
                     right: 15px;
                     left: 15px;
+
                     h2 {
                         font-family: var(--font-family);
                         font-weight: 500;
@@ -160,5 +169,5 @@
                 }
             }
         }
-         }
     }
+}

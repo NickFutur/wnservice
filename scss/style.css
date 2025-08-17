@@ -1538,6 +1538,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 2;
+  will-change: transform;
+  transition: transform 0.4s ease-out;
 }
 .about-page .about-service__left .service-images__big {
   width: 533px;
@@ -1576,6 +1578,8 @@
   height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
+  will-change: transform;
+  transition: transform 0.1s linear;
 }
 .about-page .about-service__center .about-service__name {
   font-family: var(--font-family);
@@ -1610,6 +1614,8 @@
      object-fit: cover;
   bottom: 240px;
   right: 50px;
+  will-change: transform;
+  transition: transform 0.4s ease-out;
 }
 .about-page .about-service__right .about-service__img-small {
   position: absolute;
@@ -1619,6 +1625,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   left: 95px;
+  will-change: transform;
+  transition: transform 0.4s ease-out;
 }
 .about-page .about-service__right .about-service__label {
   top: 240px;

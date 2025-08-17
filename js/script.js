@@ -297,3 +297,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+//анимация параллакса 
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY;
+
+  // объект с селекторами и скоростями
+  const parallaxItems = [
+    { selector: ".about-service__img-small", speed: 0.05 },
+    { selector: ".about-service__img", speed: 0.05 },
+    { selector: ".service-images__small", speed: 0.02 },
+  ];
+
+  parallaxItems.forEach(item => {
+    const el = document.querySelector(item.selector);
+    if (el) {
+      el.style.transform = `translateY(${scrolled * item.speed}px)`;
+    }
+  });
+});
+

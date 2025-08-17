@@ -1,0 +1,193 @@
+@use "variants" as var;
+
+.history-block {
+  padding: 0px 20px;
+  margin-top: 20px;
+  .history-block__wrap {
+    overflow: hidden;
+    border-radius: 30px;
+    background: rgba(7, 117, 181, 0.05);
+    padding: 65px 0px;
+    .component__title-block {
+      .component__title-text {
+        h3 {
+        }
+      }
+    }
+
+    .history-block__content {
+      height: 387px;
+      padding: 0px 50px;
+      .history-block__content-scroll {
+        background-image: url("../images/history-time-line-desk.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        align-items: center;
+        .history-block__card {
+          border-radius: 20px;
+          width: 314px;
+          min-height: 257px;
+          overflow: hidden;
+          padding: 20px 20px 23px 20px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .history-block__card-title {
+            img {
+              width: 50px;
+              height: 50px;
+              margin-bottom: 14px;
+            }
+            h4 {
+              font-family: var.$font-family-med;
+              font-weight: 500;
+              font-size: 2.6rem;
+              line-height: 108%;
+              letter-spacing: -0.01em;
+              color: var.$blue;
+            }
+          }
+          .history-block__card-desc {
+            padding-top: 13px;
+            border-top: 1px solid rgba(7, 117, 181, 0.1);
+            p {
+              font-family: var.$font-family-light;
+              font-weight: 300;
+              font-size: 1.2rem;
+              line-height: 133%;
+              color: var.$black;
+              opacity: 0.5;
+            }
+          }
+
+          &:nth-child(1) {
+            background: var.$light-blue-2;
+          }
+          &:nth-child(2) {
+            background: var.$light-blue-2;
+          }
+          &:nth-child(3) {
+            background: var.$sea-blue;
+            .history-block__card-title {
+              h4 {
+                color: var.$white;
+              }
+            }
+            .history-block__card-desc {
+              border-color: rgba(255, 255, 255, 0.1);
+              p {
+                color: var.$white;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .history-block {
+    .history-block__wrap {
+      .history-block__content {
+        .history-block__content-scroll {
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .history-block {
+    .history-block__wrap {
+      .history-block__content {
+        .history-block__content-scroll {
+          background-image: url("../images/history-time-line-tablet.svg");
+          background-size: contain;
+          gap: 28px;
+
+          .history-block__card {
+            min-height: 243px;
+            width: 200px;
+            padding: 16px 14px 15px 15px;
+            gap: 16px;
+            .history-block__card-title {
+              img {
+                width: 36px;
+                height: 36px;
+                margin-bottom: 17px;
+              }
+              h4 {
+                font-size: 1.8rem;
+              }
+            }
+            .history-block__card-desc {
+              flex: 1;
+              p {
+                font-size: 1.2rem;
+              }
+            }
+
+            &:nth-child(1) {
+              .history-block__card-title {
+                margin-top: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .history-block {
+    .history-block__wrap {
+      .history-block__content {
+        .history-block__content-scroll {
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .history-block {
+    .history-block__wrap {
+      .history-block__content {
+        .history-block__content-scroll {
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .history-block {
+    .history-block__wrap {
+      .history-block__content {
+        .history-block__content-scroll {
+          background-image: url("../images/history-time-line-mobile.svg");
+          background-size: contain;
+          gap: 28px;
+
+          .history-block__card {
+            width: 272px;
+            height: 243px;
+            min-height: 243px;
+          }
+        }
+      }
+    }
+  }
+}

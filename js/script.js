@@ -299,30 +299,176 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-const container = document.querySelector(".our-equip-block__content");
-const track = container.querySelector(".our-equip-block__content-scroll");
+// Глобальная функция для управления всеми анимациями
+function initScrollAnimations() {
+  // 1. Полная очистка всех предыдущих анимаций
+  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
-function getScrollLen() {
-  const containerW = container.clientWidth;
-  const trackW = track.scrollWidth;
-  const gap = parseFloat(getComputedStyle(track).gap) || 0;
-  return track.scrollWidth - container.clientWidth + gap;
+  // 2. Инициализация блока истории
+  initHistoryScroll();
+
+  // 3. Инициализация блока оборудования
+  initEquipmentScroll();
+
+  // 4. Принудительное обновление
+  ScrollTrigger.refresh();
 }
 
-gsap.to(track, {
-  x: () => -getScrollLen(),
-  ease: "none",
-  scrollTrigger: {
-    trigger: container,
-    start: "top top",
-    end: () => "+=" + getScrollLen(),
-    pin: true,
-    scrub: true,
-    pinSpacing: true,
-    invalidateOnRefresh: true,
-  },
+// Блок истории
+function initHistoryScroll() {
+  const section = document.querySelector(".history-block");
+  if (!section) return;
+
+  const container = section.querySelector(".history-block__content");
+  const track = container?.querySelector(".history-block__content-scroll");
+  const cards = gsap.utils.toArray(".history-block__card");
+
+  if (!container || !track) return;
+
+  if (window.innerWidth >= 650) {
+    // DESKTOP - вертикальный скролл
+    const pinTrigger = ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: () => `+=${cards.length * window.innerHeight * 0.6}`,
+      pin: container,
+      pinSpacing: true,
+      anticipatePin: 1,
+      id: "history-pin",
+    });
+
+    cards.forEach((card, i) => {
+      gsap.fromTo(
+        card,
+        { autoAlpha: 0, y: 50 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: section,
+            start: () => `top+=${i * window.innerHeight * 0.6} top`,
+            end: () => `+=${window.innerHeight * 0.6}`,
+            scrub: true,
+            id: `history-card-${i}`,
+            markers: false,
+          },
+        }
+      );
+    });
+  } else {
+    // MOBILE - горизонтальный скролл с фиксацией
+    const scrollWidth = track.scrollWidth - container.clientWidth;
+
+    // Фиксация всей секции
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: () => `+=${scrollWidth + 100}`,
+      pin: true,
+      pinSpacing: false,
+      id: "history-mobile-pin",
+    });
+
+    // Горизонтальный скролл
+    const horizontalScroll = gsap.to(track, {
+      x: -scrollWidth,
+      ease: "none",
+      scrollTrigger: {
+        trigger: track,
+        start: "left left",
+        end: () => `+=${scrollWidth}`,
+        scrub: true,
+        invalidateOnRefresh: true,
+        id: "history-horizontal-scroll",
+      },
+    });
+
+    // Анимация карточек
+    cards.forEach((card, i) => {
+      gsap.fromTo(
+        card,
+        { autoAlpha: 0, x: 20 },
+        {
+          autoAlpha: 1,
+          x: 0,
+          scrollTrigger: {
+            trigger: card,
+            start: () => `left+=${i * card.offsetWidth - 100} left`,
+            end: () => `left+=${card.offsetWidth} left`,
+            scrub: true,
+            containerAnimation: horizontalScroll.scrollTrigger,
+            id: `history-mobile-card-${i}`,
+          },
+        }
+      );
+    });
+  }
+}
+
+// Блок оборудования
+function initEquipmentScroll() {
+  const container = document.querySelector(".our-equip-block__content");
+  if (!container) return;
+
+  const track = container.querySelector(".our-equip-block__content-scroll");
+  if (!track) return;
+
+  const gap = parseFloat(getComputedStyle(track).gap) || 0;
+  const scrollLength = track.scrollWidth - container.clientWidth + gap;
+
+  // Основная анимация скролла
+  gsap.to(track, {
+    x: -scrollLength,
+    ease: "none",
+    scrollTrigger: {
+      trigger: container,
+      start: "top top",
+      end: () => `+=${scrollLength}`,
+      pin: true,
+      scrub: true,
+      pinSpacing: true,
+      invalidateOnRefresh: true,
+      id: "equipment-horizontal",
+      onRefresh: (self) => {
+        // Корректировка при ресайзе
+        if (self.progress > 0.5) {
+          gsap.to(track, { x: -scrollLength, duration: 0.3 });
+        }
+      },
+    },
+  });
+
+  // Дополнительные анимации для элементов
+  gsap.utils.toArray(".our-equip-block__item").forEach((item, i) => {
+    gsap.from(item, {
+      opacity: 0,
+      x: 50,
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none reverse",
+        id: `equip-item-${i}`,
+      },
+    });
+  });
+}
+
+// Инициализация и обработчики
+window.addEventListener("load", initScrollAnimations);
+
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    initScrollAnimations();
+  }, 200);
 });
 
-window.addEventListener("load", () => ScrollTrigger.refresh());
-window.addEventListener("resize", () => ScrollTrigger.refresh());
+// Очистка при переходе между страницами (для SPA)
+window.addEventListener("beforeunload", () => {
+  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+});

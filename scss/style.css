@@ -1789,6 +1789,7 @@
   .about-page .about-service-tablet .about-service__left .service-images__wrapper .service-images__big {
     width: 354px;
     height: 354px;
+    padding: 5px;
   }
   .about-page .about-service-tablet .about-service__left .service-images__wrapper .about-service__img {
     z-index: 2;
@@ -1849,6 +1850,7 @@
     text-align: center;
     color: rgba(31, 31, 31, 0.5);
     margin-bottom: 30px;
+    max-width: 304px;
   }
   .about-page .about-service-tablet .about-service__right .about-service__person {
     display: flex;
@@ -1881,7 +1883,7 @@
     line-height: 142%;
     letter-spacing: 0em;
     color: rgba(31, 31, 31, 0.5);
-    margin-bottom: 47px;
+    margin-bottom: 0px;
   }
   .about-page .about-service-tablet .about-service__right .about-service__label {
     display: none;

@@ -3063,7 +3063,7 @@ img {
   padding: 5px 9px;
   transition: all 0.3s ease;
 }
-.service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:hover {
+.service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:hover, .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:active, .service-block .service-block__info-block .service-block__info-wrap-1 .service-block__card-wrapper .service-block__card .service-block__card-text .service-block__card-links-block a:focus {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background: rgb(221, 238, 248);
@@ -5162,6 +5162,170 @@ img {
   height: 114px;
   width: auto;
   margin-left: -67px;
+}
+
+.adv-service-about .adv-service__wrap {
+  gap: 60px;
+}
+.adv-service-about .adv-service__wrap .adv-service__head {
+  max-width: 620px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card .adv-service__card-image .adv-service__card-img {
+  border-radius: 20px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) {
+  background: #0775b5;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-image .adv-service__card-icon {
+  right: auto;
+  left: 20px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text {
+  padding: 25px 25px 45px 45px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img {
+  display: flex;
+  gap: 38px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ffffff;
+  padding-top: 20px;
+  flex: 1;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img .adv-service__card-txt p {
+  color: #ffffff;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img {
+  width: 182px;
+  height: 182px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-text-img .adv-service__card-img img {
+  border-radius: 13px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .leave-request-btn a:hover, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .leave-request-btn a:active, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .leave-request-btn a:focus {
+  border: 1px solid #ffffff;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-links-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-links-block a {
+  font-family: "TT Hoves Pro Trial Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #0775b5;
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 5px 9px;
+  transition: all 0.3s ease;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-links-block a:hover, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-links-block a:active, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(1) .adv-service__card-text .adv-service__card-links-block a:focus {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgb(221, 238, 248);
+  color: rgb(7, 117, 181);
+  transition: all 0.3s ease;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) {
+  background: #ddeef8;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-image .adv-service__card-icon {
+  left: auto;
+  right: 25px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text {
+  padding: 45px 30px 40px 45px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-text-block h3 {
+  color: #13a9e1;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list {
+  border-top: none;
+  gap: 0;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item:nth-child(1) {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(2) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item img {
+  height: 30px;
+  width: 32px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) {
+  background: #f7f7f7;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text {
+  padding: 43px 27px 37px 46px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-block {
+  max-width: 340px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-block h3 {
+  color: #1f1f1f;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-text-block p {
+  color: #000000;
+  opacity: 0.5;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-link {
+  position: absolute;
+  right: 27px;
+  bottom: 40px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-link a {
+  font-family: "TT Hoves Pro Trial Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 0em;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-link a:hover, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-link a:active, .adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-link a:focus {
+  color: #000000;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-top: 31px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item img {
+  width: 36px;
+  height: 35px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div {
+  max-width: 338px;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+}
+.adv-service-about .adv-service__wrap .adv-service__desc .adv-service__card:nth-child(3) .adv-service__card-text .adv-service__card-list .adv-service__card-list-item div p span {
+  color: #13a9e1;
 }
 
 .service-catalog {

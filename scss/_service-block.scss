@@ -75,7 +75,9 @@
                 padding: 5px 9px;
                 transition: $transition-default;
 
-                &:hover {
+                &:hover,
+                &:active,
+                &:focus {
                   -webkit-backdrop-filter: blur(15px);
                   backdrop-filter: blur(15px);
                   background: $blue-link-light;

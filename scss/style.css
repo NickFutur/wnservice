@@ -2104,10 +2104,22 @@
   }
 }
 @media (max-width: 650px) {
+  .history-block .history-block__wrap .history-block__content {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .history-block .history-block__wrap .history-block__content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
   .history-block .history-block__wrap .history-block__content .history-block__content-scroll {
     background-image: url("../images/history-time-line-mobile.svg");
     background-size: contain;
     gap: 28px;
+    width: 960px;
   }
   .history-block .history-block__wrap .history-block__content .history-block__content-scroll .history-block__card {
     width: 272px;

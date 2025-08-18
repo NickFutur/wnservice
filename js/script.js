@@ -316,7 +316,6 @@ function initScrollAnimations() {
   ScrollTrigger.refresh();
 }
 
-// Блок истории
 function initHistoryScroll() {
   const section = document.querySelector(".history-block");
   if (!section) return;
@@ -328,7 +327,7 @@ function initHistoryScroll() {
   if (!container || !track) return;
 
   if (window.innerWidth >= 650) {
-    // DESKTOP - вертикальный скролл
+    // DESKTOP - вертикальный скролл (оставляем как есть)
     const pinTrigger = ScrollTrigger.create({
       trigger: section,
       start: "top top",
@@ -358,52 +357,54 @@ function initHistoryScroll() {
       );
     });
   } else {
-    // MOBILE - горизонтальный скролл с фиксацией
+    // MOBILE - ТОЛЬКО горизонтальный скролл БЕЗ анимации карточек
     const scrollWidth = track.scrollWidth - container.clientWidth;
 
-    // Фиксация всей секции
-    ScrollTrigger.create({
-      trigger: section,
-      start: "top top",
-      end: () => `+=${scrollWidth + 100}`,
-      pin: true,
-      pinSpacing: false,
-      id: "history-mobile-pin",
-    });
+    const mm = gsap.matchMedia();
 
-    // Горизонтальный скролл
-    const horizontalScroll = gsap.to(track, {
-      x: -scrollWidth,
-      ease: "none",
-      scrollTrigger: {
-        trigger: track,
-        start: "left left",
-        end: () => `+=${scrollWidth}`,
-        scrub: true,
-        invalidateOnRefresh: true,
-        id: "history-horizontal-scroll",
-      },
-    });
+    mm.add("(max-width: 649px)", () => {
+      const historyContainer = document.querySelector(
+        ".history-block__content"
+      );
+      if (!historyContainer) return;
 
-    // Анимация карточек
-    cards.forEach((card, i) => {
-      gsap.fromTo(
-        card,
-        { autoAlpha: 0, x: 20 },
-        {
-          autoAlpha: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: card,
-            start: () => `left+=${i * card.offsetWidth - 100} left`,
-            end: () => `left+=${card.offsetWidth} left`,
-            scrub: true,
-            containerAnimation: horizontalScroll.scrollTrigger,
-            id: `history-mobile-card-${i}`,
-          },
-        }
+      historyContainer.addEventListener(
+        "wheel",
+        (e) => {
+          if (e.deltaY !== 0) {
+            e.preventDefault();
+            historyContainer.scrollLeft += e.deltaY;
+          }
+        },
+        { passive: false }
       );
     });
+
+    // Фиксация всей секции (оставляем)
+    // ScrollTrigger.create({
+    //   trigger: section,
+    //   start: "top top",
+    //   end: () => `+=${scrollWidth + 100}`,
+    //   pin: true,
+    //   pinSpacing: false,
+    //   id: "history-mobile-pin",
+    // });
+
+    // Горизонтальный скролл (оставляем)
+    // gsap.to(track, {
+    //   x: -scrollWidth,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: track,
+    //     start: "left left",
+    //     end: () => `+=${scrollWidth}`,
+    //     scrub: true,
+    //     invalidateOnRefresh: true,
+    //     id: "history-horizontal-scroll",
+    //   },
+    // });
+
+    // УДАЛЕНО: блок с анимацией карточек (gsap.fromTo)
   }
 }
 
